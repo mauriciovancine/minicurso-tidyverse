@@ -1,1 +1,1 @@
-# Curso *tidyverse*
+# Minicurso *tidyverse*
