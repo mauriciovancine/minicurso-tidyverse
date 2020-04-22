@@ -1,0 +1,504 @@
+---
+title: "Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade <br><br>"
+subtitle: "0 Controle de versão, Git e GitHub <br><br> xaringan [presentation ninja]"
+author: "Maurício H. Vancine"
+date: "30/09/2019"
+output:
+  xaringan::moon_reader:
+    css: [metropolis]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+    includes:
+      in_header: header.html
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE,
+        encoding = "UTF-8")
+```
+
+class: clear, center, middle
+background-image: url(http://pluspng.com/img-png/github-octocat-logo-vector-png--896.jpg)
+background-size: 500px
+
+---
+
+background-image: url(https://miro.medium.com/max/1366/1*mtsk3fQ_BRemFidhkel3dA.png)
+background-size: 400px
+background-position: 85% 85%
+
+# 0 Controle de versão, Git e GitHub (segunda)
+
+## Conteúdo
+
+0.0 Verificar os notebooks
+<br>
+0.1 Controle de versão
+<br>
+0.2 Git
+<br>
+0.3 GitHub
+<br>
+0.4 Funcionamento do controle de versão
+<br>
+0.5 Fork
+<br>
+0.6 Clone
+<br>
+0.7 Add e Commit
+<br>
+0.8 Push
+<br>
+0.9 Pull
+<br>
+0.10 Controle de versão no RStudio
+
+---
+
+class: inverse, middle, center
+
+# Vamos conferir os notebooks?!
+
+---
+
+background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/hard_soft.png)
+background-size: 600px
+background-position: 50% 50%
+
+# Software e Hardware
+
+---
+
+# 0.0 Verificar os notebooks
+
+## Hardware
+
+<br><br><br>
+
+## 1 Notebook - Windows, MacOS, Linux ou freeBSD
+
+<br> 
+
+## 2 Acesso à internet
+
+---
+
+background-image: url(https://www.r-project.org/logo/Rlogo.svg)
+background-size: 400px
+background-position: 50% 70%
+
+# 0.0 Verificar os notebooks
+
+## Softwares
+
+### https://www.r-project.org/
+
+---
+
+background-image: url(https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg)
+background-size: 500px
+background-position: 50% 60%
+
+# 0.0 Verificar os notebooks
+
+## Softwares
+
+### https://www.rstudio.com/
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png)
+background-size: 400px
+background-position: 50% 60%
+
+# 0.0 Verificar os notebooks
+
+## Softwares
+
+### https://git-scm.com/
+
+---
+
+class: inverse, middle, center
+
+# Tudo funcionando? Então bora!
+
+---
+
+background-image: url(http://phdcomics.com/comics/archive/phd101212s.gif)
+background-size: 400px
+background-position: 50% 50%
+
+# 0.1 Controle de versão
+
+---
+
+background-image: url(http://stoa.usp.br/ewout/files/744/4162/dvc-solo.png)
+background-size: 400px
+background-position: 50% 50%
+
+# 0.1 Controle de versão
+
+## Manejar projetos individualmente
+
+---
+
+background-image: url(http://stoa.usp.br/ewout/files/744/4164/dvc-ramos.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 0.1 Controle de versão
+
+## Manejar projetos compartilhados
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png)
+background-size: 500px
+background-position: 50% 70%
+
+# 0.2 Git
+
+## Software que faz o controle de versão
+
+### Maneja os repositórios locais (notebook) e remotos (GitHub)
+ 
+---
+
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/GitHub-brave-hed-796x418.jpg)
+background-size: 600px
+background-position: 50% 70%
+
+# 0.3 GitHub
+
+## Repositório remoto
+
+### Plataforma de hospedagem de código-fonte com controle de versão usando o Git
+
+---
+
+class: inverse, middle, center
+
+# Recapitulando
+
+---
+
+background-image: url(https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/12/gitHub.png)
+background-size: 700px
+background-position: 50% 80%
+
+# 0.3 GitHub
+
+### **Git**: software que faz o controle de versão
+
+### **GitHub**: repositório remoto que hospeda os arquivos versionados
+
+---
+
+# 0.3 GitHub
+
+## Vamos criar uma conta no GitHub (caso não possuam)
+<br><br><br><br><br>
+##.center[https://github.com]
+
+---
+
+# 0.3 GitHub
+
+## **Salvem essas informações!!!**
+
+<br><br><br>
+
+## **username**: mauriciovancine
+## **email**: mauricio.vancine@gmail.com
+## **senha**: !@#$%¨&*+
+
+---
+
+background-image: url(https://www.earthdatascience.org/images/workshops/version-control/git-fork-clone-flow.png)
+background-size: 450px
+background-position: 50% 50%
+
+# 0.4 Funcionamento do controle de versão
+
+---
+
+class: inverse, middle, center
+
+# Então vamos lá!
+
+---
+
+background-image: url(https://www.battelleecology.org/sites/default/files/images/pre-institute-content/pre-institute2-git/git_fork_emphasis.png)
+background-size: 500px
+background-position: 50% 60%
+
+# 0.5 Fork
+
+## Fork: cópia de um repositório remoto para o seu GitHub
+
+---
+
+background-image: url(https://www.neonscience.org/sites/default/files/images/pre-institute-content/pre-institute2-git/GitHubGuides_Bootcamp-Fork.png)
+background-size: 600px
+background-position: 50% 60%
+
+# 0.5 Fork
+
+## Forken o repositório da disciplina para o GitHub de vocês
+
+https://github.com/mauriciovancine/disciplina-geoprocessamento.git
+
+---
+
+background-image: url(https://camo.githubusercontent.com/963ddbc14538af86b3882716c00ceda9c86804e5/687474703a2f2f61737365742d352e736f757063646e2e636f6d2f61737365742f333534392f303137325f353466372e676966)
+background-size: 400px
+background-position: 50% 60%
+
+# 0.5 Fork
+
+## Forken o repositório da disciplina para o GitHub de vocês
+
+https://github.com/mauriciovancine/disciplina-geoprocessamento.git
+
+---
+
+background-image: url(https://www.earthdatascience.org/images/workshops/version-control/git-fork-clone-flow.png)
+background-size: 450px
+background-position: 50% 50%
+
+# 0.4 Funcionamento do controle de versão
+
+---
+
+background-image: url(https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/12/gitHub.png)
+background-size: 700px
+background-position: 50% 80%
+
+# Repositório local
+
+## Agora vamos criar uma pasta chamada `github` onde o repositório da disciplina irá ficar armazenado
+
+---
+
+background-image: url(https://www.battelleecology.org/sites/default/files/images/pre-institute-content/pre-institute2-git/git_clone.png)
+background-size: 450px
+background-position: 50% 60%
+
+# 0.6 Clone
+
+## Fazer o download do repositório remoto para o repositório local
+
+---
+
+class: inverse, middle, center
+
+# Agora precisamos trazer esses arquivos para nosso notebook
+
+<br><br><br>
+
+# E como faremos isso?
+
+---
+
+background-image: url(https://www.battelleecology.org/sites/default/files/images/pre-institute-content/pre-institute2-git/Git-ForkScreenshot-clone.png)
+background-size: 800px
+background-position: 50% 60%
+
+# 0.6 Clone
+
+## Diretamente do repositório remoto
+
+---
+
+background-image: url(https://miro.medium.com/max/1378/1*UwLa1LPpa1tI7wIAsMH67w.jpeg)
+background-size: 500px
+background-position: 50% 50%
+
+# Git e RStudio
+
+---
+
+class: inverse, middle, center
+
+# Abram o RStudio
+
+---
+
+background-image: url(https://diegopftrindade.netlify.com/img/1newproj.png)
+background-size: 800px
+background-position: 50% 60%
+
+# 0.6 Clone
+
+## Criar um projeto R com controle de versão
+
+---
+
+background-image: url(https://diegopftrindade.netlify.com/img/2choosegit.png)
+background-size: 800px
+background-position: 50% 60%
+
+# 0.6 Clone
+
+## Escolher clonar repositório do GitHub
+
+---
+
+background-image: url(https://diegopftrindade.netlify.com/img/3fillrepo.png)
+background-size: 750px
+background-position: 50% 95%
+
+# 0.6 Clone
+
+### Endereço do repositório remoto do GitHub de vocês 
+https://github.com/username/disciplina-geoprocessamento.git
+
+### Diretório da pasta `github`
+/home/mude/data/github
+
+---
+
+background-image: url(https://www.earthdatascience.org/images/workshops/version-control/git-fork-clone-flow.png)
+background-size: 450px
+background-position: 50% 50%
+
+# 0.4 Funcionamento do controle de versão
+
+---
+
+background-image: url(https://www.battelleecology.org/sites/default/files/images/pre-institute-content/pre-institute2-git/git-add-commit.png)
+background-size: 500px
+background-position: 50% 90%
+
+# 0.7 Add e Commit
+
+## Add
+**Adicionar** as mudanças após edições (stage)
+
+## Commit
+**Criar** uma nova versão no repositório local
+
+---
+
+background-image: url(https://www.battelleecology.org/sites/default/files/images/pre-institute-content/pre-institute2-git/git-add-commit.png)
+background-size: 500px
+background-position: 50% 90%
+
+# 0.8 Push
+
+## Push
+Enviar uma nova versão do **repositório local** para o **repositório remoto (GitHub)**
+
+---
+
+background-image: url(https://www.battelleecology.org/sites/default/files/images/pre-institute-content/pre-institute2-git/git-add-commit.png)
+background-size: 500px
+background-position: 50% 90%
+
+# 0.9 Pull
+
+## Pull
+Enviar uma nova versão do **repositório remoto (GitHub)** para o **repositório local**
+
+---
+
+background-image: url(http://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/img/Rstudio-GitShell.png)
+background-size: 600px
+background-position: 50% 90%
+
+# 0.10 Controle de versão no RStudio
+
+## RStudio
+
+### Configurar o nome de usuário, e-mail e senha
+
+```{bash, eval = FALSE}
+git config --global user.name "seu_usuario"
+git config --global user.email "seu_email"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa # digite a senha
+```
+
+---
+
+background-image: url(https://saagie.zendesk.com/hc/article_attachments/360003474399/image2018-12-18_16-46-24.jpg)
+background-size: 400px
+background-position: 50% 80%
+
+# 0.10 Controle de versão no RStudio
+
+## RStudio
+
+### Criar o SSH
+
+---
+
+background-image: url(http://infoheap.com/wp-content/uploads/2015/12/github-ssh-add-key-interface.png)
+background-size: 600px
+background-position: 50% 80%
+
+# 0.10 Controle de versão no RStudio
+
+## RStudio
+
+### Adicionar o SSH ao GitHub
+
+---
+
+background-image: url(https://diegopftrindade.netlify.com/img/8verscontrol.png)
+background-size: 800px
+background-position: 50% 60%
+
+# 0.10 Controle de versão no RStudio
+
+## RStudio
+
+---
+
+background-image: url(https://diegopftrindade.netlify.com/img/9changes.png)
+background-size: 800px
+background-position: 50% 60%
+
+# 0.10 Controle de versão no RStudio
+
+## RStudio
+
+---
+
+background-image: url(https://diegopftrindade.netlify.com/img/commit.png)
+background-size: 800px
+background-position: 50% 60%
+
+# 0.10 Controle de versão no RStudio
+
+## RStudio
+
+---
+
+class: inverse, middle, center
+
+# Dúvidas?
+
+---
+
+class: clear, middle
+
+## Maurício Vancine
+
+<br>
+
+Contatos:
+
+|                                                                                           |                               |
+| :---------------------------------------------------------------------------------------- | :---------------------------- |
+| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>]  | mauricio.vancine@gmail.com    |
+| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]   | mauriciovancine.netlify.com   |
+| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>]  | @mauriciovancine              |
+| <a href="http://gitlab.com/mauriciovancine">.RUred[<i class="fa fa-gitlab fa-fw"></i>]    | @mauriciovancine              |
+| <a href="http://github.com/mauriciovancine">.RUred[<i class="fa fa-github fa-fw"></i>]    | @mauriciovancine              |
+
+Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)

@@ -1,37 +1,38 @@
 ---
-title: "tidyverse: manipulação e visualização de dados<br><br>"
-subtitle: ""
-author: "Maurício Vancine <br>"
-date: "<br> xaringan [presentation ninja] <br><br> 10/04/2020"
-encoding: "UTF-8"
+title: "Introdução ao *tidyverse* <br><br>"
+subtitle: "<br><br> xaringan [presentation ninja] <br>"
+author: "Maurício H. Vancine"
+date: "25/04/2019"
 output:
   xaringan::moon_reader:
-    css: metropolis
+    css: [metropolis]
     lib_dir: libs
     nature:
-      highlightStyle: rainbow
+      ratio: "16:9"
+      highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
-      slideNumberFormat: "%current%/%total%"
+      countIncrementalSlides: true
     includes:
       in_header: header.html
 ---
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+options(htmltools.dir.version = FALSE,
+        encoding = "UTF-8")
 ```
 
 class: clear, center, middle
 background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-size: 40%
-background-position: 50% 50%
 
 ---
 
-# Maurício Vancine
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/mauricio_vancine_anfoco_perfil.jpg)
+background-size: 300px
+background-position: 85% 85%
 
-## Ecólogo (2015) | Mestre em Zoologia (2018)
+# Maurício H. Vancine
+
+## Doutorando em Zoologia
 
 --
 
@@ -39,63 +40,22 @@ background-position: 50% 50%
 - Ecologia Espacial
 - Ecologia Quantitativa
 - Ecologia e Conservação de Anfíbios
-  
+
 --
 
-### Habilidades
+### Habilidades (*Skills*) 
 - Modelos de Distribuição de Espécies (SDMs)
 - Análise de Dados Ecológicos e Geoespaciais
 - **Open source** [R, QGIS, GRASS GIS, Linux, Libreoffice....]
 
 --
 
-### Contato e informações
-|                                                                                          |                                     |
-| :--------------------------------------------------------------------------------------- | :--------------------------------   |
-| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>] | mauricio.vancine@gmail.com          |
-| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>] | @mauriciovancine                    |
-| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]  | mauriciovancine.netlify.com         |
-
-
----
-
-# Experiência
-
-## Minha história com o R (~470 h)
-
-<br>
-
-- 2011: Assisti, **Curso de R** (40 h) - Prof. Tadeu Siqueira
-
-- 2015: Minicurso, **Introdução ao software R** (08 h) - SEE
-
-- 2015: Monitor, **Ecologia Quantitativa** (60 h) - Prof. Tadeu Siqueira
-
-- 2016: Minicurso, **Introdução software R: manejo de dados, gráficos e análises estatísticas** (16 h) - SEB
-
-- 2016: Monitor, **Modelagem de Nicho Ecológico no R** (30 h) - UNESP
-
-- 2016: Professor colaborador, **Modelagem de nicho ecológico: teoria e prática** (45 h) - Unicamp
-
----
-
-# Experiência
-
-## Minha história com o R (~470 h)
-
-<br>
-
-- 2017:	Professor colaborador, **Modelagem de nicho ecológico: teoria e prática** (60 h) - UNESP
-
-- 2017: Estágio docência, **Ecologia Quantitativa** (60 h) - Prof. Tadeu Siqueira
-
-- 2018: Professor colaborador, **Modelos Estatísticos em Ecologia** (12 h) - UNESP
-
-- 2019: Curso, **Introdução à linguagem R: manejo, visualização e análises de dados** (50 h) - Labic
-
-- 2019: Assisti, **Introdução à modelagem hierárquica** (45 h) - UFRGS
-
-- 2019: Professor visitante, **Introdução ao geoprocessamento para etnobiologia e conservação da biodiversidade ** (45 h) - UFRPE
+### Contato e informações:
+|                                                                                          |                                   |
+| :--------------------------------------------------------------------------------------- | :-------------------------------- |
+| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>] | mauricio.vancine@gmail.com        |
+| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>] | @mauriciovancine                  |
+| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]  | mauriciovancine.netlify.com       |
 
 ---
 
@@ -104,51 +64,136 @@ background-position: 50% 50%
 <br><br>
 
 ### Duração
-~08 h
+~15 h
 
 --
 
 ### Datas e horários
-23/10/2019 - 14:00 às 18:00 h (4 h) <br>
-24/10/2019 - 08:00 às 12:00 h (4 h)
+25/04/2020 - 13:00 às 19:00 h (6 h) <br>
+26/10/2020 - 08:00 | (almoço) | 19:00 h (9 h)
 
 --
 
 ### Formato
-Prática (6 h) <br>
-Exercícios (2 h)
+Revisão (~1 h) <br>
+Prática (~10 h) <br>
+Exercícios (~4 h)
 
 ---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/github_repositorio.png)
+background-size: 700px
+background-position: 50% 80%
 
 # Minicurso
 
 ## Material
 
 ### Repositório de dados do minicurso no GitHub
-https://github.com/mauriciovancine/minicurso-r-sebio-2019
-
---
-
-<br>
-
-## Organização no seu computador
-Criem uma pasta chamada `github` em `Documentos` ou na famigerada `Área de Trabalho`
-
---
-
-Adicionem o arquivo `minicurso-r-sebio-2019-master.zip` nessa pasta
-
---
-
-Deszipem o arquivo nessa pasta
-
---
-
-Pronto, arquivos organizados do minicurso =]
+https://github.com/mauriciovancine/minicurso-tidyverse
 
 ---
 
-background-image: url(https://www.r-project.org/logo/Rlogo.svg)
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/git_github.png)
+background-size: 700px
+background-position: 85% 85%
+
+# Minicurso
+
+## Conteúdo
+
+### 0 Controle de versão, Git e GitHub
+0.0 Verificar os notebooks
+<br>
+0.1 Controle de versão
+<br>
+0.2 Git
+<br>
+0.3 GitHub
+<br>
+0.4 Funcionamento do controle de versão
+<br>
+0.5 Fork
+<br>
+0.6 Clone
+<br>
+0.7 Add e Commit
+<br>
+0.8 Push
+<br>
+0.9 Pull
+<br>
+0.10 Controle de versão no RStudio
+
+---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/r_rstudio.png)
+background-size: 450px
+background-position: 75% 75%
+
+# Minicurso
+
+## Conteúdo
+
+### 1 Revisão rápida de R e RStudio
+1.1 Linguagem R
+<br>
+1.2 RStudio
+<br>
+1.2 Editor/Roteiro (*code*/*script*)
+<br>
+1.4 Comentários (*#*)
+<br>
+1.5 Atribuição (*<-*)
+<br>
+1.6 Objetos
+<br>
+1.7 Operadores
+<br>
+1.8 Funções
+<br>
+1.9 Pacotes
+<br>
+1.10 Ajuda (*help*)
+<br>
+1.11 Ambiente (*environment*/*workspace*)
+<br>
+1.12 Citações
+
+---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/estrutura_dados.png)
+background-size: 400px
+background-position: 85% 90%
+
+# Minicurso
+
+## Conteúdo
+
+### 2 Revisão de estrutura de dados
+2.1 Atributos dos objetos
+<br>
+2.2 Modos dos objetos (*numeric*, *character* e *logical*)
+<br>
+2.3 Estrutura dos objetos (*vector*, *factor*, *matrix* e *data frame*)
+<br>
+2.4 Manejo de dados unidimensionais
+<br>
+2.5 Manejo de dados bidimensionais
+<br>
+2.6 Valores faltantes e especiais
+<br>
+2.7 Diretório de trabalho
+<br>
+2.8 Importar dados
+<br>
+2.9 Conferir e manejar dados importados
+<br>
+2.10 Exportar dados
+
+---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/tidyverse.png)
 background-size: 350px
 background-position: 75% 75%
 
@@ -156,260 +201,121 @@ background-position: 75% 75%
 
 ## Conteúdo
 
-### 1 Linguagem R, aplicações e material
-1.1 Linguagem R
+### 3 Introdução ao tidyverse
+3.1 tidyverse
 <br>
-1.2 Linguagem R e software RStudio
+3.2 readr
 <br>
-1.3 Aplicações da linguagem R
+3.3 readxl e writexl
 <br>
-1.4 Apostilas, sites e livros
-
----
-
-background-image: url(https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg)
-background-size: 500px
-background-position: 90% 85%
-
-# Minicurso
-
-## Conteúdo
-
-### 2 Funcionamento da linguagem R
-2.1 RStudio
+3.4 tibble
 <br>
-2.2 Editor/Roteiro (*code*/*script*)
+3.5 magrittr (*pipe - %>%*)
 <br>
-2.3 Comentários (*#*)
+3.6 tidyr
 <br>
-2.4 Atribuição (*<-*)
+3.7 dplyr
 <br>
-2.5 Objetos
+3.8 forcats
 <br>
-2.6 Operadores
+3.9 forcats
 <br>
-2.7 Funções
+3.10 stringr
 <br>
-2.8 Pacotes
-<br>
-2.9 Ajuda (*help*)
-<br>
-2.10 Ambiente (*environment*/*workspace*)
-<br>
-2.11 Citações
-<br>
-2.12 Principais erros
-
----
-
-background-image: url(https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/5-298x300.png)
-background-size: 300px
-background-position: 80% 90%
-
-# Minicurso
-
-## Conteúdo
-
-### 3 Estrutura e manipulação de dados
-3.1 Atributos dos objetos
-<br>
-3.2 Modos dos objetos (*numeric*, *character* e *logical*)
-<br>
-3.3 Estrutura dos objetos (*vector*, *factor*, *matrix* e *data frame*)
-<br>
-3.4 Manejo de dados unidimensionais
-<br>
-3.5 Manejo de dados bidimensionais
-<br>
-3.6 Valores faltantes e especiais
-<br>
-3.7 Diretório de trabalho
-<br>
-3.8 Importar dados
-<br>
-3.9 Conferir e manejar dados importados
-<br>
-3.10 Exportar dados
-
----
-
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tidyverse.png)
-background-size: 250px
-background-position: 75% 75%
-
-# Minicurso
-
-## Conteúdo
-
-### 4 Introdução ao tidyverse
-4.1 tidyverse
-<br>
-4.2 readr
-<br>
-4.3 readxl
-<br>
-4.4 tibble
-<br>
-4.5 magrittr (*pipe - %>%*)
-<br>
-4.6 dplyr
-<br>
-4.7 tidyr
+3.11 purrr
 
 ---
 
 background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/ggplot2.png)
-background-size: 250px
+background-size: 350px
 background-position: 75% 75%
 
 # Minicurso
 
 ## Conteúdo
 
-### 5 Visualização de dados
-5.1 Principais pacotes para gráficos no R
+### 4 Visualização de dados
+4.1 Pacote ggplot2
 <br>
-5.2 Principais livros e sites
+4.2 Principais livros e sites
 <br>
-5.3 Colunas como eixos do gráficos (*variáveis = colunas*)
+4.3 Colunas como eixos do gráficos (*variáveis = colunas*)
 <br>
-5.4 Principais tipos de gráficos
+4.4 Principais tipos de gráficos
 <br>
-5.5 Histograma (*histogram*)
+4.5 Histograma (*histogram*)
 <br>
-5.6 Gráfico de setores (*pie chart* e *donut plot*)
+4.6 Gráfico de setores (*pie chart* e *donut plot*)
 <br>
-5.7 Gráfico de barras (*bar plot*)
+4.7 Gráfico de barras (*bar plot*)
 <br>
-5.8 Gráfico de caixa (*box plot* e *violin plot*)
+4.8 Gráfico de caixa (*box plot* e *violin plot*)
 <br>
-5.9 Gráfico de dispersão (*scatter plot*)
+4.9 Gráfico de dispersão (*scatter plot*)
+<br>
+4.10 Gráfico pareado (*pairs plot*)
 
 ---
 
-# Minicurso
-  
-## IMPORTANTE!
-  
-<br>
-  
---
-  
-### **Aproveitem** o máximo possível!
-  
---
-  
-### **Perguntem** o que não entenderam! Não deixem passar dúvidas!
-  
---
-  
-### **Evitem** celular, redes sociais e outras distrações!
-  
---
-
-<br>
-### Estudar R e estatística geraram muitas **oportunidades** de parcerias em **pesquisas** e principalmente **trabalho**!
-
----
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/ggplot2.png)
+background-size: 350px
+background-position: 75% 75%
 
 # Minicurso
 
-## IMPORTANTE!
+## Conteúdo
 
-### Só se aprende R...
-
---
-
-### ...'errando'
-
---
-
-### Esse curso é apenas o **começo**, o aprendizado é com vocês!
-
---
-
-### Será como **reaprender** à pensar, falar e escrever
-
---
-
-### Aprender leva **tempo**! Muito tempo....
-
---
-
-### Ponto positivo: há **muito material disponível** e **grátis**!
-
----
-
-background-image: url(https://media0.giphy.com/media/dILrAu24mU729pxPYN/giphy.gif)
-background-size: 700px
-background-position: 50% 60%
-
-# O R: qual o sentido?
-
----
-
-class: clear, inverse, middle, center
-background-image: url(figs/ecologia_estatistica.jpg)
-background-size: 600px
-background-position: 50% 50%
-
----
-
-# O R: qual o sentido?
-
-## O R precisa de um <u>**objetivo**</u> para começar a fazer sentido...
-
---
+### 4 Visualização de dados (ggplot2)
+4.1 Pacote ggplot2
 <br>
-### Nesse minicurso teremos dois <u>**objetivos**</u>:
-
-### 1. **Manipular ou gerenciar** dados (planilhas) de forma mais fácil, automática e reproduzível
-
---
-
-### 2. **Visualizar** os dados (planilhas) para apresentar e entender padrões
-
---
-
+4.2 Principais livros e sites
 <br>
-
-### <u>**IMPORTANTE**</u>: não teremos <u>**estatística**</u> pelo tempo limitado...
-
----
-
-class: clear, inverse, middle, center
-
-# O que nos leva à pergunta: como são/estão suas habilidades com **planilhas eletrônicas**?
-
----
-
-# Planilha eletrônica
-
-## Softwares
-
-### Pago
-1. Microsoft Office (Excel): https://products.office.com/en/excel
-
-### Livre
-2. LibreOffice (Calc): https://www.libreoffice.org/discover/calc/
-3. WPS (SpreadSheets): https://www.wps.com/
-4. FreeOffice (PlanMaker): https://www.freeoffice.com/
-5. OnlyOffice (SpreadSheets): https://www.onlyoffice.com/
-
-### Online:
-6. Google Drive (SpreadSheets): https://docs.google.com/spreadsheets/
+4.3 Colunas como eixos do gráficos (*variáveis = colunas*)
+<br>
+4.4 Principais tipos de gráficos
+<br>
+4.5 Histograma (*histogram*)
+<br>
+4.6 Gráfico de setores (*pie chart* e *donut plot*)
+<br>
+4.7 Gráfico de barras (*bar plot*)
+<br>
+4.8 Gráfico de caixa (*box plot* e *violin plot*)
+<br>
+4.9 Gráfico de dispersão (*scatter plot*)
+<br>
+4.10 Gráfico pareado (*pairs plot*)
 
 ---
 
-background-image: url(figs/planilhas_eletronicas.png)
-background-size: 700px
-background-position: 50% 80%
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/ggplot2.png)
+background-size: 350px
+background-position: 75% 75%
 
-# Planilha eletrônica
+# Minicurso
 
-## Funcionamento
+## Conteúdo
 
-### Configurem seus notebooks sempre com região com **lígua inglesa**
+### 4 Modelos
+4.1 Pacote ggplot2
+<br>
+4.2 Principais livros e sites
+<br>
+4.3 Colunas como eixos do gráficos (*variáveis = colunas*)
+<br>
+4.4 Principais tipos de gráficos
+<br>
+4.5 Histograma (*histogram*)
+<br>
+4.6 Gráfico de setores (*pie chart* e *donut plot*)
+<br>
+4.7 Gráfico de barras (*bar plot*)
+<br>
+4.8 Gráfico de caixa (*box plot* e *violin plot*)
+<br>
+4.9 Gráfico de dispersão (*scatter plot*)
+<br>
+4.10 Gráfico pareado (*pairs plot*)
 
 ---
 

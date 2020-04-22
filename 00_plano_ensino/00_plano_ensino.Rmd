@@ -1,5 +1,5 @@
 ---
-title: "Plano de ensino do Minicurso de *tidyverse*"
+title: "Plano de ensino do Minicurso de Introdução ao *tidyverse*"
 author: "Maurício Vancine"
 date: "25/04/2020"
 output: pdf_document
@@ -22,6 +22,7 @@ Esse minicurso apresenta os recursos recentes da utilização da manipulação e
 3. Manejar a estrutura dos dados (tibble, magrittr, tidyr, dplyr, forcats, lubridate e stringr)
 4. Visualização de dados e resultados de modelos (ggplot2 e broom)
 5. Introdução à programação funcional (purrr)
+6. Introdução ao RMarkdown (rmarkdown e knit)
 
 ### Bibliografia
 Adler, J. (2012). R in a nutshell: A desktop quick reference. O'Reilly Media, Inc.
@@ -94,7 +95,8 @@ McGrath, M. (2018). R for Data Analysis in easy steps - R Programming essentials
 
 Micheaux, P. L., Drouilhet, R., & Liquet, B. (2013). The R software The R Software: Fundamentals of Programming and Statistical Analysis. Springer Science & Business Media.
 
-Oliveira, P. F., Guerra, S., Mcdonnell, R. (2018). Ciência de dados com R – Introdução. IBPAD. [https://cdr.ibpad.com.br/](https://cdr.ibpad.com.br/) 
+Oliveira, P. F., Guerra, S., Mcdonnell, R. (2018). Ciência de dados com R – Introdução. IBPAD. [https://cdr.ibpad.com.br/](https://cdr.ibpad.com.br/)
+
 R Core Team. (2019). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. [https://www.r-project.org/](https://www.r-project.org/)
 
 Racine, J. S. (2012). RStudio: a platform‐independent IDE for R and Sweave. Journal of Applied Econometrics, 27(1), 167-172.
@@ -116,6 +118,8 @@ Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform
 Wiley, M., & Wiley, J. F. (2016). Advanced R Data Programming and the Cloud. Apress.
 
 Wilke, C. O. (2019). Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures. O'Reilly Media. [https://serialmentor.com/dataviz/](https://serialmentor.com/dataviz/)
+
+Xie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide. CRC Press. [https://bookdown.org/yihui/rmarkdown/](https://bookdown.org/yihui/rmarkdown/)
 
 Zumel, N., & Mount, J. (2014). Practical data science with R. Manning Publications Co.
 

@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurício H. Vancine" />
+    <meta name="date" content="2019-01-10" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade <br><br>
+## [exercícios]
+### Maurício H. Vancine
+### 01/10/2019
+
+---
+
+
+
+
+class: inverse, center
+background-image: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
+
+# Exercícios!
+
+---
+
+# Exercícios
+
+### 1. Criem um novo script na pasta...
+
+--
+
+&lt;br&gt;
+
+`07_exercicios`
+
+--
+
+&lt;br&gt;&lt;br&gt;
+
+### ... e o nome?
+--
+
+&lt;br&gt;
+
+`script_r_exercicios.R`
+
+---
+
+# Exercícios
+
+### 2. Criem um cabeçalho descritivo para esse script
+
+--
+
+
+```r
+#### exercicios r ####
+
+# nome
+# data
+```
+
+---
+
+# Exercícios
+
+### 3. Removam todos os objetos criados anteriormente
+
+--
+
+
+```r
+# solucao
+### memoria
+rm(list = ls())
+```
+
+---
+
+# Exercícios
+
+### 4. Alguns cálculos simples:
+
+`|(2 * 5) - (3 ^ 2)|`
+
+---
+
+class: inverse, middle, center
+background-image: url(https://media.giphy.com/media/3oKIPmM4hkQIf4p5T2/giphy.gif)
+background-size: 800px
+background-position: 50% 50%
+
+---
+
+class: clear
+background-image: url(http://material.curso-r.com/rbase/figures/ajuda_google.png)
+background-size: 800px
+background-position: 50% 50%
+
+### Lembrem-se da **maracutaia** do Google para ajudar!
+
+---
+
+# Exercícios
+
+### 4. Alguns cálculos simples:
+
+`|(2 * 5) - (3 ^ 2)|`
+
+--
+
+
+```r
+# solucao
+abs((2 * 5) - (3 ^ 2))
+```
+
+```
+## [1] 1
+```
+
+---
+
+# Exercícios
+
+### 5. Alguns cálculos simples:
+
+`log10(10) + ln(100) * log2(1000)`
+
+--
+
+
+```r
+# solucao
+log10(10) + log(100) * log2(1000)
+```
+
+```
+## [1] 46.89413
+```
+
+---
+
+# Exercícios
+
+### 6. Alguns cálculos simples:
+
+`Calculem o fatorial de 10: 10!.`
+
+`Atribuam ao objeto "fa_10".`
+
+`Em seguida, tirem a raiz quadrada desse objeto, atribuindo à outro "fa_10_rq".`
+
+--
+
+
+```r
+# solucao
+fa_10 &lt;- factorial(10)
+fa_10
+```
+
+```
+## [1] 3628800
+```
+
+```r
+fa_10_rq &lt;- sqrt(fa_10)
+fa_10_rq
+```
+
+```
+## [1] 1904.941
+```
+
+---
+
+# Exercícios
+
+### 7. Alguns cálculos simples:
+
+`Calculem a velocidade média de um carro que percorreu S = 400 km em t = 3.5 horas. Utilizem atribuições de uma letra!`
+
+--
+
+
+```r
+# solucao
+s &lt;- 400
+s
+```
+
+```
+## [1] 400
+```
+
+```r
+t &lt;- 3.5
+t
+```
+
+```
+## [1] 3.5
+```
+
+```r
+v &lt;- s / t
+v 
+```
+
+```
+## [1] 114.2857
+```
+
+---
+
+# Exercícios
+
+### 8. Sequências
+
+`Criem uma sequência unitária de 0 à 10.`
+
+`Atribuam à um objeto chamado "seq_10".`
+
+`Somem os elementos desse objeto cumulativamente, atribuindo ao objeto "seq_10_sum".` 
+
+--
+
+
+```r
+# solucao
+seq_10 &lt;- 0:10
+seq_10
+```
+
+
+```r
+seq_10_sum &lt;- cumsum(seq_10)
+seq_10_sum
+```
+
+```
+##  [1]  0  1  3  6 10 15 21 28 36 45 55
+```
+
+---
+
+# Exercícios
+
+### 9. Repetições
+
+`Criem uma sequência de 0 à 50, espaçada de 5 em 5.`
+
+`Atribuam à um objeto chamado "seq_50".`
+
+`Repitam os elementos desse objeto 10 vezes sequencialmente, atribuindo ao objeto "seq_50_rep_times"` 
+
+--
+
+
+```r
+# solucao
+seq_50 &lt;- seq(0, 50, by = 5)
+seq_50
+```
+
+```
+##  [1]  0  5 10 15 20 25 30 35 40 45 50
+```
+
+
+```r
+seq_50_rep_times &lt;- rep(seq_50, times = 10)
+seq_50_rep_times
+```
+
+---
+
+# Exercícios
+
+### 10. Amostragens aleatórias
+
+`Usem a função "sample" para escolher seis números para jogar na mega-sena.`
+
+`Lembrando: valores da mega-sena vão de 1 a 60.`
+
+`Lembrando: usem o help ?sample` 
+
+--
+
+
+```r
+mega_num &lt;- sample(1:60, 6)
+mega_num
+```
+
+```
+## [1] 25 49 52 53 40 29
+```
+
+---
+
+# Exercícios
+
+### 11. Amostragens aleatórias
+
+`Einstein disse que Deus não joga dados, mas o R joga!`
+
+`Simulem o resultado de 25 jogadas de um dado.`
+
+`Lembrando: usem o help ?sample` 
+
+--
+
+
+```r
+dado_25 &lt;- sample(1:6, 25, rep = TRUE)
+dado_25
+```
+
+```
+##  [1] 5 2 6 2 2 1 6 6 2 6 6 6 2 1 4 3 6 5 2 6 6 5 2 1 3
+```
+
+---
+
+# Exercícios
+
+### 12. Criem um vetor chamado "lo" para descrever 100 locais de amostragem. O vetor deve ser dessa forma:
+
+`local_1, local_2, local_3, ...., local_100`
+
+--
+
+
+```r
+# solucao
+lo &lt;- paste("local", 1:100, sep = "_")
+lo
+```
+
+```
+##   [1] "local_1"   "local_2"   "local_3"   "local_4"   "local_5"   "local_6"  
+##   [7] "local_7"   "local_8"   "local_9"   "local_10"  "local_11"  "local_12" 
+##  [13] "local_13"  "local_14"  "local_15"  "local_16"  "local_17"  "local_18" 
+##  [19] "local_19"  "local_20"  "local_21"  "local_22"  "local_23"  "local_24" 
+##  [25] "local_25"  "local_26"  "local_27"  "local_28"  "local_29"  "local_30" 
+##  [31] "local_31"  "local_32"  "local_33"  "local_34"  "local_35"  "local_36" 
+##  [37] "local_37"  "local_38"  "local_39"  "local_40"  "local_41"  "local_42" 
+##  [43] "local_43"  "local_44"  "local_45"  "local_46"  "local_47"  "local_48" 
+##  [49] "local_49"  "local_50"  "local_51"  "local_52"  "local_53"  "local_54" 
+##  [55] "local_55"  "local_56"  "local_57"  "local_58"  "local_59"  "local_60" 
+##  [61] "local_61"  "local_62"  "local_63"  "local_64"  "local_65"  "local_66" 
+##  [67] "local_67"  "local_68"  "local_69"  "local_70"  "local_71"  "local_72" 
+##  [73] "local_73"  "local_74"  "local_75"  "local_76"  "local_77"  "local_78" 
+##  [79] "local_79"  "local_80"  "local_81"  "local_82"  "local_83"  "local_84" 
+##  [85] "local_85"  "local_86"  "local_87"  "local_88"  "local_89"  "local_90" 
+##  [91] "local_91"  "local_92"  "local_93"  "local_94"  "local_95"  "local_96" 
+##  [97] "local_97"  "local_98"  "local_99"  "local_100"
+```
+
+---
+
+# Exercícios
+
+### 13. Criem um vetor chamado "lo" para descrever 100 locais de amostragem. O vetor deve ser dessa forma:
+
+`local_001, local_002, local_003, ...., local_100`
+
+--
+
+
+```r
+# solucao
+lo_un &lt;- paste("local_00", 1:9, sep = "")
+lo_un
+
+lo_de &lt;- paste("local_0", 10:99, sep = "")
+lo_de
+
+lo &lt;- c(lo_un, lo_de, "local_100")
+lo
+```
+
+---
+
+# Exercícios
+
+### 13. Criem um vetor chamado "lo" para descrever 100 locais de amostragem. O vetor deve ser dessa forma:
+
+`local_001, local_002, local_003, ...., local_100`
+
+--
+
+
+```r
+# solucao 2
+lo_un &lt;- paste("local", 1:9, sep = "_00")
+lo_un
+
+lo_de &lt;- paste("local", 10:99, sep = "_0")
+lo_de
+
+lo &lt;- c(lo_un, lo_de, "local_100")
+lo
+```
+
+---
+
+# Exercícios
+
+### 14. Criem um fator chamado "tr", com dois níveis ("cont" e "trat") para descrever 100 locais de amostragem, 50 de cada tratamento. O fator deve ser dessa forma:
+
+`cont, cont, cont, ...., cont, trat, trat, trat, ...., trat`
+
+--
+
+
+```r
+# solucao
+re &lt;- rep(c("cont", "trat"), each = 50)
+re
+
+tr &lt;- factor(re, c("cont", "trat"))
+tr
+```
+
+---
+
+# Exercícios
+
+### 14. Criem um fator chamado "tr", com dois níveis ("cont" e "trat") para descrever 100 locais de amostragem, 50 de cada tratamento. O fator deve ser dessa forma:
+
+`cont, cont, cont, ...., cont, trat, trat, ...., trat`
+
+--
+
+
+```r
+# solucao
+tr &lt;- factor(rep(c("cont", "trat"), each = 50),
+	        c("cont", "trat"))
+tr
+```
+
+---
+
+# Exercícios
+
+### 15. Criem uma matriz chamada "ma", da disposição de um vetor composto por 100 valores aleatórios entre 0 e 10. A matriz deve conter 10 linhas e ser disposta por linhas
+
+--
+
+
+```r
+# solucao
+ve &lt;- sample(0:10, 100, rep = TRUE)
+ve
+```
+--
+
+```r
+ma &lt;- matrix(ve, 10, 10, byrow = FALSE)
+ma
+```
+
+---
+
+# Exercícios
+
+### 16. Reescreva utilizando pipes
+`max(log(exp(sqrt(rpois(100, 5)))))`
+
+--
+
+
+```r
+# solucao
+rpois(100, 5) %&gt;% 
+  sqrt %&gt;% 
+  exp %&gt;% 
+  log %&gt;% 
+  max
+```
+
+---
+
+# Exercícios
+
+### 17. Reencreva sem utilizar pipes
+
+```r
+rnorm(100) %&gt;%
+  exp() %&gt;%
+  log10() %&gt;% 
+  min() %&gt;%
+  sqrt()
+```
+
+--
+
+
+```r
+# solucao
+sqrt(min(log10(exp(rnorm(100)))))
+```
+
+---
+
+# Exercícios
+
+### 18. Reencreva utilizando pipes, utiliza a função `magrittr::divide_by()`
+
+```r
+round(mean(sum(1:10)/3), digits = 1)
+```
+
+--
+
+
+```r
+# solucao
+library(magrittr)
+
+1:10 %&gt;% 
+  sum %&gt;% 
+  divide_by(3) %&gt;% 
+  round(1)
+```
+
+---
+
+# Exercícios
+
+### 19. Importem o data paper de anfíbios ATLANTIC AMPHIBIANS (.csv) usando o formato tidyverse
+
+--
+
+
+```r
+# solucao
+# diretorio
+setwd("/home/mude/data/github/disciplina-geoprocessamento/03_dados/00_tabelas")
+
+# import sites
+da &lt;- readr::read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
+da
+```
+
+---
+
+# Exercícios
+
+### 20. Use a função `tibble::glimpse` para verificar as colunas dos dados
+
+--
+
+
+```r
+# solucao
+tibble::glimpse(da)
+```
+
+---
+
+# Exercícios
+
+### 21. Junte as colunas `country`,	`state`,	`state_abbreviation`,	`municipality`,	`site`, separadas por `, `, com o nome de `local_total`, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_unite &lt;- da %&gt;% 
+  tidyr::unite("local_total", country:site, sep = ",")
+da_unite
+```
+
+---
+
+# Exercícios
+
+### 22. Separe a coluna `passive_methods`, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_separate &lt;- da %&gt;% 
+  tidyr::separate(passive_methods, unique(da$passive_methods))
+da_separate
+```
+
+---
+
+# Exercícios
+
+### 23. Retire as linhas com NA da coluna `year_start`, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_drop_na &lt;- da %&gt;% 
+  tidyr::drop_na(year_start)
+da_drop_na
+```
+
+---
+
+# Exercícios
+
+### 24. Selecione as colunas que contenham `method`, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_select &lt;- da %&gt;% 
+  dplyr::select(contains("method"))
+da_select
+```
+
+---
+
+# Exercícios
+
+### 25. Faça um histograma da coluna `species_number` usando o formato tidyverse
+
+--
+
+
+```r
+# solucao
+da %&gt;% 
+  dplyr::select(species_number) %&gt;% 
+  dplyr::pull() %&gt;% 
+  hist
+```
+
+---
+
+# Exercícios
+
+### 26. Adicione novas colunas `alt_log, tem_log e pre_log`, que são os `log10` das colunas `altitude,	temperature e	precipitation` e atribua ao mesmo objeto `da`
+
+--
+
+
+```r
+# solucao
+da &lt;- da %&gt;% 
+  dplyr::mutate(alt_log = log10(altitude),
+                tem_log = log10(temperature),
+                pre_log = log10(precipitation))
+da
+```
+
+---
+
+# Exercícios
+
+### 27. Ordene os dados em forma decrescente pela coluna `altitude`, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_arrange &lt;- da %&gt;% 
+  dplyr::arrange(altitude)
+da_arrange
+```
+
+---
+
+# Exercícios
+
+### 28. Filtre as linhas com `altitude` maior que 1000 mm, `temperature` menor que 15 ºC ou `precipitation` maior que 1000 mm e menor ou igual que 1500 mm, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_filter &lt;- da %&gt;% 
+  dplyr::filter(altitude &gt; 1000 &amp;
+                temperature &lt; 115 |
+                precipitation &gt; 1000 &amp;
+                precipitation &lt;= 1500)
+da_filter
+```
+
+---
+
+# Exercícios
+
+### 29. Amostre 200 linhas aleatoriamente com número de espécies maior que 15 espécies, atribuindo o resultado a um novo objeto
+
+--
+
+
+```r
+# solucao
+da_sample &lt;- da %&gt;% 
+  dplyr::filter(species_number &gt; 15) %&gt;% 
+  dplyr::sample_n(200)
+da_sample
+```
+
+---
+
+# Exercícios
+
+### 30. Calcule o `range` sem os NAs, para as colunas `species_number, altitude, temperature, precipitation` usando o pacote `purrr`
+
+[*] https://gge-ucd.github.io/R-DAVIS/lesson_purrr_tutorial.html
+
+--
+
+
+```r
+# solucao
+da_range &lt;- da %&gt;% 
+  dplyr::select(species_number, altitude, temperature, precipitation) %&gt;% 
+  purrr::map_df(function(x) range(x, na.rm = TRUE))
+da_range
+```
+
+---
+
+# Exercícios
+
+### 31. Cometi um grave erro no data paper. Algo relacionado a colunas com dados separados com vírgulas nas colunas... Ache uma solucao atraves das funcoes do tidyverse e explique nos termos do pacote `tidyr` porque esses dados estao erroneos
+
+--
+
+
+```r
+# solucao
+da_correcao &lt;- da %&gt;% 
+  dplyr::mutate(sampled_habitat = stringr::str_replace_all(sampled_habitat, ",", "|"),
+                active_methods = stringr::str_replace_all(active_methods, ", ","|"),
+                passive_methods = stringr::str_replace_all(passive_methods, ",", "|"),
+                complementary_methods = stringr::str_replace_all(complementary_methods, ",", "|"),
+                period = stringr::str_replace_all(period, ",", "|"))
+da_correcao
+
+# no formato tidyr cada valor deve ficar numa celula e cada variavel numa coluna
+```
+
+---
+
+# Exercícios
+
+### 32. Gere gráficos no `ggplot2` relacionando o número de espécies e as colunas `altitude, temperature, precipitation`, exportando cada um deles
+
+--
+
+
+```r
+# solucao
+
+# altitude
+ggplot(data = da) +
+  aes(x = altitude, y = species_number) +
+  geom_point(colour = "black", fill = "orange4", size = 5, alpha = .5, pch = 21) +
+  labs(x = "Altitude (m)", y = "Número de espécies") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+ggsave("scatter_numero_especies_altitude.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+```
+
+---
+
+# Exercícios
+
+### 32. Gere gráficos no `ggplot2` relacionando o número de espécies e as colunas `altitude, temperature, precipitation`, exportando cada um deles
+  
+
+```r
+# temperature
+ggplot(data = da) +
+  aes(x = temperature, y = species_number) +
+  geom_point(colour = "black", fill = "brown", size = 5, alpha = .5, pch = 21) +
+  labs(x = "Temperatura (ºC)", y = "Número de espécies") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+ggsave("scatter_numero_especies_temperatura.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+```
+
+---
+
+# Exercícios
+
+### 32. Gere gráficos no `ggplot2` relacionando o número de espécies e as colunas `altitude, temperature, precipitation`, exportando cada um deles
+  
+
+```r
+# precipitation
+ggplot(data = da) +
+  aes(x = precipitation, y = species_number) +
+  geom_point(colour = "black", fill = "darkslateblue", size = 5, alpha = .5, pch = 21) +
+  labs(x = "Precipitação (mm)", y = "Número de espécies") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+ggsave("scatter_numero_especies_precipitacao.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+```
+
+---
+
+# Exercícios
+
+### 33. Gere gráficos no `ggplot2` mostrando a frequência absoluta de amostragem em cada estado e exporte. Ah, inverta seu gráfico... e exporte
+
+--
+
+
+```r
+# solucao
+ggplot(data = da) +
+  aes(x = forcats::fct_infreq(state_abbreviation)) +
+  geom_bar(fill = "deepskyblue4") +
+  labs(x = "Estados", y = "Frequêcia absoluta de amostragem") +
+  coord_flip() +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+ggsave("barplot_numero_amostragem_estado.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+```
+
+---
+
+# Exercícios
+
+### 34. Gere gráficos no `ggpubr` relacionando o número de espécies e os estados e exporte
+
+--
+
+
+```r
+# solucao
+ggboxplot(data = da %&gt;% dplyr::arrange(state_abbreviation), 
+         x = "state_abbreviation", 
+         y = "species_number",
+         add = "jitter", 
+         fill = "gray",
+         color = "black",
+         xlab = "Estados",
+         ylab = "Número de espécies",
+         legend = "none")
+
+ggsave("box_numero_especies_estados.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+```
+
+---
+
+# Exercícios
+
+### 35. Gere gráficos no `ggpubr` relacionando o número de espécies e a precisão do GPS e exporte
+
+--
+
+
+```r
+# solucao
+ggboxplot(data = da, 
+         x = "coordinate_precision", 
+         y = "species_number",
+         add = "jitter", 
+         fill = "gray",
+         color = "black",
+         xlab = "Precisão do GPS",
+         ylab = "Número de espécies",
+         legend = "none")
+
+ggsave("boxplot_numero_especies_gps.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+```
+
+---
+
+class: inverse, middle, center
+
+# Dúvidas?
+
+---
+
+class: clear, middle
+
+### Maurício H. Vancine
+
+&lt;br&gt;
+
+Contatos:
+
+|                                                                                           |                               |
+| :---------------------------------------------------------------------------------------- | :---------------------------- |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
+| &lt;a href="http://gitlab.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-gitlab fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
+| &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
+
+Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,1165 @@
+id;reference_number;species_number;record;sampled_habitat;active_methods;passive_methods;complementary_methods;period;month_start;year_start;month_finish;year_finish;effort_months;country;state;state_abbreviation;municipality;site;latitude;longitude;coordinate_precision;altitude;temperature;precipitation
+amp1001;1001;19;ab;fo,ll;as;pt;NA;mo,da,tw,ni; 9;2000; 1;2002; 16;Brazil;Piauí;BR-PI;Canto do Buriti;Parque Nacional Serra das Confusões; -8,680000;-43,42194;gm; 543;24,98; 853
+amp1002;1002;16;co;fo,la,ll;as;pt;NA;mo,da,tw,ni;12;2007; 5;2009; 17;Brazil;Ceará;BR-CE;São Gonçalo do Amarante;Dunas; -3,545527;-38,85783;dd;  15;26,53;1318
+amp1003;1002;14;co;fo,la,ll;as;pt;NA;mo,da,tw,ni;12;2007; 5;2009; 17;Brazil;Ceará;BR-CE;São Gonçalo do Amarante;Jardim Botânico Municipal de Bauru; -3,574194;-38,88869;dd;  29;26,45;1248
+amp1004;1002;13;co;fo,la,ll;as;pt;NA;mo,da,tw,ni;12;2007; 5;2009; 17;Brazil;Ceará;BR-CE;São Gonçalo do Amarante;Taíba; -3,515250;-38,91880;dd;  25;26,55;1376
+amp1005;1003;30;co;fo,ll,br;as;NA;NA;mo,da,ni; 7;1988; 8;2001;157;Brazil;Ceará;BR-CE;Baturité;Serra de Baturité; -4,280556;-38,91083;gm; 750;21,35;1689
+amp1006;1004;42;co;tp,pp,la,ll,is;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Ceará;BR-CE;Quebrangulo;Reserva Biológica de Pedra Talhada; -9,229167;-36,42806;NA; 745;20,45;1249
+amp1007;1005;23;co;sp;as;NA;NA;NA; 4;2007; 4;2009; 24;Brazil;Ceará;BR-CE;Ubajara;Planalto da Ibiapaba; -3,846111;-40,89444;gms; 863;21,57;1520
+amp1008;1005;19;co;sp,la,sw;as,sb,tr;NA;NA;tw,ni; 4;2007; 4;2009; 24;Brazil;Ceará;BR-CE;Ubajara;Planalto da Ibiapaba; -3,825833;-40,91944;gms; 878;21,47;1474
+amp1009;1005;13;ab;fo;NA;pt;NA;mo,da,tw,ni; 4;2007; 4;2009; 24;Brazil;Ceará;BR-CE;Ubajara;Planalto da Ibiapaba; -3,837500;-40,91028;gms; 826;21,76;1450
+amp1010;1006; 1;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;São José de Mipibu;Patch A; -6,136944;-35,22944;NA;  93;25,40;1332
+amp1011;1006; 1;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Arês;Patch B; -6,173889;-35,22028;NA;  35;25,78;1331
+amp1012;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Arês;Patch C; -6,185833;-35,19944;NA;  69;25,59;1352
+amp1013;1006; 4;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Arês;Patch D; -6,212222;-35,21028;NA;  93;25,42;1327
+amp1014;1006; 4;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Espírito Santo;Patch E; -6,234167;-35,31250;NA; 130;25,14;1133
+amp1015;1006; 6;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Espírito Santo;Patch F; -6,261667;-35,29194;NA;  69;25,57;1147
+amp1016;1006; 5;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Goianinha;Patch G; -6,248333;-35,25694;NA;  93;25,41;1223
+amp1017;1006; 8;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Goianinha;Patch H; -6,256944;-35,17222;NA;  59;25,69;1349
+amp1018;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Goianinha;Patch I; -6,271944;-35,17028;NA;  58;25,70;1356
+amp1019;1006; 5;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Tibau do Sul;Patch J; -6,253333;-35,14000;NA;  38;25,84;1421
+amp1020;1006; 1;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Goianinha;Patch K; -6,340833;-35,21417;NA; 122;25,25;1274
+amp1021;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Goianinha;Patch L; -6,349722;-35,21556;NA; 117;25,28;1276
+amp1022;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Goianinha;Patch M; -6,342500;-35,19194;NA; 100;25,40;1314
+amp1023;1006; 1;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch N; -6,370278;-35,20389;NA; 111;25,34;1298
+amp1024;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch O; -6,392778;-35,18389;NA;  57;25,72;1335
+amp1025;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch P; -6,382222;-35,18306;NA;  95;25,49;1332
+amp1026;1006; 1;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch Q; -6,376667;-35,18222;NA;  95;25,49;1332
+amp1027;1006; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch R; -6,367222;-35,18389;NA;  99;25,44;1318
+amp1028;1006; 3;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch S; -6,364444;-35,17167;NA;  77;25,59;1341
+amp1029;1006; 7;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch T; -6,324722;-35,14194;NA;  33;25,84;1378
+amp1030;1006; 8;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch U; -6,335833;-35,11750;NA;  56;25,69;1460
+amp1031;1006; 7;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Canguaretama;Patch V; -6,336389;-35,10639;NA;  49;25,75;1475
+amp1032;1006; 7;ab;fo;NA;pt;NA;mo,da,tw,ni; 5;2011; 7;2011;  2;Brazil;Rio Grande do Norte;BR-RN;Vila Flor;Patch W; -6,327778;-35,09750;NA;  40;25,81;1470
+amp1033;1007; 7;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;Santa Rita;Reserva Particular do Patrimônio Natural Gargaú; -6,994444;-34,96278;gms;  32;25,74;1663
+amp1034;1007; 7;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;Planalto da Boa Esperança;Parque Natural Municipal do Cuiá; -7,191389;-34,85889;gms;  28;25,70;1914
+amp1035;1007; 7;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;Cabedelo;Floresta Nacional da Restinga de Cabedelo; -7,064444;-34,85278;gms;  15;25,96;1837
+amp1036;1007; 8;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;Roger;Parque Zoobotânico Arruda Câmara; -7,112222;-34,87389;gms;  29;25,77;1957
+amp1037;1007; 9;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;João Pessoa;Refúgio da Vida Silvestre Mata do Buraquinho; -7,144167;-34,85861;gms;  56;25,64;1902
+amp1038;1007; 4;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;João Pessoa;Parque Estadual Mata do Xem-Xem; -7,153611;-34,93361;gms;  65;25,52;1746
+amp1039;1007; 2;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;João Pessoa;Câmpus I da Universidade Federal da Paraíba; -7,138611;-34,87389;gms;  38;25,72;1939
+amp1040;1007; 2;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;João Pessoa;Horto Florestal Cidade Verde; -7,174444;-34,82444;gms;  38;25,71;1959
+amp1041;1007; 3;co;NA;NA;dr;NA;NA; 3;2013; 2;2014; 11;Brazil;Paraíba;BR-PB;João Pessoa;Parque Cabo Branco; -7,148611;-34,79667;gms;   5;NA;NA
+amp1042;1008; 5;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,724250;-35,14472;dd; 103;25,20;1377
+amp1043;1008; 2;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,728472;-35,13764;dd; 163;24,80;1406
+amp1044;1008; 1;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,721167;-35,17824;dd; 159;24,81;1316
+amp1045;1008; 1;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,743806;-35,15508;dd; 174;24,76;1393
+amp1046;1008; 2;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,740806;-35,17117;dd; 180;24,70;1348
+amp1047;1008; 8;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,718722;-35,14825;dd; 103;25,20;1377
+amp1048;1008; 8;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,719194;-35,14867;dd; 103;25,20;1377
+amp1049;1008; 7;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,700111;-35,14189;dd;  66;25,45;1371
+amp1050;1008; 8;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,720250;-35,16119;dd;  98;25,23;1331
+amp1051;1008; 9;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,723000;-35,15892;dd;  98;25,23;1331
+amp1052;1008; 6;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,718778;-35,15575;dd;  80;25,35;1350
+amp1053;1008; 5;co;pp;as;NA;ae;ni; 5;2013;12;2013;  7;Brazil;Paraíba;BR-PB;Mamanguape;Reserva Biológica Guaribas; -6,731556;-35,16028;dd; 112;25,14;1334
+amp1054;1009;21;co;tp;as;NA;NA;da,tw,ni; 2;1993;NA;1996;NA;Brazil;Paraíba;BR-PB;Mamanguape e Rio Tinto;Reserva Biológica Guaribas; -6,833333;-35,11667;gm;  41;25,72;1393
+amp1055;1009;24;co;tp,sw,is;as;NA;NA;tw,ni; 1;1993;12;1996; 47;Brazil;Paraíba;BR-PB;Mamanguape e Rio Tinto;Reserva Biológica Guaribas; -6,731667;-35,14639;gm; 139;24,97;1374
+amp1056;1009;19;co;sp,pp,la,sw,is;as;NA;NA;tw,ni; 1;1993;12;1996; 47;Brazil;Paraíba;BR-PB;Areia;Reserva Ecológica Mata do Pau Ferro; -6,966667;-35,68333;gm; 512;21,79;1255
+amp1057;1010;21;co;la,sw;as,sb;NA;ae;tw,ni; 6;2011;11;2011;  5;Brazil;Paraíba;BR-PB;Areia;Reserva Ecológica Mata do Pau Ferro; -6,970000;-35,71528;gms; 536;21,68;1201
+amp1058;1011;14;co;fo,tp,ll,is;as;pt;ae;mo,tw,ni; 8;2011; 7;2012; 11;Brazil;Paraíba;BR-PB;João Pessoa;Jardim Botânico Benjamim Maranhão; -7,145000;-34,86500;gms;  56;25,64;1902
+amp1059;1012;14;co;NA;as,sb;pt;NA;mo,da,tw,ni; 6;2004; 2;2005;  8;Brazil;Paraíba;BR-PB;João Pessoa;Área de Preservação Permanente Mata do Buraquinho; -7,145000;-34,86500;gms;  56;25,64;1902
+amp1060;1013; 8;ab;br;as;NA;NA;NA; 4;2008;11;2008;  7;Brazil;Pernambuco;BR-PE;São Lourenço da Mata;Estação Ecológica do Tapacurá; -8,038889;-35,20167;gms; 169;24,05;1126
+amp1061;1014;12;ab;fo,ll,is,br;as;pt;NA;tw,ni; 1;2007;12;2007; 11;Brazil;Pernambuco;BR-PE;Igarassu;Reserva da Usina São José; -7,841944;-35,00667;gms; 109;24,40;1613
+amp1062;1014;25;ab;fo,sp,ll;as;pt;NA;tw,ni; 1;2007;12;2007; 11;Brazil;Pernambuco;BR-PE;Igarassu;Reserva da Usina São José; -7,826389;-35,00750;gms;  75;24,66;1635
+amp1063;1014;23;ab;fo,sp,ll,is;as;pt;NA;tw,ni; 1;2007;12;2007; 11;Brazil;Pernambuco;BR-PE;Igarassu;Reserva da Usina São José; -7,826944;-34,99889;gms;  78;24,61;1655
+amp1064;1015; 6;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,721944;-35,18889;NA; 102;23,85;1948
+amp1065;1015; 4;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,721111;-35,18833;NA; 102;23,85;1948
+amp1066;1015; 7;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,725833;-35,17917;NA;  80;23,98;1908
+amp1067;1015; 5;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,731111;-35,17917;NA;  80;23,98;1908
+amp1068;1015; 7;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,728611;-35,17278;NA;  67;24,04;1890
+amp1069;1015; 7;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,733333;-35,17389;NA;  67;24,04;1890
+amp1070;1015; 8;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,733611;-35,17167;NA;  73;24,02;1865
+amp1071;1015; 7;ab;fo;as;pt;NA;NA; 1;2010; 1;2011; 12;Brazil;Pernambuco;BR-PE;Tamandaré;Reserva Biológica de Saltinho; -8,735278;-35,16722;NA;  73;24,02;1865
+amp1072;1016;15;ab;tp;as;NA;NA;NA; 3;2008;12;2008;  9;Brazil;Pernambuco;BR-PE;São Lourenço da Mata;Estação Ecológica do Tapacurá; -8,039444;-35,19722;gms; 135;24,24;1131
+amp1073;1016;11;ab;tp;as;NA;NA;NA; 4;2008;12;2008;  8;Brazil;Pernambuco;BR-PE;São Lourenço da Mata;Estação Ecológica do Tapacurá; -8,036944;-35,20028;gms; 169;24,05;1126
+amp1074;1017;37;co;fo,tp,sw,is,br;as;NA;NA;NA;11;2007; 7;2008;  8;Brazil;Pernambuco;BR-PE;Paulista;Estação Ecológica de Caetés; -7,909167;-34,95806;gms;  96;24,47;1703
+amp1075;1018;19;ab;fo;as;pt;NA;tw,ni; 4;2007;10;2007;  6;Brazil;Pernambuco;BR-PE;Barreiros;NA; -8,818333;-35,18639;gms;  31;24,33;1776
+amp1076;1019;15;ab;pp;as;pt;NA;tw,ni; 1;2004;10;2004;  9;Brazil;Pernambuco;BR-PE;Nazaré da Mata;Engenho Santa Fé; -7,733333;-35,23333;gm;  78;24,79;1212
+amp1077;1020;41;co;fo,tp,la,sw,ll,br;as;pt;NA;mo,da,tw,ni;NA;NA;NA;NA;NA;Brazil;Pernambuco;BR-PE;Dois Irmãos;Parque Estadual de Dois Irmãos; -8,003611;-34,94722;gms;  64;24,83;1581
+amp1078;1021; 8;co;fo,ll,is;as,tr;pt;ae;NA; 8;2012; 9;2013; 13;Brazil;Pernambuco;BR-PE;Lagoa dos Gatos;Reserva Particular do Patrimônio Natural Pedra D’Antas; -8,693056;-35,85750;gms; 588;21,06;1100
+amp1079;1021; 6;co;fo,ll;as,tr;pt;ae;NA; 8;2012; 9;2013; 13;Brazil;Pernambuco;BR-PE;Lagoa dos Gatos;Reserva Particular do Patrimônio Natural Pedra D’Antas; -8,696389;-35,85472;gms; 588;21,06;1100
+amp1080;1021;16;co;fo,tp,ll;as,tr;pt;ae;NA; 8;2012; 9;2013; 13;Brazil;Pernambuco;BR-PE;Lagoa dos Gatos;Reserva Particular do Patrimônio Natural Pedra D’Antas; -8,696667;-35,85694;gms; 588;21,06;1100
+amp1081;1021; 9;co;fo,ll,br;as,tr;pt;ae;NA; 8;2012; 9;2013; 13;Brazil;Pernambuco;BR-PE;Lagoa dos Gatos;Reserva Particular do Patrimônio Natural Pedra D’Antas; -8,705556;-35,85278;gms; 652;20,71;1090
+amp1082;1021;21;co;fo,sp,ll,br;as,tr;pt;ae;NA; 8;2012; 9;2013; 13;Brazil;Pernambuco;BR-PE;Lagoa dos Gatos;Reserva Particular do Patrimônio Natural Pedra D’Antas; -8,710000;-35,85639;gms; 687;20,50;1095
+amp1083;1021;27;co;pp;as,tr;pt;ae;NA; 8;2012; 9;2013; 13;Brazil;Pernambuco;BR-PE;Lagoa dos Gatos;Reserva Particular do Patrimônio Natural Pedra D’Antas; -8,693333;-35,85556;gms; 588;21,06;1100
+amp1084;1022;19;co;fo,ll,is,br;as;pt;NA;tw,ni; 7;2007; 9;2008; 14;Brazil;Pernambuco;BR-PE;Jaqueira;Reserva Particular do Patrimônio Natural Frei Caneca (Mata do Quengo); -8,716111;-35,83889;gms; 633;20,86;1149
+amp1085;1022;20;co;sp,la,is,br;as;pt;NA;tw,ni; 7;2007; 9;2008; 14;Brazil;Pernambuco;BR-PE;Jaqueira;Reserva Particular do Patrimônio Natural Frei Caneca (Açude das Moças); -8,720833;-35,84694;gms; 642;20,77;1138
+amp1086;1022;26;co;tp,sp;as;pt;NA;tw,ni; 7;2007; 9;2008; 14;Brazil;Pernambuco;BR-PE;Jaqueira;Reserva Particular do Patrimônio Natural Frei Caneca (Área dos Bois); -8,728611;-35,84639;gms; 652;20,72;1147
+amp1087;1022;10;co;br;as;NA;NA;tw,ni; 7;2007; 9;2008; 14;Brazil;Pernambuco;BR-PE;Jaqueira;Reserva Particular do Patrimônio Natural Frei Caneca (Pedra do Cruzeiro); -8,732778;-35,84500;gms; 652;20,72;1147
+amp1088;1022; 6;co;fo;NA;pt;NA;NA; 7;2007; 9;2008; 14;Brazil;Pernambuco;BR-PE;Jaqueira;Reserva Particular do Patrimônio Natural Frei Caneca (Mata do Espelho); -8,722778;-35,84139;gms; 570;21,25;1201
+amp1089;1023;30;ab;fo,sp,pp,ll,br;as;NA;NA;da,tw,ni; 3;1994;12;1994;  9;Brazil;Pernambuco;BR-PE;Igarassu;Refúgio Ecológico Charles Darwin; -7,800556;-34,93361;gm;  72;24,66;1852
+amp1090;1024;35;co;fo,tp,sw,br;as;pt;NA;NA; 1;1993;12;2008;191;Brazil;Pernambuco;BR-PE;São Lourenço da Mata;Estação Ecológica do Tapacurá; -8,039444;-35,19694;gm; 135;24,24;1131
+amp1091;1025;28;co;fo,pp,sw,ll;as;NA;NA;tw,ni; 3;2004;10;2004;  7;Brazil;Pernambuco;BR-PE;Aldeia;NA; -7,960833;-34,98250;gms;  98;24,46;1546
+amp1092;1026;27;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Alagoas;BR-AL;Teotônio Vilela;Reserva Madeiras; -9,938611;-36,37139;gms; 108;24,36;1101
+amp1093;1027;32;ab;tp,la,sw,ll,is,br;as,sb;NA;NA;da,tw,ni; 6;2011; 8;2011;  2;Brazil;Alagoas;BR-AL;Boca da Mata;Fazenda Cariri da Prensa; -9,690833;-36,20028;gms; 137;24,11;1307
+amp1094;1028;29;co;fo;as;pt;ae;mo,da,tw,ni; 6;2006; 8;2007; 14;Brazil;Alagoas;BR-AL;Campo Alegre;Reserva Particular da Usina Porto Rico; -9,758889;-36,23583;gms; 163;23,86;1222
+amp1095;1029; 5;ab;is;as;NA;NA;NA;11;2013; 7;2014;  8;Brazil;Alagoas;BR-AL;Murici;Estação Ecológica de Murici; -9,211667;-35,86444;gms; 524;21,57;1788
+amp1096;1029; 4;ab;is;as;NA;NA;NA;11;2013; 7;2014;  8;Brazil;Alagoas;BR-AL;Murici;Estação Ecológica de Murici; -9,217500;-35,87556;gms; 519;21,59;1766
+amp1097;1030;23;ab;NA;NA;NA;NA;NA; 5;NA; 9;NA;NA;Brazil;Sergipe;BR-SE;Areia Branca;Parque Nacional Serra de Itabaiana;-10,666667;-37,41667;NA; 169;24,33;1190
+amp1098;1031;33;co;fo,sw;as;pt;ae;da,ni; 9;2009; 9;2009;  0;Brazil;Sergipe;BR-SE;Capela;Refúgio da Vida Silvestre Mata do Junco;-10,541667;-37,05833;gms; 137;24,54;1250
+amp1099;1032;18;co;NA;NA;NA;NA;NA; 5;1997; 8;1997;  3;Brazil;Sergipe;BR-SE;Aracaju e São Cristóvão;Universidade Federal de Sergipe;-10,927500;-37,07389;gm;  10;25,90;1510
+amp1100;1033;21;ab;tp,la,sw,ll,is;as;NA;NA;tw,ni;10;2012; 9;2013; 11;Brazil;Sergipe;BR-SE;Capela;Refúgio da Vida Silvestre Mata do Junco;-10,533333;-37,05000;gm; 117;24,68;1235
+amp1101;1034;26;ab;pp,la,is,re,du,br;as,qs;pt;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;Bahia;BR-BA;Mata de São João;Reserva Sapiranga;-12,566389;-38,03833;gms;  44;24,68;1699
+amp1102;1034;14;ab;fo,la,re,du,br;as,qs;pt;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;Bahia;BR-BA;Mata de São João;Restinga from Praia do Forte;-12,570000;-38,00111;gms;   6;24,97;1678
+amp1103;1035;48;co;fo,tp,pp,ll,is,br;as;pt;NA;da,tw,ni; 2;2007;12;2008; 22;Brazil;Bahia;BR-BA;Igrapiúna;Reserva Ecológica da Michelin;-13,774722;-39,18528;gm; 140;23,55;2095
+amp1104;1036;16;co;sw,br;as;NA;NA;da,tw,ni;11;2009;11;2009;  0;Brazil;Bahia;BR-BA;Lauro de Freitas;Loteamento Quintas do Picuaia;-12,883889;-38,33917;gms;  19;25,14;1943
+amp1105;1037;80;co;fo,tp,pp,is;as,tr;pt;ae;NA;12;2008;11;2010; 23;Brazil;Bahia;BR-BA;Camacan e Pau-Brasil;Reserva do Patrimônio Natural Serra Bonita;-15,393611;-39,56583;gm; 729;20,34;1274
+amp1106;1038;33;co;fo,tp,pp,ll,is,br;as;NA;ae;da,tw,ni; 2;2011; 2;2011;  0;Brazil;Bahia;BR-BA;Almadina;Serra do Sete Paus;-14,762575;-39,64956;dd; 624;20,69;1311
+amp1107;1038;38;co;fo,tp,pp,ll,is,br;as;NA;ae;da,tw,ni; 2;2011; 2;2011;  0;Brazil;Bahia;BR-BA;Almadina;Serra do Corcovado;-14,700156;-39,59601;dd; 681;20,44;1369
+amp1108;1038;40;co;fo,tp,pp,ll,is,br;as;NA;ae;da,tw,ni; 2;2011; 2;2011;  0;Brazil;Bahia;BR-BA;Ilhéus;Serra da Temerosa;-14,487317;-39,45076;dd; 481;21,68;1572
+amp1109;1038;40;co;fo,tp,pp,ll,is,br;as;NA;ae;da,tw,ni; 2;2011; 2;2011;  0;Brazil;Bahia;BR-BA;Ilhéus;Lagoa Encantada;-14,534158;-39,11559;dd; 117;23,93;1955
+amp1110;1039;13;ab;fo;NA;pt;NA;mo,da,tw,ni;10;1999; 2;2000;  4;Brazil;Bahia;BR-BA;Una;Reserva Biológica de Una;-15,173056;-39,12944;NA;  93;23,92;1759
+amp1111;1039;12;ab;fo;NA;pt;NA;mo,da,tw,ni; 4;2002; 5;2002;  1;Brazil;Bahia;BR-BA;Ilhéus;Ilhéus;-14,698333;-39,22111;NA;  80;24,17;1734
+amp1112;1040; 7;co;fo,la;as;NA;in;NA;12;2004;12;2004;  0;Brazil;Bahia;BR-BA;Salvador;Companhia Hidroelétrica do São Francisco - Pituaçu;-12,938056;-38,41972;NA;  49;25,13;2018
+amp1113;1041; 5;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,903056;-37,59167;gms;  19;25,00;1572
+amp1114;1041; 5;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,918889;-37,60167;gms;  25;24,94;1589
+amp1115;1041; 5;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,962500;-37,63111;gms;  10;24,97;1586
+amp1116;1041;18;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,941389;-37,60694;gms;   6;25,02;1564
+amp1117;1041;12;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,832222;-37,55806;gms;   2;NA;NA
+amp1118;1041; 8;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,886944;-37,58222;gms;   3;NA;NA
+amp1119;1041; 8;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,946667;-37,61306;gms;  25;24,90;1589
+amp1120;1041; 2;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,825833;-37,55194;gms;   2;NA;NA
+amp1121;1041; 2;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,998611;-37,66139;gms;  48;24,72;1627
+amp1122;1041; 1;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,991667;-37,63444;gms;  32;24,83;1598
+amp1123;1041; 1;co;re,du,br;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-12,005000;-37,63972;gms;  10;24,94;1604
+amp1124;1041;13;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,998889;-37,67972;gms;  30;24,78;1660
+amp1125;1041; 2;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-12,006944;-37,68194;gms;  27;24,80;1653
+amp1126;1041; 6;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,997500;-37,64750;gms;  37;24,78;1610
+amp1127;1041; 3;co;tp,pp,sw;as,qs;NA;NA;tw,ni; 7;2015;11;2015;  4;Brazil;Bahia;BR-BA;Conde;Área de Proteção Ambiental do Litoral Norte do Estado da Bahia;-11,815278;-37,62111;gms;   7;25,03;1571
+amp1128;1042; 2;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,406389;-38,47583;NA; 117;24,05;1434
+amp1129;1042; 2;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,386944;-38,47944;NA; 146;23,88;1418
+amp1130;1042; 2;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,395000;-38,49750;NA; 141;23,90;1418
+amp1131;1042; 1;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,404722;-38,49361;NA; 153;23,83;1423
+amp1132;1042; 2;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,405833;-38,45528;NA; 158;23,81;1455
+amp1133;1042; 9;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;São Sebastião do Passé;NA;-12,432500;-38,56028;NA; 123;23,95;1425
+amp1134;1042; 3;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,368889;-38,45556;NA; 186;23,64;1417
+amp1135;1042; 1;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,388333;-38,44139;NA; 137;23,95;1429
+amp1136;1042; 1;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,395000;-38,44972;NA; 159;23,81;1444
+amp1137;1042;21;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;São Sebastião do Passé;NA;-12,450833;-38,40500;NA; 155;23,86;1509
+amp1138;1042; 1;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,393889;-38,38694;NA; 163;23,79;1469
+amp1139;1042;11;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;São Sebastião do Passé;NA;-12,509444;-38,45306;NA; 141;24,00;1580
+amp1140;1042; 9;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Pojuca;NA;-12,390833;-38,37056;NA; 101;24,16;1471
+amp1141;1042; 5;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,365556;-38,37361;NA; 136;23,97;1461
+amp1142;1042; 1;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Pojuca;NA;-12,405000;-38,37111;NA; 106;24,12;1481
+amp1143;1042; 2;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;São Sebastião do Passé;NA;-12,562222;-38,41917;NA; 108;24,21;1656
+amp1144;1042; 4;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Pojuca;NA;-12,423056;-38,36694;NA; 131;23,97;1489
+amp1145;1042; 6;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;São Sebastião do Passé;NA;-12,524722;-38,41472;NA; 115;24,09;1605
+amp1146;1042; 4;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Araçás;NA;-12,266389;-38,29028;NA; 132;23,85;1459
+amp1147;1042; 2;ab;NA;qs;NA;NA;mo,ni; 5;NA;12;NA;NA;Brazil;Bahia;BR-BA;Catu;NA;-12,280000;-38,39472;NA; 156;23,73;1374
+amp1148;1043;24;co;tp,pp,la,ll,is,br;as,tr;NA;NA;tw,ni; 4;2001;12;2001;  8;Brazil;Bahia;BR-BA;Mata de São João;Reserva Sapiranga;-12,566944;-38,03667;NA;  25;24,82;1686
+amp1149;1043;24;co;tp,pp,ll,is,br;as,tr;NA;NA;tw,ni; 3;2001;11;2001;  8;Brazil;Bahia;BR-BA;Santa Terezinha e Elísio Medrado;Serra da Jibóia;-12,840556;-39,48167;NA; 536;21,00; 872
+amp1150;1044;29;co;fo,is;as;pt;NA;mo,da,tw,ni; 1;2013; 2;2013;  1;Brazil;Bahia;BR-BA;Palmeiras;Parque Nacional da Chapada Diamantina;-12,542778;-41,48167;gms;1049;19,88; 873
+amp1151;1045;12;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Ilhéus;NA;-14,742222;-39,10556;gms;  48;24,48;1915
+amp1152;1045; 2;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Itambé;NA;-15,182778;-40,34111;gms; 322;23,11; 894
+amp1153;1045;16;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Valença;NA;-13,342222;-39,19528;gms; 168;23,33;1908
+amp1154;1045;11;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Ubaíra;NA;-13,121944;-39,65944;gms; 814;19,21;1060
+amp1155;1045; 6;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Nilo Peçanha;NA;-13,649444;-39,21028;gms; 132;23,54;1980
+amp1156;1045; 7;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Wenceslau Guimarães;NA;-13,553889;-39,70194;gms; 474;21,13;1453
+amp1157;1045;11;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Camamu;NA;-14,014167;-39,18222;gms; 160;23,49;2149
+amp1158;1045; 9;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Bahia;BR-BA;Jaguaripe;NA;-13,195556;-39,02389;gms;  65;24,09;1904
+amp1159;1046;15;co;sp;as,tr;NA;NA;tw,ni;12;2012;11;2013; 11;Brazil;Bahia;BR-BA;Vitória da Conquista;Câmpus da Universidade Estadual do Sudoeste da Bahia;-14,892778;-40,80250;gms; 859;20,09; 780
+amp1160;1046; 9;co;is;as,tr;NA;NA;tw,ni;12;2012;11;2013; 11;Brazil;Bahia;BR-BA;Vitória da Conquista;Estádio Municipal Lomanto Júnior;-14,870000;-40,82472;gms; 892;19,98; 781
+amp1161;1046; 6;co;la;as,tr;NA;NA;tw,ni;12;2012;11;2013; 11;Brazil;Bahia;BR-BA;Vitória da Conquista;Parque Municipal da Lagoa das Bateias;-14,855278;-40,87028;gms; 904;20,04; 773
+amp1162;1047;12;co;fo,tp,pp;as;NA;NA;tw,ni; 8;2011; 7;2012; 11;Brazil;Bahia;BR-BA;Itapetinga;Parque Municipal da Matinha;-15,203889;-40,20278;gms; 296;23,16; 888
+amp1163;1048; 8;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Bahia;BR-BA;Porto Seguro;Trancoso;-16,651389;-39,09667;gm;   3;NA;NA
+amp1164;1048; 5;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Bahia;BR-BA;Prado;Prado;-17,299722;-39,22222;gm;   7;NA;NA
+amp1165;1049;32;co;fo,tp,sp,la,os;as,sb;pt;NA;mo,da,tw,ni;11;2009; 2;2012; 27;Brazil;Bahia;BR-BA;Jequié;Fazenda Serra do Brejo Novo;-13,944722;-40,10917;gms; 629;20,65; 826
+amp1166;1050;18;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Cairu;Fazenda Subaúma;-13,525278;-39,03528;gm;  47;24,24;2183
+amp1167;1050;23;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Nilo Peçanha;Fazenda São João;-13,700833;-39,23278;gm; 232;22,96;1982
+amp1168;1050;19;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Wenceslau Guimarães;Estação Ecológica Estadual Nova Esperança;-13,578611;-39,70667;gm; 473;21,14;1497
+amp1169;1050;32;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Camamu;Projeto de Assentamento Zumbi dos Palmares;-14,017778;-39,14333;gm; 115;23,78;2215
+amp1170;1050;24;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Ibirapitanga;Fazenda Pedra Formosa;-13,952500;-39,45111;gm; 318;22,38;1711
+amp1171;1050;20;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Itamari;Fazenda Alto São Roque;-13,864444;-39,67278;gm; 625;20,48;1542
+amp1172;1050;17;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Uruçuca;Fazenda Caititu;-14,423889;-39,06056;gm; 104;24,00;2046
+amp1173;1050;18;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Una;Reserva Particular do Patrimônio Natural Ecoparque de Una;-15,166389;-39,05944;gm;  64;24,11;1827
+amp1174;1050;16;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Arataca;Fazenda Boa Sorte, Fazenda Orion;-15,227500;-39,38361;gm; 326;22,54;1493
+amp1175;1050;24;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Jussari;Reserva Particular do Patrimônio Natural Serra do Teimoso;-15,155278;-39,52694;gm; 297;22,97;1285
+amp1176;1050;19;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Una;Reserva Biológica de Uma;-15,171944;-39,06139;gm;  39;24,25;1819
+amp1177;1050;21;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Canavieiras;Fazenda Monte Cristo;-15,619722;-39,16111;gm;  29;24,13;1565
+amp1178;1050;19;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Belmonte;Fazenda Taquara;-15,973611;-39,37361;gm; 172;23,44;1227
+amp1179;1050;23;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Itapebi;Fazenda Palmeiras;-15,926667;-39,63583;gm; 247;23,30;1017
+amp1180;1050;39;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Porto Seguro;Reserva Particular do Patrimônio Natural Estação Veracruz;-16,324444;-39,12083;gm;  67;23,95;1608
+amp1181;1050;13;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Santa Cruz de Cabrália;Mata Cara Branca;-16,286389;-39,42389;gm; 142;23,74;1276
+amp1182;1050;34;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Guaratinga;Fazenda Vista Bela;-16,599167;-39,91389;gm; 321;23,29; 989
+amp1183;1050;22;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Porto Seguro;Parque Nacional Pau Brasil;-16,512500;-39,30333;gm; 106;23,87;1427
+amp1184;1050;25;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Prado;Parque Nacional Descobrimento;-17,106667;-39,33972;gm;  85;24,11;1304
+amp1185;1050;18;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Teixeira de Freitas;Fazenda Alcoprado;-17,291944;-39,67306;gm; 126;24,09;1124
+amp1186;1050;20;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2001; 9;2002; 20;Brazil;Bahia;BR-BA;Itamaraju;Fazenda Princesa do Pajaú;-17,169167;-39,84167;gm; 213;23,84;1113
+amp1187;1051;20;co;tp,sw;as;NA;NA;ni;10;2007; 1;2008;  3;Brazil;Bahia;BR-BA;São Desidério;Parque Municipal Lagoa Azul;-12,371944;-44,88028;gm; 658;23,55;1126
+amp1188;1051;19;co;tp;as;NA;NA;ni;10;2007; 1;2008;  3;Brazil;Bahia;BR-BA;São Desidério;Estrada de Correntina para São Desidério;-13,171389;-44,61528;gm; 579;23,98; 972
+amp1189;1052;29;co;tp,pp;as,qs;NA;NA;tw,ni;11;2006; 1;2007;  2;Brazil;Bahia;BR-BA;Miguel Calmon;Parque Estadual das Sete Passagens;-11,392500;-40,52778;gm;1038;19,49; 959
+amp1190;1053;28;co;fo,pp;as,sb;NA;NA;da,tw,ni;10;2001; 3;2005; 41;Brazil;Goiás;BR-GO;Pontalina;Pontalina;-17,525000;-49,44722;gms; 605;23,33;1570
+amp1191;1053;28;co;fo,pp;as,sb;NA;NA;da,tw,ni;10;2001; 3;2005; 41;Brazil;Goiás;BR-GO;Quirinópolis;Quirinópolis;-18,448333;-50,45167;gms; 520;23,37;1562
+amp1192;1053;22;co;fo,pp;as,sb;NA;NA;da,tw,ni;10;2001; 3;2005; 41;Brazil;Goiás;BR-GO;Santa Rita do Novo Destino;Santa Rita do Novo Destino;-15,135278;-49,12028;gms; 794;22,92;1512
+amp1193;1054;36;co;tp,pp,sw;as,sb;NA;NA;ni;11;2007; 3;2009; 16;Brazil;Goiás;BR-GO;Rio Verde;NA;-17,801667;-51,08944;gms; 823;21,90;1665
+amp1194;1055;19;co;is;as;NA;NA;da,tw,ni; 8;2003;10;2004; 14;Brazil;Minas Gerais;BR-MG;Catas Altas;Reserva Particular do Patrimônio Natural Serra do Caraça;-20,102778;-43,49889;gm;1297;17,21;1579
+amp1195;1056; 7;co;tp;as;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;Minas Gerais;BR-MG;Araponga;Serra do Brigadeiro;-20,715278;-42,48611;gms;1431;15,77;1488
+amp1196;1056;15;co;la;as;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;Minas Gerais;BR-MG;Araponga;Serra do Brigadeiro;-20,721944;-42,47861;gms;1367;16,02;1469
+amp1197;1056; 6;co;is;as;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;Minas Gerais;BR-MG;Araponga;Serra do Brigadeiro;-20,735278;-42,49111;gms;1460;15,65;1490
+amp1198;1056; 9;co;br;as;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;Minas Gerais;BR-MG;Araponga;Serra do Brigadeiro;-20,736667;-42,49361;gms;1294;16,46;1442
+amp1199;1056; 4;co;is;as;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;Minas Gerais;BR-MG;Araponga;Serra do Brigadeiro;-20,731667;-42,46361;gms;1158;16,98;1406
+amp1200;1057;14;co;NA;as;NA;NA;ni; 2;2015; 6;2015;  4;Brazil;Minas Gerais;BR-MG;Diamantina;Salitre Cave;-18,277778;-43,53667;gm;1118;19,05;1376
+amp1201;1057;15;co;NA;as,tr;NA;NA;ni; 4;2010; 3;2011; 11;Brazil;Minas Gerais;BR-MG;Diamantina;Soberbo River;-18,193889;-43,59056;gm;1381;17,87;1443
+amp1202;1057;34;co;NA;as;NA;NA;ni;10;2010; 5;2011;  7;Brazil;Minas Gerais;BR-MG;Olhos-d'Água;Parque Nacional das Sempre-Vivas;-17,793056;-43,74944;gm;1180;19,15;1226
+amp1203;1057;44;co;NA;as;NA;NA;ni; 9;2010;10;2011; 13;Brazil;Minas Gerais;BR-MG;Santo Antônio do Itambé;Parque Estadual do Pico do Itambé;-18,430833;-43,33833;gm;1246;18,06;1483
+amp1204;1058;33;co;tp,pp,la,sw,is;as;NA;NA;ni; 4;2002;10;2004; 30;Brazil;Minas Gerais;BR-MG;São Gonçalo do Rio Abaixo;Estação de Pesquisa, Desenvolvimento Ambiental de Peti;-19,893611;-43,38222;gm; 755;20,23;1448
+amp1205;1059;43;co;sp,sw,is;as;NA;NA;da,tw,ni;10;2001; 9;2002; 11;Brazil;Minas Gerais;BR-MG;Catas Altas;Reserva Particular do Patrimônio Natural Serra do Caraça;-20,095000;-43,47306;gm;1550;16,00;1645
+amp1206;1060;18;co;tp,pp,la,is;as;NA;NA;da,tw,ni; 7;1980; 6;1983; 35;Brazil;Minas Gerais;BR-MG;Poços de Caldas;Morro do Ferro;-21,903333;-46,50028;gm;1311;17,86;1697
+amp1207;1061; 5;ab;fo;NA;pt;NA;mo,da,tw,ni;11;2011; 9;2012; 10;Brazil;Minas Gerais;BR-MG;Caratinga;Reserva Particular do Patrimônio Natural Feliciano Miguel Abdala;-19,740278;-41,79139;gm; 399;21,81;1214
+amp1208;1061; 5;ab;fo;NA;pt;NA;mo,da,tw,ni;11;2011; 9;2012; 10;Brazil;Minas Gerais;BR-MG;Caratinga;Reserva Particular do Patrimônio Natural Feliciano Miguel Abdala;-19,731111;-41,82194;gm; 522;21,14;1223
+amp1209;1061; 5;ab;fo;NA;pt;NA;mo,da,tw,ni;11;2011; 9;2012; 10;Brazil;Minas Gerais;BR-MG;Caratinga;Reserva Particular do Patrimônio Natural Feliciano Miguel Abdala;-19,709167;-41,82444;gm; 456;21,58;1213
+amp1210;1061; 5;ab;fo;NA;pt;NA;mo,da,tw,ni;11;2011; 9;2012; 10;Brazil;Minas Gerais;BR-MG;Caratinga;Reserva Particular do Patrimônio Natural Feliciano Miguel Abdala;-19,719167;-41,82528;gm; 542;21,08;1228
+amp1211;1062;11;co;is;as;NA;ae;tw,ni; 4;2007;12;2007;  8;Brazil;Minas Gerais;BR-MG;Carrancas;Chapada das Perdizes;-21,592778;-44,58861;gms;1505;17,02;1728
+amp1212;1063;40;co;fo,tp,la,sw,ll,is;as,sb,tr;pt;NA;mo,da,tw,ni; 8;2005; 3;2008; 31;Brazil;Minas Gerais;BR-MG;Ituiutaba;Bacia do rio Tijuco;-18,931667;-49,58139;gms; 551;23,07;1456
+amp1213;1064;35;co;fo,tp,pp,sw,is;as;pt;NA;mo,da,tw,ni; 9;2013; 3;2015; 18;Brazil;Minas Gerais;BR-MG;São Gonçalo do Rio Preto;Parque Estadual Rio Preto;-18,194722;-43,28750;gm;1303;18,03;1434
+amp1214;1065;37;co;fo,tp,pp,sw,ll,is;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Minas Gerais;BR-MG;Lima Duarte;Parque Estadual do Ibitipoca;-21,706667;-43,88500;gm;1433;16,62;1641
+amp1215;1066; 8;ab;fo;NA;pt;NA;mo,da,tw,ni; 1;2011;12;2011; 11;Brazil;Minas Gerais;BR-MG;Alfenas;NA;-21,381667;-45,92694;NA; 831;20,10;1515
+amp1216;1067;15;co;sp;as;NA;NA;da,tw,ni; 9;2007; 9;2008; 12;Brazil;Minas Gerais;BR-MG;Viçosa;Estação de Pesquisa, Treinamento, Educação Ambiental Mata do Paraíso;-20,800278;-42,85861;gms; 777;19,16;1294
+amp1217;1067;12;co;sp;as;NA;NA;da,tw,ni; 9;2007; 9;2008; 12;Brazil;Minas Gerais;BR-MG;Viçosa;Estação de Pesquisa, Treinamento, Educação Ambiental Mata do Paraíso;-20,800278;-42,86250;gms; 777;19,16;1294
+amp1218;1068;15;co;tp;as;NA;NA;tw,ni;10;2004;10;2008; 48;Brazil;Minas Gerais;BR-MG;Ouro Preto;Parque Estadual do Itacolomi;-20,431111;-43,48667;gms;1590;15,90;1644
+amp1219;1069;14;co;sp,sw,os;as;NA;NA;da,tw,ni; 8;1996; 7;1997; 11;Brazil;Minas Gerais;BR-MG;Santana do Riacho;Serra do Cipó;-19,279722;-43,59333;gms;1093;19,00;1478
+amp1220;1070;26;co;is,os;as;NA;NA;da,tw,ni;11;1999; 2;2000;  3;Brazil;Minas Gerais;BR-MG;Santana do Riacho;Serra do Cipó;-19,280000;-43,54722;gm;1224;18,23;1540
+amp1221;1071;43;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Minas Gerais;BR-MG;Morro do Pilar;Serra do Cipó;-19,257778;-43,51444;gm;1234;18,06;1593
+amp1222;1072;38;co;NA;NA;NA;NA;NA;NA;1982;NA;1997;NA;Brazil;Minas Gerais;BR-MG;Marliéria;Parque Estadual do Rio Doce;-19,706389;-42,57583;NA; 272;22,88;1214
+amp1223;1073;39;co;fo,tp,sp,pp,la,sw,ll,is,br;as;NA;ae,in;mo,da,tw,ni; 2;2003; 1;2005; 23;Brazil;Minas Gerais;BR-MG;Almenara;Complexo Limoeiro (Fazenda Limoeiro, Fazenda Bela Vista);-16,027500;-40,85361;gms; 501;22,48; 818
+amp1224;1073;30;co;fo,tp,sp,pp,la,sw,ll,is,br;as;NA;ae,in;mo,da,tw,ni; 4;2003; 6;2004; 14;Brazil;Minas Gerais;BR-MG;Bandeira;Complexo Bandeira (Fazenda Bom Jardim, Fazenda Serra Azul, Mata da Balbia);-15,817778;-40,52389;gms; 606;21,55; 957
+amp1225;1073;28;co;fo,tp,sp,pp,la,sw,ll,is,br;as;NA;ae,in;mo,da,tw,ni; 2;2003; 3;2004; 13;Brazil;Minas Gerais;BR-MG;Salto da Divisa;Complexo Santana (Fazenda Santana, Fazenda Ondina, Fazenda Jaboti);-16,085278;-40,03417;gms; 136;24,63; 828
+amp1226;1073;36;co;fo,tp,sp,pp,la,sw,ll,is,br;as;NA;ae,in;mo,da,tw,ni;10;2003; 1;2005; 15;Brazil;Minas Gerais;BR-MG;Santa Maria do Salto;Complexo Cariri (Fazenda Duas Barras);-16,410000;-40,05639;gms; 838;20,21;1013
+amp1227;1073;27;co;fo,tp,sp,pp,la,sw,ll,is,br;as;NA;ae,in;mo,da,tw,ni; 6;2003;12;2003;  6;Brazil;Minas Gerais;BR-MG;Ladainha;Complexo Mumbuca (Fazenda Mumbuca, Fazenda das Araras);-17,625278;-41,96889;gms; 719;21,27;1044
+amp1228;1073;38;co;fo,tp,sp,pp,la,sw,ll,is,br;as;NA;ae,in;mo,da,tw,ni; 9;2004;12;2004;  3;Brazil;Minas Gerais;BR-MG;Poté;Complexo Nossa Senhora de Fátima (Fazenda Nossa Senhora de Fátima, Fazenda Bálsamo);-17,752500;-41,73778;gms; 477;22,56;1027
+amp1229;1074;20;co;fo;as;NA;NA;da,tw,ni;11;2001; 1;2002;  2;Brazil;Minas Gerais;BR-MG;Rio Novo;Mata dos Bentes;-21,510833;-43,16306;gms; 421;21,31;1333
+amp1230;1074;20;co;fo,pp,sw;as;NA;NA;da,tw,ni;11;2001; 1;2002;  2;Brazil;Minas Gerais;BR-MG;Rio Novo;Mata da Cabeceira;-21,523056;-43,18361;gms; 410;21,35;1332
+amp1231;1075;26;co;fo;as,tr;NA;NA;ni;12;2011; 2;2014; 26;Brazil;Minas Gerais;BR-MG;Alfenas;NA;-21,425000;-45,98417;gms; 804;20,22;1521
+amp1232;1076;24;co;la,sw,is;as;pt;NA;mo,da,tw,ni; 8;2003; 5;2005; 21;Brazil;Minas Gerais;BR-MG;Monte Belo;Reserva Particular do Patrimônio Natural Fazenda Lagoa;-21,405000;-46,25389;gm; 894;19,69;1530
+amp1233;1077;29;co;fo,pp,la,sw,is;as,sb;pt;tp;mo,da,tw,ni; 8;2003; 5;2005; 21;Brazil;Minas Gerais;BR-MG;Monte Belo;Reserva Particular do Patrimônio Natural Fazenda Lagoa;-21,405000;-46,25389;gms; 894;19,69;1530
+amp1234;1078;17;co;fo,sw,is;as;NA;NA;mo,da,tw,ni;10;2010;12;2010;  2;Brazil;Minas Gerais;BR-MG;Descoberto;Reserva Particular do Patrimônio Natural Alto de Boa Vista;-21,366389;-42,94972;gms;1121;17,86;1528
+amp1235;1079;14;co;la,is;as;NA;NA;da,tw,ni; 3;2002; 3;2003; 12;Brazil;Minas Gerais;BR-MG;Rio Acima;Condomínio Canto das Águas;-20,125000;-43,87500;gms; 877;20,20;1498
+amp1236;1080;22;co;tp,pp;as;NA;NA;da,tw,ni; 9;2003;12;2004; 15;Brazil;Minas Gerais;BR-MG;Catas Altas;Reserva Particular do Patrimônio Natural Santuário do Caraça;-20,108611;-43,49000;gms;1294;17,25;1571
+amp1237;1081;14;co;pp,la,sw,ll,is;as;pt;NA;da,tw,ni; 9;2006; 9;2007; 12;Brazil;Minas Gerais;BR-MG;Nova Lima;Reserva Particular do Patrimônio Natural Mata Samuel de Paula;-20,001111;-43,87111;NA; 925;20,19;1517
+amp1238;1082;32;co;fo,pp,la,ll,is;as,sb;pt;NA;mo,da,tw,ni; 1;2008; 1;2009; 12;Brazil;Minas Gerais;BR-MG;Brumadinho;Instituto Inhotim;-20,123889;-44,21833;gms; 791;20,82;1506
+amp1239;1083;15;co;fo;NA;pt;NA;mo,da,tw,ni; 1;2010; 5;2011; 16;Brazil;Minas Gerais;BR-MG;Ouro Branco;Parque Estatual da Serra do Ouro Branco;-20,494167;-43,60556;gms;1070;18,43;1451
+amp1240;1084;18;ab;tp,la,ll;as;ft;NA;tw,ni;10;2013; 9;2014; 11;Brazil;Minas Gerais;BR-MG;OuroPreto;Estação Ecológica do Tripuí;-20,385000;-43,54000;gms;1222;17,52;1525
+amp1241;1084;10;ab;tp,ll,is;as;ft;NA;tw,ni;10;2013; 9;2014; 11;Brazil;Minas Gerais;BR-MG;OuroPreto;Estação Ecológica do Tripuí;-20,381389;-43,54778;gms;1255;17,40;1531
+amp1242;1084; 4;ab;fo;as;ft;NA;tw,ni;10;2013; 9;2014; 11;Brazil;Minas Gerais;BR-MG;OuroPreto;Estação Ecológica do Tripuí;-20,378611;-43,54111;gms;1270;17,33;1543
+amp1243;1085;18;co;sp;as;NA;NA;da,tw,ni; 1;2011; 1;2012; 12;Brazil;Minas Gerais;BR-MG;Mariana;NA;-20,125600;-43,38920;dd; 913;19,22;1456
+amp1244;1085;16;co;pp;as;NA;NA;da,tw,ni; 1;2011; 1;2012; 12;Brazil;Minas Gerais;BR-MG;Mariana;NA;-20,128300;-43,38520;dd; 913;19,22;1456
+amp1245;1085;18;co;tp;as;NA;NA;da,tw,ni; 1;2011; 1;2012; 12;Brazil;Minas Gerais;BR-MG;Mariana;NA;-20,161700;-43,43220;dd; 892;19,29;1434
+amp1246;1085;26;co;pp;as;NA;NA;da,tw,ni; 1;2011; 1;2012; 12;Brazil;Minas Gerais;BR-MG;Mariana;NA;-20,162500;-43,40830;dd; 881;19,34;1430
+amp1247;1086; 9;co;fo,la,is;as;pt;tp;mo,da,tw,ni; 9;2001; 4;2003; 19;Brazil;Minas Gerais;BR-MG;Poços de Caldas;Serra de São Domingos;-21,775000;-46,55528;gms;1327;17,85;1686
+amp1248;1086;18;co;fo,la,is;as;pt;tp;mo,da,tw,ni; 9;2001; 4;2003; 19;Brazil;Minas Gerais;BR-MG;Poços de Caldas;Marçal Santos;-21,783333;-46,53083;gms;1444;17,17;1712
+amp1249;1086;20;co;fo,la,is;as;pt;tp;mo,da,tw,ni; 9;2001; 4;2003; 19;Brazil;Minas Gerais;BR-MG;Poços de Caldas;Retiro Branco;-21,779167;-46,51417;gms;1470;17,03;1722
+amp1250;1086;18;co;fo,la,is;as;pt;tp;mo,da,tw,ni; 9;2001; 4;2003; 19;Brazil;Minas Gerais;BR-MG;Poços de Caldas;Alcoa;-21,853611;-46,58750;gms;1276;17,95;1674
+amp1251;1087;21;co;fo,tp,sw,is;as;NA;ae;tw,ni; 9;2009; 8;2011; 23;Brazil;Minas Gerais;BR-MG;Araponga;Parque Estadual da Serra do Brigadeiro - Setor Norte;-20,625556;-42,41111;gms;1437;15,74;1484
+amp1252;1087;49;co;fo,tp,la,sw,is;as;pt;ae;mo,da,tw,ni; 9;2009; 8;2011; 23;Brazil;Minas Gerais;BR-MG;Araponga e Fervedouro;Parque Estadual da Serra do Brigadeiro - Setor Central;-20,722222;-42,48056;gms;1367;16,02;1469
+amp1253;1087;34;co;fo,tp,is;as;NA;ae;tw,ni; 9;2009; 8;2011; 23;Brazil;Minas Gerais;BR-MG;Ervália, Miradouro e Muriaé;Parque Estadual da Serra do Brigadeiro - Setor Sul;-21,508333;-42,68056;gms; 270;22,02;1275
+amp1254;1088; 9;co;fo,la,is;as;NA;NA;ni; 9;1989; 1;1991; 16;Brazil;Minas Gerais;BR-MG;Nova Lima;Área de Proteção da Captação do Mutuca;-20,013889;-43,97167;NA;1194;18,80;1607
+amp1255;1089; 5;co;fo,pp,sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Floresta Cambuí;-22,004820;-43,88903;dd; 922;18,65;1404
+amp1256;1089; 3;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Vila Funil;-22,007549;-43,88936;dd; 922;18,65;1404
+amp1257;1089; 7;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Toca do Coelho;-22,011556;-43,87586;dd; 916;18,70;1401
+amp1258;1089; 3;co;tp,sw;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Dona Camila;-21,984167;-43,91336;dd; 984;18,33;1442
+amp1259;1089;16;co;pp,sw;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Fazenda Tiririca;-21,985700;-43,93825;dd; 966;18,44;1435
+amp1260;1089;14;co;la;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Hotel Tiê;-21,995676;-43,86709;dd; 879;18,86;1381
+amp1261;1089; 3;co;is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Ninho da égua;-21,984056;-43,88688;dd;1086;17,85;1495
+amp1262;1089;10;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;#N/D;-21,970827;-43,89725;dd;1389;16,50;1663
+amp1263;1089;12;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Santa Bárbara do Monte Verde;Três Cruzes Village;-21,970734;-43,81235;dd; 892;18,83;1380
+amp1264;1089; 3;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Riacho da Nenê;-21,981861;-43,87244;dd;1087;17,88;1498
+amp1265;1089; 7;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Santa Bárbara do Monte Verde;#N/D;-21,964305;-43,80014;dd;1116;17,78;1521
+amp1266;1089;13;co;sw,is;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;#N/D;-21,988778;-43,88561;dd;1086;17,85;1495
+amp1267;1089;10;co;sw;as;NA;NA;ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Rio Preto;Brejo da Casinha;-21,978352;-43,85798;dd;1089;17,92;1497
+amp1268;1090;18;co;la;as;NA;NA;tw,ni; 5;1995; 2;1997; 21;Brazil;Minas Gerais;BR-MG;Camanducaia;#N/D;-22,886667;-46,04056;gm;1901;12,47;1870
+amp1269;1091; 9;co;tp;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;Poça do Paulo;-21,265278;-42,25889;gms; 233;22,20;1304
+amp1270;1091;15;co;is;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;NA;-21,274722;-42,23472;gms; 350;21,52;1314
+amp1271;1091;10;co;tp;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;NA;-21,288056;-42,24389;gms; 317;21,67;1319
+amp1272;1091; 7;co;is;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;NA;-21,301667;-42,25250;gms; 326;21,60;1315
+amp1273;1091; 8;co;la;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;Represa Zé 1;-21,295278;-42,29611;gms; 283;21,93;1321
+amp1274;1091; 8;co;la;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;Represa Zé 2;-21,295833;-42,31722;gms; 326;21,68;1328
+amp1275;1091;16;co;pp,sw;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;NA;-21,324444;-42,28694;gms; 354;21,52;1326
+amp1276;1091;14;co;pp,sw;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;NA;-21,322222;-42,27306;gms; 358;21,48;1319
+amp1277;1091; 9;co;tp;as;NA;NA;tw,ni;10;2013; 3;2015; 17;Brazil;Minas Gerais;BR-MG;Barão de Monte Alto;Poça do Odilon;-21,335556;-42,25750;gms; 439;21,03;1331
+amp1278;1092;36;co;tp,pp,is;as,tr;NA;tp;tw,ni; 9;2009; 8;2010; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Floresta Estadual do Uaimií;-20,501667;-43,96306;gms;1010;19,34;1452
+amp1279;1093; 8;ab;fo;NA;pt;NA;mo,da,tw,ni; 4;2007; 5;2008; 13;Brazil;Minas Gerais;BR-MG;Marliéria;Parque Estadual do Rio Doce;-19,666904;-42,51676;gms; 272;22,90;1209
+amp1280;1093;10;ab;fo;NA;pt;NA;mo,da,tw,ni; 4;2007; 5;2008; 13;Brazil;Minas Gerais;BR-MG;Marliéria;Parque Estadual do Rio Doce;-19,650088;-42,56677;gms; 293;22,84;1219
+amp1281;1093; 7;ab;fo;NA;pt;NA;mo,da,tw,ni; 4;2007; 5;2008; 13;Brazil;Minas Gerais;BR-MG;Marliéria;Parque Estadual do Rio Doce;-19,750041;-42,48334;gms; 279;22,77;1202
+amp1282;1094;41;co;fo,tp,pp;as,tr;NA;NA;da,tw,ni; 3;2005; 9;2007; 30;Brazil;Minas Gerais;BR-MG;Muriaré;Alta Região do Rio Muriaé;-21,081667;-42,35528;NA; 318;21,90;1336
+amp1283;1095;11;co;tp,sp,la,ll,is,br;as;ft;NA;tw,ni;10;2001; 9;2002; 11;Brazil;Minas Gerais;BR-MG;Araponga;Parque Estadual da Serra do Brigadeiro;-20,717500;-42,48111;gm;1367;16,02;1469
+amp1284;1096;30;co;tp,sw,ll,is,br;as,tr;pt;NA;mo,da,tw,ni; 9;2010; 8;2011; 11;Brazil;Minas Gerais;BR-MG;Simonésia;Reserva Particular do Patrimônio Natural Mata do Sossego, Reserva Sossego do Muriqui;-20,070000;-42,07611;gms;1396;16,05;1466
+amp1285;1097;19;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,499722;-43,62333;gms;1116;18,23;1470
+amp1286;1097; 5;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,495000;-43,60333;gms;1070;18,43;1451
+amp1287;1097; 7;co;tp;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,508611;-43,61306;gms;1107;18,25;1464
+amp1288;1097;20;co;pp;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,479722;-43,59306;gms;1076;18,35;1460
+amp1289;1097; 7;co;sw;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,447500;-43,60722;gms;1370;17,02;1548
+amp1290;1097; 6;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,473611;-43,65278;gms;1301;17,45;1527
+amp1291;1097; 5;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,437778;-43,58917;gms;1366;17,01;1545
+amp1292;1097; 2;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,438333;-43,58889;gms;1366;17,01;1545
+amp1293;1097; 3;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,440000;-43,59278;gms;1408;16,83;1560
+amp1294;1097; 3;co;pp;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,490556;-43,59639;gms;1051;18,51;1447
+amp1295;1097; 9;co;la;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Branco;Serra do Ouro Branco;-20,510000;-43,71972;gms; 991;19,20;1429
+amp1296;1097; 5;co;sw;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,489722;-43,68972;gms;1336;17,46;1537
+amp1297;1097; 5;co;sw;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,489722;-43,71000;gms;1530;16,55;1594
+amp1298;1097; 3;co;os;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,480000;-43,57000;gms;1305;17,30;1535
+amp1299;1097; 4;co;is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,469722;-43,59000;gms;1257;17,50;1522
+amp1300;1097;13;co;tp;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,469722;-43,60000;gms;1187;17,83;1495
+amp1301;1097; 2;co;tp,is;as;NA;NA;tw,ni; 7;2006; 6;2007; 11;Brazil;Minas Gerais;BR-MG;Ouro Preto;Serra do Ouro Branco;-20,510000;-43,60972;gms;1107;18,25;1464
+amp1302;1098;20;co;fo,tp,pp,la,is;as;NA;NA;tw,ni; 8;1993; 2;1995; 18;Brazil;Minas Gerais;BR-MG;Monte Belo;Reserva Particular do Patrimônio Natural Fazenda Lagoa;-21,405000;-46,25389;gm; 894;19,69;1530
+amp1303;1099;25;co;fo,tp,la,sw,is,os;as;NA;NA;da,tw,ni;11;1996; 3;1998; 16;Brazil;Minas Gerais;BR-MG;Tiradentes;Área de Proteção Ambiental São José;-21,101111;-44,17806;gm; 961;19,49;1446
+amp1304;1100; 5;ab;fo,is;as;NA;NA;tw,ni; 8;2010; 9;2011; 13;Brazil;Minas Gerais;BR-MG;Belo Horizonte;Parque Municipal Aggeo Pio Sobrinho;-19,976111;-43,97056;gms; 982;20,21;1563
+amp1305;1100; 8;ab;fo,is;as;NA;NA;tw,ni; 8;2010; 9;2011; 13;Brazil;Minas Gerais;BR-MG;Belo Horizonte;Parque Municipal Carlos de Faria Tavares;-20,000833;-44,02806;gms;1001;20,13;1562
+amp1306;1100; 5;ab;fo;as;NA;NA;tw,ni; 8;2010; 9;2011; 13;Brazil;Minas Gerais;BR-MG;Belo Horizonte;Parque Municipal Jacques Cousteau;-19,971944;-43,98639;gms; 943;20,54;1571
+amp1307;1100; 2;ab;fo,la,is;as;NA;NA;tw,ni; 8;2010; 9;2011; 13;Brazil;Minas Gerais;BR-MG;Belo Horizonte;Parque Municipal Julien Rien;-19,952500;-43,92694;gms;1010;20,04;1590
+amp1308;1100; 4;ab;fo,is;as;NA;NA;tw,ni; 8;2010; 9;2011; 13;Brazil;Minas Gerais;BR-MG;Belo Horizonte;Parque Municipal Mata das Borboletas;-19,957778;-43,93556;gms; 996;20,17;1589
+amp1309;1100;10;ab;fo,is;as;NA;NA;tw,ni; 8;2010; 9;2011; 13;Brazil;Minas Gerais;BR-MG;Belo Horizonte;Parque Municipal Roberto Burle Marx;-19,999722;-43,99750;gms;1028;19,88;1588
+amp1310;1101; 4;ab;fo;NA;pt;NA;mo,da,tw,ni;12;2010; 5;2011;  5;Brazil;Minas Gerais;BR-MG;Poços de Caldas;Parque Municipal das Andorinhas;-21,855556;-46,56528;gms;1299;17,92;1688
+amp1311;1102;29;co;fo,sw,ll,is,br;as;NA;NA;da,tw,ni; 1;2015; 3;2015;  2;Brazil;Espírito Santo;BR-ES;Santa Teresa;Reserva Biológica Augusto Ruschi;-19,908333;-40,55833;NA; 845;18,96;1341
+amp1312;1103;22;co;fo,la,is;as,sb,tr;pt;NA;mo,da,tw,ni; 1;2008; 2;2009; 13;Brazil;Espírito Santo;BR-ES;Alfredo Chaves;Reserva Particular do Patrimônio Natural Oiutrem;-20,548333;-40,80278;gm; 639;20,10;1244
+amp1313;1104;22;co;NA;as;NA;NA;NA; 2;2004;12;2005; 22;Brazil;Espírito Santo;BR-ES;Vitória;NA;-20,166667;-40,33333;gm; 328;21,97;1297
+amp1314;1105;22;co;pp;as;NA;NA;tw,ni;12;2003;11;2004; 11;Brazil;Espírito Santo;BR-ES;Marechal Floriano;Sítio Amarildo Uliana, Sítio Jaime Stein, Condomínio de chácaras Recanto das Flores;-20,391389;-40,84500;gms; 945;18,26;1304
+amp1315;1106;29;ab;fo,ll,br;qs;NA;NA;tw,ni; 9;2012; 7;2013; 10;Brazil;Espírito Santo;BR-ES;Santa Teresa;Reserva Biológica Augusto Ruschi;-19,908333;-40,55833;gm; 845;18,96;1341
+amp1316;1107;12;co;fo,br;as;pt;NA;mo,da,tw,ni; 1;2005;12;2005; 11;Brazil;Espírito Santo;BR-ES;Vitória;Universidade Federal do Espírito Santo campus Alaor Queiroz;-20,275000;-40,30667;NA;   3;23,64;1276
+amp1317;1108;22;co;pp,la,sw;as;NA;NA;da,tw,ni; 6;2013; 5;2014; 11;Brazil;Espírito Santo;BR-ES;São Roque do Canaã;Tancredo;-19,673611;-40,73167;gms; 170;23,13;1200
+amp1318;1108;14;co;pp,la,sw;as;NA;NA;da,tw,ni; 6;2013; 5;2014; 11;Brazil;Espírito Santo;BR-ES;São Roque do Canaã;Córrego da Saúde;-19,696944;-40,62833;gms; 214;22,87;1229
+amp1319;1109;40;co;fo,pp,la,is,br;as;NA;NA;NA; 9;2004;10;2009; 61;Brazil;Espírito Santo;BR-ES;Domingos Martins;Parque Estadual de Pedra Azul;-20,400000;-41,01667;gm;1543;15,15;1413
+amp1320;1109;41;co;fo,pp,la,is,br;as;NA;NA;NA; 9;2004;10;2009; 61;Brazil;Espírito Santo;BR-ES;Castelo;Parque Estadual do Forno Grande;-20,516667;-41,01667;gm;1149;17,14;1319
+amp1321;1110;13;ab;ll;qs;NA;NA;tw,ni; 6;2009; 2;2011; 20;Brazil;Espírito Santo;BR-ES;Atílio Vivacqua;Monumento Natural Serra das Torres;-21,000000;-41,21667;gm; 792;19,37;1235
+amp1322;1111;19;ab;la,pp,sw,ll,is,re,br;as,tr;NA;NA;tw,ni;NA;2012;NA;2014;NA;Brazil;Espírito Santo;BR-ES;Presidente Kennedy;Praia das Neves;-21,216667;-40,95000;gm;   4;23,34;1023
+amp1323;1111;22;ab;la,pp,sw,ll,is,re,br;as,tr;NA;NA;tw,ni;NA;2012;NA;2014;NA;Brazil;Espírito Santo;BR-ES;Guarapari;Parque Estadual Paulo Cesar Vinha;-20,600000;-40,41667;gm;   3;23,46;1171
+amp1324;1111; 4;ab;ll,re,br;as,tr;NA;NA;tw,ni;NA;2012;NA;2014;NA;Brazil;Espírito Santo;BR-ES;Linhares;Reserva Biológica de Comboios;-19,666667;-39,88333;gm;   1;23,73;1268
+amp1325;1111;14;ab;la,pp,sw,ll,is,re,br;as,tr;NA;NA;tw,ni;NA;2012;NA;2014;NA;Brazil;Espírito Santo;BR-ES;Conceição da Barra;Área de Proteção Ambiental Conceição da Barra;-18,616667;-39,73333;gm;   1;NA;NA
+amp1326;1111;11;ab;la,pp,sw,ll,is,re,br;as,tr;NA;NA;tw,ni;NA;2012;NA;2014;NA;Brazil;Espírito Santo;BR-ES;Conceição da Barra;Parque Estadual de Itaúnas;-18,400000;-39,70000;gm;   6;24,12;1328
+amp1327;1112; 2;ab;fo;NA;ft;NA;da,tw,ni; 6;2015; 5;2016; 11;Brazil;Espírito Santo;BR-ES;Linhares;Vale Natural Reserve;-19,112500;-40,05083;gms;  61;23,58;1189
+amp1328;1113; 5;ab;br;as;NA;NA;da; 8;2005; 8;2005;  0;Brazil;Espírito Santo;BR-ES;Santa Teresa;NA;-19,933333;-40,58333;gm; 813;19,12;1325
+amp1329;1114; 3;ab;br;as;NA;NA;da;11;2007;12;2007;  1;Brazil;Espírito Santo;BR-ES;Afonso Cláudio;Três Pontões;-20,066667;-41,03333;gm; 920;18,70;1335
+amp1330;1115;34;co;tp,sw;as;pt;NA;mo,da,tw,ni; 2;2001; 1;2002; 11;Brazil;Espírito Santo;BR-ES;Cariacica;Reserva Biológica de Duas Bocas;-20,280833;-40,47694;gms; 216;22,41;1262
+amp1331;1116;41;co;fo,la,ll,is,br;as;NA;NA;da,tw,ni;NA;1999;NA;2001;NA;Brazil;Espírito Santo;BR-ES;Fundão;Parque Municipal do Goiapaba-Acu;-19,919167;-40,47250;NA; 399;21,58;1275
+amp1332;1048; 2;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Espírito Santo;BR-ES;São Mateus;Guriri;-18,683333;-39,75000;gm;   6;24,06;1216
+amp1333;1048; 7;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Espírito Santo;BR-ES;Guarapari;Setiba;-20,583333;-40,45000;gm;  11;23,50;1216
+amp1334;1048;13;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Espírito Santo;BR-ES;Presidente Kennedy;Praia das Neves;-21,250000;-40,96667;gm;   7;23,30;1028
+amp1335;1117;50;ab;tp,pp;as;NA;NA;ni; 8;2002; 7;2004; 23;Brazil;Espírito Santo;BR-ES;Santa Teresa;Estação Biológica de Santa Lúcia;-19,983333;-40,53750;gms; 810;19,18;1328
+amp1336;1118;53;co;pp,sw,is;as,tr;NA;ae,tp;da,tw,ni;NA;1997;NA;2007;NA;Brazil;Espírito Santo;BR-ES;Santa Teresa;Reserva Biológia de Santa Lúcia;-18,966667;-40,53337;gms; 210;23,18;1183
+amp1337;1118;22;co;pp,sw,is;as,tr;NA;ae,tp;da,tw,ni; 3;2006; 5;2006;  2;Brazil;Espírito Santo;BR-ES;Santa Teresa;Pousada Paradiso;-19,916780;-40,63357;gms; 878;18,78;1359
+amp1338;1118;29;co;pp,sw,is;as,tr;NA;ae,tp;da,tw,ni; 3;2006; 5;2006;  2;Brazil;Espírito Santo;BR-ES;Santa Teresa;Nova Lombardia;-19,916822;-40,58345;gms; 777;19,30;1324
+amp1339;1118;24;co;pp,sw,is;as,tr;NA;ae,tp;da,tw,ni; 3;2006; 5;2006;  2;Brazil;Espírito Santo;BR-ES;Santa Teresa;Vargem Alta;-19,900015;-40,48358;gms; 564;20,59;1309
+amp1340;1119; 6;ab;br;as;NA;NA;da; 1;1998;12;1998; 11;Brazil;Espírito Santo;BR-ES;Linhares;Regência;-19,594444;-39,83472;gm;   5;23,73;1263
+amp1341;1120;31;co;fo,tp,pp,sw,is,br;as;NA;in;mo,da,tw,ni;12;2008;10;2011; 34;Brazil;Espírito Santo;BR-ES;Castelo;Parque Estadual do Forno Grande;-20,522222;-41,10833;gms;1795;13,95;1448
+amp1342;1121; 4;co;br;as;NA;NA;da; 8;2002; 7;2003; 11;Brazil;Espírito Santo;BR-ES;Itarana;Pedra da Onça;-19,902500;-40,82417;gms; 707;20,00;1308
+amp1343;1122;33;ab;tp,pp;as;NA;NA;ni; 2;2005; 7;2006; 17;Brazil;Espírito Santo;BR-ES;Santa Teresa;Reserva Biologica Augusto Ruschi;-19,908333;-40,55833;NA; 845;18,96;1341
+amp1344;1123;21;co;la;as;NA;NA;ni; 1;2000;11;2004; 58;Brazil;Espírito Santo;BR-ES;Anchiera;Barragem Norte, Miamba Lagoon and Ubu Lagoon;-20,766667;-40,58333;gm;  14;23,39;1140
+amp1345;1124;26;co;pp;as;NA;NA;ni;11;2001; 3;2002;  4;Brazil;Espírito Santo;BR-ES;Linhares;Pontal do Ipiranga;-19,116667;-39,76667;gm;   5;23,85;1241
+amp1346;1125;37;ab;fo,tp,pp,ll,br;as;NA;NA;ni;11;2000; 3;2001;  4;Brazil;Espírito Santo;BR-ES;Linhares;Fazenda José Pascoal;-19,466667;-39,90000;gm;  18;23,51;1246
+amp1347;1126;39;co;fo;NA;pt;NA;mo,da,tw,ni; 5;2007; 4;2008; 11;Brazil;Espírito Santo;BR-ES;Alto Alegre;Reserva Biológica de Duas Bocas;-20,281111;-40,52194;gms; 578;20,43;1294
+amp1348;1127;31;co;fo,tp,pp,ll,is,br;as;pt;NA;mo,da,tw,ni;12;2008;11;2009; 11;Brazil;Espírito Santo;BR-ES;Serra;Costa Bela;-20,101944;-40,18222;gms;  14;23,52;1229
+amp1349;1128;20;co;fo,tp,pp,la,is;as;NA;NA;NA; 6;2010; 2;2011;  8;Brazil;Espírito Santo;BR-ES;Santa Teresa;Câmpus da Escola Superior São Francisco de Assis;-19,936944;-40,58500;gms; 681;19,79;1317
+amp1350;1129;19;co;tp;as;NA;NA;da,tw,ni; 7;1999; 7;2000; 12;Brazil;Rio de Janeiro;BR-RJ;Saquarema;Palmital;-22,846667;-42,45444;gms;  56;22,74;1123
+amp1351;1130;16;co;fo,ll;as,tr,qs;pt;ae;mo,da,tw,ni; 5;2005; 6;2005;  1;Brazil;Rio de Janeiro;BR-RJ;Casimiro de Abreu;Morro São João;-22,550000;-42,01667;gm;  89;22,58;1200
+amp1352;1131;20;co;fo,tp,pp,ll,br;as,tr,qs;pt;ae;mo,da,tw,ni; 9;2006; 9;2006;  0;Brazil;Rio de Janeiro;BR-RJ;Cambuci;Serra do Monte Verde;-21,483333;-41,86667;gm; 778;19,30;1291
+amp1353;1132;76;co;NA;as,tr,qs;pt;ae;mo,da,tw,ni; 9;2004; 2;2014;113;Brazil;Rio de Janeiro;BR-RJ;Cachoeiras de Macacu;Reserva Ecológica de Guapiaçu;-22,400000;-42,73333;gm; 411;20,63;1331
+amp1354;1133;15;co;tp,sp,la,re,br;as,tr;NA;NA;tw,ni;12;2009;11;2010; 11;Brazil;Rio de Janeiro;BR-RJ;São João da Barra;Restinga de Iquiparí;-21,736667;-41,02889;gm;   4;23,65;1031
+amp1355;1134;32;co;pp,is,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Ilha Grande;-23,142500;-44,17222;gms;  93;22,61;1591
+amp1356;1134;26;co;pp,is,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba;Ilha Marambaia;-23,073056;-43,97000;gms; 404;20,93;1450
+amp1357;1134;13;co;pp,is,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba;Ilha Itacuruçá;-22,933611;-43,88333;gms;  53;23,06;1396
+amp1358;1134; 7;co;tp,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Ilha Gipóia;-23,042500;-44,36722;gms;  19;NA;NA
+amp1359;1134; 4;co;tp,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba;Ilha Jaguanum;-23,000278;-43,92889;gms;  72;22,93;1422
+amp1360;1134; 5;co;tp,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Ilha Itanhangá;-22,991111;-44,41167;gms;  11;NA;NA
+amp1361;1134; 1;co;tp,br;as;NA;NA;NA; 3;2009; 1;2011; 22;Brazil;Rio de Janeiro;BR-RJ;Niterói;Ilha Mãe;-22,983889;-43,06583;gms;   5;NA;NA
+amp1362;1135; 6;co;is;as;NA;NA;ni;10;1998; 9;2000; 23;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Vila Dois Rios;-23,183333;-44,20000;gm; 147;22,21;1610
+amp1363;1102;25;co;fo,sw,ll,is,br;as;NA;NA;da,tw,ni; 1;2015; 3;2015;  2;Brazil;Rio de Janeiro;BR-RJ;Teresópolis;Parque Nacional da Serra dos Órgãos;-22,457222;-43,01944;NA;1950;12,69;1841
+amp1364;1136;26;co;fo,tp,pp,ll;as;NA;NA;da,tw,ni; 2;2010; 4;2012; 26;Brazil;Rio de Janeiro;BR-RJ;Soropédia;Floresta Nacional Mário Xavier;-22,730833;-43,70806;gm;  43;23,22;1453
+amp1365;1137;12;co;tp,pp,sw,is,br;as,qs;NA;NA;NA;10;2007; 9;2009; 23;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Vila Dois Rios;-23,185833;-44,20167;gms; 132;22,30;1608
+amp1366;1138;41;co;tp,pp,la,sw,ll,is,br;as;NA;NA;da,tw,ni; 5;1997; 9;2006;112;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba;Reserva Rio das Pedras;-22,991389;-44,10028;gms; 147;22,44;1578
+amp1367;1139;32;ab;fo,ll,is,br;as;NA;ae;NA; 2;2008;10;2010; 32;Brazil;Rio de Janeiro;BR-RJ;Nova Friburgo;Parque Estadual dos Três Picos;-22,370000;-42,55417;gms;1171;16,43;1457
+amp1368;1140;36;co;NA;NA;NA;NA;NA;NA;2003;NA;2006;NA;Brazil;Rio de Janeiro;BR-RJ;Rio das Ostras;Reserva Biológica União;-22,426389;-42,03444;NA;  52;22,78;1196
+amp1369;1141;36;ab;fo,tp,pp,la,sw,ll,is,br;as;ft;NA;da,tw,ni; 4;2009;12;2013; 56;Brazil;Rio de Janeiro;BR-RJ;Mendes;Centro Marista São José das Paineiras;-22,512500;-43,75444;gms; 511;20,31;1409
+amp1370;1142;14;co;fo,ll,is,br;as;pt;NA;mo,da,tw,ni;NA;2009;NA;2013;NA;Brazil;Rio de Janeiro;BR-RJ;Teresópolis;Parque Nacional da Serra dos Órgãos;-22,457222;-43,01944;gms;1950;12,69;1841
+amp1371;1143;11;ab;fo;NA;pt;NA;mo,da,tw,ni;11;2006; 9;2007; 10;Brazil;Rio de Janeiro;BR-RJ;Rio das Ostras;Reserva Biológica União;-22,421389;-42,02556;NA;  48;22,81;1197
+amp1372;1143;12;ab;fo;NA;pt;NA;mo,da,tw,ni;11;2006; 9;2007; 10;Brazil;Rio de Janeiro;BR-RJ;Rio das Ostras;Reserva Biológica União;-22,419444;-42,01944;NA;  43;22,84;1199
+amp1373;1144;19;ab;fo,ll,is,br;tr,qs;NA;NA;tw,ni; 1;2008; 3;2009; 14;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Pico do Papagario;-23,154444;-44,19611;gms; 781;18,61;1632
+amp1374;1145;69;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Maciço da Tijuca;-22,958333;-43,28139;NA; 531;20,23;1397
+amp1375;1146;32;co;NA;NA;NA;NA;NA;NA;1963;NA;1990;NA;Brazil;Rio de Janeiro;BR-RJ;Seropédica;Floresta Nacional Mário Xavier;-22,725000;-43,72500;gms;  48;23,19;1456
+amp1376;1147;21;co;NA;as;pt;NA;da,tw,ni;NA;NA;NA;NA;NA;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Parque Estadual Cunhambebe;-22,883333;-44,23333;gm; 631;19,50;1510
+amp1377;1148;18;co;fo,ll,re,br;as;pt;ae;da,tw,ni; 7;2008;12;2009; 17;Brazil;Rio de Janeiro;BR-RJ;Iguaba Grande;Núcleo Experimental de Iguaba Grande;-22,849167;-42,19167;gms;  19;22,88;1128
+amp1378;1149;44;co;fo,tp,ll,is,br;as,qs;NA;NA;tw,ni; 1;2011;12;2012; 23;Brazil;Rio de Janeiro;BR-RJ;Maricá;Região do Espraiado;-22,882222;-42,68444;gms; 262;21,64;1118
+amp1379;1150;28;co;fo,la,is;as;NA;NA;da,tw,ni; 1;2010;10;2010;  9;Brazil;Rio de Janeiro;BR-RJ;Itaguaí;Parque Estadual do Cunhambebe;-22,901944;-43,89250;gms; 184;22,27;1446
+amp1380;1151;44;ab;fo,tp,pp,sw,ll,is,br;as,qs;pt,ft;ae;mo,da,tw,ni;NA;2006;NA;2010;NA;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Parque Natural Municipal da Serra do Mendanha;-22,826944;-43,50444;gms; 302;21,70;1546
+amp1381;1152; 5;ab;fo,br;as;NA;NA;da,tw,ni; 8;2008; 7;2010; 23;Brazil;Rio de Janeiro;BR-RJ;Niterói;Parque Estadual da Serra da Tiririca;-22,977500;-43,02750;gms;  37;23,08;1001
+amp1382;1153;21;co;NA;as,tr,qs;pt;NA;mo,da,tw,ni;NA;2002;NA;2014;NA;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Parque Natural Municipal Bosque da Barra;-22,997500;-43,37083;utm;   6;23,56;1222
+amp1383;1153;18;co;NA;as,tr,qs;pt;NA;mo,da,tw,ni;NA;2002;NA;2014;NA;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Parque Natural Municipal da Painha;-23,039444;-43,50667;utm; 129;22,62;1257
+amp1384;1153;45;co;NA;as,tr,qs;pt;NA;mo,da,tw,ni;NA;2002;NA;2014;NA;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Parque Natural Municipal Serra do Mendanha;-22,825278;-43,49861;utm; 259;21,98;1551
+amp1385;1154;44;co;fo,sw,is,re;as,sb;NA;NA;da,tw,ni; 7;2008; 6;2010; 23;Brazil;Rio de Janeiro;BR-RJ;Niterói;Parque Estadual da Serra da Tiririca;-22,977500;-43,02750;gm;  37;23,08;1001
+amp1386;1155;10;ab;ll;qs;NA;NA;da,tw,ni; 1;1997; 5;1997;  4;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Vila Dois Rios;-23,183333;-44,20000;gm; 147;22,21;1610
+amp1387;1156;12;ab;fo,ll;tr,qs;pt;NA;mo,da,tw,ni;10;2004;11;2004;  1;Brazil;Rio de Janeiro;BR-RJ;Cachoeiras de Macacu;Reserva Ecológica de Guapiaçu;-22,400000;-42,73333;gm; 411;20,63;1331
+amp1388;1048; 8;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Rio de Janeiro;BR-RJ;São João da Barra;Grussaí;-21,733333;-41,03333;gm;   5;23,65;1043
+amp1389;1048; 7;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Rio de Janeiro;BR-RJ;Carapebus;Jurubatiba;-22,283333;-41,68333;gm;  11;23,21;1212
+amp1390;1048; 5;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Rio de Janeiro;BR-RJ;Araruama;Massambaba;-22,933333;-42,20000;gm;   3;22,90;1099
+amp1391;1048; 5;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Rio de Janeiro;BR-RJ;Maricá;Barra de Maricá;-22,950000;-42,83333;gm;   7;23,07;1028
+amp1392;1048; 2;co;ll,re,br;as,tr;NA;NA;da,tw,ni;11;1999; 3;2000;  4;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Grumari;-23,050000;-43,53333;gm;   0;NA;NA
+amp1393;1157;25;co;fo,ll,is;as,qs;NA;NA;NA; 7;1995;NA;NA;NA;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Ilha Grande;-23,181944;-44,21361;gms; 433;20,57;1631
+amp1394;1158;16;ab;fo,ll;as,qs;pt;NA;mo,da,tw,ni; 9;2004;10;2004;  1;Brazil;Rio de Janeiro;BR-RJ;Guapimirim;Estação Ecológica Estadual do Paraíso;-22,483333;-42,91667;gm; 279;21,33;1441
+amp1395;1159; 6;ab;fo,ll;as,qs;pt;NA;mo,da,tw,ni; 8;2005; 8;2005;  0;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba;Reserva Rio das Pedras;-22,983333;-44,10000;gm; 352;21,24;1508
+amp1396;1160;50;co;NA;as;NA;NA;da,tw,ni; 9;2006;10;2008; 25;Brazil;Rio de Janeiro;BR-RJ;Duque de Caxias;"Parque Natural Municipal
+da Taquara";-22,583333;-43,23333;gm; 501;20,21;1651
+amp1397;1161;23;ab;fo,is;as;pt;NA;da,tw,ni;12;2009;11;2010; 11;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba e Itaguaí;Parque Estadual do Cunhambebe;-22,901944;-43,89278;gms; 184;22,27;1446
+amp1398;1162;24;co;fo,tp,sw,ll,is,re,du,br;as;NA;NA;da,tw,ni; 4;2002; 4;2008; 72;Brazil;Rio de Janeiro;BR-RJ;Mangaratiba;Ilha da Marambaia;-23,061667;-43,96528;gms; 262;21,85;1432
+amp1399;1163;40;co;fo,tp,pp,la,sw,ll,is,br;as;NA;NA;da,tw,ni;11;1983;NA;NA;NA;Brazil;Rio de Janeiro;BR-RJ;Guapimirim;Reserva Particular de Patrimônio Natural Campo Escoteiro Geraldo Hugo Nunes;-22,576111;-43,02444;gms;  73;22,56;1445
+amp1400;1164; 9;ab;re,du,br;as;NA;NA;NA; 5;1985; 5;1986; 12;Brazil;Rio de Janeiro;BR-RJ;Maricá;Restinga de Maricá;-22,962500;-42,87778;gms;   7;23,16;1016
+amp1401;1165;16;ab;fo,ll;as,tr,qs;pt;ae;mo,da,tw,ni;10;2006;11;2006;  1;Brazil;Rio de Janeiro;BR-RJ;Cachoeiras de Macacu;Parque Estadual dos Três Picos;-22,416667;-42,58333;gm; 739;18,73;1304
+amp1402;1166;13;ab;fo,ll;as,qs;pt;ae;mo,da,tw,ni; 5;2006; 6;2006;  1;Brazil;Rio de Janeiro;BR-RJ;Santa Maria Madalena, São Fidélis e Campos dos Goytacazes;Parque Estadual do Desengano;-21,866667;-41,90000;gm;1372;15,73;1412
+amp1403;1167;31;ab;NA;as;NA;ae;tw,ni; 3;2008; 3;2010; 24;Brazil;Rio de Janeiro;BR-RJ;Nova Friburgo;Distritro de Theodoro de Oliveira;-22,369444;-42,55694;gms;1171;16,43;1457
+amp1404;1167; 9;ab;NA;as;NA;ae;tw,ni; 3;2008; 3;2010; 24;Brazil;Rio de Janeiro;BR-RJ;Nova Friburgo;Baixo Caledônia;-22,359444;-42,57083;gms;1461;14,97;1599
+amp1405;1168;16;ab;NA;as;NA;NA;NA; 3;2007;11;2008; 20;Brazil;Rio de Janeiro;BR-RJ;Teresópolis;Parque Nacional da Serra dos Órgãos;-22,450278;-42,98806;gm;1115;16,89;1733
+amp1406;1169;22;co;fo,tp,la,sw,ll,re,br;as,tr,qs;NA;ae;da,tw,ni; 5;2009;12;2010; 19;Brazil;Rio de Janeiro;BR-RJ;Rio de Janeiro;Parque Natural Municipal de Grumari;-23,047778;-43,52667;gms;  14;23,29;1232
+amp1407;1170;10;co;fo,la,ll,re,br;as,sb,tr,qs;pt;NA;tw,ni;NA;NA;NA;NA;NA;Brazil;Rio de Janeiro;BR-RJ;Carapebus;Jurubatiba;-22,283333;-41,68333;NA;  11;23,21;1212
+amp1408;1171; 8;ab;ll;as,qs;NA;NA;da,tw,ni; 8;1996;10;1997; 14;Brazil;Rio de Janeiro;BR-RJ;Angra dos Reis;Vila Dois Rios;-23,183333;-44,21667;gm; 601;19,57;1638
+amp1409;1172;30;co;fo,ll;as,qs;pt;ae;mo,da,tw,ni; 9;2004;10;2004;  1;Brazil;Rio de Janeiro;BR-RJ;Guapirim e Cachoeiras de Macacu;Estação Ecológica Estadual do Paraíso;-22,493333;-42,90528;gm;  92;22,41;1384
+amp1410;1173;27;ab;fo,ll;qs;NA;NA;tw,ni; 1;2011; 1;2012; 12;Brazil;São Paulo;BR-SP;São Miguel Arcanjo;Parque Estadual Carlos Botelho;-24,053056;-48,01361;gms; 721;18,07;1328
+amp1411;1174;14;ab;NA;as;pt;ae;mo,da,tw,ni; 7;2005; 6;2006; 11;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Ilha Anchieta;-23,539444;-45,05778;gm; 219;21,04;2506
+amp1412;1175;10;co;pp;as;NA;NA;tw,ni;11;1984; 4;1986; 17;Brazil;São Paulo;BR-SP;Cabreúva;Fazenda da Cava;-23,350000;-47,06667;gms; 682;18,86;1321
+amp1413;1176;53;co;fo,is;tr;NA;NA;tw,ni; 4;2001; 5;2006; 61;Brazil;São Paulo;BR-SP;Pilar do Sul;Reservas legais das empresas Eucatex/SA, Cia. Suzano Celulose, Papel;-23,946944;-47,67667;gms; 873;17,17;1620
+amp1414;1177;24;co;fo,pp,la,sw,is;as;NA;ae;da,tw,ni; 8;2006; 1;2007;  5;Brazil;São Paulo;BR-SP;Pedregulho;Parque Estadual das Furnas do Bom Jesus;-20,240556;-47,45750;gms; 852;20,58;1550
+amp1415;1178;30;co;tp,pp,sw,ll,is,br;as,tr;NA;ae;da,tw,ni;10;2009;12;2009;  2;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,328611;-48,59167;gms; 949;17,05;1424
+amp1416;1178;22;co;tp,pp,sw,ll,is,br;as,tr;NA;ae;da,tw,ni;10;2009;12;2009;  2;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,328333;-48,50972;gms; 724;18,33;1393
+amp1417;1178;32;co;tp,pp,sw,ll,is,br;as,tr;NA;ae;da,tw,ni;10;2009;12;2009;  2;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,426944;-48,59000;gms; 744;18,30;1430
+amp1418;1178;14;co;tp,pp,sw,ll,is,br;as,tr;NA;ae;da,tw,ni;10;2009;12;2009;  2;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,491944;-48,56389;gms; 165;21,98;1431
+amp1419;1178;17;co;tp,pp,sw,ll,is,br;as,tr;NA;ae;da,tw,ni;10;2009;12;2009;  2;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,546111;-48,67778;gms; 241;21,49;1381
+amp1420;1178;17;co;tp,pp,sw,ll,is,br;as,tr;NA;ae;da,tw,ni;10;2009;12;2009;  2;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,511667;-48,69944;gms; 656;18,91;1397
+amp1421;1179; 4;co;fo;NA;pt;ae;mo,da,tw,ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,596667;-50,36667;gms; 551;20,67;1205
+amp1422;1179; 4;co;fo;NA;pt;ae;mo,da,tw,ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,601111;-50,39056;gms; 581;20,55;1215
+amp1423;1179; 2;co;fo;NA;pt;ae;mo,da,tw,ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,587500;-50,37667;gms; 589;20,51;1215
+amp1424;1179; 5;co;fo;NA;pt;ae;mo,da,tw,ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,578333;-50,36833;gms; 549;20,72;1207
+amp1425;1179; 5;co;fo;NA;pt;ae;mo,da,tw,ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,572222;-50,37806;gms; 559;20,70;1214
+amp1426;1179; 3;co;fo;NA;pt;ae;mo,da,tw,ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,567500;-50,38472;gms; 581;20,62;1219
+amp1427;1179;13;co;sw,ll,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,595556;-50,36528;gms; 535;20,77;1204
+amp1428;1179; 4;co;ll,is,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,597222;-50,37083;gms; 551;20,67;1205
+amp1429;1179; 7;co;la,ll,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,597500;-50,37167;gms; 551;20,67;1205
+amp1430;1179;14;co;la,ll,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,576667;-50,36750;gms; 549;20,72;1207
+amp1431;1179; 5;co;ll,is,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,572222;-50,37778;gms; 559;20,70;1214
+amp1432;1179; 3;co;tp,ll,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,598889;-50,39306;gms; 585;20,58;1216
+amp1433;1179;10;co;tp,ll,br;as;NA;ae;ni; 9;2007; 3;2008;  6;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,596111;-50,39639;gms; 585;20,58;1216
+amp1434;1180; 3;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,413333;-48,37528;gms; 750;19,12;1231
+amp1435;1180; 4;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,411111;-48,38111;gms; 750;19,12;1231
+amp1436;1180; 3;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,401111;-48,38250;gms; 720;19,28;1224
+amp1437;1180; 1;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,399722;-48,37722;gms; 705;19,35;1225
+amp1438;1180; 1;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,396667;-48,36861;gms; 688;19,44;1219
+amp1439;1180; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,406111;-48,34583;gms; 701;19,29;1223
+amp1440;1180; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,409167;-48,34944;gms; 691;19,37;1221
+amp1441;1180; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,397778;-48,33028;gms; 660;19,49;1221
+amp1442;1180; 5;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,400278;-48,32556;gms; 654;19,54;1218
+amp1443;1180; 5;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,420556;-48,33556;gms; 664;19,51;1216
+amp1444;1180; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,428056;-48,33028;gms; 626;19,72;1207
+amp1445;1180; 9;co;la,ll,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,415000;-48,36806;gms; 762;19,02;1232
+amp1446;1180; 2;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,398056;-48,37694;gms; 705;19,35;1225
+amp1447;1180; 2;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,396111;-48,36667;gms; 688;19,44;1219
+amp1448;1180; 1;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,393056;-48,36306;gms; 673;19,48;1215
+amp1449;1180; 6;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,413333;-48,35889;gms; 749;19,09;1228
+amp1450;1180;10;co;la,ll,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,421944;-48,33500;gms; 664;19,51;1216
+amp1451;1180; 6;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,434444;-48,33222;gms; 615;19,78;1205
+amp1452;1180;10;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,434444;-48,33167;gms; 615;19,78;1205
+amp1453;1180; 4;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,411389;-48,32500;gms; 638;19,65;1210
+amp1454;1180; 3;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,419722;-48,32472;gms; 616;19,75;1211
+amp1455;1180; 3;co;ll,is,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,420278;-48,32111;gms; 616;19,75;1211
+amp1456;1180;10;co;sw,ll,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,421111;-48,31972;gms; 616;19,75;1211
+amp1457;1180;16;co;sw,ll,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,425833;-48,35250;gms; 687;19,41;1219
+amp1458;1180;14;co;sw,ll,br;as;NA;ae;ni; 3;2007; 3;2009; 24;Brazil;São Paulo;BR-SP;Angatuba;Estação Ecológica de Angatuba;-23,427778;-48,35722;gms; 687;19,41;1219
+amp1459;1181; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,836389;-49,23222;gms; 633;20,37;1244
+amp1460;1181; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,836944;-49,23444;gms; 618;20,46;1243
+amp1461;1181; 3;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,834444;-49,23750;gms; 618;20,46;1243
+amp1462;1181; 1;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,831111;-49,22889;gms; 645;20,30;1239
+amp1463;1181; 3;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,825278;-49,23917;gms; 633;20,37;1241
+amp1464;1181; 3;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,811667;-49,19917;gms; 644;20,26;1234
+amp1465;1181; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,813889;-49,23444;gms; 631;20,37;1240
+amp1466;1181; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,814167;-49,20833;gms; 631;20,33;1235
+amp1467;1181; 3;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,803611;-49,19167;gms; 639;20,28;1234
+amp1468;1181; 4;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,805000;-49,18722;gms; 633;20,33;1229
+amp1469;1181; 2;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,806389;-49,18306;gms; 612;20,45;1226
+amp1470;1181; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,785000;-49,24139;gms; 638;20,35;1248
+amp1471;1181; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,786944;-49,23444;gms; 638;20,35;1248
+amp1472;1181; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,790000;-49,24361;gms; 634;20,39;1249
+amp1473;1181; 5;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,791667;-49,23444;gms; 630;20,38;1242
+amp1474;1181; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,786944;-49,24972;gms; 634;20,39;1249
+amp1475;1181; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,782222;-49,24889;gms; 633;20,41;1246
+amp1476;1181; 9;co;la,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,827500;-49,23611;gms; 633;20,37;1241
+amp1477;1181;10;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,825000;-49,24750;gms; 611;20,47;1247
+amp1478;1181; 7;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,821389;-49,24806;gms; 611;20,49;1244
+amp1479;1181; 3;co;ll,is,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,815833;-49,24083;gms; 631;20,37;1240
+amp1480;1181; 9;co;la,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,815278;-49,24056;gms; 631;20,37;1240
+amp1481;1181;15;co;la,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,813611;-49,23611;gms; 631;20,37;1240
+amp1482;1181; 7;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,806944;-49,21083;gms; 645;20,25;1237
+amp1483;1181; 8;co;sw,ll,is,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,807500;-49,21056;gms; 645;20,25;1237
+amp1484;1181;11;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,801944;-49,19694;gms; 639;20,28;1234
+amp1485;1181;16;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,806111;-49,18222;gms; 612;20,45;1226
+amp1486;1181; 2;co;tp,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,795278;-49,22278;gms; 659;20,18;1236
+amp1487;1181; 2;co;ll,is,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,795000;-49,23444;gms; 630;20,38;1242
+amp1488;1181;13;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,788611;-49,24306;gms; 634;20,39;1249
+amp1489;1181; 6;co;sw,ll,br;as;NA;ae;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,790278;-49,25583;gms; 626;20,44;1253
+amp1490;1182; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,229444;-49,08111;gms; 566;21,38;1135
+amp1491;1182; 8;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,235556;-49,08556;gms; 512;21,64;1136
+amp1492;1182; 8;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,237500;-49,08139;gms; 527;21,58;1133
+amp1493;1182; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,232778;-49,08417;gms; 549;21,46;1138
+amp1494;1182; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,238333;-49,07917;gms; 527;21,58;1133
+amp1495;1182; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,232222;-49,08444;gms; 549;21,46;1138
+amp1496;1182; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,235278;-49,09167;gms; 508;21,65;1139
+amp1497;1182; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,238056;-49,09083;gms; 512;21,64;1136
+amp1498;1182; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,229722;-49,09806;gms; 531;21,53;1141
+amp1499;1182; 6;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,229722;-49,08944;gms; 549;21,46;1138
+amp1500;1182; 7;co;fo;NA;pt;ae;mo,da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,230833;-49,09444;gms; 531;21,53;1141
+amp1501;1182;16;co;tp,ll,br;as;NA;ae;ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,236389;-49,08667;gms; 512;21,64;1136
+amp1502;1182; 2;co;ll,is,br;as;NA;ae;ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,233056;-49,08556;gms; 549;21,46;1138
+amp1503;1182;13;co;ll,os,br;as;NA;ae;ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,238611;-49,08361;gms; 512;21,64;1136
+amp1504;1182; 7;co;ll,os,br;as;NA;ae;ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,237778;-49,08667;gms; 512;21,64;1136
+amp1505;1182;16;co;tp,ll,is,br;as;NA;ae;ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,238889;-49,09167;gms; 508;21,65;1139
+amp1506;1182; 4;co;sw,ll,br;as;NA;ae;ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Botucatu;Estação Ecológica de Bauru;-22,237500;-49,09194;gms; 508;21,65;1139
+amp1507;1183;10;ab;fo,is,os;as;pt;ae;tw,ni;12;2011;12;2012; 12;Brazil;São Paulo;BR-SP;Pedreira;NA;-22,764167;-46,87917;gms; 672;19,80;1285
+amp1508;1183; 6;ab;fo,is,os;as;pt;ae;tw,ni;12;2011;12;2012; 12;Brazil;São Paulo;BR-SP;Cosmópolis;NA;-22,662500;-47,27500;gms; 540;20,63;1251
+amp1509;1183;13;ab;fo,is,os;as;pt;ae;tw,ni;12;2011;12;2012; 12;Brazil;São Paulo;BR-SP;Jaguariúna;NA;-22,729444;-47,08611;gms; 572;20,49;1273
+amp1510;1184; 5;ab;fo,ll;qs;NA;NA;mo,da,tw; 4;2011; 2;2012; 10;Brazil;São Paulo;BR-SP;Capão Bonito;Fazenda Boa Esperança, Fazenda Santa Inês;-23,921111;-48,34861;gms; 712;18,52;1227
+amp1511;1185;13;ab;fo,ll;NA;pt;NA;mo,da,tw,ni;11;2004; 3;2005;  4;Brazil;São Paulo;BR-SP;São Luis do Paraitinga;NA;-23,218056;-45,27583;gm; 885;17,80;1494
+amp1512;1186;19;co;tp;as,tr;NA;NA;ni;12;2014; 2;2016; 14;Brazil;São Paulo;BR-SP;Santa Rita do Passa Quatro;Parque Estadual do Vassununga;-21,719167;-47,64556;gms; 560;21,67;1382
+amp1513;1186; 5;co;fo,tp;as,tr;NA;NA;ni;12;2014; 2;2016; 14;Brazil;São Paulo;BR-SP;Santa Rita do Passa Quatro;Parque Estadual do Vassununga;-21,731111;-47,58417;gms; 553;21,77;1375
+amp1514;1186; 2;co;fo,is;as,tr;NA;NA;ni;12;2014; 2;2016; 14;Brazil;São Paulo;BR-SP;Santa Rita do Passa Quatro;Parque Estadual do Vassununga;-21,649722;-47,63972;gms; 623;21,31;1395
+amp1515;1186; 4;co;fo,is;as,tr;NA;NA;ni;12;2014; 2;2016; 14;Brazil;São Paulo;BR-SP;Santa Rita do Passa Quatro;Parque Estadual do Vassununga;-21,720556;-47,59583;gms; 604;21,50;1391
+amp1516;1186; 3;co;fo;as,tr;NA;NA;ni;12;2014; 2;2016; 14;Brazil;São Paulo;BR-SP;Santa Rita do Passa Quatro;Parque Estadual do Vassununga;-21,609722;-47,62278;gms; 737;20,74;1433
+amp1517;1186; 1;co;fo;as,tr;NA;NA;ni;12;2014; 2;2016; 14;Brazil;São Paulo;BR-SP;Santa Rita do Passa Quatro;Parque Estadual do Vassununga;-21,724722;-47,59500;gms; 604;21,50;1391
+amp1518;1187;26;co;fo,tp,pp,la,sw;as;NA;NA;NA; 1;1996; 4;1998; 27;Brazil;São Paulo;BR-SP;Guararapes;NA;-21,266667;-50,61667;gm; 416;22,07;1188
+amp1519;1188;47;co;sp,pp,la,sw;sb;NA;NA;da,ni; 4;1990; 3;1991; 11;Brazil;São Paulo;BR-SP;Ribeirão Grande;Parque Estadual Intervales;-24,265278;-48,40694;gm; 900;17,25;1424
+amp1520;1189;28;co;sp,la,sw,is;sb;NA;NA;da,ni; 9;1993; 9;1994; 12;Brazil;São Paulo;BR-SP;Salesópolis;Estação Biológica de Boracéia;-23,633333;-45,86667;gm; 970;16,66;2016
+amp1521;1190;12;co;sp,pp,la,is;as;NA;NA;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,193333;-47,92861;gms;  99;22,00;1460
+amp1522;1190;11;co;sp,pp,la,is;as;NA;NA;tw,ni;11;2006;10;2007; 11;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,203611;-47,93222;gms;  89;22,09;1464
+amp1523;1190; 8;co;sp,pp,la,is;as;NA;NA;tw,ni;11;2006;10;2007; 11;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,202222;-47,94167;gms;  53;22,30;1458
+amp1524;1190; 9;co;sp,pp,la,is;as;NA;NA;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,205833;-47,95444;gms; 114;21,94;1454
+amp1525;1190; 9;co;sp,pp,la,is;as;NA;NA;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,193611;-47,91972;gms; 138;21,78;1466
+amp1526;1190; 5;co;sp,pp,la,is;as;NA;NA;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,193056;-47,91972;gms; 138;21,78;1466
+amp1527;1190; 4;co;sp,pp,la,is;as;NA;NA;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,194167;-47,93194;gms;  99;22,00;1460
+amp1528;1190; 9;co;fo,is;tr;NA;NA;mo,da;10;2005; 9;2006; 11;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,166667;-47,91972;gm; 543;19,22;1507
+amp1529;1191;28;co;fo,tp,sp,pp,la,sw,ll,os;as;pt;ae;mo,da,tw,ni; 9;1998; 3;2002; 42;Brazil;São Paulo;BR-SP;Itirapina;Estação Ecológica de Itirapina;-22,225556;-47,90389;gm; 723;19,91;1347
+amp1530;1192;20;co;fo,tp;as;pt;NA;mo,da,tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Bauru;Estação Ecológica de Bauru;-22,237500;-49,09250;gms; 508;21,65;1139
+amp1531;1192;20;co;fo,la;as;pt;NA;mo,da,tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Garça;Fazenda Igure;-22,259167;-49,63361;gms; 667;20,05;1285
+amp1532;1192;21;co;fo,la;as;pt;NA;mo,da,tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Lupércio;Fazenda Santa Heloisa;-22,377500;-49,79778;gms; 647;20,07;1278
+amp1533;1192;12;co;eu,la;as;pt;NA;mo,da,tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Arealva;NA;-22,187778;-48,96972;gms; 533;21,42;1117
+amp1534;1192;18;co;eu,la;as;pt;NA;mo,da,tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Avaí;Fazenda Sossego;-22,238889;-49,27944;gms; 523;21,32;1177
+amp1535;1192;15;co;eu,la;as;pt;NA;mo,da,tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Paulistânia;Fazenda Santa Izabel;-22,518333;-49,22278;gms; 559;20,99;1209
+amp1536;1193;14;co;sp,sw,os;as,sb;NA;ae;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,413550;-49,68361;gms; 558;20,52;1275
+amp1537;1193;13;co;sp;as,sb;NA;ae;tw,ni;11;2005;10;2007; 23;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,388292;-49,67538;gms; 674;19,91;1289
+amp1538;1193;16;co;sp;as,sb;NA;ae;tw,ni;11;2005;10;2007; 23;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,380373;-49,67234;gms; 673;19,96;1295
+amp1539;1193;12;co;sp,sw;as,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,411455;-49,69365;gms; 546;20,57;1270
+amp1540;1193; 7;co;tp,sw;as,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,411024;-49,69395;gms; 546;20,57;1270
+amp1541;1193; 9;co;is;as,tr,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,411891;-49,69388;gms; 546;20,57;1270
+amp1542;1193; 9;co;is;as,tr,sb;NA;ae;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,391311;-49,69235;gms; 641;20,04;1290
+amp1543;1193;16;co;sp;as,sb;NA;ae;tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Alvinlândia;Estação Ecológica dos Caetetus;-22,418266;-49,71771;gms; 573;20,43;1274
+amp1544;1193; 8;co;tp;as,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,410786;-49,69361;gms; 546;20,57;1270
+amp1545;1193; 7;co;tp;as,tr,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,410734;-49,69384;gms; 546;20,57;1270
+amp1546;1193; 8;co;tp;as,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,410861;-49,69389;gms; 546;20,57;1270
+amp1547;1193;11;co;tp;as,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,379222;-49,67968;gms; 675;19,93;1296
+amp1548;1193;17;co;pp;as,sb;NA;ae;tw,ni; 9;2005;10;2007; 25;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,378825;-49,67969;gms; 675;19,93;1296
+amp1549;1193; 7;co;la;as,sb;NA;ae;tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Gália;Estação Ecológica dos Caetetus;-22,402779;-49,67555;gms; 599;20,32;1283
+amp1550;1193;15;co;la;as,sb;NA;ae;tw,ni;10;2008; 6;2009;  8;Brazil;São Paulo;BR-SP;Alvinlândia;Estação Ecológica dos Caetetus;-22,387778;-49,72583;gms; 659;19,98;1296
+amp1551;1194;17;co;fo,ll;NA;pt;NA;mo,da,tw,ni;11;2005; 1;2007; 14;Brazil;São Paulo;BR-SP;Piedade;Parque Estadual de Jurupará;-23,947778;-47,39556;gms; 712;18,00;1745
+amp1552;1194;18;co;fo,ll;NA;pt;NA;mo,da,tw,ni; 1;2002;12;2002; 11;Brazil;São Paulo;BR-SP;Cotia;Reserva do Morro Grande;-23,715000;-46,94556;gms; 926;16,95;1572
+amp1553;1194;15;co;fo,ll;NA;pt;NA;mo,da,tw,ni;11;2005; 2;2007; 15;Brazil;São Paulo;BR-SP;Ribeirão Grande;Fazenda Paraíso;-24,230000;-48,37722;gms; 854;17,51;1395
+amp1554;1194;20;co;fo,ll;NA;pt;NA;mo,da,tw,ni;11;2005; 2;2007; 15;Brazil;São Paulo;BR-SP;Piedade;Piedade;-23,888889;-47,45972;gms; 951;17,01;1746
+amp1555;1194;19;co;fo,ll;NA;pt;NA;mo,da,tw,ni; 1;2002;12;2002; 11;Brazil;São Paulo;BR-SP;Ibiuna;Ibiuna;-23,715278;-47,07250;gms; 915;17,07;1539
+amp1556;1194;18;co;fo,ll;NA;pt;NA;mo,da,tw,ni;11;2005; 2;2007; 15;Brazil;São Paulo;BR-SP;Ribeirão Grande;Ribeirão Grande;-24,087222;-48,34806;gms; 707;18,62;1280
+amp1557;1102;29;co;fo,sw,ll,is,br;as;NA;NA;da,tw,ni; 1;2015; 3;2015;  2;Brazil;São Paulo;BR-SP;Pedro de Toledo;Estação Ecológica de Juréia-Itatins;-24,333333;-47,25000;NA; 416;19,82;2022
+amp1558;1102;35;co;fo,sw,ll,is,br;as;NA;NA;da,tw,ni; 1;2015; 3;2015;  2;Brazil;São Paulo;BR-SP;Caraguatatuba;Parque Estadual da Serra do Mar - Núcleo Caraguatatuba;-23,591389;-45,42833;NA; 169;21,30;2246
+amp1559;1195;25;co;NA;as;pt;NA;mo,da,tw,ni; 9;2005; 7;2006; 10;Brazil;São Paulo;BR-SP;Santa Isabel;Residencial Reserva Ibirapitanga;-23,296667;-46,29056;gms; 695;18,69;1398
+amp1560;1196;14;co;fo,la,sw,is;as;pt;NA;mo,da,tw,ni; 1;2010; 7;2013; 42;Brazil;São Paulo;BR-SP;Sorocaba;NA;-23,375556;-47,47083;utm; 601;19,33;1228
+amp1561;1197; 4;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,261111;-46,92806;gms; 967;17,51;1361
+amp1562;1197;12;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,245000;-46,93667;gms;1140;16,68;1411
+amp1563;1197;12;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,236389;-46,94583;gms;1113;16,84;1394
+amp1564;1197;12;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,238056;-46,94083;gms;1105;16,92;1394
+amp1565;1197; 9;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,249167;-46,93972;gms;1140;16,68;1411
+amp1566;1197;11;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,249722;-46,94361;gms;1129;16,70;1405
+amp1567;1197; 4;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,239444;-46,92639;gms;1051;17,22;1370
+amp1568;1197; 8;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,257778;-46,93583;gms;1089;16,88;1399
+amp1569;1197; 8;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,233889;-46,93250;gms;1051;17,22;1370
+amp1570;1197; 5;ab;la;as,sb;NA;NA;ni;11;2014; 3;2015;  4;Brazil;São Paulo;BR-SP;Jundiaí;Reserva Municipal da Serra do Japi;-23,247222;-46,91167;gms; 908;17,97;1343
+amp1571;1198;17;co;NA;as;pt,ft;tp;mo,da,tw,ni; 7;2005; 6;2006; 11;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Ilha Anchieta;-23,539444;-45,05778;gm; 219;21,04;2506
+amp1572;1199;14;co;NA;as;pt;NA;mo,da,tw,ni; 2;2008;10;2009; 20;Brazil;São Paulo;BR-SP;Ubatuba;Boqueirão;-23,501389;-45,07833;NA;  68;21,82;2474
+amp1573;1199;18;co;NA;as;pt;tp;mo,da,tw,ni; 2;2008;10;2009; 20;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Ilha Anchieta;-23,539444;-45,05778;NA; 219;21,04;2506
+amp1574;1200;48;co;fo,ll,is;as;pt;ae,tp;mo,da,tw,ni;10;2005; 1;2007; 15;Brazil;São Paulo;BR-SP;Tapiraí;Parque Estadual do Jurupará;-23,920278;-47,47500;gm; 897;17,24;1808
+amp1575;1201;21;ab;NA;as;NA;NA;tw,ni;10;2009; 8;2010; 10;Brazil;São Paulo;BR-SP;Luiz Antônio;Estação Ecológica de Jataí;-21,617500;-47,76528;gm; 556;21,69;1375
+amp1576;1202;29;co;tp,pp,la,sw,is,os;as;NA;NA;tw,ni;12;2008;12;2009; 12;Brazil;São Paulo;BR-SP;Anhembi;Sítio Recanto Paraíso;-22,920833;-48,20833;gms; 515;20,73;1233
+amp1577;1203;23;ab;fo,ll;qs;NA;NA;tw,ni; 5;2012;10;2013; 17;Brazil;São Paulo;BR-SP;Salesópolis;Estação Biológica de Boracéia;-23,633333;-45,86667;gm; 970;16,66;2016
+amp1578;1204; 5;ab;fo,ll,is,br;as,tr;pt,ar;NA;mo,da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,380833;-49,25083;NA; 468;23,35;1267
+amp1579;1204; 7;ab;fo,ll,br;as,tr;ar;NA;mo,da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,376944;-49,27306;NA; 449;23,44;1257
+amp1580;1204; 6;ab;fo,ll,br;as,tr;pt,ar;NA;mo,da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,369722;-49,19444;NA; 455;23,53;1272
+amp1581;1204; 9;ab;fo,ll,br;as,tr;pt,ar;NA;mo,da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,366667;-49,20194;NA; 464;23,50;1270
+amp1582;1204; 2;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,379167;-49,25000;gms; 492;23,22;1270
+amp1583;1204; 5;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,372500;-49,27000;gms; 473;23,33;1267
+amp1584;1204; 6;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,368889;-49,19306;gms; 455;23,53;1272
+amp1585;1204;11;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,379167;-49,25167;gms; 468;23,35;1267
+amp1586;1204;10;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,378611;-49,25111;gms; 468;23,35;1267
+amp1587;1204;13;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,381389;-49,25167;gms; 468;23,35;1267
+amp1588;1204;14;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,375000;-49,27556;gms; 447;23,46;1252
+amp1589;1204;14;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,358333;-49,19333;gms; 451;23,54;1280
+amp1590;1204;14;ab;sw;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,363333;-49,19861;gms; 446;23,57;1271
+amp1591;1204;11;ab;pp;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,379444;-49,25056;gms; 468;23,35;1267
+amp1592;1204;12;ab;pp;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,366944;-49,20194;gms; 464;23,50;1270
+amp1593;1204;11;ab;tp;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,368611;-49,19278;gms; 455;23,53;1272
+amp1594;1204;17;ab;pp;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,355000;-49,27556;gms; 444;23,49;1249
+amp1595;1204;13;ab;pp;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,362778;-49,23639;gms; 460;23,43;1267
+amp1596;1204;17;ab;tp;as,sb;NA;NA;da,tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,356111;-49,20000;gms; 453;23,55;1280
+amp1597;1205; 4;ab;NA;NA;pt;NA;mo,da,tw,ni;12;2004; 5;2005;  5;Brazil;São Paulo;BR-SP;Jaboticabal;Fazenda de Estudo, Pesquisa, Produção, Faculdade de Ciências Agrárias, Veterinárias;-21,250000;-48,30000;gm; 567;22,11;1349
+amp1598;1206;13;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Macaubal;NA;-20,741800;-49,93470;dd; 486;22,56;1209
+amp1599;1206; 6;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Macaubal;NA;-20,740800;-49,93760;dd; 511;22,44;1212
+amp1600;1206;13;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Macaubal;NA;-20,740700;-49,93550;dd; 511;22,44;1212
+amp1601;1206;17;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Magda;NA;-20,616700;-50,20700;dd; 497;22,37;1200
+amp1602;1206;16;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Magda;NA;-20,554300;-50,21230;dd; 444;22,64;1196
+amp1603;1206;13;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Magda;NA;-20,557500;-50,22850;dd; 426;22,72;1191
+amp1604;1206; 7;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Magda;NA;-20,587800;-50,21440;dd; 480;22,47;1196
+amp1605;1206;13;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Matão;NA;-21,595900;-48,51660;dd; 588;21,42;1300
+amp1606;1206; 5;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Matão;NA;-21,590500;-48,49890;dd; 579;21,50;1308
+amp1607;1206;14;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Onda Verde;NA;-20,619800;-49,26520;dd; 545;22,77;1285
+amp1608;1206; 5;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Onda Verde;NA;-20,614800;-49,28430;dd; 549;22,75;1290
+amp1609;1206; 7;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Onda Verde;NA;-20,606100;-49,30670;dd; 539;22,80;1289
+amp1610;1206;13;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Palestina;NA;-20,252700;-49,54490;dd; 479;23,24;1216
+amp1611;1206;16;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Palestina;NA;-20,256600;-49,54050;dd; 481;23,23;1219
+amp1612;1206; 9;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Palestina;NA;-20,272300;-49,48480;dd; 459;23,36;1228
+amp1613;1206; 5;ab;tp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Pindorama;NA;-21,226400;-48,92260;dd; 567;22,09;1251
+amp1614;1206;10;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Pindorama;NA;-21,231700;-48,91770;dd; 567;22,09;1251
+amp1615;1206;10;ab;pp;as;NA;NA;ni;10;2008; 3;2009;  5;Brazil;São Paulo;BR-SP;Pindorama;NA;-21,229700;-48,91280;dd; 579;22,02;1252
+amp1616;1207; 3;co;tp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,366389;-49,25667;dd; 491;23,23;1268
+amp1617;1207;17;co;tp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,356111;-49,20194;dd; 453;23,55;1280
+amp1618;1207;10;co;tp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,355000;-49,20389;dd; 453;23,55;1280
+amp1619;1207; 3;co;tp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,356667;-49,20194;dd; 453;23,55;1280
+amp1620;1207; 7;co;tp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,368611;-49,20056;dd; 464;23,50;1270
+amp1621;1207;12;co;pp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,363889;-49,23833;dd; 460;23,43;1267
+amp1622;1207;10;co;pp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,375000;-49,27556;dd; 447;23,46;1252
+amp1623;1207;17;co;pp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,355000;-49,20472;dd; 453;23,55;1280
+amp1624;1207;15;co;pp;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,363889;-49,19389;dd; 446;23,57;1271
+amp1625;1207;11;co;sw;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,362778;-49,23639;dd; 460;23,43;1267
+amp1626;1207;12;co;sw;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,358333;-49,19861;dd; 451;23,54;1280
+amp1627;1207;10;co;sw;as;NA;NA;tw,ni;11;2004; 8;2005;  9;Brazil;São Paulo;BR-SP;Icém;NA;-20,363333;-49,19333;dd; 446;23,57;1271
+amp1628;1208;34;co;fo,pp,ll,is,br;as,sb;NA;NA;da,tw,ni;12;2014; 2;2017; 26;Brazil;São Paulo;BR-SP;São Paulo;Parque Estadual da Serra do Mar - Núcleo Curucutu;-23,986944;-46,74278;gms; 804;17,40;2348
+amp1629;1208;43;co;fo,pp,ll,is,br;as,sb;NA;NA;da,tw,ni;12;2014; 2;2017; 26;Brazil;São Paulo;BR-SP;São Sebastião;Parque Estadual da Serra do Mar - Núcleo São Sebastião;-23,718889;-45,71917;gms; 107;21,60;2559
+amp1630;1208;42;co;fo,pp,ll,is,br;as,sb;NA;NA;da,tw,ni;12;2014; 2;2017; 26;Brazil;São Paulo;BR-SP;São Luís do Paraitinga;Parque Estadual da Serra do Mar - Núcleo Santa Virgínia;-23,337222;-45,13528;gms; 984;16,83;1761
+amp1631;1209;15;ab;fo,pp,la,sw;as,sb;pt;ae,rr;mo,da,tw,ni; 3;2010;12;2010;  9;Brazil;São Paulo;BR-SP;Limeira;NA;-22,653333;-47,27472;utm; 557;20,55;1252
+amp1632;1209; 5;ab;fo,pp,la,sw;as,sb;pt;ae,rr;mo,da,tw,ni; 3;2010;12;2010;  9;Brazil;São Paulo;BR-SP;Jaguariúna;NA;-22,715833;-47,08778;utm; 610;20,29;1270
+amp1633;1209;13;ab;fo,pp,la,sw;as,sb;pt;ae,rr;mo,da,tw,ni; 3;2010;12;2010;  9;Brazil;São Paulo;BR-SP;Araras;NA;-22,274722;-47,18833;utm; 583;20,87;1301
+amp1634;1209;11;ab;fo,pp,la,sw;as,sb;pt;ae,rr;mo,da,tw,ni; 3;2010;12;2010;  9;Brazil;São Paulo;BR-SP;Artur Nogueira;NA;-22,573333;-47,10250;utm; 584;20,39;1279
+amp1635;1209; 5;ab;fo,pp,la,sw;as,sb;pt;ae,rr;mo,da,tw,ni; 3;2010;12;2010;  9;Brazil;São Paulo;BR-SP;Conchal;NA;-22,423333;-47,14556;utm; 657;20,28;1300
+amp1636;1209;10;ab;fo,pp,la,sw;as,sb;pt;ae,rr;mo,da,tw,ni; 3;2010;12;2010;  9;Brazil;São Paulo;BR-SP;Engenheiro Coelho;NA;-22,480833;-47,10028;utm; 694;20,02;1299
+amp1637;1210;25;ab;fo,tp,la,sw,ll,is,br;as;pt;tp;mo,da,tw,ni; 6;2005; 1;2008; 31;Brazil;São Paulo;BR-SP;Eldorado;Parque Estadual de Jacupiranga - Núcleo Caverna do Diabo;-24,638056;-48,40167;gms; 543;19,57;1546
+amp1638;1210;26;ab;fo,tp,la,sw,ll,is,br;as;pt;tp;mo,da,tw,ni; 6;2005; 1;2008; 31;Brazil;São Paulo;BR-SP;Barra do Turvo;Parque Estadual de Jacupiranga - Núcleo Cedro;-24,967500;-48,42639;NA; 790;17,84;1680
+amp1639;1211; 5;ab;is;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,761111;-49,16083;gms; 623;19,67;1214
+amp1640;1211; 7;ab;is;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,746389;-46,16361;gms; 746;17,85;2466
+amp1641;1211; 8;ab;is;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,742778;-46,14750;gms; 803;17,56;2440
+amp1642;1211;10;ab;pp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,734167;-46,18056;gms; 844;17,30;2388
+amp1643;1211;11;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,740556;-46,14306;gms; 742;17,88;2421
+amp1644;1211;11;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,756667;-46,14306;gms; 785;17,65;2487
+amp1645;1211; 9;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,750833;-46,16417;gms; 771;17,72;2499
+amp1646;1211; 9;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,743889;-46,14917;gms; 803;17,56;2440
+amp1647;1211; 7;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,740278;-46,14306;gms; 742;17,88;2421
+amp1648;1211; 9;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,742778;-46,14806;gms; 803;17,56;2440
+amp1649;1211;11;ab;tp;as;NA;NA;NA; 3;2006; 3;2007; 12;Brazil;São Paulo;BR-SP;Bertioga;Parque das Neblinas;-23,743611;-46,14917;gms; 803;17,56;2440
+amp1650;1212;27;co;fo,ll;as;pt;NA;NA; 1;2002; 1;2003; 12;Brazil;São Paulo;BR-SP;Cotia;Reserva Florestal de Morro Grande;-23,726667;-46,99639;NA; 956;16,79;1585
+amp1651;1213;21;co;fo,ll;as;pt;NA;NA; 1;2002; 1;2004; 24;Brazil;São Paulo;BR-SP;Ibiúna;Planalto de Ibiúna;-23,713889;-47,08222;NA; 914;17,07;1538
+amp1652;1214;17;co;tp,la,sw;as;NA;NA;da,tw,ni; 7;2010; 6;2011; 11;Brazil;São Paulo;BR-SP;Botucatu;Represa do Ribeirão Lavapés;-22,923056;-48,45778;gms; 844;19,02;1325
+amp1653;1215;32;co;fo,la,is;as,sb;NA;NA;da,tw,ni; 8;2005; 9;2006; 13;Brazil;São Paulo;BR-SP;São Miguel Arcanjo;Parque Estadual Carlos Botelho;-24,050000;-47,98333;gm; 787;17,65;1379
+amp1654;1215;28;co;tp,la,is;as,sb;pt;NA;mo,da,tw,ni; 8;2005; 9;2006; 13;Brazil;São Paulo;BR-SP;São Miguel Arcanjo;Parque Estadual Carlos Botelho;-24,050000;-47,93333;gm; 780;17,63;1433
+amp1655;1215;11;co;fo,is;as,sb;NA;NA;da,tw,ni; 8;2005; 9;2006; 13;Brazil;São Paulo;BR-SP;São Miguel Arcanjo;Parque Estadual Carlos Botelho;-24,016667;-47,91667;gm; 796;17,60;1414
+amp1656;1215;30;co;fo,sw,is;as,sb;NA;NA;da,tw,ni; 8;2005; 9;2006; 13;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,116667;-47,98333;gm; 777;17,65;1449
+amp1657;1215;13;co;fo,tp,la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2005; 9;2006; 13;Brazil;São Paulo;BR-SP;Capão Bonito;Parque Estadual Carlos Botelho;-24,100000;-48,03333;gm; 832;17,40;1421
+amp1658;1215;19;co;fo,la,is;as,sb;NA;NA;da,tw,ni; 8;2005; 9;2006; 13;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,200000;-47,95000;gm; 114;21,94;1454
+amp1659;1216;20;co;la;as;NA;NA;ni; 9;2004; 2;2006; 17;Brazil;São Paulo;BR-SP;São Miguel Arcanjo;Lagoa da Sede da Reserva Particular Parque do Zizo;-24,015000;-47,81278;NA; 710;18,05;1510
+amp1660;1217;21;co;la,sw;as;NA;NA;NA;10;2010; 2;2011;  4;Brazil;São Paulo;BR-SP;Salesópolis;Estação Biológica de Boracéia;-23,645833;-45,86056;utm; 884;17,10;2073
+amp1661;1217; 9;co;pp,la;as;NA;NA;NA;10;2010; 2;2011;  4;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,070833;-47,92361;utm;   9;22,35;2188
+amp1662;1217;17;co;la,sw;as;NA;NA;NA;10;2010; 2;2011;  4;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Turístico do Alto Ribeira;-24,516667;-48,68333;gm; 614;19,19;1397
+amp1663;1217;12;co;fo,la;as;NA;NA;NA;10;2010; 2;2011;  4;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,360000;-44,85000;utm;   5;NA;NA
+amp1664;1217; 9;co;pp,sw;as;NA;NA;NA;10;2010; 2;2011;  4;Brazil;São Paulo;BR-SP;Iguape;Estação Ecológica Juréia-Itatins;-24,390278;-47,07306;utm;  12;22,19;2035
+amp1665;1217;16;co;pp,sw;as;NA;NA;NA;10;2010; 2;2011;  4;Brazil;São Paulo;BR-SP;Iporanga;Parque Estadual Intervales;-24,274167;-48,41556;utm; 847;17,54;1405
+amp1666;1218;32;co;fo,pp,la,is;as,tr;pt;ae;mo,da,tw,ni; 1;2009; 6;2009;  5;Brazil;São Paulo;BR-SP;Mogi das Cruzes;Parque Natural Municipal Francisco Affonso de Mello;-23,492778;-46,21444;NA; 814;18,00;1493
+amp1667;1219;46;co;fo,pp,sw,ll,is,br;as;NA;NA;NA; 5;2008; 1;2011; 32;Brazil;São Paulo;BR-SP;São José do Barreiro;Parque Nacional da Serra da Bocaina;-22,734444;-44,61556;NA;1547;14,53;1744
+amp1668;1220; 5;co;ll;qs;NA;NA;mo,da; 7;1995; 8;1995;  1;Brazil;São Paulo;BR-SP;Cabreúva;Serra do Japi;-23,283333;-47,00000;gm;1069;16,96;1383
+amp1669;1221;21;co;ll;qs;NA;NA;mo,da;12;1995; 6;1996;  6;Brazil;São Paulo;BR-SP;Ubatuba;NA;-23,411944;-45,07528;gm; 353;20,75;2511
+amp1670;1222;16;co;ll,is;qs;NA;NA;mo,da; 5;1994; 2;1995;  9;Brazil;São Paulo;BR-SP;Atibaia;Parque Florestal do Itapetinga;-23,205000;-46,49972;gm;1170;16,20;1503
+amp1671;1223;50;ab;fo,pp,la,sw,ll,is,br;as;pt;NA;mo,da,tw,ni; 1;2003;12;2006; 47;Brazil;São Paulo;BR-SP;São Luís do Paraitinga;Parque Estadual da Serra do Mar - Núcleo Santa Virgínia;-23,333333;-45,10000;gm; 997;16,78;1769
+amp1672;1224;17;ab;tp,la,is;as;NA;NA;NA;12;2006; 2;2008; 14;Brazil;São Paulo;BR-SP;Pindamonhangaba;Parque Estadual de Campos do Jordão;-22,750000;-45,50000;gm;1523;14,15;1794
+amp1673;1225;26;co;fo,tp,ll,is,br;as;pt;NA;mo,da,tw,ni; 1;2005; 1;2005;  0;Brazil;São Paulo;BR-SP;Santana de Parnaíba;Reserva Biológica Tamboré;-23,465833;-46,83722;gms; 828;18,23;1378
+amp1674;1226;40;co;NA;as;NA;NA;NA; 5;1987; 8;1990; 39;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,133333;-47,99167;gm; 823;17,43;1476
+amp1675;1227;54;co;NA;NA;NA;NA;NA;NA;1997;NA;1998;NA;Brazil;São Paulo;BR-SP;Sete Barras;Parque Estadual Carlos Botelho;-24,200000;-48,05833;gm; 245;21,17;1409
+amp1676;1228;24;co;pp,la,ll,is;as;NA;tp;da,tw,ni; 3;1988; 2;1989; 11;Brazil;São Paulo;BR-SP;Jundiaí;Serra do Japi;-23,226944;-46,96667;gm; 971;17,67;1327
+amp1677;1229;40;co;fo,tp,sp,la,is,re;as;NA;NA;mo,da,tw,ni; 1;2000;11;2002; 34;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,383333;-44,83333;gm; 191;21,52;2492
+amp1678;1230;65;co;fo,tp,pp,la,ll,is,br;as;NA;NA;NA;NA;1940;NA;1990;NA;Brazil;São Paulo;BR-SP;Salesópolis;Estação Biológica de Boracéia;-23,633333;-45,86667;gm; 970;16,66;2016
+amp1679;1231; 7;co;tp,pp,sw,is;as;NA;NA;mo,da; 9;2011; 3;2012;  6;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,360000;-44,84778;gms;   5;NA;NA
+amp1680;1232;32;co;fo,tp,pp,ll,is,os,br;as;pt;NA;mo,da,tw,ni;10;2008; 8;2010; 22;Brazil;São Paulo;BR-SP;Piquete;Pico dos Marins;-22,508611;-45,14917;gms;1457;15,36;1721
+amp1681;1233;15;co;tp;as;NA;NA;tw,ni;10;1990; 8;1991; 10;Brazil;São Paulo;BR-SP;Corumbataí;Sítio Santa Amélia;-22,234444;-47,61139;gm; 584;20,88;1320
+amp1682;1234;31;co;fo,la,ll;as;pt;NA;mo,da,tw,ni; 8;2007; 7;2009; 23;Brazil;São Paulo;BR-SP;Angatuba;Fazenda Três Lagoas, na Fazenda Arca;-23,328611;-48,44167;gms; 618;19,92;1225
+amp1683;1235;21;co;fo,tp,pp;as,sb,tr;NA;NA;NA;10;2011; 5;2012;  7;Brazil;São Paulo;BR-SP;Bertioga;Bertioga, São Sebastião;-23,756667;-45,92472;gms;  18;22,24;2909
+amp1684;1235;29;co;fo,tp,pp;as,sb,tr;NA;NA;NA;10;2011; 5;2012;  7;Brazil;São Paulo;BR-SP;Itanhaém;Santos, Itanhaém;-24,200000;-46,91278;gms;  21;22,48;2028
+amp1685;1235;19;co;fo,tp,pp;as,sb,tr;NA;NA;NA;10;2011; 5;2012;  7;Brazil;São Paulo;BR-SP;Iguape;Cananéia, Iguape;-24,613333;-47,35111;gms;  14;21,96;2009
+amp1686;1235;24;co;fo,tp,pp;as,sb,tr;NA;NA;NA;10;2011; 5;2012;  7;Brazil;São Paulo;BR-SP;Ubatuba;Ubatuba;-23,357500;-44,84750;gms;  10;22,47;2546
+amp1687;1236;26;co;fo,sp,la,sw,ll,is;as;pt;NA;mo,da,tw,ni;10;2006; 9;2010; 47;Brazil;São Paulo;BR-SP;Botucatu;Escola do Meio Ambiente;-22,923056;-48,45778;gms; 844;19,02;1325
+amp1688;1237;27;ab;eu,sp,sw;as,sb;NA;NA;ni; 1;2008;12;2009; 23;Brazil;São Paulo;BR-SP;Borebi;Fazenda Rio Pardo;-22,803611;-49,00500;gms; 656;20,15;1206
+amp1689;1238;24;ab;eu,la,is;as,sb;NA;NA;ni; 1;2008;12;2009; 23;Brazil;São Paulo;BR-SP;Lençóis Paulista;Reserva Particular do Patrimônio Natural Olavo Egydio Setúbal;-22,778333;-48,95250;gms; 655;20,12;1216
+amp1690;1239;29;ab;eu,sw,is;as,sb;NA;NA;ni; 9;2011; 5;2013; 20;Brazil;São Paulo;BR-SP;Avaré;Fazenda Rio Pardo II;-22,836944;-48,98194;gms; 640;20,27;1212
+amp1691;1239;17;ab;eu,sp,is;as,sb;NA;NA;ni;10;2011; 4;2013; 18;Brazil;São Paulo;BR-SP;Lençóis Paulista;Fazenda Rio Claro;-22,776667;-48,89806;gms; 649;20,17;1221
+amp1692;1239;19;ab;la;as,sb;NA;NA;ni;10;2011; 4;2013; 18;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,813889;-49,23639;gms; 631;20,37;1240
+amp1693;1240;20;ab;eu,tp,la;as,sb;NA;NA;ni; 5;2012; 4;2013; 11;Brazil;São Paulo;BR-SP;Agudos;Fazenda Monte Alegre;-22,431667;-48,86639;gms; 554;20,85;1174
+amp1694;1240;22;ab;tp,pp,sw;as,sb;NA;NA;ni; 5;2012; 4;2013; 11;Brazil;São Paulo;BR-SP;Jaú;Fazenda Santo Antônio;-22,266389;-48,44444;gms; 706;19,97;1299
+amp1695;1241;66;ab;fo,tp,la,sw,ll,is,br;as;pt;ae;mo,da,tw,ni; 2;2005; 2;2011; 72;Brazil;São Paulo;BR-SP;Itanhaém;Parque Estadual da Serra do Mar - Núcleo Curucutu;-23,991111;-46,78917;NA; 738;17,72;2298
+amp1696;1242;25;co;fo,la,sw,is;as;pt;ae;mo,da,tw,ni; 1;2009; 6;2009;  5;Brazil;São Paulo;BR-SP;Mogi das Cruzes;Reserva Legal da Pedreira Itapeti;-23,493333;-46,25333;NA; 800;18,08;1481
+amp1697;1243;21;co;fo,tp,la;as;pt;NA;mo,da,tw,ni; 3;2013; 1;2014; 10;Brazil;São Paulo;BR-SP;Miguelópolis;Represa Volta Grande;-20,160000;-48,12722;utm; 509;22,81;1448
+amp1698;1244;14;co;pp;as;NA;NA;tw,ni;10;1996; 2;1998; 16;Brazil;São Paulo;BR-SP;Botucatu;Distrito de Rubião Júnior;-22,896667;-48,48722;gm; 878;18,85;1326
+amp1699;1245;17;co;fo,tp,ll,is;as;NA;ae,tp;mo,da,tw,ni; 9;2008; 8;2009; 11;Brazil;São Paulo;BR-SP;Sorocaba;Parque Municipal Mário Covas;-23,421111;-47,36444;gms; 584;19,42;1258
+amp1700;1246;19;ab;la;as;NA;ae;tw,ni; 8;1999; 7;2000; 11;Brazil;São Paulo;BR-SP;São Miguel Arcanjo;Parque Estadual Carlos Botelho;-24,060833;-47,98861;gm; 788;17,65;1382
+amp1701;1247;20;co;tp,pp,re;as;NA;NA;tw,ni; 2;1993;12;1993; 10;Brazil;São Paulo;BR-SP;Peruíbe;Estação Ecológica Juréia-Itatins;-24,390000;-47,01278;gms;  21;NA;NA
+amp1702;1248;23;ab;tp,sp,is;as,sb;NA;NA;NA; 7;2005; 3;2007; 20;Brazil;São Paulo;BR-SP;Vitória Brasil;NA;-20,202778;-50,49750;gms; 482;22,41;1182
+amp1703;1248;23;ab;tp,sp,pp;as,sb;NA;NA;NA; 7;2005; 3;2007; 20;Brazil;São Paulo;BR-SP;Palestina;NA;-20,358056;-49,28194;gms; 444;23,49;1249
+amp1704;1248;29;ab;pp,is;as,sb;NA;NA;NA; 7;2005; 3;2007; 20;Brazil;São Paulo;BR-SP;Atibaia;NA;-23,182500;-46,52361;gms;1293;15,73;1541
+amp1705;1249;11;co;pp,is;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;Parque Ecológico do Baguaçú;-21,219444;-50,42944;dd; 357;22,56;1236
+amp1706;1249; 6;co;pp;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;Lagoa do Miguelão;-21,187500;-50,44806;dd; 400;22,35;1241
+amp1707;1249; 5;co;pp;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;Lagoa das Flores;-21,207778;-50,46000;dd; 411;22,20;1252
+amp1708;1249; 9;co;pp;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;Lagoa da Unesp;-21,183611;-50,43472;dd; 387;22,43;1230
+amp1709;1249;10;co;pp;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;Chácara Ariane;-21,237222;-50,41056;dd; 394;22,31;1199
+amp1710;1249; 2;co;pp;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;Rancho Calamar;-21,229167;-50,41167;dd; 391;22,36;1210
+amp1711;1249;20;co;pp;as;NA;NA;ni;11;2011; 4;2012;  5;Brazil;São Paulo;BR-SP;Araçatuba;NA;-21,235556;-50,38444;dd; 397;22,24;1191
+amp1712;1250;45;co;fo,ll;NA;pt;NA;mo,da,tw,ni; 2;2000; 1;2001; 11;Brazil;São Paulo;BR-SP;Pilar do Sul;Fazenda João XXIII;-23,904167;-47,69167;gms; 796;17,61;1473
+amp1713;1251;15;co;tp,la;as;NA;NA;da,tw,ni; 9;2006; 8;2008; 23;Brazil;São Paulo;BR-SP;Palestina;NA;-20,390000;-49,43306;gms; 539;22,95;1247
+amp1714;1252;12;ab;fo;NA;pt;NA;mo,da,tw,ni;10;2009; 9;2010; 11;Brazil;São Paulo;BR-SP;Luiz Antônio;Estação Ecológica de Jataí;-21,611944;-47,78972;gm; 565;21,60;1370
+amp1715;1253;33;ab;la,is;as;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;São Paulo;BR-SP;Salesópolis;Parque Estadual Carlos Botelho;-23,646667;-45,86056;gm; 884;17,10;2073
+amp1716;1254;10;co;fo,ll,re;qs;NA;NA;da,tw,ni;10;2007; 3;2008;  5;Brazil;São Paulo;BR-SP;Cananéia;Ilha do Cardoso;-25,091667;-47,92833;gm;  26;22,23;2242
+amp1717;1255;31;co;fo,tp,pp,is,re;as;NA;NA;da,tw,ni; 9;1989; 6;1990;  9;Brazil;São Paulo;BR-SP;Peruíbe;Estação Ecológia Juréia-Itatins;-24,387500;-47,01861;gm; 107;21,69;2087
+amp1718;1256;45;co;pp;as;NA;NA;tw,ni; 1;1993;12;1993; 11;Brazil;São Paulo;BR-SP;Ribeirão Branco e Apiaí;Serra de Paranapiacaba;-24,350833;-48,85139;gm; 979;16,99;1368
+amp1719;1257;21;co;tp,pp,la,sw,is;as,sb;NA;NA;ni;12;2006;12;2006;  0;Brazil;São Paulo;BR-SP;Luiz Antônio;Estação Ecológica de Jataí;-21,604722;-47,79250;gm; 545;21,69;1370
+amp1720;1258; 7;ab;tp,pp,la,sw,is;as,sb;NA;NA;ni;12;2006;12;2006;  0;Brazil;São Paulo;BR-SP;Nova aliança;Nova Itapirema;-21,073333;-49,51889;gms; 476;22,43;1160
+amp1721;1258; 7;ab;tp,pp,la,sw,is;as,sb;NA;NA;ni;12;2006;12;2006;  0;Brazil;São Paulo;BR-SP;Nova aliança;Nova Itapirema;-21,073611;-49,51889;gms; 476;22,43;1160
+amp1722;1259;31;co;NA;NA;NA;NA;NA;NA;1999;NA;2005;NA;Brazil;São Paulo;BR-SP;Jundiaí;Serra do Japi;-23,230000;-46,93500;NA;1071;17,17;1373
+amp1723;1260; 8;co;pp;as;NA;NA;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,597778;-50,37194;gms; 551;20,67;1205
+amp1724;1260;11;co;la;as;NA;NA;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Assis;Floresta Estadual de Assis;-22,590833;-50,42056;gms; 552;20,85;1218
+amp1725;1260;15;co;tp;as;NA;NA;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Assis;Floresta Estadual de Assis;-22,572500;-50,41056;gms; 540;20,92;1221
+amp1726;1260; 4;co;tp;as;NA;NA;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Assis;Floresta Estadual de Assis;-22,589722;-50,41139;gms; 553;20,81;1215
+amp1727;1260; 4;co;tp;as;NA;NA;tw,ni; 3;2006;10;2007; 19;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,599722;-50,39444;gms; 585;20,58;1216
+amp1728;1260; 7;co;pp;as;NA;NA;tw,ni; 8;2006;10;2007; 14;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,611667;-50,39917;gms; 562;20,66;1212
+amp1729;1260;13;co;la;as;NA;NA;tw,ni; 8;2006;10;2007; 14;Brazil;São Paulo;BR-SP;Assis;Floresta Estadual de Assis;-22,573611;-50,41278;gms; 540;20,92;1221
+amp1730;1260;12;co;tp;as;NA;NA;tw,ni; 8;2006;10;2007; 14;Brazil;São Paulo;BR-SP;Assis;Estação Ecológica de Assis;-22,596667;-50,39667;gms; 585;20,58;1216
+amp1731;1261;14;ab;tp,la,sw,os;as,sb;pt;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Chácara Jim;-22,893333;-48,50111;gms; 860;18,93;1322
+amp1732;1261; 8;ab;pp,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;#N/D;-22,778889;-48,56583;gms; 790;19,38;1329
+amp1733;1261;21;ab;tp,pp,sw,os;as,sb;pt;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Capão Bonito I;-22,887778;-48,50639;gms; 875;18,87;1319
+amp1734;1261;20;ab;tp,la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Capão Bonito II;-22,893056;-48,51167;gms; 842;19,03;1316
+amp1735;1261;23;ab;tp,la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Sítio Campo Verde;-22,877222;-48,51306;gms; 865;18,93;1318
+amp1736;1261;19;ab;tp,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Estância Toninho Santi;-22,870000;-48,56028;gms; 831;19,10;1311
+amp1737;1261;24;ab;tp,pp,la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Recanto dos Oliveiras;-22,865278;-48,54972;gms; 869;18,91;1318
+amp1738;1261;11;ab;la,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Sítio JB;-22,920556;-48,53917;gms; 807;19,18;1302
+amp1739;1261; 8;ab;pp,la,os;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Fazenda Indiana;-22,893333;-48,38167;gms; 552;20,63;1258
+amp1740;1261;13;ab;tp,la,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Fazenda Rincão do Pinhal;-22,993333;-48,49194;gms; 870;18,76;1305
+amp1741;1261; 9;ab;la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;São Manuel;Sítio Phoenix;-22,838889;-48,57583;gms; 818;19,19;1315
+amp1742;1261;23;ab;tp,pp,la,is,os;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Pratânia;Sítio Palmeiras da Serra;-22,814167;-48,74139;gms; 704;19,92;1273
+amp1743;1261;11;ab;pp,la,sw;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Itatinga;Fazenda Serra Linda;-23,087500;-48,52667;gms; 883;18,71;1303
+amp1744;1261;15;ab;pp,la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;São Manuel;Fazenda da UNESP;-22,778889;-48,56583;gms; 790;19,38;1329
+amp1745;1261;21;ab;tp,la,is;as,sb;pt,ar;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Borebi;Fazenda Turvinho II;-22,738333;-49,01861;gms; 641;20,30;1214
+amp1746;1261;17;ab;tp,la;as,sb;pt,ar;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Borebi;Fazenda Turvinho IV;-22,733056;-49,00444;gms; 656;20,20;1216
+amp1747;1261; 5;ab;tp;as,sb;pt,ar;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Borebi;Fazenda São Luiz;-22,753056;-49,04444;gms; 643;20,30;1216
+amp1748;1261;12;ab;tp,os;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Bauru;Residencial Samambaia;-22,365278;-49,05028;gms; 549;21,48;1178
+amp1749;1261;16;ab;pp,la,sw;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Brotas;Residencial Lagoa Dourada;-22,196667;-47,92111;gms; 740;19,86;1351
+amp1750;1261;17;ab;tp,sw;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Brotas;Fazenda Santa Evangelina;-22,160000;-47,96028;gms; 743;19,89;1364
+amp1751;1261;11;ab;pp,sw;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Brotas;NA;-22,185833;-47,96139;gms; 715;19,97;1349
+amp1752;1261;12;ab;tp,pp,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Itirapina;Estação Ecológica de Itirapina;-22,212500;-47,91333;gms; 744;19,82;1355
+amp1753;1261;14;ab;pp,la,sw,is,os;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Horto Florestal de Santa Bárbara;-22,816111;-49,23611;gms; 631;20,37;1240
+amp1754;1261;14;ab;tp,pp,sw,is;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Águas de Santa Bárbara;Estação Ecológica de Santa Bárbara;-22,790278;-49,24306;gms; 634;20,39;1249
+amp1755;1261;19;ab;tp,la,sw,os;as,sb;NA;NA;da,tw,ni; 8;2006;12;2008; 28;Brazil;São Paulo;BR-SP;Botucatu;Dinuci;-22,950833;-48,46000;gms; 846;18,95;1315
+amp1756;1262;17;ab;pp,la,sw,is;as,sb;NA;NA;da,tw,ni; 8;2009; 7;2010; 11;Brazil;São Paulo;BR-SP;Bauru;Jardim Botânico Municipal de Bauru;-22,346667;-49,01556;gms; 565;21,29;1158
+amp1757;1262; 9;ab;pp,la,is;as,sb;NA;NA;da,tw,ni;11;2010; 8;2011;  9;Brazil;São Paulo;BR-SP;Bauru;Jardim Botânico Municipal de Bauru;-22,346667;-49,01556;gms; 565;21,29;1158
+amp1758;1262;14;ab;la;as,sb;NA;NA;da,tw,ni;11;2009;10;2010; 11;Brazil;São Paulo;BR-SP;Bauru;Instituto Lauro Souza Lima;-22,341389;-48,98306;gms; 559;21,20;1152
+amp1759;1262;19;ab;tp,is;as,sb;NA;NA;da,tw,ni; 9;2009; 8;2010; 11;Brazil;São Paulo;BR-SP;Agudos;Fazenda São Benedito;-22,481389;-49,03556;gms; 659;20,61;1197
+amp1760;1262;22;ab;tp,is;as,sb;NA;NA;da,tw,ni;10;2010; 9;2011; 11;Brazil;São Paulo;BR-SP;Agudos;Pesqueiro Toca do Peixe;-22,477222;-49,03778;gms; 659;20,61;1197
+amp1761;1262;16;ab;tp,pp,la,sw;as,sb;NA;NA;da,tw,ni;11;2009;10;2010; 11;Brazil;São Paulo;BR-SP;Iacanga;Fazenda Pindorama;-21,979444;-49,03806;gms; 432;21,88;1146
+amp1762;1262; 8;ab;tp,pp,sw,is;as,sb;NA;NA;da,tw,ni; 9;2009; 8;2010; 11;Brazil;São Paulo;BR-SP;Piratininga;Sitio Piratininga;-22,405556;-49,10361;gms; 502;21,60;1171
+amp1763;1262;26;ab;tp,pp,la,sw;as,sb;NA;NA;da,tw,ni; 9;2009; 8;2010; 11;Brazil;São Paulo;BR-SP;Avaí;Fazenda Rio Batalha;-22,042778;-49,24972;gms; 426;21,78;1162
+amp1764;1262;16;ab;tp,sw,is;as,sb;NA;NA;da,tw,ni;11;2011; 8;2012;  9;Brazil;São Paulo;BR-SP;Pederneiras;Reserva Legal do Horto Aimorés;-22,298611;-48,93389;gms; 546;21,23;1147
+amp1765;1263;15;co;tp,pp,sw;as;NA;NA;da,tw,ni; 2;1984; 3;1985; 13;Brazil;São Paulo;BR-SP;Botucatu;Sítio Capivara;-22,753611;-48,36667;NA; 485;20,97;1264
+amp1766;1263;19;co;tp,sp,pp;as;NA;NA;da,tw,ni; 2;1984; 3;1985; 13;Brazil;São Paulo;BR-SP;Botucatu;Fazenda Lageado;-22,858333;-48,43306;NA; 779;19,44;1321
+amp1767;1264;18;co;tp;as;NA;NA;tw,ni;10;1992; 3;1995; 29;Brazil;São Paulo;BR-SP;Nova Itapirema;Distrito de Nova Aliança;-21,192222;-49,70861;gm; 420;22,42;1156
+amp1768;1265;18;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Santo Antonio do Aracanguá;Fazenda Rancho Alegre;-20,926111;-50,34861;gms; 401;22,50;1184
+amp1769;1265;21;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Macaubal;Fazenda Pauã;-20,742778;-49,92917;gms; 477;22,61;1206
+amp1770;1265;22;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Pindorama;Estação Experimental de Pindorama;-21,220000;-48,91778;gms; 547;22,21;1253
+amp1771;1265;25;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Sales;Fazenda Águas Claras;-21,404722;-49,50028;gms; 409;22,14;1176
+amp1772;1265;24;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;União Paulista;Fazenda Boa Vista;-20,921111;-49,92611;gms; 477;22,39;1181
+amp1773;1265;21;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Palestina;Fazenda Boa Vista;-20,288333;-49,50028;gms; 478;23,29;1223
+amp1774;1265;14;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Palestina;Fazenda Boa Vista;-20,321111;-49,50472;gms; 503;23,13;1231
+amp1775;1265;14;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Matão;Fazenda Cambuhy;-21,620556;-48,53722;gms; 578;21,40;1292
+amp1776;1265;21;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Bebedouro;Fazenda Córrego dos Bois;-20,885000;-48,54056;gms; 562;22,47;1329
+amp1777;1265;15;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Barretos;Fazenda Floresta;-20,637222;-48,75167;gms; 564;22,70;1305
+amp1778;1265;25;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Votuporanga;Fazenda Primavera;-20,514444;-50,08667;gms; 436;22,84;1209
+amp1779;1265;23;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Taquaritinga;Fazenda Santa Lúcia;-21,402222;-48,68722;gms; 520;22,15;1277
+amp1780;1265;22;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;São João de Iracema;Fazenda São Francisco;-20,473611;-50,29333;gms; 373;22,89;1171
+amp1781;1265;19;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Nova Granada;Fazenda São João;-20,543611;-49,24639;gms; 492;23,08;1256
+amp1782;1265; 8;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Turmalina;Fazenda São João;-20,003611;-50,43389;gms; 450;22,73;1193
+amp1783;1265;13;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Novo Horizonte;Fazenda Serrinha;-21,520833;-49,29472;gms; 429;22,02;1231
+amp1784;1265; 9;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Planalto;Fazenda Taperão;-21,001389;-49,97389;gms; 422;22,53;1171
+amp1785;1265;23;co;fo,la,sw,os;as,sb;pt;ae;mo,da,tw,ni;10;2006; 2;2009; 28;Brazil;São Paulo;BR-SP;Barretos;Fazenda Vista Bonita;-20,484722;-48,82250;gms; 476;23,20;1297
+amp1786;1266;13;co;fo,tp,la,is;as,tr;NA;ae;tw,ni; 3;2009; 2;2010; 11;Brazil;São Paulo;BR-SP;São Carlos;Universidade Federal de São Carlos;-21,967778;-47,87083;gm; 868;19,60;1415
+amp1787;1267;12;co;pp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,188889;-50,89639;gms; 393;22,64;1210
+amp1788;1267; 9;co;pp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,184722;-50,89444;gms; 393;22,64;1210
+amp1789;1267; 5;co;pp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,185556;-50,89056;gms; 405;22,56;1211
+amp1790;1267; 7;co;pp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,185278;-50,89444;gms; 393;22,64;1210
+amp1791;1267;11;co;pp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,178333;-50,89222;gms; 398;22,61;1215
+amp1792;1267; 8;co;tp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,185278;-50,89361;gms; 393;22,64;1210
+amp1793;1267; 5;co;tp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,184167;-50,89444;gms; 393;22,64;1210
+amp1794;1267; 6;co;tp;as;NA;NA;da; 9;2003; 8;2004; 11;Brazil;São Paulo;BR-SP;Santa Fé do Sul;NA;-20,184167;-50,89444;gms; 393;22,64;1210
+amp1795;1268;28;co;fo,tp,pp,la;as,sb;pt;NA;mo,da,tw,ni; 9;2005; 3;2007; 18;Brazil;São Paulo;BR-SP;Teodoro Sampaio;Parque Estadual Morro do Diabo;-22,544444;-52,29500;gms; 403;21,66;1170
+amp1796;1269; 9;co;is;as,tr;NA;NA;da,tw,ni; 1;2007;NA;2011;NA;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,354167;-44,76750;gms; 341;20,78;2341
+amp1797;1269;11;co;is;as,tr;NA;NA;da,tw,ni; 1;2007;NA;2011;NA;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,359444;-44,78417;gms; 150;21,77;2514
+amp1798;1269;13;co;is;as,tr;NA;NA;da,tw,ni; 1;2007;NA;2011;NA;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,361389;-44,78750;gms; 150;21,77;2514
+amp1799;1269;13;co;is;as,tr;NA;NA;da,tw,ni; 1;2007;NA;2011;NA;Brazil;São Paulo;BR-SP;Ubatuba;Parque Estadual da Serra do Mar - Núcleo Picinguaba;-23,364722;-44,80056;gms; 287;21,03;2415
+amp1800;1270;17;co;ll;qs;NA;NA;da;12;1997; 1;1998;  1;Brazil;São Paulo;BR-SP;Ilhabela;Ilha de São Sebastião;-23,862778;-45,32083;gm; 533;19,01;2395
+amp1801;1271;29;ab;sp,la,is;as,sb;NA;NA;da,tw,ni;10;2005; 9;2006; 11;Brazil;São Paulo;BR-SP;Botucatu;Recanto Ecológico Sacae Watanabe;-22,992500;-48,50111;gms; 837;18,95;1297
+amp1802;1272;21;co;tp,pp,la,sw;as;NA;NA;NA;12;2010;11;2011; 11;Brazil;São Paulo;BR-SP;Luís Antônio;Estação Ecológica de Jataí;-21,569722;-47,73528;gms; 633;21,32;1411
+amp1803;1273;19;co;tp,pp,sw,ll,is,os,br;as;NA;ae;da,tw,ni; 4;2004;12;2006; 32;Brazil;São Paulo;BR-SP;São José do Barreiro;Fazenda Atibaia;-22,642778;-44,65667;gms; 540;20,46;1520
+amp1804;1273;19;co;tp,pp,sw,ll,is,os,br;as;NA;ae;da,tw,ni; 5;2005;12;2006; 19;Brazil;São Paulo;BR-SP;São José do Barreiro;Pousada Recanto da Floresta;-22,718889;-44,61417;gms;1618;14,30;1796
+amp1805;1274;11;ab;la;sb;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,366944;-49,25000;dd; 488;23,24;1272
+amp1806;1274;13;ab;la;sb;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,363889;-49,19361;dd; 446;23,57;1271
+amp1807;1274;10;ab;la;sb;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,375000;-49,27583;dd; 447;23,46;1252
+amp1808;1274; 8;ab;la;sb;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,381389;-49,25167;dd; 468;23,35;1267
+amp1809;1274; 7;ab;sw;sb;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,362778;-49,23639;dd; 460;23,43;1267
+amp1810;1274; 7;ab;sw;sb;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;São Paulo;BR-SP;Icém;NA;-20,363889;-49,23833;dd; 460;23,43;1267
+amp1811;1275;23;co;fo,tp,la;as,sb;NA;NA;tw,ni; 1;2010;12;2010; 11;Brazil;São Paulo;BR-SP;Ribeirão Grande;Fazenda Intermontes;-24,194167;-48,42306;gms; 863;17,54;1367
+amp1812;1275;25;co;sw;as,sb;NA;NA;tw,ni; 1;2010;12;2010; 11;Brazil;São Paulo;BR-SP;Ribeirão Grande;Fazenda Intermontes;-24,199444;-48,43556;gms; 870;17,53;1365
+amp1813;1276;13;co;pp,sw,is;as,sb;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;São Paulo;BR-SP;Botucatu;Recanto Ecológico Sacae Watanabe;-22,997500;-48,50472;gms; 837;18,95;1297
+amp1814;1276; 8;co;pp,is;as,sb;NA;NA;tw,ni; 8;2007; 7;2008; 11;Brazil;São Paulo;BR-SP;Botucatu;Sítio Santo Antônio da Cascatinha;-22,896667;-48,48722;gms; 878;18,85;1326
+amp1815;1277;21;co;fo,tp,la,is;as;NA;rr;tw,ni; 7;2001;11;2002; 16;Brazil;São Paulo;BR-SP;Rio Claro;Floresta Estadual “Edmundo Navarro de Andrade”;-22,411944;-47,52139;gm; 613;20,53;1255
+amp1816;1278;14;ab;fo,is;as;pt;NA;mo,da,tw,ni; 2;2009; 2;2010; 12;Brazil;São Paulo;BR-SP;São Luiz do Paraitinga;NA;-23,260833;-45,31611;gms; 847;18,00;1496
+amp1817;1279;53;co;NA;as;pt;ae;mo,da,tw,ni;11;2009; 3;2011; 16;Brazil;São Paulo;BR-SP;Santo André;Parque Natural Municipal Nascentes de Paranapiacaba;-23,775000;-46,29167;gms; 916;16,93;2412
+amp1818;1280;15;co;la;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,078056;-49,53889;gms; 468;22,42;1162
+amp1819;1280;17;co;la;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,075833;-49,53917;gms; 468;22,42;1162
+amp1820;1280;18;co;la;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,081111;-49,51917;gms; 459;22,51;1159
+amp1821;1280;20;co;la;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,073611;-49,51889;gms; 476;22,43;1160
+amp1822;1280;20;co;tp;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,077778;-49,53972;gms; 468;22,42;1162
+amp1823;1280;19;co;tp;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,078889;-49,53889;gms; 468;22,42;1162
+amp1824;1280;18;co;tp;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,073333;-49,51889;gms; 476;22,43;1160
+amp1825;1280;13;co;sw;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,074444;-49,52056;gms; 476;22,43;1160
+amp1826;1280;11;co;os;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,078611;-49,53917;gms; 468;22,42;1162
+amp1827;1280;10;co;is;as;NA;NA;da,tw,ni; 1;2003; 3;2004; 14;Brazil;São Paulo;BR-SP;Nova Itapirema;NA;-21,074444;-49,52056;gms; 476;22,43;1160
+amp1828;1281;18;co;NA;as;pt;NA;da,tw,ni; 3;2004; 8;2004;  5;Brazil;São Paulo;BR-SP;Santo André;Reserva Biológica de Paranapiacaba;-23,778889;-46,31083;utm; 801;17,58;2672
+amp1829;1282;10;co;tp,re;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,069167;-47,92139;utm;   9;22,35;2188
+amp1830;1282;10;co;tp,re;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,073611;-47,92472;utm;   9;22,35;2188
+amp1831;1282; 7;co;fo,tp;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,075278;-47,92556;utm;  15;22,31;2208
+amp1832;1282;11;co;tp,re,br;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,070556;-47,92333;utm;   9;22,35;2188
+amp1833;1282; 4;co;pp,re;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,070000;-47,91972;utm;   9;22,35;2188
+amp1834;1282; 5;co;pp,re;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,069722;-47,91972;utm;   9;22,35;2188
+amp1835;1282; 4;co;fo,pp;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,068889;-47,92167;utm;   9;22,35;2188
+amp1836;1282; 5;co;re;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,072778;-47,92389;utm;   9;22,35;2188
+amp1837;1282; 8;co;re;as,sb,tr,qs;NA;NA;tw,ni;10;2005;10;2007; 24;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,078333;-47,92611;utm;  15;22,31;2208
+amp1838;1283; 2;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Lorena;Fazenda Boa Esperança;-22,771111;-45,02972;gm; 594;20,87;1432
+amp1839;1283;15;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Sapucaí-Mirim;Fazenda Karacy;-22,858611;-45,86694;gm;1541;14,31;1781
+amp1840;1283; 7;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Igaratá;Fazenda Morro Azul;-23,133056;-46,13528;gm; 722;18,75;1415
+amp1841;1283;13;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Lorena;Fazenda Porto do Meira;-22,703611;-45,18472;gm; 572;21,47;1485
+amp1842;1283; 7;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Taubaté;Fazenda Santa,Fazenda Uma;-23,090000;-45,50750;gm; 704;19,33;1290
+amp1843;1283;14;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Jambeiro,Redenção da Serra;Fazenda Santa Cruz I;-23,239444;-45,60611;gm; 858;17,94;1389
+amp1844;1283;21;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;São Luís do Paraitinga;Fazenda São José II;-23,126389;-45,30944;gm; 850;18,17;1372
+amp1845;1283;33;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Pindamonhangaba;Fazenda São Sebastião do Ribeirão Grande;-22,766111;-45,46944;gm; 798;19,00;1511
+amp1846;1283;32;co;fo,tp,pp,ll,is;as;NA;NA;NA; 7;2001;11;2003; 28;Brazil;São Paulo;BR-SP;Mogi das Cruzes,Bertioga;Fazenda São Simão;-23,733889;-46,15139;gm; 736;17,92;2429
+amp1847;1283;26;co;fo,eu,pp,la;as;pt;NA;NA; 3;1997;12;2003; 81;Brazil;São Paulo;BR-SP;Santa Branca;Fazenda Taboão;-23,395000;-45,84500;gm; 706;18,63;1421
+amp1848;1284;30;co;fo,ll;NA;pt;NA;mo,da,tw,ni;12;2003; 1;2004;  1;Brazil;São Paulo;BR-SP;Bananal;Estação Ecológica de Bananal;-22,798056;-44,35972;gms;1341;15,48;1683
+amp1849;1285;24;co;fo,tp,la,is;as;NA;NA;tw,ni; 8;2002; 7;2003; 11;Brazil;São Paulo;BR-SP;Rio Claro;Reserva Legal da Mata São José;-22,358889;-47,47944;gm; 664;20,24;1294
+amp1850;1285;29;co;tp,la;NA;NA;NA;NA;NA;1995;12;2005;NA;Brazil;São Paulo;BR-SP;Rio Claro;Itapé;-22,325000;-47,71444;gm; 660;20,23;1323
+amp1851;1285;17;co;fo,la,sw,is;NA;NA;NA;NA;NA;1985;NA;1995;NA;Brazil;São Paulo;BR-SP;Campinas;Mata Santa Genebra;-22,822222;-47,11111;gm; 615;20,52;1271
+amp1852;1286;21;co;fo,tp,sp,pp,la,ll,br;as;pt;NA;mo,da,tw,ni; 2;2007; 1;2009; 23;Brazil;São Paulo;BR-SP;Cananéia;Ilha de Cananéia;-24,933056;-47,88778;gms;  20;22,37;2022
+amp1853;1286;18;co;fo,tp,sp,pp,la,ll,br;as;pt;NA;mo,da,tw,ni; 2;2007; 1;2009; 23;Brazil;São Paulo;BR-SP;Cananéia;Parque Estadual da Ilha do Cardoso;-25,051389;-48,09500;gms;  10;22,44;2107
+amp1854;1286;16;co;fo,tp,sp,pp,la,ll,br;as;pt;NA;mo,da,tw,ni; 2;2007; 1;2009; 23;Brazil;São Paulo;BR-SP;Ilha Comprida;Ilha Comprida;-25,005278;-47,87167;gms;   7;22,35;2094
+amp1855;1286;22;co;fo,tp,sp,pp,la,ll,br;as;pt;NA;mo,da,tw,ni; 2;2007; 1;2009; 23;Brazil;São Paulo;BR-SP;Pariquera-Açu;Parque Estadual da Campina do Encantado;-24,645556;-47,81083;gms;  15;22,38;1701
+amp1856;1286;26;co;fo,tp,sp,pp,la,ll,br;as;pt;NA;mo,da,tw,ni; 2;2007; 1;2009; 23;Brazil;São Paulo;BR-SP;Iguape;Escola Agrícola Engenheiro Narciso de Medeiros;-24,687222;-47,53111;gms;  36;21,83;1967
+amp1857;1287;38;co;fo,sp,la,sw,is,os,br;as,tr;NA;ae,tp;mo,da,tw,ni; 8;2015;12;2015;  4;Brazil;Mato Grosso do Sul;BR-MS;Bonito, Bodoquena, Jardim e Porto Murtinho;Parque Nacional da Serra da Bodoquena;-21,198611;-56,74194;gms; 584;22,33;1318
+amp1858;1288;21;co;fo,is;as;NA;NA;tw,ni; 8;2006; 7;2007; 11;Brazil;Paraná;BR-PR;Maringá;Fazenda Cesumar;-23,394444;-51,87278;gms; 564;18,47;1290
+amp1859;1288;18;co;fo,pp;as;NA;NA;tw,ni; 8;2006; 7;2007; 11;Brazil;Paraná;BR-PR;Maringá;Fazenda Ibiteca;-23,477778;-51,90833;gms; 491;18,66;1290
+amp1860;1288;13;co;fo,pp;as;NA;NA;tw,ni; 8;2006; 7;2007; 11;Brazil;Paraná;BR-PR;Maringá;Pesqueiro do Português;-23,355556;-51,90361;gms; 459;19,12;1273
+amp1861;1288;15;co;fo,pp;as;NA;NA;tw,ni; 8;2006; 7;2007; 11;Brazil;Paraná;BR-PR;Maringá;Condomínio Recanto dos Guerreiros;-23,332222;-51,88000;gms; 467;19,13;1282
+amp1862;1289;32;co;fo,tp,la,is;as,sb,tr;NA;NA;da,tw,ni;11;2002; 2;2006; 39;Brazil;Paraná;BR-PR;Morretes;Condomínio Rio Sagrado;-25,498611;-48,84139;gms;  17;21,02;1731
+amp1863;1290;42;co;tp,pp;as;NA;NA;da,tw,ni;10;2012; 3;2013;  5;Brazil;Paraná;BR-PR;Piraí do Sul;NA;-24,537222;-49,90472;gms;1094;16,45;1519
+amp1864;1291;14;co;pp,la,is;as;NA;NA;tw,ni; 9;2009; 4;2010;  7;Brazil;Paraná;BR-PR;Bocaiúva do Sul;Chácara Beltramin;-25,240000;-49,03417;gms; 904;17,57;1703
+amp1865;1292;23;co;fo,tp,la,sw,is;as;NA;NA;tw,ni;10;1997; 9;1998; 11;Brazil;Paraná;BR-PR;Três Barras do Paraná;Parque Estadual do Rio Guarani;-25,450000;-53,11667;gm; 418;18,81;1825
+amp1866;1292;22;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Quatro Barras;NA;-25,350000;-49,05000;gm; 885;17,75;1744
+amp1867;1292;22;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Palmeira;Fazenda Santa Rita;-25,250000;-50,00000;gm; 853;17,45;1481
+amp1868;1102;31;co;fo,sw,ll,is,br;as;NA;NA;da,tw,ni; 1;2015; 3;2015;  2;Brazil;Paraná;BR-PR;Morretes;Parque Estadual Pico do Marumbi;-25,453611;-48,91972;NA;1359;15,02;1985
+amp1869;1293;20;co;la,sw,os;as;NA;NA;tw,ni;10;2005; 9;2006; 11;Brazil;Paraná;BR-PR;Balsa Nova;Fazenda Monjolo;-25,458333;-49,70917;NA;1117;16,01;1562
+amp1870;1294;39;co;tp,sp,ll,is,br;as,tr;NA;NA;da,tw,ni; 9;1996; 7;1998; 22;Brazil;Paraná;BR-PR;Guaraqueçaba;Área de Proteção Ambiental Guaraqueçaba;-25,256667;-48,29861;gms;  68;21,51;2134
+amp1871;1295;10;co;sw,is;as;NA;NA;tw,ni; 3;2000; 3;2001; 12;Brazil;Paraná;BR-PR;Tijucas do Sul;Pontifícia Universidade Católica do Paraná;-25,951667;-49,22056;gms; 929;16,30;1525
+amp1872;1295;18;co;la;as;NA;NA;tw,ni; 3;2000; 3;2001; 12;Brazil;Paraná;BR-PR;Tijucas do Sul;Pontifícia Universidade Católica do Paraná;-25,953611;-49,22111;gms; 929;16,30;1525
+amp1873;1295;13;co;la;as;NA;NA;tw,ni; 3;2000; 3;2001; 12;Brazil;Paraná;BR-PR;Tijucas do Sul;Pontifícia Universidade Católica do Paraná;-25,960833;-49,23639;gms; 929;16,29;1514
+amp1874;1295;20;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Fênix;Parque Estadual de Vila Rica do Espírito Santo;-23,916667;-51,95000;gm; 331;20,18;1479
+amp1875;1296;34;co;fo,tp,la,ll,is,br;as;NA;NA;da,tw,ni; 1;2003; 5;2004; 16;Brazil;Paraná;BR-PR;São José dos Pinhais;Serro, Gemido;-25,683333;-49,05000;gm; 978;16,83;1759
+amp1876;1297;32;co;fo,tp,la,sw,br;as,sb,tr;NA;NA;da,tw,ni; 1;2002; 3;2003; 14;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,656389;-49,28667;gm; 905;17,15;1423
+amp1877;1298;28;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;General Carneiro;Fazenda Pedro Pizzatto;-26,366667;-51,36667;gm;1097;15,49;1690
+amp1878;1298;26;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Candói;Rio Jordão;-25,633333;-51,96667;gm; 851;17,23;1744
+amp1879;1298;23;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Rio Negro;Parque Municipal de São Luis de Tolosa;-26,083333;-49,80000;gm; 805;16,70;1398
+amp1880;1298;22;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,383333;-50,56667;gm; 866;17,17;1461
+amp1881;1298;19;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Palmas;Refúgio de Vida Silvestre dos Campos de Palmas;-26,516667;-51,63333;gm;1254;14,90;1747
+amp1882;1298;21;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Araucária;NA;-25,716667;-49,43333;gm; 928;16,73;1359
+amp1883;1299;39;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA; 1;2013;12;2013; 11;Brazil;Paraná;BR-PR;Castro;Parque Nacional dos Campos Gerais;-25,050000;-49,95000;gm; 933;17,00;1581
+amp1884;1299;26;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA; 1;2013;12;2013; 11;Brazil;Paraná;BR-PR;Ponta Grossa;Parque Estadual de Vila Velha;-25,233300;-50,00000;gm; 973;16,86;1516
+amp1885;1299;29;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA; 1;2013;12;2013; 11;Brazil;Paraná;BR-PR;Platina;Parque Estadual do Guartelá;-24,566700;-50,23330;gm;1005;16,96;1432
+amp1886;1299;29;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA; 1;2013;12;2013; 11;Brazil;Paraná;BR-PR;Palmas;Refúgio da Vida Silvestre dos Campos de Palmas;-26,516700;-51,61670;gm;1263;14,85;1744
+amp1887;1299;21;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA; 7;2005; 4;2006;  9;Brazil;Paraná;BR-PR;Curitiba;Parques Municipais de Curitiba;-25,387500;-49,30833;gm; 924;17,42;1543
+amp1888;1299;24;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA; 7;2010; 3;2011;  8;Brazil;Paraná;BR-PR;Castro;Parque Estadual do Caxambú;-24,666700;-50,00000;gm; 988;16,80;1535
+amp1889;1299;27;co;fo,tp,pp,sw,is;as,sb,tr;NA;NA;NA;11;2001;12;2006; 61;Brazil;Paraná;BR-PR;Candói;Parque Estadual Santa Clara;-25,600000;-51,98330;gm; 877;17,15;1748
+amp1890;1300;32;co;fo,tp,sw,ll,is;as,sb;pt;NA;mo,da,tw,ni; 5;2006;12;2009; 43;Brazil;Paraná;BR-PR;São José dos Pinhais;Colônia Castelhanos;-25,783602;-48,90018;gms; 451;18,86;1756
+amp1891;1301;33;ab;fo,pp,la,sw,is,os;sb,tr;pt;NA;mo,da,tw,ni;10;2012; 3;2013;  5;Brazil;Paraná;BR-PR;Piraí do Sul;Floresta Nacional de Piraí do Sul;-24,566667;-49,91667;gm;1069;16,52;1517
+amp1892;1302;42;co;tp,pp,ll,is,br;as,sb;NA;NA;da,tw,ni; 9;2006; 3;2007;  6;Brazil;Paraná;BR-PR;Guaraqueçab;Reserva Natural Salto Morato;-25,167222;-48,30361;gms; 110;21,52;2090
+amp1893;1303;16;co;fo,tp,pp,sw;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Guarapuava;Parque Municipal das Araucárias;-25,354444;-51,46611;NA;1063;16,69;1686
+amp1894;1304;24;co;fo,pp,sw,br;as,sb,tr;NA;NA;tw,ni;11;2010; 4;2012; 17;Brazil;Paraná;BR-PR;Piraquara;Mananciais da Serra;-25,507222;-49,03111;gms; 916;17,53;1804
+amp1895;1304;20;co;fo,pp,sw,is,br;as,sb,tr;NA;NA;tw,ni;11;2010; 4;2012; 17;Brazil;Paraná;BR-PR;Piraquara;Mananciais da Serra;-25,502778;-48,98556;gms;1039;16,71;1933
+amp1896;1304;23;co;fo,pp,sw,br;as,sb,tr;NA;NA;tw,ni;11;2010; 4;2012; 17;Brazil;Paraná;BR-PR;Piraquara;Mananciais da Serra;-25,489167;-48,97389;gms;1129;16,16;1942
+amp1897;1304;21;co;fo,pp,sw,br;as,sb,tr;NA;NA;tw,ni;11;2010; 4;2012; 17;Brazil;Paraná;BR-PR;Piraquara;Mananciais da Serra;-25,476944;-48,96333;gms;1147;16,08;1952
+amp1898;1305;32;co;tp,is;as,sb;pt;NA;mo,da,tw,ni; 7;2010; 6;2011; 11;Brazil;Paraná;BR-PR;Paranaguá;Floresta Estadual do Palmito;-25,583333;-48,55000;gm;  17;20,64;1928
+amp1899;1305;25;co;tp,is;as,sb;pt;NA;mo,da,tw,ni;11;2012; 3;2013;  4;Brazil;Paraná;BR-PR;Matinhos;Parque Florestal do Rio da Onça;-25,750000;-48,50000;gm;   0;NA;NA
+amp1900;1305;21;co;tp,is;as,sb;pt;NA;mo,da,tw,ni; 7;2010; 6;2011; 11;Brazil;Paraná;BR-PR;Guaraqueçaba;Ilha Rasa;-25,350000;-48,40000;gm;   0;NA;NA
+amp1901;1305;19;co;tp,la,is;as,sb;pt;NA;mo,da,tw,ni;11;2012; 3;2013;  4;Brazil;Paraná;BR-PR;Paranaguá;Ilha do Mel;-25,500000;-48,33333;gm;  15;20,97;2102
+amp1902;1305;22;co;tp,la,is;as,sb;pt;NA;mo,da,tw,ni;11;2012; 3;2013;  4;Brazil;Paraná;BR-PR;Guaraqueçaba;Ilha Superagui;-25,466667;-48,21667;gm;   0;NA;NA
+amp1903;1306;31;co;pp,sw,is;as,sb,tr;NA;NA;tw,ni; 7;2001; 7;2002; 12;Brazil;Paraná;BR-PR;Campina Grande do Sul;NA;-25,283333;-49,03333;dd; 869;17,75;1717
+amp1904;1306;28;co;pp,sw,is;as,sb,tr;NA;NA;tw,ni;10;2012; 1;2013;  3;Brazil;Paraná;BR-PR;Campina Grande do Sul;NA;-24,983333;-48,61667;dd; 698;18,58;1562
+amp1905;1306;20;co;pp,is;as,sb,tr;NA;NA;tw,ni;12;2009;11;2010; 11;Brazil;Paraná;BR-PR;Bocaiúva do Sul;NA;-25,240000;-49,03417;dd; 904;17,57;1703
+amp1906;1307;19;co;pp,sw,is;as,sb,tr;NA;NA;tw,ni; 8;2010; 5;2011;  9;Brazil;Paraná;BR-PR;Campo Largo;NA;-25,396944;-49,53083;gms; 962;16,82;1555
+amp1907;1307;18;co;pp;as,sb,tr;NA;NA;tw,ni; 8;2010; 5;2011;  9;Brazil;Paraná;BR-PR;Campo Largo;NA;-25,410556;-49,49306;gms; 981;16,82;1553
+amp1908;1307;19;co;sw,is;as,sb,tr;NA;NA;tw,ni; 8;2010; 5;2011;  9;Brazil;Paraná;BR-PR;Campo Largo;NA;-25,427778;-49,47667;gms; 933;17,08;1510
+amp1909;1307;14;co;sw,is;as,sb,tr;NA;NA;tw,ni; 8;2010; 5;2011;  9;Brazil;Paraná;BR-PR;Campo Largo;NA;-25,433611;-49,47333;gms; 918;17,16;1494
+amp1910;1307;14;co;pp,la,sw,is;as,sb,tr;NA;NA;tw,ni; 8;2010; 5;2011;  9;Brazil;Paraná;BR-PR;Campo Largo;NA;-25,496667;-49,38944;gms; 917;17,19;1454
+amp1911;1308;15;co;fo,la;as;NA;NA;tw,ni;12;2009;11;2010; 11;Brazil;Paraná;BR-PR;Alvorada do Sul;Fazenda Alvorada;-22,818056;-51,18944;gms; 370;22,11;1292
+amp1912;1309;24;co;fo,tp,la,sw,is;as;NA;NA;da,tw,ni; 9;1995; 2;1997; 17;Brazil;Paraná;BR-PR;Londrina;Parque Estadual Mata dos Godoy;-23,450000;-51,25000;gm; 547;20,24;1540
+amp1913;1309;14;co;fo,tp,la,sw,is;as;NA;NA;da,tw,ni; 9;1995; 2;1997; 17;Brazil;Paraná;BR-PR;Londrina;Estação de Piscicultura da Universidade Estadual de Londrina;-23,316667;-51,20000;gm; 579;20,58;1563
+amp1914;1310;27;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Londrina;Baixo Tibagi;-23,450001;-51,25000;dd; 547;20,24;1540
+amp1915;1310;27;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Ortigueira;Médio Tibagi;-24,224873;-50,92828;dd; 791;18,23;1504
+amp1916;1310;19;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Ponta Grossa;Alto Tibagi;-25,094547;-50,16328;dd; 945;17,24;1490
+amp1917;1311;32;co;fo,la,sw,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Parque Ecológico da Klabin;-24,283333;-50,58333;gm; 771;18,23;1367
+amp1918;1311; 9;co;fo,sw,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Ribeirão Anta Brava;-24,150000;-50,38333;gm; 838;18,03;1351
+amp1919;1311;10;co;fo,la,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Salto Aparado;-24,166667;-50,70000;gm; 610;19,09;1411
+amp1920;1311;16;co;fo,la,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Arroio Vila Preta;-24,133333;-50,43333;gm; 792;18,26;1356
+amp1921;1311;21;co;fo,la,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Taboal da Bacia;-24,283333;-50,56667;gm; 830;17,94;1382
+amp1922;1311; 5;co;fo,sw,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Ribeirão no Cerradinho;-24,250000;-50,33333;gm; 897;17,70;1370
+amp1923;1311;19;co;fo,la,sw,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Lagoas do Gaúcho;-24,116667;-50,68333;gm; 696;18,68;1419
+amp1924;1311; 7;co;fo,la,sw,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Lagoas no Km 60;-24,066667;-50,70000;gm; 612;19,15;1428
+amp1925;1311;12;co;fo,la,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Lagoa do Cerradinho;-24,300000;-50,31667;gm; 967;17,33;1393
+amp1926;1311;13;co;fo,la,sw,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Lagoas do Prata;-24,383333;-50,45000;gm; 803;18,08;1358
+amp1927;1311; 8;co;fo,la,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Ribeirão da Usina Mauá;-24,050000;-50,70000;gm; 679;18,82;1431
+amp1928;1311;12;co;fo,la,sw,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Taboal na Mina Velha;-24,116667;-50,66667;gm; 694;18,67;1413
+amp1929;1311;14;co;fo,la,sw,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Lagoa do Sapatão;-24,333333;-50,41667;gm; 791;18,17;1348
+amp1930;1311;11;co;fo,la,ll,is;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Salto Conceição;-24,400000;-50,55000;gm; 757;18,25;1365
+amp1931;1311;19;co;fo,la,sw,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Taboal Estrada Mauá;-24,066667;-50,68333;gm; 710;18,66;1420
+amp1932;1311;13;co;fo,la,ll;as,tr;NA;NA;NA; 1;2001;12;2002; 23;Brazil;Paraná;BR-PR;Telêmaco Borba;Taboal na Vila Preta;-24,133333;-50,36667;gm; 859;18,00;1362
+amp1933;1312;24;ab;fo,pp,la,sw,is;as,sb,tr;pt;NA;mo,da,tw,ni; 9;2014; 8;2015; 11;Brazil;Paraná;BR-PR;Foz do Iguaçú;Parque Nacional do Iguaçu;-25,603611;-54,41444;gms; 264;20,46;1771
+amp1934;1312;21;ab;fo,pp,la,sw,is;as,sb,tr;pt;NA;mo,da,tw,ni; 9;2014; 8;2015; 11;Brazil;Paraná;BR-PR;Céu Azul;Parque Nacional do Iguaçu;-25,072778;-53,65806;gms; 731;18,11;1825
+amp1935;1313;25;co;fo,la,sw,is;sb;pt;NA;mo,da,tw,ni;11;2005;11;2007; 24;Brazil;Paraná;BR-PR;Ribeirão Claro;Rio Paranapanema;-23,107778;-49,79333;gms; 420;21,01;1280
+amp1936;1314; 5;co;is;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,600833;-52,88250;gms; 292;22,23;1210
+amp1937;1314; 3;co;is;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,590556;-52,89083;gms; 253;22,43;1217
+amp1938;1314; 6;co;pp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,596667;-52,88139;gms; 259;22,41;1213
+amp1939;1314;10;co;tp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,615833;-52,85667;gms; 260;22,31;1206
+amp1940;1314;10;co;sw;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,586389;-52,89250;gms; 272;22,34;1221
+amp1941;1314;10;co;sw;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,621667;-52,83861;gms; 270;22,25;1202
+amp1942;1314; 5;co;sw;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,599722;-52,87472;gms; 245;22,46;1205
+amp1943;1314;10;co;la;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,618889;-52,82778;gms; 269;22,25;1200
+amp1944;1314; 8;co;is;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,623611;-52,84861;gms; 275;22,23;1201
+amp1945;1314;11;co;la;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,634444;-52,82222;gms; 284;22,20;1212
+amp1946;1314; 5;co;la;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,644167;-52,81500;gms; 295;22,15;1214
+amp1947;1314;16;co;tp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,635000;-52,82028;gms; 284;22,20;1212
+amp1948;1314; 7;co;la;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,611389;-52,90139;gms; 319;22,15;1230
+amp1949;1314; 8;co;la;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,618611;-52,89833;gms; 332;22,07;1230
+amp1950;1314;14;co;tp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,610833;-52,89694;gms; 324;22,10;1224
+amp1951;1314;11;co;tp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,623889;-52,88639;gms; 346;22,00;1226
+amp1952;1314;13;co;tp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,622500;-52,89389;gms; 332;22,07;1230
+amp1953;1314;11;co;tp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,610278;-52,91722;gms; 347;22,04;1238
+amp1954;1314;13;co;pp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,613611;-52,88778;gms; 320;22,12;1222
+amp1955;1314; 9;co;pp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,625833;-52,90333;gms; 357;21,96;1240
+amp1956;1314;10;co;pp;as;NA;NA;tw,ni; 4;2011; 3;2013; 23;Brazil;Paraná;BR-PR;Diamante do Norte;NA;-22,614167;-52,90944;gms; 344;22,05;1235
+amp1957;1315;26;co;la;as;NA;NA;da,tw,ni; 8;2009; 7;2010; 11;Brazil;Paraná;BR-PR;Quatro Barras;Reserva Ambiental Serelepe;-25,362222;-48,99111;gms; 907;17,53;1818
+amp1958;1316; 9;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,395000;-51,36400;dd;1027;15,78;1676
+amp1959;1316;10;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,379000;-51,37940;dd;1089;15,52;1693
+amp1960;1316; 9;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,376000;-51,38010;dd;1089;15,52;1693
+amp1961;1316; 2;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,393000;-51,37860;dd;1071;15,59;1686
+amp1962;1316; 8;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,394000;-51,37960;dd;1071;15,59;1686
+amp1963;1316; 5;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,396000;-51,37840;dd;1071;15,59;1686
+amp1964;1316; 9;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,406000;-51,38880;dd;1096;15,50;1697
+amp1965;1316; 6;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,406000;-51,38860;dd;1096;15,50;1697
+amp1966;1316; 8;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,407000;-51,40060;dd;1106;15,45;1700
+amp1967;1316; 4;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,407000;-51,40120;dd;1106;15,45;1700
+amp1968;1316; 1;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,404000;-51,40490;dd;1106;15,45;1700
+amp1969;1316; 5;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,402000;-51,40270;dd;1106;15,45;1700
+amp1970;1316; 9;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,394000;-51,39250;dd;1077;15,58;1693
+amp1971;1316;10;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,415000;-51,34990;dd;1008;15,88;1675
+amp1972;1316;15;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,420000;-51,35910;dd;1059;15,64;1687
+amp1973;1316;14;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,421000;-51,35860;dd;1059;15,64;1687
+amp1974;1316; 6;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;General Carneiro;NA;-26,419000;-51,35140;dd;1035;15,75;1680
+amp1975;1316;10;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,556000;-51,66150;dd;1303;14,68;1749
+amp1976;1316; 4;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,557000;-51,66290;dd;1303;14,68;1749
+amp1977;1316;10;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,545000;-51,66320;dd;1292;14,74;1753
+amp1978;1316; 8;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,524000;-51,67420;dd;1257;14,92;1752
+amp1979;1316;13;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,522000;-51,67550;dd;1257;14,92;1754
+amp1980;1316; 8;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,506000;-51,66940;dd;1212;15,10;1747
+amp1981;1316;13;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,556000;-51,66150;dd;1303;14,68;1749
+amp1982;1316; 8;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,496000;-51,66560;dd;1214;15,09;1745
+amp1983;1316;11;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,495000;-51,66610;dd;1214;15,09;1745
+amp1984;1316; 3;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,546000;-51,65730;dd;1281;14,78;1751
+amp1985;1316; 4;ab;tp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Paraná;BR-PR;Palmas;NA;-26,542000;-51,65230;dd;1281;14,78;1751
+amp1986;1317;28;ab;NA;sb,tr;NA;NA;NA;NA;2013;NA;2015;NA;Brazil;Paraná;BR-PR;Piraí do Sul;Floresta Nacional de Piraí do Sul;-24,566667;-49,91667;dd;1069;16,52;1517
+amp1987;1317;26;ab;NA;sb,tr;NA;NA;NA;NA;2013;NA;2015;NA;Brazil;Paraná;BR-PR;Tibagi;Parque Estadual do Guartelá;-24,569174;-50,26746;dd;1081;16,68;1461
+amp1988;1317;23;ab;NA;sb,tr;NA;NA;NA;NA;2013;NA;2015;NA;Brazil;Paraná;BR-PR;Ponta Grossa;Parque Estadual de Vila Velha;-25,235003;-50,01182;dd; 828;17,58;1468
+amp1989;1317;38;ab;NA;sb,tr;NA;NA;NA;NA;2013;NA;2015;NA;Brazil;Paraná;BR-PR;Castro;Parque Nacional dos Campos Gerais;-25,039978;-49,95225;dd; 932;16,97;1572
+amp1990;1317;24;ab;NA;sb,tr;NA;NA;NA;NA;2013;NA;2015;NA;Brazil;Paraná;BR-PR;Palmas;Refúgio da Vida Silvestre dos Campos de Palmas;-26,516705;-51,61673;dd;1263;14,85;1744
+amp1991;1317; 9;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,358056;-50,55278;gms; 824;17,33;1450
+amp1992;1317;10;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,350000;-50,57694;gms; 826;17,35;1452
+amp1993;1317; 9;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,353611;-50,58194;gms; 826;17,35;1452
+amp1994;1317; 4;ab;sw;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,373889;-50,57500;gms; 869;17,16;1460
+amp1995;1317; 9;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,379722;-50,58417;gms; 837;17,32;1453
+amp1996;1317;13;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,401389;-50,59056;gms; 828;17,37;1457
+amp1997;1317; 8;ab;la;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,404444;-50,59083;gms; 828;17,37;1457
+amp1998;1317;10;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fernandes Pinheiro;Floresta Nacional de Irati;-25,415000;-50,59750;gms; 822;17,41;1457
+amp1999;1317; 5;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,668611;-49,27694;gms; 922;17,05;1430
+amp2000;1317;14;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,664722;-49,26472;gms; 893;17,20;1424
+amp2001;1317; 3;ab;sw;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,666667;-49,27028;gms; 919;17,06;1434
+amp2002;1317; 2;ab;sw;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,666667;-49,27056;gms; 919;17,06;1434
+amp2003;1317; 2;ab;sw;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,666667;-49,27083;gms; 919;17,06;1434
+amp2004;1317; 3;ab;sw;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,666667;-49,27139;gms; 919;17,06;1434
+amp2005;1317;13;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,664444;-49,27028;gms; 908;17,14;1430
+amp2006;1317;11;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,664167;-49,27167;gms; 908;17,14;1430
+amp2007;1317; 9;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,662500;-49,27222;gms; 908;17,14;1430
+amp2008;1317; 9;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,661667;-49,27306;gms; 908;17,14;1430
+amp2009;1317;11;ab;pp;sb;NA;NA;NA; 8;2013;12;2015; 28;Brazil;Paraná;BR-PR;Fazenda Rio Grande;Fazenda Experimental Gralha Azul;-25,660278;-49,27333;gms; 908;17,14;1430
+amp2010;1318;21;co;fo,pp,la,is;sb,tr;NA;NA;da,tw,ni; 6;2002; 3;2012;117;Brazil;Paraná;BR-PR;São Pedro do Ivaí;Reserva Particular do Patrimônio Natural Fazenda Barbacena,Fazenda Santa Vitória,Parque Estadual Vila Rica do Espírito Santo,Fazenda Cagibi;-23,870000;-51,94917;gms; 333;20,04;1457
+amp2011;1319; 7;ab;fo,ll;qs;NA;NA;tw,ni; 7;2009; 4;2010;  9;Brazil;Paraná;BR-PR;Guaraqueçaba;Reserva Natural Salto Morato;-25,150000;-48,30000;gm; 275;20,68;2097
+amp2012;1320;54;co;fo,pp,ll,is,br;as,tr;NA;NA;NA; 2;2013; 7;2015; 29;Brazil;Paraná;BR-PR;Guaraqueçaba;Salto Morato Nature Reserve;-25,150000;-48,26667;gm; 112;21,58;2091
+amp2013;1321;15;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Paraná;BR-PR;Londrina;Universidade Estadual de Londrina;-23,321944;-51,20111;gms; 579;20,58;1563
+amp2014;1322;10;co;is;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Castro;NA;-24,821111;-50,06722;utm;1100;16,10;1576
+amp2015;1322; 3;co;fo,br;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,877778;-50,11694;utm;1026;16,55;1540
+amp2016;1322; 2;co;is,br;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,882500;-50,11722;utm;1026;16,55;1540
+amp2017;1322;10;co;tp,la,is,br;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,908611;-50,14361;utm;1008;16,72;1495
+amp2018;1322; 6;co;pp,os,br;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,888611;-50,20444;utm; 874;17,50;1421
+amp2019;1322; 5;co;is;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,893333;-50,20694;utm; 848;17,64;1407
+amp2020;1322; 4;co;pp;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,897222;-50,21139;utm; 841;17,70;1405
+amp2021;1322; 4;co;tp;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,904167;-50,21417;utm; 831;17,74;1398
+amp2022;1322;14;co;tp,pp,br;as,sb;NA;NA;tw,ni; 6;2010; 7;2011; 13;Brazil;Paraná;BR-PR;Carambeí;NA;-24,938333;-50,09833;utm;1063;16,38;1543
+amp2023;1323;12;co;sw;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,289444;-52,11806;gms; 405;18,91;1862
+amp2024;1323;12;co;la;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,304444;-52,10111;gms; 417;18,85;1856
+amp2025;1323; 2;co;is;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,303889;-52,10139;gms; 417;18,85;1856
+amp2026;1323;11;co;la;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,305000;-52,10000;gms; 467;18,64;1857
+amp2027;1323; 9;co;is;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,288611;-52,11389;gms; 428;18,82;1864
+amp2028;1323; 7;co;is;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,293333;-52,11056;gms; 493;18,56;1873
+amp2029;1323; 8;co;is;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,279722;-52,10667;gms; 458;18,70;1861
+amp2030;1323;16;co;la;as,sb;NA;NA;tw,ni; 8;2010; 7;2011; 11;Brazil;Santa Catarina;BR-SC;Concórdia;Parque Estadual Fritz Plaumann;-27,296944;-52,11472;gms; 493;18,56;1873
+amp2031;1324;19;co;la,sw,is;as,sb;NA;NA;da,tw,ni; 3;2010;11;2010;  8;Brazil;Santa Catarina;BR-SC;Águas Frias;Floresta Nacional de Chapecó;-26,890227;-52,92491;dd; 457;18,97;2013
+amp2032;1324;23;co;la,sw,is;as,sb;NA;NA;da,tw,ni; 3;2010;11;2010;  8;Brazil;Santa Catarina;BR-SC;Tunas do Paraná;Parque Nacional da Serra do Itajaí;-26,931817;-49,25587;dd;  95;19,90;1640
+amp2033;1102;25;co;fo,sw,ll,is,br;as;NA;NA;da,tw,ni; 1;2015; 3;2015;  2;Brazil;Santa Catarina;BR-SC;Pedro de Toledo;Parque Ecológico Spitzkopf;-27,003611;-49,11111;NA; 227;19,08;1669
+amp2034;1325;11;ab;fo,tp,is,br;as,sb,tr;pt;ae;mo,da,tw,ni; 5;2013; 1;2014;  8;Brazil;Santa Catarina;BR-SC;Nova Veneza;Morro do Chapéu;-28,649167;-49,67056;gms; 425;17,71;1477
+amp2035;1326;27;co;fo,sw,is;as;NA;NA;da,tw,ni; 8;2014; 7;2015; 11;Brazil;Santa Catarina;BR-SC;Grão Pará;Parque Estadual da Serra Furada;-28,185278;-49,39194;gms; 517;17,49;1508
+amp2036;1327;26;co;sw,is;as;NA;NA;da,tw,ni;11;2010;12;2011; 13;Brazil;Santa Catarina;BR-SC;Urussanga;NA;-28,481389;-49,31056;gms; 164;19,08;1429
+amp2037;1328; 8;co;tp,la;as;NA;NA;tw,ni;11;2004; 4;2005;  5;Brazil;Santa Catarina;BR-SC;Criciúma;Lagoa do Verdinho;-28,791389;-49,41556;NA;  16;19,45;1317
+amp2038;1298;33;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Santa Catarina;BR-SC;Ponte Serrada;Parque Nacional das Araucárias;-26,783333;-51,90000;gm; 944;16,25;1856
+amp2039;1329;14;co;la,sw;as,sb;NA;NA;tw,ni; 9;2008; 2;2009;  5;Brazil;Santa Catarina;BR-SC;Treviso;Usina Termelétrica do Sul Catarinense USITESC;-28,465833;-49,46861;gms; 275;18,43;1435
+amp2040;1329;17;co;la,sw;as,sb;NA;NA;tw,ni; 9;2008; 2;2009;  5;Brazil;Santa Catarina;BR-SC;Treviso;Usina Termelétrica do Sul Catarinense USITESC;-28,495833;-49,45000;gms; 192;18,82;1405
+amp2041;1329;11;co;la,sw;as,sb;NA;NA;tw,ni; 9;2008; 2;2009;  5;Brazil;Santa Catarina;BR-SC;Treviso;Usina Termelétrica do Sul Catarinense USITESC;-28,480000;-49,44667;gms; 218;18,71;1415
+amp2042;1330; 7;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,622778;-49,41944;NA; 136;19,14;1376
+amp2043;1330;10;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,691111;-49,35833;NA;  83;19,53;1379
+amp2044;1330; 2;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,590278;-49,50556;NA; 138;19,04;1370
+amp2045;1330; 3;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,588333;-49,45861;NA; 101;19,23;1367
+amp2046;1330; 9;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,576667;-49,44944;NA; 119;19,19;1381
+amp2047;1330; 7;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,580833;-49,39444;NA; 212;18,83;1409
+amp2048;1330; 9;ab;pp;sb;NA;NA;tw,ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;Criciúma;NA;-28,510556;-49,46694;NA; 165;18,94;1398
+amp2049;1331;24;co;fo;as;NA;NA;tw,ni; 4;2004; 4;2005; 12;Brazil;Santa Catarina;BR-SC;Ibirama;Parque Nacional da Serra do Itajaí;-27,040833;-49,15000;gms; 554;17,42;1677
+amp2050;1332;23;co;fo,pp;as,qs;NA;NA;da;11;2012; 5;2013;  6;Brazil;Santa Catarina;BR-SC;Santo Amaro da Imperatriz;Parque Estadual da Serra do Tabuleiro;-27,741944;-48,81139;gms; 512;17,56;1651
+amp2051;1333; 1;co;fo;as;NA;NA;da,tw,ni; 4;1995; 3;1996; 11;Brazil;Santa Catarina;BR-SC;Florianópolis;Ilha de Ratones Grande;-27,476389;-48,56278;gms;   4;NA;NA
+amp2052;1334;21;co;la,sw,is;as,sb;NA;in;da,tw,ni; 2;2001; 3;2002; 13;Brazil;Santa Catarina;BR-SC;Ipuaçu;Usina Hidrelétrica Quebra-queixo;-26,666667;-52,55000;gms; 564;18,42;2096
+amp2053;1335;32;co;fo,pp,is;as,sb,tr;NA;NA;ni; 4;2005;11;2006; 19;Brazil;Santa Catarina;BR-SC;Lebon Régis;Fazenda Serra da Esperança;-26,853611;-50,66667;gms;1199;14,48;1581
+amp2054;1336;20;co;tp,la,is;as;NA;NA;da,tw,ni;12;1998; 9;2000; 21;Brazil;Santa Catarina;BR-SC;Guatambu;Floresta Nacional de Chapecó;-27,088611;-52,77972;gms; 589;18,48;1977
+amp2055;1336;24;co;tp,la,is;as;NA;NA;da,tw,ni;10;2000;12;2001; 14;Brazil;Santa Catarina;BR-SC;Chapecó;Floresta Nacional de Chapecó;-27,185556;-52,61917;gms; 714;17,96;1997
+amp2056;1337;29;co;fo,tp,pp,la,sw,ll,is;as,sb;NA;NA;da,tw,ni;10;2008; 3;2009;  5;Brazil;Santa Catarina;BR-SC;Ponte Serrada;Parque Nacional das Araucárias;-26,794167;-51,94556;gms; 949;16,21;1895
+amp2057;1338;25;co;fo,la,sw;sb,tr;pt;NA;NA; 9;2012; 3;2013;  6;Brazil;Santa Catarina;BR-SC;Joinville;Área de Proteção Ambiental Serra Dona Francisca;-26,151944;-48,99222;gms; 138;20,05;1642
+amp2058;1338;28;co;fo,la,sw;sb,tr;pt;NA;NA; 9;2012; 3;2013;  6;Brazil;Santa Catarina;BR-SC;Joinville;Área de Proteção Ambiental Serra Dona Francisca;-26,178889;-49,00583;gms; 222;19,59;1659
+amp2059;1338;38;co;fo,la,sw;sb,tr;pt;NA;NA; 9;2012; 1;2014; 16;Brazil;Santa Catarina;BR-SC;Joinville;Área de Proteção Ambiental Serra Dona Francisca;-26,283611;-49,10222;gms; 675;17,24;1627
+amp2060;1338;36;co;fo,la,sw;sb,tr;pt;NA;NA; 9;2012; 1;2014; 16;Brazil;Santa Catarina;BR-SC;Joinville;Área de Proteção Ambiental Serra Dona Francisca;-26,212778;-49,22083;gms;1023;15,62;1619
+amp2061;1339;30;co;fo,la,sw,ll,is,br;as,sb;NA;NA;tw,ni; 8;2007; 6;2008; 10;Brazil;Santa Catarina;BR-SC;Siderópolis;Barragem do Rio São Bento;-28,604444;-49,57972;utm; 180;18,81;1390
+amp2062;1316; 6;ab;pp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Santa Catarina;BR-SC;Água Doce;NA;-26,600000;-51,57840;dd;1323;14,54;1726
+amp2063;1316; 9;ab;sp;as;NA;NA;NA; 8;2012; 7;2013; 11;Brazil;Santa Catarina;BR-SC;Água Doce;NA;-26,601000;-51,57700;dd;1323;14,54;1726
+amp2064;1340;23;co;fo,la,is;as,sb,tr;NA;NA;tw,ni; 1;2009;10;2010; 21;Brazil;Santa Catarina;BR-SC;Pedras Grandes;Parque Ecológico, Ecoturístico de Pedras Grandes;-28,484444;-49,25667;gms; 289;18,55;1459
+amp2065;1317;48;ab;NA;sb,tr;NA;NA;NA;NA;2013;NA;2015;NA;Brazil;Santa Catarina;BR-SC;Joinville;Área de Proteção Ambiental Serra Dona Francisca;-26,283309;-49,10011;dd; 648;17,36;1623
+amp2066;1341;15;co;pp,sw,is;as;NA;NA;ni;10;2012; 2;2013;  4;Brazil;Santa Catarina;BR-SC;São Miguel do Oeste;NA;-26,758333;-53,52306;gms; 657;18,20;1994
+amp2067;1342;12;co;fo,ll;as,qs;NA;NA;tw,ni;11;2012; 5;2013;  6;Brazil;Santa Catarina;BR-SC;Florianópolis;Parque Municipal da Lagoa do Peri;-27,716667;-48,53333;gm; 211;19,06;1596
+amp2068;1342;13;co;fo,ll;as,qs;NA;NA;tw,ni;11;2012; 5;2013;  6;Brazil;Santa Catarina;BR-SC;Florianópolis;Parque Municipal do Maciço da Costeira;-27,625000;-48,51667;gm; 103;19,57;1589
+amp2069;1342;13;co;fo,ll;as,qs;NA;NA;tw,ni;11;2012; 5;2013;  6;Brazil;Santa Catarina;BR-SC;Florianópolis;Unidade de Conservação Ambiental Desterro;-27,516667;-48,52500;gm;  18;19,93;1572
+amp2070;1343;28;co;fo,la,sw,ll,is;as,qs;NA;ae,tp;NA;NA;2013;NA;2017;NA;Brazil;Santa Catarina;BR-SC;Urubici;Parque Nacional de São Joaquim;-28,136389;-49,64139;NA;1433;12,94;1701
+amp2071;1344; 7;co;sw;as,sb;NA;NA;tw,ni; 1;2008; 3;2008;  2;Brazil;Santa Catarina;BR-SC;Turvo;NA;-28,874722;-49,80083;utm;  80;19,12;1365
+amp2072;1344; 9;co;tp,la,sw;as,sb;NA;NA;tw,ni; 1;2008; 3;2008;  2;Brazil;Santa Catarina;BR-SC;Timbé do Sul;NA;-28,852500;-49,87250;utm; 144;18,80;1407
+amp2073;1345;15;co;fo,tp,pp,re,du;as,sb,tr;pt;ae;mo,da,tw,ni; 7;2007; 4;2010; 33;Brazil;Santa Catarina;BR-SC;Palhoça;Parque Estadual da Serra do Tabuleiro;-27,826944;-48,62028;gms;   3;20,05;1528
+amp2074;1346;32;co;fo,tp,pp,sw,ll,is,br;as,sb,tr;NA;NA;da,tw,ni; 2;2001; 3;2002; 13;Brazil;Santa Catarina;BR-SC;Santo Amaro da Imperatriz;Hotel Plaza Caldas da Imperatriz;-27,716667;-48,81667;gm; 241;18,85;1590
+amp2075;1347;13;co;tp,sw,is;as;NA;NA;NA;11;2009; 3;2010;  4;Brazil;Rio Grande do Sul;BR-RS;Faxinalzinho;NA;-27,338333;-52,66556;NA; 424;19,02;1884
+amp2076;1348;18;co;NA;as;NA;NA;da,tw,ni; 4;2003; 2;2004; 10;Brazil;Rio Grande do Sul;BR-RS;Palmares do Sul;Lagoa do Casamento;-30,267778;-50,49722;NA;   4;19,33;1496
+amp2077;1348;22;co;NA;as;NA;NA;da,tw,ni; 4;2003; 2;2004; 10;Brazil;Rio Grande do Sul;BR-RS;Tapes;Butiazais de Tapes;-30,577222;-51,38583;NA;  35;19,37;1410
+amp2078;1349;20;co;pp,la,is;as;NA;NA;NA; 8;2005; 7;2006; 11;Brazil;Rio Grande do Sul;BR-RS;Itaara;Represa Rodolfo Costa, Represa Silva;-29,537500;-53,79167;gms; 356;18,61;1679
+amp2079;1350;20;co;tp,pp;as;NA;NA;NA;10;2005; 9;2006; 11;Brazil;Rio Grande do Sul;BR-RS;São Francisco de Paula;Pró-Mata Research and Nature Conservation Center;-29,480000;-50,17361;gm; 820;15,50;1936
+amp2080;1324;19;co;la,sw,is;as,sb;NA;NA;da,tw,ni; 3;2010;11;2010;  8;Brazil;Rio Grande do Sul;BR-RS;Faxinal do Soturno;NA;-29,566400;-53,42343;dd; 152;19,59;1588
+amp2081;1351;23;co;fo,la,ll;as;pt;NA;mo,da,tw,ni; 2;2009; 6;2010; 16;Brazil;Rio Grande do Sul;BR-RS;Viamão;Morro do Coco;-30,270278;-51,06139;NA;  71;19,28;1475
+amp2082;1352;29;co;tp,la,sw,os,re,du;as;NA;NA;da,ni; 3;2000; 3;2003; 36;Brazil;Rio Grande do Sul;BR-RS;Torres;Parque Estadual de Itapeva;-29,355556;-49,75528;gms;  10;19,31;1414
+amp2083;1353;15;co;sw;as;NA;NA;da,tw,ni;10;2011; 6;2012;  8;Brazil;Rio Grande do Sul;BR-RS;Capivari do Sul;NA;-30,122778;-50,51556;gm;   7;19,42;1513
+amp2084;1354;31;co;NA;NA;NA;NA;NA;10;2001; 3;2005; 41;Brazil;Rio Grande do Sul;BR-RS;Cambará do Sul;Parque Nacional de Aparados da Serra;-29,189722;-50,09500;NA; 969;15,05;1883
+amp2085;1355;16;co;fo,sp,sw,is,os;as,sb;NA;ae;mo,da,tw,ni; 7;2012; 4;2015; 33;Brazil;Rio Grande do Sul;BR-RS;Pelotas;Instituto Federal de Educação, Ciências, Tecnologia, Câmpus Pelotas-Visconde da Graça;-31,724167;-52,30750;gms;  12;19,37;1364
+amp2086;1356;19;co;NA;NA;NA;NA;NA;11;1993; 3;2005;136;Brazil;Rio Grande do Sul;BR-RS;Porto Alegre;Reserva Biológica do Lami José Lutzenberger;-30,236111;-51,09889;NA;   6;19,64;1451
+amp2087;1357;17;co;fo,ll,br;as;pt;NA;mo,da,tw,ni;NA;1979;NA;1983;NA;Brazil;Rio Grande do Sul;BR-RS;Santa Vitória do Palmar;Estação Ecológica do Taim;-32,537222;-52,54583;NA;   5;18,18;1239
+amp2088;1357;10;co;fo,tp,ll,du,br;as;pt;NA;mo,da,tw,ni;NA;1979;NA;1983;NA;Brazil;Rio Grande do Sul;BR-RS;Santa Vitória do Palmar;Estação Ecológica do Taim;-32,605278;-52,50583;NA;   6;18,02;1234
+amp2089;1357; 8;co;sw,ll,br;as;pt;NA;mo,da,tw,ni;NA;1979;NA;1983;NA;Brazil;Rio Grande do Sul;BR-RS;Santa Vitória do Palmar;Estação Ecológica do Taim;-32,763611;-52,52639;NA;   2;17,84;1203
+amp2090;1357; 9;co;sw,ll,br;as;pt;NA;mo,da,tw,ni;NA;1979;NA;1983;NA;Brazil;Rio Grande do Sul;BR-RS;Santa Vitória do Palmar;Estação Ecológica do Taim;-32,809444;-52,63167;NA;   2;17,87;1204
+amp2091;1358;32;co;fo,tp,pp,sw,ll,is;as;pt;ae;mo,da,tw,ni; 4;2009; 3;2010; 11;Brazil;Rio Grande do Sul;BR-RS;Derrubadas;Parque Estadual do Turvo;-27,242222;-53,94889;gm; 396;19,22;1847
+amp2092;1359;55;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Brazil;Rio Grande do Sul;BR-RS;São Francisco de Paula;Pró Mata;-29,500000;-50,16667;NA; 561;16,67;1793
+amp2093;1360;19;co;pp;as;NA;NA;NA;11;2011; 8;2012;  9;Brazil;Rio Grande do Sul;BR-RS;Santa Maria;NA;-29,774425;-53,66191;dd; 118;19,80;1654
+amp2094;1361;16;co;sw;as;NA;NA;ni;11;1998;11;1999; 12;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;NA;-32,166667;-52,16667;gm;   9;18,47;1218
+amp2095;1361; 5;co;du;as;NA;NA;ni;11;1998;11;1999; 12;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;NA;-32,183333;-52,15000;gm;   2;18,42;1210
+amp2096;1362;13;co;sw,du;as;pt;NA;mo,da,tw,ni;NA;2001;NA;2002;NA;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Parque Nacional da Lagoa do Peixe;-31,258333;-50,96194;NA;   0;18,97;1349
+amp2097;1363; 1;co;sw;as;NA;NA;NA; 3;2002; 3;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Mostardas II;-30,821389;-50,67639;dd;  18;19,08;1432
+amp2098;1363; 1;co;sw;as;NA;NA;NA; 3;2002; 3;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Mostardas III;-31,144722;-50,93361;dd;  16;19,00;1392
+amp2099;1363; 2;co;tp;as;NA;NA;NA; 3;2002; 3;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Tavares;Tapera;-31,230000;-51,03611;dd;  10;18,98;1379
+amp2100;1363; 3;co;sw;as;NA;NA;NA; 3;2002; 3;2002;  0;Brazil;Rio Grande do Sul;BR-RS;São José do Norte;São José do Norte II;-31,810278;-51,70500;dd;   6;18,72;1252
+amp2101;1363; 2;co;sw;as;NA;NA;NA; 4;2002; 4;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Tapes;Tapes;-30,705556;-51,58194;dd;  41;19,30;1412
+amp2102;1363; 1;co;sw;as;NA;NA;NA; 4;2002; 4;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;Rio Grande I;-31,963056;-52,30639;dd;  14;18,90;1310
+amp2103;1363; 2;co;sw;as;NA;NA;NA; 4;2002; 4;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;Rio Grande II;-32,293333;-52,53139;dd;  11;18,49;1278
+amp2104;1363; 1;co;sw;as;NA;NA;NA; 4;2002; 4;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;Rio Grande III;-32,500278;-52,57306;dd;   7;18,20;1247
+amp2105;1363; 3;co;sw;as;NA;NA;NA; 4;2002; 4;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Santa Vitória do Palmar;Santa Vitória do Palmar III;-33,510833;-53,31278;dd;  16;16,89;1219
+amp2106;1363; 2;co;la;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Maquiné;Maquiné;-29,684722;-50,14917;dd;   3;19,32;1494
+amp2107;1363; 2;co;la;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Dom Pedro de Alcântara;Torres;-29,384167;-49,83000;dd;   1;19,33;1430
+amp2108;1363; 1;co;tp;as;NA;NA;NA; 7;2002; 7;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Candelária;Candelária;-29,681389;-52,80056;dd;  68;19,80;1414
+amp2109;1363; 1;co;la;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Caxias do Sul;Serra II;-29,334444;-51,18639;dd;  64;19,47;1507
+amp2110;1363; 1;co;sw;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Cambará do Sul;Cambará I;-29,223611;-50,25028;dd; 950;15,00;1964
+amp2111;1363; 2;co;la;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Cambará do Sul;Cambará II;-29,011111;-50,10917;dd;1003;15,08;1807
+amp2112;1363; 3;co;la;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;São José dos Ausentes;São José dos Ausentes II;-28,735833;-50,11667;dd;1182;14,72;1694
+amp2113;1363; 2;co;sw;as;NA;NA;NA; 5;2002; 5;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Lagoa Vermelha;Lagoa Vermelha;-28,378889;-51,47778;dd; 738;16,78;1681
+amp2114;1363; 2;co;sw;as;NA;NA;NA; 6;2002; 6;2002;  0;Brazil;Rio Grande do Sul;BR-RS;Tio Hugo;Soledade II;-28,616389;-52,61889;dd; 462;18,35;1636
+amp2115;1364;16;co;la,du;as,tr;NA;NA;tw,ni;11;2007; 8;2008;  9;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Parque Nacional da Lagoa do Peixe;-31,179167;-50,90556;gm;   0;18,98;1378
+amp2116;1365;13;ab;sw;as,qs,tr;NA;NA;tw,ni;11;2007; 8;2008;  9;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Parque Nacional da Lagoa do Peixe;-31,118333;-50,89972;gm;  18;19,00;1398
+amp2117;1366;12;ab;sw;as,tr;NA;NA;tw,ni; 6;2005; 6;2006; 12;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Parque Nacional da Lagoa do Peixe;-30,864167;-50,80417;gm;   0;19,18;1413
+amp2118;1367;10;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Soledade;NA;-28,897824;-52,47617;dd; 593;17,47;1587
+amp2119;1367; 8;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Soledade;NA;-28,883893;-52,46604;dd; 675;17,11;1619
+amp2120;1367;10;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Soledade;NA;-28,876287;-52,45718;dd; 675;17,12;1623
+amp2121;1367;12;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Soledade;NA;-28,894150;-52,47061;dd; 628;17,32;1600
+amp2122;1367;11;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Soledade;NA;-28,883418;-52,47074;dd; 639;17,28;1604
+amp2123;1367; 7;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,166318;-50,98024;dd; 893;16,17;1587
+amp2124;1367; 8;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,169905;-50,98818;dd; 907;16,10;1597
+amp2125;1367; 5;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,167504;-50,97473;dd; 879;16,21;1586
+amp2126;1367; 7;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,196328;-51,01222;dd; 907;16,10;1606
+amp2127;1367; 6;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,193134;-50,98721;dd; 914;16,08;1604
+amp2128;1367;10;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,195446;-50,97502;dd; 912;16,09;1600
+amp2129;1367; 6;co;pp;as;dr;NA;mo,da,tw,ni;10;2014; 1;2015;  3;Brazil;Rio Grande do Sul;BR-RS;Vacaria;NA;-28,193527;-50,97733;dd; 912;16,09;1600
+amp2130;1368;12;ab;fo;NA;pt;NA;mo,da,tw,ni; 8;2002; 7;2003; 11;Brazil;Rio Grande do Sul;BR-RS;Sapiranga;Rio dos Sinos;-29,270556;-49,84806;gms;   5;19,36;1425
+amp2131;1369;17;ab;pp;as,tr;NA;NA;tw,ni; 9;2004; 8;2005; 11;Brazil;Rio Grande do Sul;BR-RS;Novo Hamburgo;NA;-29,704444;-50,98917;gms;  14;19,73;1519
+amp2132;1370;17;co;tp,pp,du;as,sb;NA;NA;tw,ni;10;2007; 8;2008; 10;Brazil;Rio Grande do Sul;BR-RS;Mostardas;Parque Nacional da Lagoa do Peixe;-31,180000;-50,88000;dd;  11;18,88;1506
+amp2133;1371;17;ab;tp;as;NA;NA;tw,ni; 8;2011; 8;2013; 24;Brazil;Rio Grande do Sul;BR-RS;Sentinela do Sul;NA;-30,732222;-51,65944;dd;  39;19,30;1409
+amp2134;1372;12;ab;re,du;NA;pt;NA;mo,da,tw,ni; 4;2009; 3;2010; 11;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;Balneário Cassino;-32,225000;-52,20000;gm;   2;18,46;1199
+amp2135;1373;16;co;fo,tp,sw,du;as;pt,ar;NA;mo,da,tw,ni;NA;2006;NA;2008;NA;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;Ilha dos Marinheiros;-32,016667;-52,15000;gm;   2;18,67;1216
+amp2136;1374;12;ab;fo,sw;as,tr;pt,ft,ar;NA;tw,ni; 7;2005; 5;2007; 22;Brazil;Rio Grande do Sul;BR-RS;Rio Grande;Mata da Estrada Velha;-32,150833;-52,16528;gm;   4;18,48;1211
+amp2137;1375;12;co;tp,la,sw,ll,br;as;pt;NA;mo,da,tw,ni;10;2006; 5;2007;  7;Brazil;Rio Grande do Sul;BR-RS;Canoas;Universidade Luterana do Brazil;-29,920000;-51,18000;gms;  20;19,97;1514
+amp2138;1376;24;co;tp,pp,la,sw,is;sb;NA;NA;tw,ni;11;2001;10;2002; 11;Brazil;Rio Grande do Sul;BR-RS;Santa Maria;Câmpus da Universidade Federal de Santa Maria;-29,700000;-53,70000;gm;  89;19,94;1676
+amp2139;1377; 6;ab;sw;as,sb;NA;NA;ni;11;2005; 2;2006;  3;Brazil;Rio Grande do Sul;BR-RS;Torres;Parque Estadual de Itapeva;-29,382778;-49,76389;NA;  29;19,20;1422
+amp2140;1377; 9;ab;re,du;as,sb;NA;NA;ni;11;2005; 2;2006;  3;Brazil;Rio Grande do Sul;BR-RS;Torres;Parque Estadual de Itapeva;-29,379722;-49,75722;NA;   4;19,32;1410
+amp2141;1377; 7;ab;sw;as,sb;NA;NA;ni;11;2005; 2;2006;  3;Brazil;Rio Grande do Sul;BR-RS;Torres;Parque Estadual de Itapeva;-29,366944;-49,76417;NA;  24;19,24;1424
+amp2142;1377; 7;ab;sw;as,sb;NA;NA;ni;11;2005; 2;2006;  3;Brazil;Rio Grande do Sul;BR-RS;Torres;Parque Estadual de Itapeva;-29,346944;-49,76528;NA;   8;19,33;1411
+amp2143;1378;23;co;fo,sw;as;pt,ft;ae;mo,da,tw,ni; 5;2008; 4;2010; 23;Brazil;Rio Grande do Sul;BR-RS;Sertão;Parque Natural Municipal de Sertão;-28,041944;-52,22444;gms; 707;17,26;1781
+amp2144;1379;27;co;sw;sb,tr;NA;NA;da,tw,ni;NA;2000;NA;2012;NA;Brazil;Rio Grande do Sul;BR-RS;Triunfo;Estação Ambiental Braskem;-29,861667;-51,37028;gms;  13;19,83;1458
+amp2145;1380;27;co;la,sw,is;as;pt,ft;NA;da,tw,ni;11;2003; 1;2005; 14;Paraguay;Canindeyu;PY-14;Ygatimi;Reserva Natural del Bosque Mbaracayú;-24,133611;-55,42611;gm; 221;22,32;1625
+amp2146;1381;30;co;NA;as;NA;NA;da,tw,ni; 1;2015; 6;2015;  5;Paraguay;Amambay;PY-13;Pedro Juan Caballero;Parque Nacional Cerro Corá;-22,649167;-56,01472;NA; 276;22,97;1516
+amp2147;1382;26;co;fo,is;as;pt,ft;NA;mo,da,tw,ni; 7;2008; 5;2009; 10;Paraguay;Itapua;PY-7;Alto Vera;Reserva Kanguery;-26,513333;-55,78472;gms; 161;21,66;1561
+amp2148;1383;32;ab;fo,tp,la;as;pt;NA;mo,da,tw,ni; 4;2010;11;2014; 55;Paraguay;San Pedro;PY-2;Santa Rosa Del Aguaray;Reserva Natural de Laguna Blanca;-23,812500;-56,29472;gm; 203;23,29;1536
+amp2149;1384;25;co;NA;as;pt;NA;mo,da,tw,ni; 7;2008; 2;2011; 31;Paraguay;Guaira;PY-4;General Garay;Reserva de Recursos Manejados de Ybyturuzú;-25,847222;-56,21972;gms; 269;21,45;1580
+amp2150;1385;22;ab;fo,la;as,sb,tr;pt;NA;mo,da,tw,ni; 8;2012; 8;2014; 24;Argentina;Misiones;AR-N;Iguazú;Parque Nacional Iguazú;-25,827222;-54,32694;gms; 292;20,07;1744
+amp2151;1386;20;co;tp,pp,sw,is;as;NA;NA;da,ni; 1;2007; 2;2008; 13;Argentina;Misiones;AR-N;Iguazú;Reserva de Vida Silvestre Urugua-í;-26,000278;-54,06722;NA; 318;19,45;1764
+amp2152;1387;15;co;fo,la;as;pt,ft;NA;mo,da,tw,ni; 7;2002; 2;2006; 43;Argentina;Misiones;AR-N;General Manuel Belgrano;Refugio de Vida Silvestre Yacutinga;-25,565556;-54,07722;NA; 223;20,09;1769
+amp2153;1388;21;co;fo,tp,pp;as;NA;NA;NA; 3;2002; 1;2009; 82;Argentina;Misiones;AR-N;San Pedro;Reserva y Refugio Privado de Vida Silvestre Yaguaroundí;-26,689167;-54,26333;gms; 494;18,97;1749
+amp2154;1389; 3;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Cainguás;Aristóbulo del Valle;-27,010833;-54,88917;gms; 422;20,10;1605
+amp2155;1389; 4;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Cainguás;Salto Encantado;-27,008611;-54,87778;gms; 400;20,17;1605
+amp2156;1389; 6;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Manuel Belgrano;Reserva Privada Urugua-í;-25,974167;-54,11611;gms; 278;19,72;1750
+amp2157;1389; 3;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Iguazú;Puerto Iguazú;-25,612222;-54,56083;gms; 198;21,24;1793
+amp2158;1389; 3;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Manuel Belgrano;Comandante Andresito;-25,669444;-54,04556;gms; 251;19,94;1780
+amp2159;1389; 9;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Posadas;Posadas;-27,453333;-55,89250;gms; 105;21,30;1768
+amp2160;1389; 6;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Montecarlo;Montecarlo;-26,568889;-53,60889;gms; 597;18,35;1954
+amp2161;1389; 1;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;San Pedro;Refugio Moconá;-27,140833;-53,92611;gms; 202;19,92;1850
+amp2162;1389; 2;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Cainguás;Balneario Municipal Cuñá Pirú;-27,087222;-54,95278;gms; 213;21,04;1553
+amp2163;1389; 2;co;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Argentina;Misiones;AR-N;Oberá;Chacra San Juan de Dios;-27,473333;-55,17194;gms; 254;20,67;1683

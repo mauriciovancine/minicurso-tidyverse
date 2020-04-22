@@ -1,0 +1,4 @@
+[1118/221230.852:ERROR:process_info.cc(359)] UncheckedAllocate
+[1130/205238.185:ERROR:process_reader_win.cc(90)] NtQuerySystemInformation: {Cota insuficiente} A cota de arquivo de paginação ou de memória virtual disponível é insuficiente para completar a operação especificada. (0xc0000017)
+[1130/205238.216:ERROR:exception_snapshot_win.cc(98)] thread ID 24132 not found in process
+[1130/221557.104:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: {Cota insuficiente} A cota de arquivo de paginação ou de memória virtual disponível é insuficiente para completar a operação especificada. (0xc0000017)

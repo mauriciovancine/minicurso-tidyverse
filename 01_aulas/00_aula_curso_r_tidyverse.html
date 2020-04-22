@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>tidyverse: manipulação e visualização de dados</title>
+    <title>Introdução ao tidyverse</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Maurício Vancine" />
+    <meta name="author" content="Maurício H. Vancine" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/5235085b15.js"></script>
   </head>
@@ -11,9 +11,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# tidyverse: manipulação e visualização de dados<br><br>
-### Maurício Vancine <br>
-### <br> xaringan [presentation ninja] <br><br> 10/04/2020
+# Introdução ao <em>tidyverse</em> <br><br>
+## <br><br> xaringan [presentation ninja] <br>
+### Maurício H. Vancine
+### 25/04/2019
 
 ---
 
@@ -22,14 +23,16 @@ class: center, middle, inverse, title-slide
 
 class: clear, center, middle
 background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
-background-size: 40%
-background-position: 50% 50%
 
 ---
 
-# Maurício Vancine
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/mauricio_vancine_anfoco_perfil.jpg)
+background-size: 300px
+background-position: 85% 85%
 
-## Ecólogo (2015) | Mestre em Zoologia (2018)
+# Maurício H. Vancine
+
+## Doutorando em Zoologia
 
 --
 
@@ -37,63 +40,22 @@ background-position: 50% 50%
 - Ecologia Espacial
 - Ecologia Quantitativa
 - Ecologia e Conservação de Anfíbios
-  
+
 --
 
-### Habilidades
+### Habilidades (*Skills*) 
 - Modelos de Distribuição de Espécies (SDMs)
 - Análise de Dados Ecológicos e Geoespaciais
 - **Open source** [R, QGIS, GRASS GIS, Linux, Libreoffice....]
 
 --
 
-### Contato e informações
-|                                                                                          |                                     |
-| :--------------------------------------------------------------------------------------- | :--------------------------------   |
-| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;] | mauricio.vancine@gmail.com          |
-| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;] | @mauriciovancine                    |
-| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]  | mauriciovancine.netlify.com         |
-
-
----
-
-# Experiência
-
-## Minha história com o R (~470 h)
-
-&lt;br&gt;
-
-- 2011: Assisti, **Curso de R** (40 h) - Prof. Tadeu Siqueira
-
-- 2015: Minicurso, **Introdução ao software R** (08 h) - SEE
-
-- 2015: Monitor, **Ecologia Quantitativa** (60 h) - Prof. Tadeu Siqueira
-
-- 2016: Minicurso, **Introdução software R: manejo de dados, gráficos e análises estatísticas** (16 h) - SEB
-
-- 2016: Monitor, **Modelagem de Nicho Ecológico no R** (30 h) - UNESP
-
-- 2016: Professor colaborador, **Modelagem de nicho ecológico: teoria e prática** (45 h) - Unicamp
-
----
-
-# Experiência
-
-## Minha história com o R (~470 h)
-
-&lt;br&gt;
-
-- 2017:	Professor colaborador, **Modelagem de nicho ecológico: teoria e prática** (60 h) - UNESP
-
-- 2017: Estágio docência, **Ecologia Quantitativa** (60 h) - Prof. Tadeu Siqueira
-
-- 2018: Professor colaborador, **Modelos Estatísticos em Ecologia** (12 h) - UNESP
-
-- 2019: Curso, **Introdução à linguagem R: manejo, visualização e análises de dados** (50 h) - Labic
-
-- 2019: Assisti, **Introdução à modelagem hierárquica** (45 h) - UFRGS
-
-- 2019: Professor visitante, **Introdução ao geoprocessamento para etnobiologia e conservação da biodiversidade ** (45 h) - UFRPE
+### Contato e informações:
+|                                                                                          |                                   |
+| :--------------------------------------------------------------------------------------- | :-------------------------------- |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;] | mauricio.vancine@gmail.com        |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;] | @mauriciovancine                  |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]  | mauriciovancine.netlify.com       |
 
 ---
 
@@ -102,51 +64,136 @@ background-position: 50% 50%
 &lt;br&gt;&lt;br&gt;
 
 ### Duração
-~08 h
+~15 h
 
 --
 
 ### Datas e horários
-23/10/2019 - 14:00 às 18:00 h (4 h) &lt;br&gt;
-24/10/2019 - 08:00 às 12:00 h (4 h)
+25/04/2020 - 13:00 às 19:00 h (6 h) &lt;br&gt;
+26/10/2020 - 08:00 | (almoço) | 19:00 h (9 h)
 
 --
 
 ### Formato
-Prática (6 h) &lt;br&gt;
-Exercícios (2 h)
+Revisão (~1 h) &lt;br&gt;
+Prática (~10 h) &lt;br&gt;
+Exercícios (~4 h)
 
 ---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/github_repositorio.png)
+background-size: 700px
+background-position: 50% 80%
 
 # Minicurso
 
 ## Material
 
 ### Repositório de dados do minicurso no GitHub
-https://github.com/mauriciovancine/minicurso-r-sebio-2019
-
---
-
-&lt;br&gt;
-
-## Organização no seu computador
-Criem uma pasta chamada `github` em `Documentos` ou na famigerada `Área de Trabalho`
-
---
-
-Adicionem o arquivo `minicurso-r-sebio-2019-master.zip` nessa pasta
-
---
-
-Deszipem o arquivo nessa pasta
-
---
-
-Pronto, arquivos organizados do minicurso =]
+https://github.com/mauriciovancine/minicurso-tidyverse
 
 ---
 
-background-image: url(https://www.r-project.org/logo/Rlogo.svg)
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/git_github.png)
+background-size: 700px
+background-position: 85% 85%
+
+# Minicurso
+
+## Conteúdo
+
+### 0 Controle de versão, Git e GitHub
+0.0 Verificar os notebooks
+&lt;br&gt;
+0.1 Controle de versão
+&lt;br&gt;
+0.2 Git
+&lt;br&gt;
+0.3 GitHub
+&lt;br&gt;
+0.4 Funcionamento do controle de versão
+&lt;br&gt;
+0.5 Fork
+&lt;br&gt;
+0.6 Clone
+&lt;br&gt;
+0.7 Add e Commit
+&lt;br&gt;
+0.8 Push
+&lt;br&gt;
+0.9 Pull
+&lt;br&gt;
+0.10 Controle de versão no RStudio
+
+---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/r_rstudio.png)
+background-size: 450px
+background-position: 75% 75%
+
+# Minicurso
+
+## Conteúdo
+
+### 1 Revisão rápida de R e RStudio
+1.1 Linguagem R
+&lt;br&gt;
+1.2 RStudio
+&lt;br&gt;
+1.2 Editor/Roteiro (*code*/*script*)
+&lt;br&gt;
+1.4 Comentários (*#*)
+&lt;br&gt;
+1.5 Atribuição (*&lt;-*)
+&lt;br&gt;
+1.6 Objetos
+&lt;br&gt;
+1.7 Operadores
+&lt;br&gt;
+1.8 Funções
+&lt;br&gt;
+1.9 Pacotes
+&lt;br&gt;
+1.10 Ajuda (*help*)
+&lt;br&gt;
+1.11 Ambiente (*environment*/*workspace*)
+&lt;br&gt;
+1.12 Citações
+
+---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/estrutura_dados.png)
+background-size: 400px
+background-position: 85% 90%
+
+# Minicurso
+
+## Conteúdo
+
+### 2 Revisão de estrutura de dados
+2.1 Atributos dos objetos
+&lt;br&gt;
+2.2 Modos dos objetos (*numeric*, *character* e *logical*)
+&lt;br&gt;
+2.3 Estrutura dos objetos (*vector*, *factor*, *matrix* e *data frame*)
+&lt;br&gt;
+2.4 Manejo de dados unidimensionais
+&lt;br&gt;
+2.5 Manejo de dados bidimensionais
+&lt;br&gt;
+2.6 Valores faltantes e especiais
+&lt;br&gt;
+2.7 Diretório de trabalho
+&lt;br&gt;
+2.8 Importar dados
+&lt;br&gt;
+2.9 Conferir e manejar dados importados
+&lt;br&gt;
+2.10 Exportar dados
+
+---
+
+background-image: url(/home/mude/data/github/minicurso-tidyverse/01_aulas/img/tidyverse.png)
 background-size: 350px
 background-position: 75% 75%
 
@@ -154,260 +201,59 @@ background-position: 75% 75%
 
 ## Conteúdo
 
-### 1 Linguagem R, aplicações e material
-1.1 Linguagem R
+### 3 Introdução ao tidyverse
+3.1 tidyverse
 &lt;br&gt;
-1.2 Linguagem R e software RStudio
+3.2 readr
 &lt;br&gt;
-1.3 Aplicações da linguagem R
+3.3 readxl e writexl
 &lt;br&gt;
-1.4 Apostilas, sites e livros
-
----
-
-background-image: url(https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg)
-background-size: 500px
-background-position: 90% 85%
-
-# Minicurso
-
-## Conteúdo
-
-### 2 Funcionamento da linguagem R
-2.1 RStudio
+3.4 tibble
 &lt;br&gt;
-2.2 Editor/Roteiro (*code*/*script*)
+3.5 magrittr (*pipe - %&gt;%*)
 &lt;br&gt;
-2.3 Comentários (*#*)
+3.6 tidyr
 &lt;br&gt;
-2.4 Atribuição (*&lt;-*)
+3.7 dplyr
 &lt;br&gt;
-2.5 Objetos
+3.8 forcats
 &lt;br&gt;
-2.6 Operadores
+3.9 forcats
 &lt;br&gt;
-2.7 Funções
+3.10 stringr
 &lt;br&gt;
-2.8 Pacotes
-&lt;br&gt;
-2.9 Ajuda (*help*)
-&lt;br&gt;
-2.10 Ambiente (*environment*/*workspace*)
-&lt;br&gt;
-2.11 Citações
-&lt;br&gt;
-2.12 Principais erros
-
----
-
-background-image: url(https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/5-298x300.png)
-background-size: 300px
-background-position: 80% 90%
-
-# Minicurso
-
-## Conteúdo
-
-### 3 Estrutura e manipulação de dados
-3.1 Atributos dos objetos
-&lt;br&gt;
-3.2 Modos dos objetos (*numeric*, *character* e *logical*)
-&lt;br&gt;
-3.3 Estrutura dos objetos (*vector*, *factor*, *matrix* e *data frame*)
-&lt;br&gt;
-3.4 Manejo de dados unidimensionais
-&lt;br&gt;
-3.5 Manejo de dados bidimensionais
-&lt;br&gt;
-3.6 Valores faltantes e especiais
-&lt;br&gt;
-3.7 Diretório de trabalho
-&lt;br&gt;
-3.8 Importar dados
-&lt;br&gt;
-3.9 Conferir e manejar dados importados
-&lt;br&gt;
-3.10 Exportar dados
-
----
-
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tidyverse.png)
-background-size: 250px
-background-position: 75% 75%
-
-# Minicurso
-
-## Conteúdo
-
-### 4 Introdução ao tidyverse
-4.1 tidyverse
-&lt;br&gt;
-4.2 readr
-&lt;br&gt;
-4.3 readxl
-&lt;br&gt;
-4.4 tibble
-&lt;br&gt;
-4.5 magrittr (*pipe - %&gt;%*)
-&lt;br&gt;
-4.6 dplyr
-&lt;br&gt;
-4.7 tidyr
+3.11 purrr
 
 ---
 
 background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/ggplot2.png)
-background-size: 250px
+background-size: 350px
 background-position: 75% 75%
 
 # Minicurso
 
 ## Conteúdo
 
-### 5 Visualização de dados
-5.1 Principais pacotes para gráficos no R
+### 4 Visualização de dados
+4.1 Pacote ggplot2
 &lt;br&gt;
-5.2 Principais livros e sites
+4.2 Principais livros e sites
 &lt;br&gt;
-5.3 Colunas como eixos do gráficos (*variáveis = colunas*)
+4.3 Colunas como eixos do gráficos (*variáveis = colunas*)
 &lt;br&gt;
-5.4 Principais tipos de gráficos
+4.4 Principais tipos de gráficos
 &lt;br&gt;
-5.5 Histograma (*histogram*)
+4.5 Histograma (*histogram*)
 &lt;br&gt;
-5.6 Gráfico de setores (*pie chart* e *donut plot*)
+4.6 Gráfico de setores (*pie chart* e *donut plot*)
 &lt;br&gt;
-5.7 Gráfico de barras (*bar plot*)
+4.7 Gráfico de barras (*bar plot*)
 &lt;br&gt;
-5.8 Gráfico de caixa (*box plot* e *violin plot*)
+4.8 Gráfico de caixa (*box plot* e *violin plot*)
 &lt;br&gt;
-5.9 Gráfico de dispersão (*scatter plot*)
-
----
-
-# Minicurso
-  
-## IMPORTANTE!
-  
+4.9 Gráfico de dispersão (*scatter plot*)
 &lt;br&gt;
-  
---
-  
-### **Aproveitem** o máximo possível!
-  
---
-  
-### **Perguntem** o que não entenderam! Não deixem passar dúvidas!
-  
---
-  
-### **Evitem** celular, redes sociais e outras distrações!
-  
---
-
-&lt;br&gt;
-### Estudar R e estatística geraram muitas **oportunidades** de parcerias em **pesquisas** e principalmente **trabalho**!
-
----
-
-# Minicurso
-
-## IMPORTANTE!
-
-### Só se aprende R...
-
---
-
-### ...'errando'
-
---
-
-### Esse curso é apenas o **começo**, o aprendizado é com vocês!
-
---
-
-### Será como **reaprender** à pensar, falar e escrever
-
---
-
-### Aprender leva **tempo**! Muito tempo....
-
---
-
-### Ponto positivo: há **muito material disponível** e **grátis**!
-
----
-
-background-image: url(https://media0.giphy.com/media/dILrAu24mU729pxPYN/giphy.gif)
-background-size: 700px
-background-position: 50% 60%
-
-# O R: qual o sentido?
-
----
-
-class: clear, inverse, middle, center
-background-image: url(figs/ecologia_estatistica.jpg)
-background-size: 600px
-background-position: 50% 50%
-
----
-
-# O R: qual o sentido?
-
-## O R precisa de um &lt;u&gt;**objetivo**&lt;/u&gt; para começar a fazer sentido...
-
---
-&lt;br&gt;
-### Nesse minicurso teremos dois &lt;u&gt;**objetivos**&lt;/u&gt;:
-
-### 1. **Manipular ou gerenciar** dados (planilhas) de forma mais fácil, automática e reproduzível
-
---
-
-### 2. **Visualizar** os dados (planilhas) para apresentar e entender padrões
-
---
-
-&lt;br&gt;
-
-### &lt;u&gt;**IMPORTANTE**&lt;/u&gt;: não teremos &lt;u&gt;**estatística**&lt;/u&gt; pelo tempo limitado...
-
----
-
-class: clear, inverse, middle, center
-
-# O que nos leva à pergunta: como são/estão suas habilidades com **planilhas eletrônicas**?
-
----
-
-# Planilha eletrônica
-
-## Softwares
-
-### Pago
-1. Microsoft Office (Excel): https://products.office.com/en/excel
-
-### Livre
-2. LibreOffice (Calc): https://www.libreoffice.org/discover/calc/
-3. WPS (SpreadSheets): https://www.wps.com/
-4. FreeOffice (PlanMaker): https://www.freeoffice.com/
-5. OnlyOffice (SpreadSheets): https://www.onlyoffice.com/
-
-### Online:
-6. Google Drive (SpreadSheets): https://docs.google.com/spreadsheets/
-
----
-
-background-image: url(figs/planilhas_eletronicas.png)
-background-size: 700px
-background-position: 50% 80%
-
-# Planilha eletrônica
-
-## Funcionamento
-
-### Configurem seus notebooks sempre com região com **lígua inglesa**
+4.10 Gráfico pareado (*pairs plot*)
 
 ---
 
@@ -438,10 +284,10 @@ Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "rainbow",
+"ratio": "16:9",
+"highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false,
-"slideNumberFormat": "%current%/%total%"
+"countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
@@ -484,30 +330,20 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 })();
 (function() {
   "use strict"
-  /* Replace <script> tags in slides area to make them executable
-   *
-   * Runs after post-processing of markdown source into slides and replaces only
-   * <script>s on the last slide of continued slides using the .has-continuation
-   * class added by xaringan. Finally, any <script>s in the slides area that
-   * aren't executed are commented out.
-   */
+  // Replace <script> tags in slides area to make them executable
   var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container:not(.has-continuation) script'
+    '.remark-slides-area .remark-slide-container script'
   );
   if (!scripts.length) return;
   for (var i = 0; i < scripts.length; i++) {
     var s = document.createElement('script');
     var code = document.createTextNode(scripts[i].textContent);
     s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
     scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-  var scriptsNotExecuted = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container.has-continuation script'
-  );
-  if (!scriptsNotExecuted.length) return;
-  for (var i = 0; i < scriptsNotExecuted.length; i++) {
-    var comment = document.createComment(scriptsNotExecuted[i].outerHTML)
-    scriptsNotExecuted[i].parentElement.replaceChild(comment, scriptsNotExecuted[i])
   }
 })();
 (function() {
