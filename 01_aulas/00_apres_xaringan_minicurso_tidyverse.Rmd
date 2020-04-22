@@ -28,7 +28,7 @@ background-size: 1200px
 ---
 
 background-image: url(img/git_github.png)
-background-size: 400px
+background-size: 600px
 background-position: 85% 85%
 
 # 0 Controle de versão, Git e GitHub
@@ -65,7 +65,7 @@ class: inverse, middle, center
 
 ---
 
-background-image: url(img/hard_soft.png)
+background-image: url(img/general_hard_soft.png)
 background-size: 600px
 background-position: 50% 50%
 
@@ -87,7 +87,7 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/rlogo.svg)
+background-image: url(img/r_logo.svg)
 background-size: 400px
 background-position: 50% 70%
 
@@ -99,7 +99,7 @@ background-position: 50% 70%
 
 ---
 
-background-image: url(img/rstudio.svg)
+background-image: url(img/rstudio_logo.svg)
 background-size: 500px
 background-position: 50% 60%
 
@@ -111,7 +111,7 @@ background-position: 50% 60%
 
 ---
 
-background-image: url(img/git.png)
+background-image: url(img/git_logo.png)
 background-size: 400px
 background-position: 50% 60%
 
@@ -129,7 +129,7 @@ class: inverse, middle, center
 
 ---
 
-background-image: url(img/versao.gif)
+background-image: url(img/git_file_version.gif)
 background-size: 400px
 background-position: 50% 50%
 
@@ -137,7 +137,7 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/versao_solo.png)
+background-image: url(img/git_one_brantch.png)
 background-size: 600px
 background-position: 50% 50%
 
@@ -147,7 +147,7 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/versao_ramos.png)
+background-image: url(img/git_multi_brantch.png)
 background-size: 700px
 background-position: 50% 50%
 
@@ -157,7 +157,7 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/git.png)
+background-image: url(img/git_logo.png)
 background-size: 500px
 background-position: 50% 70%
 
@@ -187,7 +187,7 @@ class: inverse, middle, center
 
 ---
 
-background-image: url(img/github_func.png)
+background-image: url(img/github_work.png)
 background-size: 700px
 background-position: 50% 80%
 
@@ -243,7 +243,7 @@ background-position: 50% 60%
 
 ---
 
-background-image: url(img/fork.png)
+background-image: url(img/git_fork.png)
 background-size: 600px
 background-position: 50% 60%
 
@@ -256,7 +256,7 @@ https://github.com/mauriciovancine/minicurso-tidyverse
 
 ---
 
-background-image: url(img/fork.gif)
+background-image: url(img/git_fork.gif)
 background-size: 600px
 background-position: 50% 80%
 
@@ -277,7 +277,7 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/github_func.png)
+background-image: url(img/github_work.png)
 background-size: 700px
 background-position: 50% 80%
 

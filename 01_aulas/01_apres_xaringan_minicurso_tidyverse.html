@@ -12,7 +12,7 @@
 class: center, middle, inverse, title-slide
 
 # Introdução ao <em>tidyverse</em> <br><br>
-## <br><br> xaringan [presentation ninja] <br>
+## <br> 1 Revisão rápida de R e RStudio <br>
 ### Maurício Vancine
 ### 25/04/2019
 
@@ -22,124 +22,19 @@ class: center, middle, inverse, title-slide
 
 
 class: clear, center, middle
-background-image: url(img/package_xaringan.png)
-
----
-
-background-image: url(img/person_mauricio_vancine.jpg)
-background-size: 300px
-background-position: 85% 85%
-
-# Maurício H. Vancine
-
-## Doutorando em Zoologia
-
---
-
-### Pesquisa
-- Ecologia Espacial
-- Ecologia Quantitativa
-- Ecologia e Conservação de Anfíbios
-
---
-
-### Ferramentas 
-- Modelos de Distribuição de Espécies (SDMs)
-- Análise de Dados Ecológicos e Geoespaciais
-- **Open source** [R, QGIS, GRASS GIS, Linux, LibreOffice....]
-
---
-
-### Contato e informações:
-|                                                                                          |                                   |
-| :--------------------------------------------------------------------------------------- | :-------------------------------- |
-| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;] | mauricio.vancine@gmail.com        |
-| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;] | @mauriciovancine                  |
-| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]  | mauriciovancine.netlify.com       |
-
----
-
-background-image: url(img/general_list.jpg)
-background-size: 350px
-background-position: 85% 85%
-
-# Minicurso
-
-&lt;br&gt;&lt;br&gt;
-
-### Duração
-~15 h
-
---
-
-### Datas e horários
-25/04/2020 - 13:00 às 19:00 h (6 h) &lt;br&gt;
-26/10/2020 - 08:00 | (almoço) | 19:00 h (9 h)
-
---
-
-### Formato
-Revisão (~1 h) &lt;br&gt;
-Prática (~10 h) &lt;br&gt;
-Exercícios (~4 h)
-
----
-
-background-image: url(img/github_repository.png)
-background-size: 700px
-background-position: 50% 80%
-
-# Minicurso
-
-## Material
-
-### Repositório de dados do minicurso no GitHub
-https://github.com/mauriciovancine/minicurso-tidyverse
-
----
-
-background-image: url(img/git_github.png)
-background-size: 700px
-background-position: 85% 85%
-
-# Minicurso
-
-## Conteúdo
-
-### 0 Controle de versão, Git e GitHub
-0.0 Verificar os ambientes
-&lt;br&gt;
-0.1 Controle de versão
-&lt;br&gt;
-0.2 Git
-&lt;br&gt;
-0.3 GitHub
-&lt;br&gt;
-0.4 Funcionamento do controle de versão
-&lt;br&gt;
-0.5 Fork
-&lt;br&gt;
-0.6 Clone
-&lt;br&gt;
-0.7 Add e Commit
-&lt;br&gt;
-0.8 Push
-&lt;br&gt;
-0.9 Pull
-&lt;br&gt;
-0.10 Controle de versão no RStudio
+background-image: url(img/r_rstudio.png)
+background-size: 500px
+background-position: 50% 50%
 
 ---
 
 background-image: url(img/r_rstudio.png)
-background-size: 450px
-background-position: 75% 75%
+background-size: 400px
+background-position: 70% 70%
 
-# Minicurso
+# 1 Revisão rápida de R e RStudio
 
-## Conteúdo
-
-### 1 Revisão rápida de R e RStudio
+## Tópicos
 1.1 Linguagem R
 &lt;br&gt;
 1.2 RStudio
@@ -168,152 +63,231 @@ background-position: 75% 75%
 
 ---
 
-background-image: url(img/r_data_structure.png)
+# 1.1 Linguagem R
+
+## E por que usar o R?
+
+&lt;br&gt;&lt;br&gt;
+
+### 1. É **grátis**!
+
+--
+
+### 2. Implementação de **rotinas** (repetir várias operações)!
+
+--
+
+### 3. Faz **gráficos** de forma eficiente
+
+--
+
+### 4. Atualmente é a **principal linguagem** utilizada para análises de dados
+
+---
+
+class: inverse, middle, center
+
+# E de onde surgiu o R?
+
+---
+
+background-image: url(img/john_chambers.jpg)
+background-size: 300px
+background-position: 80% 80%
+
+# 1.1 Linguagem R
+
+## Histórico - Linguagem S
+
+### John M. Chambers (Universidade de Stanford, CA, EUA)
+
+- Old S (1976-1987)
+- New S (1988-1997)
+- S4 (1998)
+&lt;br&gt;&lt;br&gt;
+- Interface: S-PLUS (1988-2008)
+
+---
+
+background-image: url(img/gentleman_ihaka.jpg)
 background-size: 400px
-background-position: 85% 90%
+background-position: 80% 80%
 
-# Minicurso
+# 1.1 Linguagem R
 
-## Conteúdo
+## Histórico - Linguagem R
+### Robert Gentleman e Ross Ihaka (Universidade de Aucland, NZ)
+- Desenvolvimento (1997-2000)
+- Versão 1 (2000-2004)
+- Versão 2 (2004-2013)
+- Versão 3 (2013-2020)
+- Versão 4 (2020-????)
+&lt;br&gt;&lt;br&gt;
+- Interface: RStudio (2011-atual)
+- Atualmente: **R Core Team**
 
-### 2 Revisão de estrutura de dados
-2.1 Atributos dos objetos
-&lt;br&gt;
-2.2 Modos dos objetos (*numeric*, *character* e *logical*)
-&lt;br&gt;
-2.3 Estrutura dos objetos (*vector*, *factor*, *matrix* e *data frame*)
-&lt;br&gt;
-2.4 Manejo de dados unidimensionais
-&lt;br&gt;
-2.5 Manejo de dados bidimensionais
-&lt;br&gt;
-2.6 Valores faltantes e especiais
-&lt;br&gt;
-2.7 Diretório de trabalho
-&lt;br&gt;
-2.8 Importar dados
-&lt;br&gt;
-2.9 Conferir e manejar dados importados
-&lt;br&gt;
-2.10 Exportar dados
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[http://vita.had.co.nz/papers/r-s.pdf]
 
 ---
 
-background-image: url(img/package_tidyverse.png)
-background-size: 350px
-background-position: 85% 75%
+background-image: url(img/r_vs_rstudio.png)
+background-size: 600px
+background-position: 50% 80%
 
-# Minicurso
+# 1.2 RStudio
 
-## Conteúdo
-
-### 3 Introdução ao tidyverse
-3.1 Pacote tidyverse
-&lt;br&gt;
-3.2 Pacote readr
-&lt;br&gt;
-3.3 Pacotes readxl e writexl
-&lt;br&gt;
-3.4 Pacote tibble
-&lt;br&gt;
-3.5 Pacote magrittr (*pipe - %&gt;%*)
-&lt;br&gt;
-3.6 Pacote tidyr
-&lt;br&gt;
-3.7 Pacote dplyr
-&lt;br&gt;
-3.8 Pacote forcats
-&lt;br&gt;
-3.9 Pacote lubridate
-&lt;br&gt;
-3.10 Pacote stringr
-&lt;br&gt;
-3.11 Pacote purrr
+## Todos conhecem o R e o RStudio?
 
 ---
 
-background-image: url(img/package_ggplot2.png)
-background-size: 350px
-background-position: 85% 75%
+class: inverse, middle, center
 
-# Minicurso
-
-## Conteúdo
-
-### 4 Visualização de dados
-4.1 Pacote ggplot2
-&lt;br&gt;
-4.2 Principais livros e sites
-&lt;br&gt;
-4.3 Colunas como eixos do gráficos (*variáveis = colunas*)
-&lt;br&gt;
-4.4 Principais tipos de gráficos
-&lt;br&gt;
-4.5 Histograma (*histogram*)
-&lt;br&gt;
-4.6 Gráfico de setores (*pie chart* e *donut plot*)
-&lt;br&gt;
-4.7 Gráfico de barras (*bar plot*)
-&lt;br&gt;
-4.8 Gráfico de caixa (*box plot* e *violin plot*)
-&lt;br&gt;
-4.9 Gráfico de dispersão (*scatter plot*)
-&lt;br&gt;
-4.10 Gráfico pareado (*pairs plot*)
+# Não confundam a **Linguagem R** com o software **RStudio**
 
 ---
 
-background-image: url(img/package_broom.png)
-background-size: 350px
-background-position: 85% 75%
+background-image: url(img/r_linguagem_rstudio.png)
+background-size: 800px
+background-position: 50% 50%
 
-# Minicurso
-
-## Conteúdo
-
-### 5 GLM e tidymodels
-5.1 Pacote broom
-&lt;br&gt;
-5.2 Modelos lineares 
-&lt;br&gt;
-5.3 Famílias de distribuição (Gaussiana, Binomial e Poisson)
-&lt;br&gt;
-5.4 Funções de ligação
-&lt;br&gt;
-5.5 Ajuste dos modelos
-&lt;br&gt;
-5.6 Avaliação do ajuste dos modelos
-&lt;br&gt;
-5.7 Seleção de modelos (AIC)
+# 1.2 RStudio
 
 ---
+
+class: inverse, middle, center
+
+# E o que o R pode fazer?
+
+---
+
+# 1.3 Aplicações da linguagem R
+
+## Análises e Visualização
+- Estatísticas univariadas e multivariadas
+- Análises de dados ecológicos (população, comunidades e ecossistemas)
+- Análise de dados espaciais, temporais e sonoros
+- Análise de dados funcionais, genéticos e filogenéticos
+- Análise de dados geoespaciais, sensoriamento retomo
+- Visualização de todos os dados anteriores
+- Data Science
+
+--
 
 background-image: url(img/rmarkdown_output_formats.png)
 background-size: 350px
-background-position: 80% 75%
+background-position: 80% 80%
 
-# Minicurso
+## R Markdown
+- Textos em HTML, PDF, Word, ODT, Markdown
+- Apresentação de slides
+- Websites e Blogs
+- Livros
+- Artigos para publicação
+- Shiny
 
-## Conteúdo
+---
 
-### 6 RMarkdown
-6.1 Markdown
-&lt;br&gt;
-6.2 R Markdown
-&lt;br&gt;
-6.3 Instalar pacotes
-&lt;br&gt;
-6.4 Criar um arquivo R Markdown
-&lt;br&gt;
-6.5 Renderizar um arquivo R Markdown
-&lt;br&gt;
-6.6 Estrutura do RMarkdown
-&lt;br&gt;
-6.7 Opções do chunk
-&lt;br&gt;
-6.8 Sintaxe do Markdown
-&lt;br&gt;
-6.9 Principais formatos de saída
+class: inverse, middle, center
+
+# Há uns 10 anos, um nome tem se destacado no avanço da linguagem R, na parte de *manejo, visualização e análises de dados* (*tidyverse*)
+
+---
+
+background-image: url(img/hadley_wickham.jpg)
+background-size: 600px
+background-position: 50% 65%
+
+# Hadley Wickham
+
+### Cientista Chefe no RStudio e Professor Adjunto de Estatística na Universidade de Auckland, Stanford e Rice
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] http://hadley.nz/
+
+---
+
+class: inverse, middle, center
+
+# Há uns 5 anos, outro nome tem se destacado no avanço da linguagem R, na parte de *textos, sites e apresentações* (*R Markdown*) 
+
+---
+
+background-image: url(img/yihui_xie.jpg)
+background-size: 600px
+background-position: 50% 55%
+
+# Yihui Xie
+
+##  Engenheiro de software no RStudio
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://yihui.name/
+
+---
+
+class: inverse, middle, center
+
+# Principal material para estudo
+
+---
+
+background-image: url(img/cover_ciencias_dados_r.jpg)
+background-size: 300px
+background-position: 50% 50%
+
+# Recomendação
+
+## Ciência de Dados com R: introdução (2018)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://www.ibpad.com.br/o-que-fazemos/publicacoes/introducao-ciencia-de-dados-com-r/
+
+---
+
+background-image: url(img/cover_data_science_r.png)
+background-size: 300px
+background-position: 50% 55%
+
+# Recomendação
+
+## R for Data Science (2017)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://r4ds.had.co.nz/
+
+---
+
+background-image: url(img/cover_statistical_inference.png)
+background-size: 300px
+background-position: 50% 55%
+
+# Recomendação
+
+## Statistical Inference via Data Science (2019)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://moderndive.com
+
+---
+
+background-image: url(img/cover_rmarkdown.png)
+background-size: 280px
+background-position: 50% 50%
+
+# Recomendação
+
+## R Markdown: The Definitive Guide (2018)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://bookdown.org/yihui/rmarkdown/
 
 ---
 
