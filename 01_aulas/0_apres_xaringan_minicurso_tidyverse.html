@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade</title>
+    <title>Introdução ao tidyverse</title>
     <meta charset="utf-8" />
     <meta name="author" content="Maurício H. Vancine" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
@@ -11,10 +11,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade <br><br>
+# Introdução ao <em>tidyverse</em> <br><br>
 ## <br><br> xaringan [presentation ninja] <br>
 ### Maurício H. Vancine
-### 30/09/2019
+### 25/04/2019
 
 ---
 
@@ -22,13 +22,17 @@ class: center, middle, inverse, title-slide
 
 
 class: clear, center, middle
-background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-image: url(img/xaringan.png)
 
 ---
 
+background-image: url(img/mauricio_vancine.jpg)
+background-size: 300px
+background-position: 85% 85%
+
 # Maurício H. Vancine
 
-## Ecólogo (2015) | Mestre em Zoologia (2018)
+## Doutorando em Zoologia
 
 --
 
@@ -39,10 +43,10 @@ background-image: url(https://user-images.githubusercontent.com/163582/45438104-
 
 --
 
-### Habilidades (*Skills*) 
+### Ferramentas 
 - Modelos de Distribuição de Espécies (SDMs)
 - Análise de Dados Ecológicos e Geoespaciais
-- **Open source** [R, QGIS, GRASS GIS, Linux, Libreoffice....]
+- **Open source** [R, QGIS, GRASS GIS, Linux, LibreOffice....]
 
 --
 
@@ -55,87 +59,55 @@ background-image: url(https://user-images.githubusercontent.com/163582/45438104-
 
 ---
 
-# Disciplina
+background-image: url(img/list.jpg)
+background-size: 350px
+background-position: 85% 85%
 
-### Pedido do **Prof. Thiago (Toyoyo)**
-
---
-
-background-image: url(https://media.giphy.com/media/9rnoFO1PP1rZYHFRtW/giphy.gif)
-background-size: 700px
-background-position: 50% 50%
-
----
-
-# Participantes
-
-## Apresentações
+# Minicurso
 
 &lt;br&gt;&lt;br&gt;
 
-### 1. Nome
-
-### 2. Formação
-
-### 3. Com o que trabalha?
-
-### 4. Conhece algo de R, git, QGIS e geoprocessamento?
-
-### 5. O que espera da disciplina?
-
----
-
-# Disciplina
-
-### Carga horária
-45 h (3 créditos)
-
---
-
-### Participantes
-15 alunos (+ 5 especiais)
+### Duração
+~15 h
 
 --
 
 ### Datas e horários
-Teórico-prático: 30/09 – 04/10 [09:00 h - 12:00 h | 14:00 h - 17:00 h] (30 horas)
+25/04/2020 - 13:00 às 19:00 h (6 h) &lt;br&gt;
+26/10/2020 - 08:00 | (almoço) | 19:00 h (9 h)
 
 --
 
-Exercícios-atividades assistidas remotamente: 07/09 – 11/09 (15 horas)
-
---
-
-### Repositório de dados da disciplina
-https://github.com/mauriciovancine/disciplina-geoprocessamento
+### Formato
+Revisão (~1 h) &lt;br&gt;
+Prática (~10 h) &lt;br&gt;
+Exercícios (~4 h)
 
 ---
 
-# Disciplina
+background-image: url(img/github_repositorio.png)
+background-size: 700px
+background-position: 50% 80%
 
-## Distribuição diária
+# Minicurso
 
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
+## Material
 
-### ~05 horas de teórico-prático (manhã-tarde)
-
-### ~01 hora de exercícios (tarde)
+### Repositório de dados do minicurso no GitHub
+https://github.com/mauriciovancine/minicurso-tidyverse
 
 ---
 
-background-image: url(https://miro.medium.com/max/1366/1*mtsk3fQ_BRemFidhkel3dA.png)
-background-size: 400px
+background-image: url(img/git_github.png)
+background-size: 700px
 background-position: 85% 85%
 
-# Disciplina
+# Minicurso
 
 ## Conteúdo
 
-### 0 Controle de versão, Git e GitHub (segunda)
-0.0 Verificar os notebooks
+### 0 Controle de versão, Git e GitHub
+0.0 Verificar os ambientes
 &lt;br&gt;
 0.1 Controle de versão
 &lt;br&gt;
@@ -159,437 +131,187 @@ background-position: 85% 85%
 
 ---
 
-background-image: url(https://www.r-project.org/logo/Rlogo.svg)
-background-size: 300px
+background-image: url(img/r_rstudio.png)
+background-size: 450px
 background-position: 75% 75%
 
-# Disciplina
+# Minicurso
 
 ## Conteúdo
 
-### 1 Linguagem R, aplicações e material (segunda)
+### 1 Revisão rápida de R e RStudio
 1.1 Linguagem R
 &lt;br&gt;
-1.2 Linguagem R vs software RStudio
+1.2 RStudio
 &lt;br&gt;
-1.3 Aplicações da linguagem R
+1.2 Editor/Roteiro (*code*/*script*)
 &lt;br&gt;
-1.4 Apostilas, sites e livros
+1.4 Comentários (*#*)
+&lt;br&gt;
+1.5 Atribuição (*&lt;-*)
+&lt;br&gt;
+1.6 Objetos
+&lt;br&gt;
+1.7 Operadores
+&lt;br&gt;
+1.8 Funções
+&lt;br&gt;
+1.9 Pacotes
+&lt;br&gt;
+1.10 Ajuda (*help*)
+&lt;br&gt;
+1.11 Ambiente (*environment*/*workspace*)
+&lt;br&gt;
+1.12 Citações
 
 ---
 
-background-image: url(https://www.rstudio.com/wp-content/uploads/2015/10/rstudio-300x260.png)
+background-image: url(img/estrutura_dados.png)
+background-size: 400px
+background-position: 85% 90%
+
+# Minicurso
+
+## Conteúdo
+
+### 2 Revisão de estrutura de dados
+2.1 Atributos dos objetos
+&lt;br&gt;
+2.2 Modos dos objetos (*numeric*, *character* e *logical*)
+&lt;br&gt;
+2.3 Estrutura dos objetos (*vector*, *factor*, *matrix* e *data frame*)
+&lt;br&gt;
+2.4 Manejo de dados unidimensionais
+&lt;br&gt;
+2.5 Manejo de dados bidimensionais
+&lt;br&gt;
+2.6 Valores faltantes e especiais
+&lt;br&gt;
+2.7 Diretório de trabalho
+&lt;br&gt;
+2.8 Importar dados
+&lt;br&gt;
+2.9 Conferir e manejar dados importados
+&lt;br&gt;
+2.10 Exportar dados
+
+---
+
+background-image: url(img/tidyverse.png)
 background-size: 350px
-background-position: 85% 85%
-
-# Disciplina
-
-## Conteúdo
-
-### 2 Funcionamento da linguagem R (segunda)
-2.1 RStudio
-&lt;br&gt;
-2.2 Editor/Roteiro (*code*/*script*)
-&lt;br&gt;
-2.3 Comentários (*#*)
-&lt;br&gt;
-2.4 Atribuição (*&lt;-*)
-&lt;br&gt;
-2.5 Objetos
-&lt;br&gt;
-2.6 Funções
-&lt;br&gt;
-2.7 Pacotes
-&lt;br&gt;
-2.8 Ambiente (*environment*/*workspace*)
-&lt;br&gt;
-2.9 Ajuda (*help*)
-&lt;br&gt;
-2.10 Citações
-&lt;br&gt;
-2.11 Principais erros
-
----
-
-background-image: url(https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Data-Types-350x300.png)
-background-size: 300px
-background-position: 85% 80%
-
-# Disciplina
-
-## Conteúdo
-
-### 3 Estrutura e manejo de dados na linguagem R (segunda)
-3.1 Atributos dos objetos
-&lt;br&gt;
-3.2 Modos dos objetos (*numeric*, *character* e *logical*)
-&lt;br&gt;
-3.3 Estrutura dos objetos (*vector*, *factor*, *matrix*, *data frame* e *list*)
-&lt;br&gt;
-3.4 Manejo de dados unidimensionais
-&lt;br&gt;
-3.5 Manejo de dados bidimensionais
-&lt;br&gt;
-3.6 Valores faltantes e especiais
-&lt;br&gt;
-3.7 Diretório de trabalho
-&lt;br&gt;
-3.8 Importar dados
-&lt;br&gt;
-3.9 Conferir e manejar dados importados
-&lt;br&gt;
-3.10 Exportar dados
-
----
-
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tidyverse.png)
-background-size: 250px
 background-position: 75% 75%
 
-# Disciplina
+# Minicurso
 
 ## Conteúdo
 
-### 4 Introdução ao tidyverse
-4.1 tidyverse
+### 3 Introdução ao tidyverse
+3.1 tidyverse
 &lt;br&gt;
-4.2 readr
+3.2 readr
 &lt;br&gt;
-4.3 readxl
+3.3 readxl e writexl
 &lt;br&gt;
-4.4 tibble
+3.4 tibble
 &lt;br&gt;
-4.5 magrittr (*pipe - %&gt;%*)
+3.5 magrittr (*pipe - %&gt;%*)
 &lt;br&gt;
-4.6 tidyr
+3.6 tidyr
 &lt;br&gt;
-4.7 dplyr
+3.7 dplyr
 &lt;br&gt;
-4.8 stringr
+3.8 forcats
 &lt;br&gt;
-4.9 forcats
+3.9 lubridate
 &lt;br&gt;
-4.10 purrr
+3.10 stringr
+&lt;br&gt;
+3.11 purrr
 
 ---
 
-background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/r_data.png)
-background-size: 400px
-background-position: 90% 80%
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/ggplot2.png)
+background-size: 350px
+background-position: 75% 75%
 
-# Disciplina
+# Minicurso
 
 ## Conteúdo
 
-### 5 Visualização de dados (segunda)
-5.1 Tipos de dados (*variáveis = colunas*)
+### 4 Visualização de dados
+4.1 Pacote ggplot2
 &lt;br&gt;
-5.2 Principais tipos de gráficos
+4.2 Principais livros e sites
 &lt;br&gt;
-5.3 Gráficos no R (pacotes *graphics*, *ggplot2* e *ggpubr*)
+4.3 Colunas como eixos do gráficos (*variáveis = colunas*)
 &lt;br&gt;
-5.4 Histograma (*histogram*)
+4.4 Principais tipos de gráficos
 &lt;br&gt;
-5.5 Gráfico de setores (*pie chart* e *danut plot*)
+4.5 Histograma (*histogram*)
 &lt;br&gt;
-5.6 Gráfico de barras (*bar plot*)
+4.6 Gráfico de setores (*pie chart* e *donut plot*)
 &lt;br&gt;
-5.7 Gráfico de caixa (*box plot* e *violin plot*)
+4.7 Gráfico de barras (*bar plot*)
 &lt;br&gt;
-5.8 Gráfico de dispersão (*scatter plot*)
+4.8 Gráfico de caixa (*box plot* e *violin plot*)
 &lt;br&gt;
-5.9 Gráfico pareado (*pairs plot*)
+4.9 Gráfico de dispersão (*scatter plot*)
+&lt;br&gt;
+4.10 Gráfico pareado (*pairs plot*)
 
 ---
 
-background-image: url(https://www.amherst.ca/images/stories/gis/GIS.jpg)
-background-size: 250px
-background-position: 95% 85%
+background-image: url(img/broom.png)
+background-size: 350px
+background-position: 75% 75%
 
-# Disciplina
+# Minicurso
 
 ## Conteúdo
 
-### 6 Estrutura e fonte de dados geoespaciais (terça)
-6.1 Geoprocessamento (cartografia, GPS, sensoriamento remoto e SIG)
+### 5 GLM e tidymodels
+5.1 Pacote broom
 &lt;br&gt;
-6.2 Cartografia (escala, sistemas de coordenadas e Datum)
+5.2 Modelos lineares 
 &lt;br&gt;
-6.3 GPS (Global Positioning System)
+5.3 Famílias de distribuição (Gaussiana, Binomial e Poisson)
 &lt;br&gt;
-6.4 Sensoriamento Remoto (bandas, satélites, resoluções e aplicações)
+5.4 Funções de ligação
 &lt;br&gt;
-6.5 Sistemas de Informações Geográficas (SIG)
+5.5 Ajuste dos modelos
 &lt;br&gt;
-6.6 Dados espaciais (vetor e raster)
+5.6 Avaliação do ajuste dos modelos
 &lt;br&gt;
-6.7 Dados vetoriais (ponto, linha e polígono)
-&lt;br&gt;
-6.8 Tabela de atributos
-&lt;br&gt;
-6.9 Formato de arquivos vetoriais (shapefile - .dbf, .prj, .shx, .shp)
-&lt;br&gt;
-6.10 Dados matriciais (gride ou raster)
-&lt;br&gt;
-6.11 Formatos de arquivos matriciais (.tif)
-&lt;br&gt;
-6.12 Banco de dados geoespaciais (geopackage - .gpkg)
-&lt;br&gt;
-6.13 Repositórios de dados geoespaciais
+5.7 Seleção de modelos (AIC)
 
 ---
 
-background-image: url(https://www.qgis.org/en/_downloads/qgis-logo.png)
-background-size: 400px
-background-position: 100% 80%
+background-image: url(img/markdown.png)
+background-size: 350px
+background-position: 75% 75%
 
-# Disciplina
+# Minicurso
 
 ## Conteúdo
 
-### 7 Introdução e funcionamento do software QGIS (terça - quarta)
-7.1 Interface do QGIS (menus, camadas, visualização, ferramentas e status)
+### 6 RMarkdown
+6.1 Markdown
 &lt;br&gt;
-7.2 Plugins (complementos)
+6.2 R Markdown
 &lt;br&gt;
-7.3 Caixa de ferramentas
+6.3 Instalar pacotes
 &lt;br&gt;
-7.4 Projeto no QGIS
+6.4 Criar um arquivo R Markdown
 &lt;br&gt;
-7.5 Adicionar dados vetoriais preexistentes
+6.5 Renderizar um arquivo R Markdown
 &lt;br&gt;
-7.6 Propriedades de dados vetoriais
+6.6 Estrutura do RMarkdown
 &lt;br&gt;
-7.7 Projeção de dados vetoriais
+6.7 Opções do chunk
 &lt;br&gt;
-7.8 Tabela de atributos
+6.8 Sintaxe do Markdown
 &lt;br&gt;
-7.9 Cálculo de área, perímetro e distância de dados vetoriais
-&lt;br&gt;
-7.10 Criação de dados vetoriais
-&lt;br&gt;
-7.11 Edição de dados vetoriais
-&lt;br&gt;
-7.12 Geoprocessamento de dados vetoriais
-&lt;br&gt;
-7.13 Fotointerpretação de imagens
-&lt;br&gt;
-7.14 Verificação geométrica e ajuste topológico
-&lt;br&gt;
-7.15 Reprojeção de dados vetoriais
-&lt;br&gt;
-7.16 Exportar dados vetoriais
-
----
-
-background-image: url(https://www.qgis.org/en/_downloads/qgis-logo.png)
-background-size: 400px
-background-position: 100% 93%
-
-# Disciplina
-
-## Conteúdo
-
-### 7 Introdução e funcionamento do software QGIS (terça - quarta)
-7.17 Adicionar dados matriciais preexistentes
-&lt;br&gt;
-7.18 Propriedades de dados matriciais
-&lt;br&gt;
-7.19 Projeção de dados matriciais
-&lt;br&gt;
-7.20 Georreferenciamento de dados matriciais
-&lt;br&gt;
-7.21 Mosaico (união de imagens)
-&lt;br&gt;
-7.22 Recorte (extração de máscara)
-&lt;br&gt;
-7.23 Alinhar raster (extensão e resolução)
-&lt;br&gt;
-7.24 Análises de superfície (mapas de calor, interpolação, proximidade)
-&lt;br&gt;
-7.25 Estatística zonal
-&lt;br&gt;
-7.26 Calculadora raster
-&lt;br&gt;
-7.27 Conversão de dados vetoriais e dados matriciais
-&lt;br&gt;
-7.29 Reprojeção de dados matriciais
-&lt;br&gt;
-7.30 Exportar dados matriciais
-
----
-
-background-image: url(https://www.qgis.org/en/_downloads/qgis-logo.png)
-background-size: 400px
-background-position: 100% 93%
-
-# Disciplina
-
-## Conteúdo
-
-### 7 Introdução e funcionamento do software QGIS (terça - quarta)
-
-7.31 Sensoriamento Remoto (bandas espectrais – composição e extração)
-&lt;br&gt;
-7.32 Classificação supervisionada
-&lt;br&gt;
-7.33 Índices de vegetação (NDVI/EVI)
-&lt;br&gt;
-7.34 Topografia (MDE, MDS, MDT, elevação, declividade, aspecto, hidrologia)
-&lt;br&gt;
-7.35 Elaboração de mapa temáticos
-
----
-
-background-image: url(https://community.rstudio.com/uploads/default/original/2X/3/3eaa7ae0ff05c5dd3933d153be865811847ce4be.jpeg)
-background-size: 250px
-background-position: 85% 80%
-
-# Disciplina
-
-## Conteúdo
-
-### 8 Estrutura e manejo de dados espaciais na linguagem R (quinta-sexta)
-8.1 Material e pacotes para análise de dados espacias
-&lt;br&gt;
-8.2 Vetor: pacote sp e sf
-&lt;br&gt;
-8.3 Importar dados vetoriais
-&lt;br&gt;
-8.4 Tipos de dados vetoriais
-&lt;br&gt;
-8.5 Estrutura de dados vetoriais
-&lt;br&gt;
-8.6 Visualizar dados vetoriais (graphics, ggplot e tmap)
-&lt;br&gt;
-8.7 Projeção de dados vetoriais
-&lt;br&gt;
-8.8 Tabela de atributos
-&lt;br&gt;
-8.9 Operações de atributos de dados vetoriais
-&lt;br&gt;
-8.10 Operações geométricas de dados vetoriais
-&lt;br&gt;
-8.11 Operações espaciais de dados vetoriais
-
----
-
-background-image: url(https://community.rstudio.com/uploads/default/original/2X/3/3eaa7ae0ff05c5dd3933d153be865811847ce4be.jpeg)
-background-size: 250px
-background-position: 85% 80%
-
-
-# Disciplina
-
-## Conteúdo
-
-### 8 Estrutura e manejo de dados espaciais na linguagem R (quinta-sexta)
-
-8.12 Raster: pacotes raster e rgdal
-&lt;br&gt;
-8.13 Importar dados matriciais
-&lt;br&gt;
-8.14 Tipos de dados matriciais
-&lt;br&gt;
-8.15 Estrutura de dados matriciais
-&lt;br&gt;
-8.16 Visualizar dados matriciais (graphics, ggplot e tmap)
-&lt;br&gt;
-8.17 Projeção de dados matriciais
-&lt;br&gt;
-8.18 Manipulando dados matriciais
-&lt;br&gt;
-8.19 Operação geométricas de dados matriciais
-&lt;br&gt;
-8.20 Operação espaciais de dados matriciais
-&lt;br&gt;
-8.21 Vetor para raster: pacote fasterize
-&lt;br&gt;
-8.22 Elaboração de mapas (ggplot e tmap)
-&lt;br&gt;
-8.23 Automação de processamentos
-
----
-
-background-image: url(https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png)
-background-size: 200px
-background-position: 85% 80%
-
-
-# Disciplina
-
-## Conteúdo
-
-### 9 Introdução e funcionamento do software GRASS GIS (sexta)
-9.1 Funcionamento do GRASS GIS (terminal, layer manager e map display)
-&lt;br&gt;
-9.2 Estrutura de dados no GRASS GIS (GRASS database, location e mapset)
-&lt;br&gt;
-9.3 Region (= região computacional)
-&lt;br&gt;
-9.4 Módulos (= funções)
-&lt;br&gt;
-9.5 Módulos para processamentos gerais (g.)
-&lt;br&gt;
-9.6 Módulos para processamento de dados vetoriais (v.)
-&lt;br&gt;
-9.7 Módulos para processamento de dados raster (r.)
-&lt;br&gt;
-9.8 Módulos para processamento de dados de imagem de satélites (i.)
-&lt;br&gt;
-9.9 Visualização de dados vetoriais, raster e imagens
-&lt;br&gt;
-9.10 Escalas, símbolos, grades, legenda, perfis e histogramas
-&lt;br&gt;
-9.11 Python para automação de processamentos
-
----
-
-# Disciplina
-
-## Exercícios-atividades assistidas remotamente
-
---
-
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
-  
-### Serão **exercícios** relativamente simples com aplicações práticas
-
---
-  
-### Todos devem enviar os mesmos pelo **GitHub**
-
---
-
-### A nota será pela **tentativa** e não pela **resolução em si**
-
---
-
-### O Thiago e eu **ainda estudaremos** como compô-la
-
----
-
-# Disciplina
-  
-## IMPORTANTE!
-
-&lt;br&gt;
-
---
-  
-### Essa é a **primeira vez** que monto e ofereço uma disciplina de pós-graduação sozinho
-  
---
-  
-### Talvez eu não consiga **passar todo o conteúdo**
-  
---
-  
-### Entretanto, estou totalmente **focado em ensinar** o que aprendi esses anos
-  
---
-  
-### Por favor, **perguntem** e **me interrompam**, o objetvo é que vocês aprendam
+6.9 Principais formatos de saída
 
 ---
 
@@ -612,7 +334,6 @@ Contatos:
 | &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
 | &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
 | &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
-| &lt;a href="http://gitlab.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-gitlab fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
 | &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)
@@ -620,9 +341,10 @@ Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": true
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

@@ -1,25 +1,25 @@
----
-title: "Introdução ao *tidyverse* <br><br>"
-subtitle: "0 Controle de versão, Git e GitHub <br><br> xaringan [presentation ninja]"
-author: "Maurício Vancine"
-date: "25/04/2019"
-output:
-  xaringan::moon_reader:
-    css: [metropolis]
-    lib_dir: libs
-    nature:
-      ratio: "16:9"
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-    includes:
-      in_header: header.html
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introdução ao tidyverse</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurício Vancine" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao <em>tidyverse</em> <br><br>
+## 0 Controle de versão, Git e GitHub <br><br> xaringan [presentation ninja]
+### Maurício Vancine
+### 25/04/2019
+
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE,
-        encoding = "UTF-8")
-```
+
+
 
 class: clear, center, middle
 background-image: url(img/git_github.png)
@@ -36,25 +36,25 @@ background-position: 85% 85%
 ## Conteúdo
 
 0.0 Verificar os notebooks
-<br>
+&lt;br&gt;
 0.1 Controle de versão
-<br>
+&lt;br&gt;
 0.2 Git
-<br>
+&lt;br&gt;
 0.3 GitHub
-<br>
+&lt;br&gt;
 0.4 Funcionamento do controle de versão
-<br>
+&lt;br&gt;
 0.5 Fork
-<br>
+&lt;br&gt;
 0.6 Clone
-<br>
+&lt;br&gt;
 0.7 Add e Commit
-<br>
+&lt;br&gt;
 0.8 Push
-<br>
+&lt;br&gt;
 0.9 Pull
-<br>
+&lt;br&gt;
 0.10 Controle de versão no RStudio
 
 ---
@@ -77,11 +77,11 @@ background-position: 50% 50%
 
 ## Hardware
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ## 1 Notebook - Windows, MacOS ou Linux
 
-<br> 
+&lt;br&gt; 
 
 ## 2 Acesso à internet
 
@@ -202,7 +202,7 @@ background-position: 50% 80%
 # 0.3 GitHub
 
 ## Vamos criar uma conta no GitHub (caso não possuam)
-<br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 ##.center[https://github.com]
 
 ---
@@ -211,11 +211,11 @@ background-position: 50% 80%
 
 ## **Salvem essas informações!!!**
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ## **username**: mauriciovancine
 ## **email**: mauricio.vancine@gmail.com
-## **senha**: !@#$%¨&*+ (e aqui ele é muito chato...)
+## **senha**: !@#$%¨&amp;*+ (e aqui ele é muito chato...)
 
 ---
 
@@ -251,7 +251,7 @@ background-position: 50% 60%
 
 ## Forken o repositório do minicurso para o GitHub de vocês
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 https://github.com/mauriciovancine/minicurso-tidyverse
 
 ---
@@ -264,7 +264,7 @@ background-position: 50% 80%
 
 ## Forken o repositório do minicurso para o GitHub de vocês
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 https://github.com/mauriciovancine/minicurso-tidyverse
 
 ---
@@ -301,7 +301,7 @@ class: inverse, middle, center
 
 # Agora precisamos trazer esses arquivos para nosso notebook
 
-<br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 # E como faremos isso?
 
@@ -421,7 +421,8 @@ background-position: 50% 90%
 
 ### Configurar o nome de usuário, e-mail e senha
 
-```{bash, eval = FALSE}
+
+```bash
 ## add user and email
 git config --global user.name "seu_usuario"
 git config --global user.email "seu_email"
@@ -439,7 +440,8 @@ background-position: 50% 90%
 
 ### Configurar o nome de usuário, e-mail e senha
 
-```{bash, eval = FALSE}
+
+```bash
 # ssh key
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa # digite sua senha
@@ -512,15 +514,139 @@ class: clear, middle
 
 ## Maurício Vancine
 
-<br>
+&lt;br&gt;
 
 Contatos:
 
 |                                                                                           |                               |
 | :---------------------------------------------------------------------------------------- | :---------------------------- |
-| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>]  | mauricio.vancine@gmail.com    |
-| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]   | mauriciovancine.netlify.com   |
-| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>]  | @mauriciovancine              |
-| <a href="http://github.com/mauriciovancine">.RUred[<i class="fa fa-github fa-fw"></i>]    | @mauriciovancine              |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
+| &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
