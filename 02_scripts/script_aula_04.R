@@ -1,9 +1,8 @@
-# -------------------------------------------------------------------------
-# aula 5 - visualizacao de dados
-
-# mauricio vancine
-# 24-10-2019
-# -------------------------------------------------------------------------
+#' ---
+#' title: aula 04 - revisao de estrutura e manejo de dados
+#' author: mauricio vancine
+#' date: 2020-04-26
+#' ---
 
 # topicos -----------------------------------------------------------------  
 # 5.1 tipos de dados (variaveis = colunas)

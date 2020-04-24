@@ -223,11 +223,11 @@ background-position: 85% 75%
 <br>
 3.7 Pacote dplyr
 <br>
-3.8 Pacote forcats
+3.8 Pacote stringr
 <br>
-3.9 Pacote lubridate
+3.9 Pacote forcats
 <br>
-3.10 Pacote stringr
+3.10 Pacote lubridate
 <br>
 3.11 Pacote purrr
 

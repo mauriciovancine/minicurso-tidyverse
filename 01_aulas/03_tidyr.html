@@ -52,11 +52,11 @@ background-position: 85% 75%
 &lt;br&gt;
 3.7 Pacote dplyr
 &lt;br&gt;
-3.8 Pacote forcats
+3.8 Pacote stringr
 &lt;br&gt;
-3.9 Pacote lubridate
+3.9 Pacote forcats
 &lt;br&gt;
-3.10 Pacote stringr
+3.10 Pacote lubridate
 &lt;br&gt;
 3.11 Pacote purrr
 
@@ -155,7 +155,7 @@ background-position: 50% 60%
 
 ---
 
-background-image: url(img/article_tidy.png)
+background-image: url(img/tidyverse_article_tidy.png)
 background-size: 400px
 background-position: 50% 60%
 
@@ -207,7 +207,7 @@ background-position: 50% 50%
 
 ## Sites
 
-&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://rpubs.com/modelthinkingbr/dados
 
@@ -244,8 +244,13 @@ library(tidyverse)
 
 ```
 ## ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()
+## x lubridate::as.difftime() masks base::as.difftime()
+## x lubridate::date()        masks base::date()
+## x dplyr::filter()          masks stats::filter()
+## x lubridate::intersect()   masks base::intersect()
+## x dplyr::lag()             masks stats::lag()
+## x lubridate::setdiff()     masks base::setdiff()
+## x lubridate::union()       masks base::union()
 ```
 
 ---
@@ -278,6 +283,16 @@ class: clear, center, middle
 background-image: url(img/package_magrittr.png)
 background-size: 400px
 background-position: 50% 50%
+
+---
+
+background-image: url(img/tidyverse_magritte_pipe.jpg), url(img/person_rene_magritte.jpg)
+background-size: 500px, 200px
+background-position: 15% 40%, 85% 90%
+
+# 3.2 magrittr (pipe - %&gt;%)
+
+## René Magritte (1898-1967)
 
 ---
 
@@ -413,7 +428,7 @@ class: clear, inverse, center, middle
 
 `prod(sort(sample(1:10, 10000, rep = TRUE)))`
 
-<div class="countdown" id="timer_5ea274e6" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea357fd" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -473,6 +488,20 @@ class: clear, center, middle
 background-image: url(img/package_readr.png)
 background-size: 400px
 background-position: 50% 50%
+
+---
+
+background-image: url(img/cheatsheet_readr.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 3.3 readr
+
+## Data Import Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf
 
 ---
 
@@ -554,7 +583,6 @@ si
 ## #   precipitation &lt;dbl&gt;
 ```
 
-
 ---
 
 # 3.3 readr
@@ -566,7 +594,7 @@ si
 # diretorio
 setwd("/home/mude/data/github/minicurso-tidyverse/03_dados")
 ```
---
+
 
 ```r
 # import sites
@@ -615,6 +643,7 @@ background-position: 50% 50%
 
 
 ```r
+# import .xlsx
 install.packages("readxl")
 library("readxl")
 ```
@@ -625,6 +654,7 @@ library("readxl")
 
 
 ```r
+# export .xlsx
 install.packages("writexl")
 library("writexl")
 ```
@@ -666,7 +696,7 @@ library("writexl")
 # diretorio
 setwd("/home/mude/data/github/minicurso-tidyverse/03_dados")
 ```
---
+
 
 ```r
 # import sites
@@ -700,11 +730,36 @@ si
 
 ---
 
-class: clear, inverse, center, middle
+# Importar os dados
 
-# Dúvidas?
+## **Formato .csv**
+
+&lt;br&gt;
+
+### Matriz de locais
+
+```r
+# import sites
+si &lt;- readr::read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
+si
+```
+
+&lt;br&gt;
+
+### Matriz de espécies
+
+```r
+# import species
+sp &lt;- readr::read_csv("ATLANTIC_AMPHIBIANS_species.csv")
+sp
+```
+
+
+
+
 
 ---
+
 class: clear, center, middle
 background-image: url(img/package_tibble.png)
 background-size: 400px
@@ -736,7 +791,7 @@ background-position: 50% 50%
 
 # 3.5 tibble
 
-## Descrição dos modos das colunas através da função `glimpse()`
+## Descrição dos modos das colunas através da função `glimpse()` - "espiar os dados"
 
 
 --
@@ -796,8 +851,8 @@ str(df)
 --
 
 ```r
-tb &lt;- tibble(ch = c("a", "b"), nu = 1:2)
-glimpse(tb)
+tb &lt;- tibble::tibble(ch = c("a", "b"), nu = 1:2)
+tibble::glimpse(tb)
 ```
 
 ```
@@ -883,6 +938,20 @@ class: clear, center, middle
 background-image: url(img/package_tidyr.png)
 background-size: 400px
 background-position: 50% 50%
+
+---
+
+background-image: url(img/cheatsheet_tidyr.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 3.6 tidyr
+
+## Data Import Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf
 
 ---
 
@@ -2332,31 +2401,29 @@ background-position: 50% 50%
 
 Long para wide
 
-1. *key*: variável categórica que irá definir os nomes das colunas
-
-2. *value*: variável numérica que irá preencher os dados
+1. **key**: variável categórica que irá definir os nomes das colunas
+2. **value**: variável numérica que irá preencher os dados
+3. **fill**: valor para preencher os NAs
 
 
 ```r
-si_spread &lt;- si[, c("id", "record", "species_number")] %&gt;% 
-  spread(key = record, value = species_number, fill = 0)
-si_spread
+si[, c("id", "record", "species_number")]
 ```
 
 ```
 ## # A tibble: 1,163 x 3
-##    id         ab    co
-##    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
-##  1 amp1001    19     0
-##  2 amp1002     0    16
-##  3 amp1003     0    14
-##  4 amp1004     0    13
-##  5 amp1005     0    30
-##  6 amp1006     0    42
-##  7 amp1007     0    23
-##  8 amp1008     0    19
-##  9 amp1009    13     0
-## 10 amp1010     1     0
+##    id      record species_number
+##    &lt;chr&gt;   &lt;chr&gt;           &lt;dbl&gt;
+##  1 amp1001 ab                 19
+##  2 amp1002 co                 16
+##  3 amp1003 co                 14
+##  4 amp1004 co                 13
+##  5 amp1005 co                 30
+##  6 amp1006 co                 42
+##  7 amp1007 co                 23
+##  8 amp1008 co                 19
+##  9 amp1009 ab                 13
+## 10 amp1010 ab                  1
 ## # … with 1,153 more rows
 ```
 
@@ -2369,14 +2436,34 @@ si_spread
 Long para wide
 
 1. **key**: variável categórica que irá definir os nomes das colunas
-
 2. **value**: variável numérica que irá preencher os dados
+3. **fill**: valor para preencher os NAs
 
 
 ```r
-si_spread &lt;- si[, c("id", "record", "species_number")] %&gt;% 
-  spread(key = state_abbreviation, value = species_number, fill = 0)
+si_spread &lt;- si[, c("id", "state_abbreviation", "species_number")] %&gt;% 
+  tidyr::spread(key = state_abbreviation, value = species_number, fill = 0)
 si_spread
+```
+
+```
+## # A tibble: 1,163 x 24
+##    id    `AR-N` `BR-AL` `BR-BA` `BR-CE` `BR-ES` `BR-GO` `BR-MG` `BR-MS` `BR-PB`
+##    &lt;chr&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+##  1 amp1…      0       0       0       0       0       0       0       0       0
+##  2 amp1…      0       0       0      16       0       0       0       0       0
+##  3 amp1…      0       0       0      14       0       0       0       0       0
+##  4 amp1…      0       0       0      13       0       0       0       0       0
+##  5 amp1…      0       0       0      30       0       0       0       0       0
+##  6 amp1…      0       0       0      42       0       0       0       0       0
+##  7 amp1…      0       0       0      23       0       0       0       0       0
+##  8 amp1…      0       0       0      19       0       0       0       0       0
+##  9 amp1…      0       0       0      13       0       0       0       0       0
+## 10 amp1…      0       0       0       0       0       0       0       0       0
+## # … with 1,153 more rows, and 14 more variables: `BR-PE` &lt;dbl&gt;, `BR-PI` &lt;dbl&gt;,
+## #   `BR-PR` &lt;dbl&gt;, `BR-RJ` &lt;dbl&gt;, `BR-RN` &lt;dbl&gt;, `BR-RS` &lt;dbl&gt;, `BR-SC` &lt;dbl&gt;,
+## #   `BR-SE` &lt;dbl&gt;, `BR-SP` &lt;dbl&gt;, `PY-13` &lt;dbl&gt;, `PY-14` &lt;dbl&gt;, `PY-2` &lt;dbl&gt;,
+## #   `PY-4` &lt;dbl&gt;, `PY-7` &lt;dbl&gt;
 ```
 
 ---
@@ -2388,15 +2475,163 @@ si_spread
 Long para wide
 
 1. **key**: variável categórica que irá definir os nomes das colunas
-
 2. **value**: variável numérica que irá preencher os dados
+3. **fill**: valor para preencher os NAs
+
+
+```r
+sp[1:1000, c("id", "species", "individuals")]
+```
+
+```
+## # A tibble: 1,000 x 3
+##    id      species                    individuals
+##    &lt;chr&gt;   &lt;chr&gt;                            &lt;dbl&gt;
+##  1 amp1001 Adenomera sp. n.                    25
+##  2 amp1001 Corythomantis greeningi             11
+##  3 amp1001 Dendropsophus soaresi                1
+##  4 amp1001 Dermatonotus muelleri               20
+##  5 amp1001 Leptodactylus aff. syphax           10
+##  6 amp1001 Leptodactylus fuscus                 2
+##  7 amp1001 Leptodactylus macrosternum           3
+##  8 amp1001 Leptodactylus mystaceus              9
+##  9 amp1001 Leptodactylus troglodytes           32
+## 10 amp1001 Leptodactylus vastus                 5
+## # … with 990 more rows
+```
+
+---
+
+# 3.6 tidyr
+
+## **6 spread()** 
+
+Long para wide
+
+1. **key**: variável categórica que irá definir os nomes das colunas
+2. **value**: variável numérica que irá preencher os dados
+3. **fill**: valor para preencher os NAs
 
 
 ```r
 sp_spread &lt;- sp[1:1000, c("id", "species", "individuals")] %&gt;% 
-  spread(key = species, value = individuals, fill = 0)
+  tidyr::replace_na(list(individuals = 0)) %&gt;% 
+  tidyr::spread(key = species, value = individuals, fill = 0)
 sp_spread
 ```
+
+```
+## # A tibble: 91 x 179
+##    id    `Adelophryne ba… `Adenomera cf. … `Adenomera hyla… `Adenomera marm…
+##    &lt;chr&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+##  1 amp1…                0                0                0                0
+##  2 amp1…                0                0                0                0
+##  3 amp1…                0                0                0                0
+##  4 amp1…                0                0                0                0
+##  5 amp1…                0                0                0                0
+##  6 amp1…                0                0                0                0
+##  7 amp1…                0                0                0                0
+##  8 amp1…                0                0                0                0
+##  9 amp1…               72                0                0                0
+## 10 amp1…                0                0                0                0
+## # … with 81 more rows, and 174 more variables: `Adenomera sp.` &lt;dbl&gt;,
+## #   `Adenomera sp. n.` &lt;dbl&gt;, `Agalychnis granulosa` &lt;dbl&gt;, `Boana
+## #   albomarginata` &lt;dbl&gt;, `Boana atlantica` &lt;dbl&gt;, `Boana crepitans` &lt;dbl&gt;,
+## #   `Boana exastis` &lt;dbl&gt;, `Boana faber` &lt;dbl&gt;, `Boana raniceps` &lt;dbl&gt;, `Boana
+## #   semilineata` &lt;dbl&gt;, `Bufo crucifer` &lt;dbl&gt;, `Bufo gr. margaritifer` &lt;dbl&gt;,
+## #   `Bufo granulosus` &lt;dbl&gt;, `Bufo schneideri` &lt;dbl&gt;, `Bufo sp.` &lt;dbl&gt;,
+## #   `Chiasmocleis alagoana` &lt;dbl&gt;, `Chiasmocleis alagoanus` &lt;dbl&gt;,
+## #   `Chiasmocleis sp. 1` &lt;dbl&gt;, `Chthonerpeton aff. arii` &lt;dbl&gt;, `Corythomantis
+## #   greeningi` &lt;dbl&gt;, `Dendropsophus aff. decipiens` &lt;dbl&gt;, `Dendropsophus
+## #   branneri` &lt;dbl&gt;, `Dendropsophus decipiens` &lt;dbl&gt;, `Dendropsophus
+## #   dutrai` &lt;dbl&gt;, `Dendropsophus elegans` &lt;dbl&gt;, `Dendropsophus gr.
+## #   microcephalus` &lt;dbl&gt;, `Dendropsophus gr. nanus` &lt;dbl&gt;, `Dendropsophus gr.
+## #   oliveirai` &lt;dbl&gt;, `Dendropsophus haddadi` &lt;dbl&gt;, `Dendropsophus
+## #   leucophyllatus` &lt;dbl&gt;, `Dendropsophus microcephalus` &lt;dbl&gt;, `Dendropsophus
+## #   minutus` &lt;dbl&gt;, `Dendropsophus nanus` &lt;dbl&gt;, `Dendropsophus
+## #   oliveirai` &lt;dbl&gt;, `Dendropsophus soaresi` &lt;dbl&gt;, `Dendropsophus sp.` &lt;dbl&gt;,
+## #   `Dendropsophus sp. (gr. microcephalus)` &lt;dbl&gt;, `Dendropsophus sp. 1` &lt;dbl&gt;,
+## #   `Dendropsophus sp.2` &lt;dbl&gt;, `Dendropsophus studerae` &lt;dbl&gt;, `Dermatonotus
+## #   muelleri` &lt;dbl&gt;, `Elachistocleis cesarii` &lt;dbl&gt;, `Elachistocleis
+## #   ovalis` &lt;dbl&gt;, `Elachistocleis piauiensis` &lt;dbl&gt;, `Elachistocleys
+## #   cesarii` &lt;dbl&gt;, `Eleutherodactylus gr. ramagii` &lt;dbl&gt;, `Eleutherodactylus
+## #   sp. 1` &lt;dbl&gt;, `Eleutherodactylus sp. 2` &lt;dbl&gt;, `Frostius
+## #   pernambucensis` &lt;dbl&gt;, `Gastrotheca fissipes` &lt;dbl&gt;, `Haddadus
+## #   binotatus` &lt;dbl&gt;, `Hyla albomarginata` &lt;dbl&gt;, `Hyla branneri` &lt;dbl&gt;, `Hyla
+## #   crepitans` &lt;dbl&gt;, `Hyla elegans` &lt;dbl&gt;, `Hyla faber` &lt;dbl&gt;, `Hyla gr.
+## #   nana` &lt;dbl&gt;, `Hyla minuta` &lt;dbl&gt;, `Hyla raniceps` &lt;dbl&gt;, `Hyla
+## #   soaresi` &lt;dbl&gt;, `Hylomantis granulosa` &lt;dbl&gt;, `Hypsiboas
+## #   albomarginatus` &lt;dbl&gt;, `Hypsiboas atlanticus` &lt;dbl&gt;, `Hypsiboas
+## #   crepitans` &lt;dbl&gt;, `Hypsiboas exastis` &lt;dbl&gt;, `Hypsiboas faber` &lt;dbl&gt;,
+## #   `Hypsiboas fasciatus` &lt;dbl&gt;, `Hypsiboas freicanecae` &lt;dbl&gt;, `Hypsiboas
+## #   multifasciatus` &lt;dbl&gt;, `Hypsiboas pardalis` &lt;dbl&gt;, `Hypsiboas
+## #   puncatatus` &lt;dbl&gt;, `Hypsiboas raniceps` &lt;dbl&gt;, `Hypsiboas
+## #   semilineatus` &lt;dbl&gt;, `Hypsiboas sp.` &lt;dbl&gt;, `Hypsiboas sp. 1` &lt;dbl&gt;,
+## #   `Ischnocnema gr. ramagii` &lt;dbl&gt;, `Ischnocnema ramagii` &lt;dbl&gt;, `Ischnocnema
+## #   sp.` &lt;dbl&gt;, `Ischnocnema sp. 1` &lt;dbl&gt;, `Ischnocnema sp. 2` &lt;dbl&gt;,
+## #   `Ischnocnema vinhai` &lt;dbl&gt;, `Leptdactylus fuscus` &lt;dbl&gt;, `Leptodactylus
+## #   aff. hylaedactylus` &lt;dbl&gt;, `Leptodactylus aff. pustulatus` &lt;dbl&gt;,
+## #   `Leptodactylus aff. syphax` &lt;dbl&gt;, `Leptodactylus cf. latrans` &lt;dbl&gt;,
+## #   `Leptodactylus furnarius` &lt;dbl&gt;, `Leptodactylus fuscus` &lt;dbl&gt;,
+## #   `Leptodactylus gr. marmoratus` &lt;dbl&gt;, `Leptodactylus gr. ocellatus` &lt;dbl&gt;,
+## #   `Leptodactylus labyrinthicus` &lt;dbl&gt;, `Leptodactylus latrans` &lt;dbl&gt;,
+## #   `Leptodactylus macrosternum` &lt;dbl&gt;, `Leptodactylus marmoratus` &lt;dbl&gt;,
+## #   `Leptodactylus mystaceus` &lt;dbl&gt;, `Leptodactylus mystacinus` &lt;dbl&gt;,
+## #   `Leptodactylus natalensis` &lt;dbl&gt;, `Leptodactylus ocellatus` &lt;dbl&gt;,
+## #   `Leptodactylus pustulatus` &lt;dbl&gt;, `Leptodactylus sp. (aff. andreae)` &lt;dbl&gt;,
+## #   …
+```
+
+---
+
+# 3.6 tidyr
+
+## **6 pivot_wider()** 
+
+Long para wide
+
+1. **id_cols**: variável id
+2. **names_from**: variável categórica que irá definir os nomes das colunas
+3. **values_from**: variável numérica que irá preencher os dados
+4. **values_fill**: valor para preencher os NAs
+
+
+```r
+si_wide &lt;- si %&gt;% 
+  tidyr::pivot_wider(id_cols = id, 
+                     names_from = state_abbreviation,
+                     values_from = species_number, 
+                     values_fill = list(species_number = 0))
+si_wide
+```
+
+
+
+---
+
+# 3.6 tidyr
+
+## **6 pivot_wider()** 
+
+Long para wide
+
+1. **id_cols**: variável id
+2. **names_from**: variável categórica que irá definir os nomes das colunas
+3. **values_from**: variável numérica que irá preencher os dados
+4. **values_fill**: valor para preencher os NAs
+
+
+```r
+sp_wide &lt;- sp[1:1000, ] %&gt;% 
+  tidyr::replace_na(list(individuals = 0)) %&gt;% 
+  tidyr::pivot_wider(id_cols = id, 
+                     names_from = species, 
+                     values_from = individuals, 
+                     values_fill = list(individuals = 0))
+sp_wide
+```
+
+
 
 ---
 
@@ -2410,36 +2645,73 @@ background-position: 50% 50%
 
 # 3.6 tidyr
 
-## **6 gather()**
+## **7 gather()**
 
 wide para long
 
 1. **key**: variável categórica que irá definir os nomes das colunas
-
 2. **value**: variável numérica que irá preencher os dados
 
 
 ```r
 si_gather &lt;- si_spread %&gt;% 
-  gather(key = record, value = species_number, -id)
+  tidyr::gather(key = record, value = species_number, -id)
 si_gather
 ```
 
 ```
-## # A tibble: 2,326 x 3
+## # A tibble: 26,749 x 3
 ##    id      record species_number
 ##    &lt;chr&gt;   &lt;chr&gt;           &lt;dbl&gt;
-##  1 amp1001 ab                 19
-##  2 amp1002 ab                  0
-##  3 amp1003 ab                  0
-##  4 amp1004 ab                  0
-##  5 amp1005 ab                  0
-##  6 amp1006 ab                  0
-##  7 amp1007 ab                  0
-##  8 amp1008 ab                  0
-##  9 amp1009 ab                 13
-## 10 amp1010 ab                  1
-## # … with 2,316 more rows
+##  1 amp1001 AR-N                0
+##  2 amp1002 AR-N                0
+##  3 amp1003 AR-N                0
+##  4 amp1004 AR-N                0
+##  5 amp1005 AR-N                0
+##  6 amp1006 AR-N                0
+##  7 amp1007 AR-N                0
+##  8 amp1008 AR-N                0
+##  9 amp1009 AR-N                0
+## 10 amp1010 AR-N                0
+## # … with 26,739 more rows
+```
+
+---
+
+# 3.6 tidyr
+
+## **7 pivot_longer()**
+
+wide para long
+
+1. **cols**: coluna do id
+2. **names_to**: nome da coluna que receberá os nomes
+3. **values_to**: nome da coluna que receberá os valores
+
+
+```r
+si_long &lt;- si_wide %&gt;% 
+  tidyr::pivot_longer(cols = -id, 
+                      names_to = "record", 
+                      values_to = "species_number")
+si_long
+```
+
+```
+## # A tibble: 26,749 x 3
+##    id      record species_number
+##    &lt;chr&gt;   &lt;chr&gt;           &lt;dbl&gt;
+##  1 amp1001 BR-PI              19
+##  2 amp1001 BR-CE               0
+##  3 amp1001 BR-RN               0
+##  4 amp1001 BR-PB               0
+##  5 amp1001 BR-PE               0
+##  6 amp1001 BR-AL               0
+##  7 amp1001 BR-SE               0
+##  8 amp1001 BR-BA               0
+##  9 amp1001 BR-GO               0
+## 10 amp1001 BR-MG               0
+## # … with 26,739 more rows
 ```
 
 ---
@@ -2453,7 +2725,7 @@ class: clear, inverse, center, middle
 # Exercício 10
 ### Combine as colunas `country`, `state`, `state_abbreviation`, `municipality`, `site`, em uma coluna chamada `local_total` separadas por `, (vírgula + espaço)`, atribuindo o resultado a um novo objeto, utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea2726f" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea35b86" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -2464,8 +2736,9 @@ class: clear, inverse, center, middle
 
 ```r
 si_local &lt;- si %&gt;% 
-  tidyr::unite("local_total", c(country, state, state_abbreviation, 
-                         municipality, site), sep = ", ")
+  tidyr::unite("local_total", 
+               c(country, state, state_abbreviation, municipality, site), 
+               sep = ", ")
 si_local$local_total
 ```
 
@@ -3637,6 +3910,50 @@ si_local$local_total
 
 ---
 
+# Exercício 11
+### Quanto indivíduos por há por família nos locais amostrados? Apenas para as 1000 primeiras linhas da tabela `sp`
+<div class="countdown" id="timer_5ea359cb" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+# Exercício 11
+## Solução
+
+```r
+family_wide &lt;- sp[1:1000, ] %&gt;% 
+  tidyr::replace_na(list(individuals = 0)) %&gt;% 
+  tidyr::drop_na(family) %&gt;% 
+  tidyr::pivot_wider(id_cols = id, 
+                     names_from = family, 
+                     values_from = individuals, 
+                     values_fn = list(individuals = sum),
+                     values_fill = list(individuals = 0))
+family_wide
+```
+
+```
+## # A tibble: 91 x 12
+##    id    Hylidae Microhylidae Leptodactylidae Phyllomedusidae Odontophrynidae
+##    &lt;chr&gt;   &lt;dbl&gt;        &lt;dbl&gt;           &lt;dbl&gt;           &lt;dbl&gt;           &lt;dbl&gt;
+##  1 amp1…      12           20             116              11              19
+##  2 amp1…       0            0               0               0               0
+##  3 amp1…       0            0               0               0               0
+##  4 amp1…       0            0               0               0               0
+##  5 amp1…       0            0               0               0               0
+##  6 amp1…       0            0               0               0               0
+##  7 amp1…       0            0               0               0               0
+##  8 amp1…       0            0               0               0               0
+##  9 amp1…       1            0            4143               1              40
+## 10 amp1…       0            0               2               0               0
+## # … with 81 more rows, and 6 more variables: Bufonidae &lt;dbl&gt;,
+## #   Siphonopidae &lt;dbl&gt;, Eleutherodactylidae &lt;dbl&gt;, Craugastoridae &lt;dbl&gt;,
+## #   Ranidae &lt;dbl&gt;, Hemiphractidae &lt;dbl&gt;
+```
+
+---
+
 class: clear, inverse, center, middle
 
 # Dúvidas?
@@ -3650,11 +3967,29 @@ background-position: 50% 50%
 
 ---
 
+background-image: url(img/dplyr_wrangling.png)
+background-size: 600px
+background-position: 50% 50%
+
 # 3.7 dplyr
 
-background-image: url(img/dplyr_wrangling.png)
-background-size: 400px
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Fonte: [@allison_horst](https://twitter.com/allison_horst)
+
+---
+
+background-image: url(img/cheatsheet_dplyr.png)
+background-size: 600px
 background-position: 50% 50%
+
+# 3.7 dplyr
+
+## Data Transformation Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
 
 ---
 
@@ -3678,13 +4013,20 @@ background-position: 50% 50%
 
 --
 
+&lt;br&gt;&lt;br&gt;
+
 ## Funções
 
-**Verbos**: mutate(), select(), filter(), arrange(), summarise(), slice(), rename(), etc
-**Sufixos**: _at(), _if(), _all(), etc
-**Agrupamento**: group_by() e ungroup()
-**Junções**: inner_join(), full_join(), left_join() e right_join()
-**Funções resumo**: n(), n_distinct(), first(), last(), nth(), etc.
+- Verbos: mutate(), select(), filter(), arrange(), summarise(), slice(), rename(), etc.
+
+- Sufixos: _at(), _if(), _all(), etc.
+
+- Agrupamento: group_by() e ungroup()
+
+- Junções: inner_join(), full_join(), left_join() e right_join()
+
+- Funções resumo: n(), n_distinct(), first(), last(), nth(), etc.
+
 
 ---
 
@@ -3692,17 +4034,17 @@ background-position: 50% 50%
 
 ### Sua gramática simples contém **funções verbais** para manipulação de dados
 
-**1 select()**: seleciona colunas pelo nome gerando um tibble&lt;br&gt;
-**2 pull()**: seleciona uma coluna como vetor&lt;br&gt;
-**3 rename()**: muda o nome das colunas&lt;br&gt;
-**4 mutate()**: adiciona novas colunas ou adiciona resultados em colunas existentes&lt;br&gt;
-**5 arrange()**: reordenar as linhas com base nos valores de colunas&lt;br&gt;
-**6 filter()**: seleciona linhas com base em valores&lt;br&gt;
-**7 distinc()**: remove linhas com valores repetidos com base nos valores de colunas&lt;br&gt;
-**8 slice()**: seleciona linhas pelos números&lt;br&gt;
-**9 sample_n()**: amostragem aleatória de linhas&lt;br&gt;
-**10 summarise()**: agrega ou resume os dados através de funções, podendo considerar valores das colunas&lt;br&gt;
-**11 join()**: junta dados de duas tabelas através de uma coluna chave
+1. select(): seleciona colunas pelo nome gerando um tibble&lt;br&gt;
+2. pull(): seleciona uma coluna como vetor&lt;br&gt;
+3. rename(): muda o nome das colunas&lt;br&gt;
+4. mutate(): adiciona novas colunas ou adiciona resultados em colunas existentes&lt;br&gt;
+5. arrange(): reordenar as linhas com base nos valores de colunas&lt;br&gt;
+6. filter(): seleciona linhas com base em valores&lt;br&gt;
+7. distinc(): remove linhas com valores repetidos com base nos valores de colunas&lt;br&gt;
+8. slice(): seleciona linhas pelos números&lt;br&gt;
+9. sample_n(): amostragem aleatória de linhas&lt;br&gt;
+10. summarise(): agrega ou resume os dados através de funções, podendo considerar valores das colunas&lt;br&gt;
+11. *_join(): junta dados de duas tabelas através de uma coluna chave
 
 ---
 
@@ -3714,23 +4056,19 @@ background-position: 50% 50%
 
 ### Todas seguem a mesma sintaxe: 
 
-### 1. tibble
-
-### 2. operador pipe 
-
-### 3. nome da função verbal com os argumentos entre parênteses 
+#### 1. tibble
+#### 2. operador pipe 
+#### 3. nome da função verbal com os argumentos entre parênteses 
 
 --
 
-&lt;br&gt; 
+&lt;br&gt;
 
 ### As funções verbais **não modificam** o tibble original
 
---
-
 
 ```r
-sp_dplyr &lt;- sp %&gt;% 
+tb_dplyr &lt;- tb %&gt;% 
   funcao_verbal(argumento1, argumento2)
 ```
 
@@ -3855,11 +4193,15 @@ background-position: 50% 50%
 
 ## **2 pull**
 
+### Seleciona uma coluna como vetor
+
 ---
 
 # 3.7 dplyr
 
 ## **2 pull**
+
+### Seleciona uma coluna como vetor
 
 
 ```r
@@ -4045,6 +4387,8 @@ si_pull
 
 ## **2 pull**
 
+### Seleciona uma coluna como vetor
+
 
 ```r
 # coluna para vetor
@@ -4114,7 +4458,7 @@ si_pull
 ### Renomeia colunas
 
 ```r
-# rename sp colum
+# rename sp column
 si_rename &lt;- si %&gt;%
   dplyr::rename(sp = species_number)
 si_rename
@@ -4162,33 +4506,63 @@ background-position: 50% 50%
 ### Adiciona colunas novas ou vindas de operações
 
 ```r
-# add colum record as factor
+# add column record as factor
 si_mutate &lt;- si %&gt;% 
   dplyr::mutate(record_factor = as.factor(record))
-si_mutate
+si_mutate$record_factor
 ```
 
 ```
-## # A tibble: 1,163 x 26
-##    id    reference_number species_number record sampled_habitat active_methods
-##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
-##  1 amp1…             1001             19 ab     fo,ll           as            
-##  2 amp1…             1002             16 co     fo,la,ll        as            
-##  3 amp1…             1002             14 co     fo,la,ll        as            
-##  4 amp1…             1002             13 co     fo,la,ll        as            
-##  5 amp1…             1003             30 co     fo,ll,br        as            
-##  6 amp1…             1004             42 co     tp,pp,la,ll,is  &lt;NA&gt;          
-##  7 amp1…             1005             23 co     sp              as            
-##  8 amp1…             1005             19 co     sp,la,sw        as,sb,tr      
-##  9 amp1…             1005             13 ab     fo              &lt;NA&gt;          
-## 10 amp1…             1006              1 ab     fo              &lt;NA&gt;          
-## # … with 1,153 more rows, and 20 more variables: passive_methods &lt;chr&gt;,
-## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
-## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
-## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
-## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
-## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
-## #   precipitation &lt;dbl&gt;, record_factor &lt;fct&gt;
+##    [1] ab co co co co co co co ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+##   [25] ab ab ab ab ab ab ab ab co co co co co co co co co co co co co co co co
+##   [49] co co co co co co co co co co co ab ab ab ab ab ab ab ab ab ab ab ab ab
+##   [73] ab co ab ab co co co co co co co co co co co co ab co co co ab co ab ab
+##   [97] ab co co ab ab ab co co co co co co co ab ab co co co co co co co co co
+##  [121] co co co co co co co ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+##  [145] ab ab ab co co co ab ab ab ab ab ab ab ab co co co co co co co co co co
+##  [169] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [193] co co co co co co co co co co co co co co ab ab ab ab co co co co ab co
+##  [217] co co co co co co co co co co co co co co co co co co co co co co co ab
+##  [241] ab ab co co co co co co co co co co co co co co co co co co co co co co
+##  [265] co co co co co co co co co co co co co co ab ab ab co co co co co co co
+##  [289] co co co co co co co co co co co co co co co ab ab ab ab ab ab ab co co
+##  [313] co co ab co co co co co ab ab ab ab ab ab ab ab ab co co co co co ab co
+##  [337] co co co ab co co ab co co ab co co co co co co co co co co co co co co
+##  [361] co co co co co co ab co ab co ab ab ab co co co co co co ab ab co co co
+##  [385] co ab ab co co co co co co ab ab co ab co co ab ab ab ab ab ab co co ab
+##  [409] co ab ab co co co co co co co co co co co co co co co co co co co co co
+##  [433] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [457] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [481] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [505] co co ab ab ab ab ab co co co co co co co co co co co co co co co co co
+##  [529] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [553] co co co co co co co co ab ab ab ab ab ab ab ab ab ab co co co co ab co
+##  [577] ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+##  [601] ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab co co co co co co co co co
+##  [625] co co co co co co ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+##  [649] ab co co co co co co co co co co co co co co co co co co co co co ab ab
+##  [673] co co co co co co co co co co co co co co co ab ab ab ab ab ab ab ab co
+##  [697] co co co ab co ab ab ab co co co co co co co co co ab ab co co co co ab
+##  [721] ab co co co co co co co co co ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+##  [745] ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab co co co co
+##  [769] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [793] co co co co co co co co ab co co co ab ab ab ab ab ab co co co co co ab
+##  [817] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [841] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [865] co co co co co co co co co co co co co co co co co co co co co co co co
+##  [889] co co ab co co co co co co co co co co co co co co co co co co co co co
+##  [913] co co co co co co co co co co co co co co co co co co co co ab ab co co
+##  [937] co co co co co co co co co co co co co co co co co co co co co ab ab ab
+##  [961] ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+##  [985] ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab
+## [1009] ab co ab co co co co co co co co co co co co co co co co co co co co co
+## [1033] co ab co co co co co co co ab ab ab ab ab ab ab co co co co co co co co
+## [1057] co co co co co ab ab co ab co co co co co co co co co co co co co co co
+## [1081] co co co co co co co co co co co co co co co co co co co co co co co co
+## [1105] co co co co co co co co co co co ab ab co co co co co co co co co co co
+## [1129] co ab ab co ab ab co ab co co ab ab ab ab co co co co co ab co ab co co
+## [1153] co co co co co co co co co co co
+## Levels: ab co
 ```
 
 ---
@@ -4215,7 +4589,34 @@ si_arrange &lt;- si %&gt;%
 si_arrange
 ```
 
---
+```
+## # A tibble: 1,163 x 25
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+##  2 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+##  3 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+##  4 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+##  5 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+##  6 amp1…             1008              1 co     pp              as            
+##  7 amp1…             1008              1 co     pp              as            
+##  8 amp1…             1041              1 co     re,du,br        as,qs         
+##  9 amp1…             1041              1 co     re,du,br        as,qs         
+## 10 amp1…             1042              1 ab     &lt;NA&gt;            qs            
+## # … with 1,153 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;
+```
+
+---
+
+# 3.7 dplyr
+
+## **5 arrange**
 
 ### Ordenar de forma decrescente pela coluna **species_number**
 
@@ -4224,12 +4625,65 @@ si_arrange &lt;- si %&gt;%
   dplyr::arrange(desc(species_number))
 si_arrange
 ```
---
+
+```
+## # A tibble: 1,163 x 25
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1037             80 co     fo,tp,pp,is     as,tr         
+##  2 amp1…             1132             76 co     &lt;NA&gt;            as,tr,qs      
+##  3 amp1…             1145             69 co     &lt;NA&gt;            &lt;NA&gt;          
+##  4 amp1…             1241             66 ab     fo,tp,la,sw,ll… as            
+##  5 amp1…             1230             65 co     fo,tp,pp,la,ll… as            
+##  6 amp2…             1359             55 co     &lt;NA&gt;            &lt;NA&gt;          
+##  7 amp1…             1227             54 co     &lt;NA&gt;            &lt;NA&gt;          
+##  8 amp2…             1320             54 co     fo,pp,ll,is,br  as,tr         
+##  9 amp1…             1118             53 co     pp,sw,is        as,tr         
+## 10 amp1…             1176             53 co     fo,is           tr            
+## # … with 1,153 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;
+```
+
+---
+
+# 3.7 dplyr
+
+## **5 arrange**
+
+### Ordenar de forma decrescente pela coluna **species_number**
 
 ```r
 si_arrange &lt;- si %&gt;% 
   dplyr::arrange(-species_number)
 si_arrange
+```
+
+```
+## # A tibble: 1,163 x 25
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1037             80 co     fo,tp,pp,is     as,tr         
+##  2 amp1…             1132             76 co     &lt;NA&gt;            as,tr,qs      
+##  3 amp1…             1145             69 co     &lt;NA&gt;            &lt;NA&gt;          
+##  4 amp1…             1241             66 ab     fo,tp,la,sw,ll… as            
+##  5 amp1…             1230             65 co     fo,tp,pp,la,ll… as            
+##  6 amp2…             1359             55 co     &lt;NA&gt;            &lt;NA&gt;          
+##  7 amp1…             1227             54 co     &lt;NA&gt;            &lt;NA&gt;          
+##  8 amp2…             1320             54 co     fo,pp,ll,is,br  as,tr         
+##  9 amp1…             1118             53 co     pp,sw,is        as,tr         
+## 10 amp1…             1176             53 co     fo,is           tr            
+## # … with 1,153 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;
 ```
 
 ---
@@ -4270,7 +4724,7 @@ si_filter
 # 3.7 dplyr
 
 ## **6 filter** 
-### Filtrar para locais sem NA no métodos passivos
+### Filtrar para locais com NA no métodos passivos
 
 ```r
 si_filter &lt;- si %&gt;% 
@@ -4278,11 +4732,11 @@ si_filter &lt;- si %&gt;%
 si_filter
 ```
 --
-### Filtrar para locais sem NA no métodos ativos **E** passivos
+### Filtrar para locais sem NA no métodos passivos
 
 ```r
 si_filter &lt;- si %&gt;% 
-  dplyr::filter(is.na(active_methods) &amp; is.na(passive_methods))
+  dplyr::filter(!is.na(passive_methods))
 si_filter
 ```
 
@@ -4291,19 +4745,32 @@ si_filter
 # 3.7 dplyr
 
 ## **6 filter** 
-### Filtrar para locais amostrados com mais de 5 espécies **E** em Pernambuco
+### Filtrar para locais sem NA no métodos ativos **E** passivos
 
 ```r
 si_filter &lt;- si %&gt;% 
-  dplyr::filter(species_number &gt; 5 &amp; state_abbreviation == "BR-PE") 
+  dplyr::filter(!is.na(active_methods) &amp; !is.na(passive_methods))
+si_filter
+```
+
+---
+
+# 3.7 dplyr
+
+## **6 filter** 
+### Filtrar para locais amostrados com mais de 5 espécies **E** em São Paulo
+
+```r
+si_filter &lt;- si %&gt;% 
+  dplyr::filter(species_number &gt; 5 &amp; state_abbreviation == "BR-SP") 
 si_filter
 ```
 --
-### Filtrar para locais amostrados com mais de 5 espécies **OU** em Pernambuco
+### Filtrar para locais amostrados com mais de 5 espécies **OU** em São Paulo
 
 ```r
 si_filter &lt;- si %&gt;% 
-  dplyr::filter(species_number &gt; 5 | state_abbreviation == "BR-PE")
+  dplyr::filter(species_number &gt; 5 | state_abbreviation == "BR-SP")
 si_filter
 ```
 
@@ -4426,16 +4893,16 @@ si_sample_n
 ## # A tibble: 100 x 25
 ##    id    reference_number species_number record sampled_habitat active_methods
 ##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
-##  1 amp1…             1316              4 ab     tp              as            
-##  2 amp1…             1285             29 co     tp,la           &lt;NA&gt;          
-##  3 amp1…             1050             13 co     fo,la,is        as            
-##  4 amp1…             1261             11 ab     pp,sw           as,sb         
-##  5 amp1…             1181              3 co     fo              &lt;NA&gt;          
-##  6 amp1…             1206             13 ab     pp              as            
-##  7 amp1…             1022             19 co     fo,ll,is,br     as            
-##  8 amp1…             1316              4 ab     tp              as            
-##  9 amp1…             1181              3 co     fo              &lt;NA&gt;          
-## 10 amp1…             1316              3 ab     tp              as            
+##  1 amp1…             1181              3 co     fo              &lt;NA&gt;          
+##  2 amp1…             1316              3 ab     tp              as            
+##  3 amp1…             1073             28 co     fo,tp,sp,pp,la… as            
+##  4 amp2…             1367              7 co     pp              as            
+##  5 amp1…             1050             20 co     fo,la,is        as            
+##  6 amp1…             1181              6 co     sw,ll,br        as            
+##  7 amp1…             1311              5 co     fo,sw,ll,is     as,tr         
+##  8 amp1…             1240             22 ab     tp,pp,sw        as,sb         
+##  9 amp2…             1323             12 co     sw              as,sb         
+## 10 amp2…             1363              1 co     la              as            
 ## # … with 90 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
 ## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
 ## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
@@ -4444,7 +4911,6 @@ si_sample_n
 ## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
 ## #   precipitation &lt;dbl&gt;
 ```
-
 
 ---
 
@@ -4467,7 +4933,8 @@ background-position: 50% 50%
 
 ```r
 si_summarise &lt;- si %&gt;% 
-  dplyr::summarise(mean_sp = mean(species_number), sd_sp = sd(species_number))
+  dplyr::summarise(mean_sp = mean(species_number), 
+                   sd_sp = sd(species_number))
 si_summarise
 ```
 
@@ -4488,7 +4955,8 @@ si_summarise
 ```r
 si_summarise_group &lt;- si %&gt;% 
   dplyr::group_by(country) %&gt;% 
-  dplyr::summarise(mean_sp = mean(species_number), sd_sp = sd(species_number))
+  dplyr::summarise(mean_sp = mean(species_number), 
+                   sd_sp = sd(species_number))
 si_summarise_group
 ```
 
@@ -4503,8 +4971,233 @@ si_summarise_group
 
 ---
 
+background-image: url(img/dplyr_join.png)
+background-size: 350px
+background-position: 50% 60%
+
 # 3.7 dplyr
-## Permite manipular os dados de forma mais simples
+
+## **11 *_join**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://rpubs.com/williamsurles/293454
+
+---
+
+background-image: url(img/dplyr_leftjoin.png), url(img/dplyr_rightjoin.png), url(img/dplyr_innerjoin.png), url(img/dplyr_fulljoin.png)
+background-size: 600px, 600px, 600px, 600px
+background-position: 50% 20%, 50% 45%, 50% 70%, 50% 95%
+
+# 3.7 dplyr
+
+## **11 *_join**
+
+---
+
+background-image: url(img/dplyr_semijoin.png), url(img/dplyr_antijoin.png)
+background-size: 700px, 700px
+background-position: 50% 40%, 50% 80%
+
+# 3.7 dplyr
+
+## **11 *_join**
+
+---
+
+background-image: url(img/dplyr_leftjoin.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 3.7 dplyr
+
+## **11 *_join**
+
+---
+
+# 3.7 dplyr
+
+## **11 *_join**
+
+## Adicionar longitute e latitude na tabela de espécies
+
+### Selecionar as colunas que preciso da tabela **si**
+
+```r
+si_coord &lt;- si %&gt;% 
+  select(id, longitude, latitude)
+si_coord 
+```
+
+```
+## # A tibble: 1,163 x 3
+##    id      longitude latitude
+##    &lt;chr&gt;       &lt;dbl&gt;    &lt;dbl&gt;
+##  1 amp1001     -43.4    -8.68
+##  2 amp1002     -38.9    -3.55
+##  3 amp1003     -38.9    -3.57
+##  4 amp1004     -38.9    -3.52
+##  5 amp1005     -38.9    -4.28
+##  6 amp1006     -36.4    -9.23
+##  7 amp1007     -40.9    -3.85
+##  8 amp1008     -40.9    -3.83
+##  9 amp1009     -40.9    -3.84
+## 10 amp1010     -35.2    -6.14
+## # … with 1,153 more rows
+```
+
+---
+
+# 3.7 dplyr
+
+## **11 *_join**
+
+## Adicionar longitute e latitude na tabela de espécies
+
+### Join com as tabelas pela coluna "id"
+
+```r
+# join dos dados
+sp_join &lt;- sp %&gt;% 
+  left_join(si_coord, by = "id")
+sp_join
+```
+
+```
+## # A tibble: 17,619 x 12
+##    id    order superfamily family subfamily genus species valid_name individuals
+##    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;  &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;            &lt;dbl&gt;
+##  1 amp1… &lt;NA&gt;  &lt;NA&gt;        &lt;NA&gt;   &lt;NA&gt;      &lt;NA&gt;  Adenom… &lt;NA&gt;                25
+##  2 amp1… Anura &lt;NA&gt;        Hylid… Lophyohy… Cory… Coryth… Corythoma…          11
+##  3 amp1… Anura &lt;NA&gt;        Hylid… Dendrops… Dend… Dendro… Dendropso…           1
+##  4 amp1… Anura &lt;NA&gt;        Micro… Gastroph… Derm… Dermat… Dermatono…          20
+##  5 amp1… &lt;NA&gt;  &lt;NA&gt;        &lt;NA&gt;   &lt;NA&gt;      &lt;NA&gt;  Leptod… &lt;NA&gt;                10
+##  6 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           2
+##  7 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           3
+##  8 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           9
+##  9 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…          32
+## 10 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           5
+## # … with 17,609 more rows, and 3 more variables: endemic &lt;dbl&gt;,
+## #   longitude &lt;dbl&gt;, latitude &lt;dbl&gt;
+```
+
+---
+
+# 3.7 dplyr
+
+## **11 *_join**
+
+## Adicionar longitute e latitude na tabela de espécies
+
+### Nome das colunas
+
+```r
+colnames(sp_join)
+```
+
+```
+##  [1] "id"          "order"       "superfamily" "family"      "subfamily"  
+##  [6] "genus"       "species"     "valid_name"  "individuals" "endemic"    
+## [11] "longitude"   "latitude"
+```
+
+---
+
+class: clear, inverse, center, middle
+
+# E não termina nunca...
+
+---
+
+# 3.7 dplyr
+
+## Sufixos: _at(), _if(), _all()
+
+### Realiza operações dependente de confições
+
+
+```r
+sp_wide_rename &lt;- sp_wide %&gt;% 
+  dplyr::rename_at(vars(contains(" ")), 
+                   list(~stringr::str_replace_all(., " ", "_"))) %&gt;% 
+  dplyr::rename_all(list(~stringr::str_to_lower(.)))
+sp_wide_rename
+```
+
+```
+## # A tibble: 91 x 179
+##    id    adenomera_sp._n. corythomantis_g… dendropsophus_s… dermatonotus_mu…
+##    &lt;chr&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+##  1 amp1…               25               11                1               20
+##  2 amp1…                0                0                0                0
+##  3 amp1…                0                0                0                0
+##  4 amp1…                0                0                0                0
+##  5 amp1…                0                0                0                0
+##  6 amp1…                0                0                0                0
+##  7 amp1…                0                0                0                0
+##  8 amp1…                0                0                0                0
+##  9 amp1…                0                1                0                0
+## 10 amp1…                0                0                0                0
+## # … with 81 more rows, and 174 more variables: leptodactylus_aff._syphax &lt;dbl&gt;,
+## #   leptodactylus_fuscus &lt;dbl&gt;, leptodactylus_macrosternum &lt;dbl&gt;,
+## #   leptodactylus_mystaceus &lt;dbl&gt;, leptodactylus_troglodytes &lt;dbl&gt;,
+## #   leptodactylus_vastus &lt;dbl&gt;, phyllomedusa_nordestina &lt;dbl&gt;,
+## #   physalaemus_albifrons &lt;dbl&gt;, physalaemus_cuvieri &lt;dbl&gt;,
+## #   proceratophrys_cristiceps &lt;dbl&gt;, rhinella_granulosa &lt;dbl&gt;,
+## #   rhinella_jimi &lt;dbl&gt;, scinax_gr._ruber &lt;dbl&gt;, scinax_sp. &lt;dbl&gt;,
+## #   siphonops_paulensis &lt;dbl&gt;, dendropsophus_microcephalus &lt;dbl&gt;,
+## #   dendropsophus_nanus &lt;dbl&gt;, elachistocleis_piauiensis &lt;dbl&gt;,
+## #   hypsiboas_raniceps &lt;dbl&gt;, leptodactylus_aff._hylaedactylus &lt;dbl&gt;,
+## #   leptodactylus_pustulatus &lt;dbl&gt;, scinax_fuscomarginatus &lt;dbl&gt;,
+## #   `scinax_x-signatus` &lt;dbl&gt;, pseudopaludicola_mystacalis &lt;dbl&gt;,
+## #   bufo_crucifer &lt;dbl&gt;, bufo_granulosus &lt;dbl&gt;, bufo_gr._margaritifer &lt;dbl&gt;,
+## #   bufo_schneideri &lt;dbl&gt;, dendropsophus_aff._decipiens &lt;dbl&gt;,
+## #   dendropsophus_gr._microcephalus &lt;dbl&gt;, dendropsophus_minutus &lt;dbl&gt;,
+## #   dendropsophus_sp. &lt;dbl&gt;, phyllomedusa_gr._hypochondrialis &lt;dbl&gt;,
+## #   scinax_aff._fuscovarius &lt;dbl&gt;, trachycephalus_venulosus &lt;dbl&gt;,
+## #   adelophryne_baturitensis &lt;dbl&gt;, eleutherodactylus_gr._ramagii &lt;dbl&gt;,
+## #   leptodactylus_furnarius &lt;dbl&gt;, leptodactylus_labyrinthicus &lt;dbl&gt;,
+## #   leptodactylus_natalensis &lt;dbl&gt;, leptodactylus_gr._ocellatus &lt;dbl&gt;,
+## #   leptodactylus_aff._pustulatus &lt;dbl&gt;, leptodactylus_syphax &lt;dbl&gt;,
+## #   odontophrynus_carvalhoi &lt;dbl&gt;, physalaemus_gr._cuvieri &lt;dbl&gt;,
+## #   siphonops_aff._paulensis &lt;dbl&gt;, chthonerpeton_aff._arii &lt;dbl&gt;,
+## #   rhinella_crucifer &lt;dbl&gt;, chiasmocleis_sp._1 &lt;dbl&gt;,
+## #   dendropsophus_branneri &lt;dbl&gt;, dendropsophus_decipiens &lt;dbl&gt;,
+## #   dendropsophus_dutrai &lt;dbl&gt;, dendropsophus_elegans &lt;dbl&gt;,
+## #   dendropsophus_haddadi &lt;dbl&gt;, dendropsophus_oliveirai &lt;dbl&gt;,
+## #   dendropsophus_studerae &lt;dbl&gt;, hypsiboas_albomarginatus &lt;dbl&gt;,
+## #   hypsiboas_crepitans &lt;dbl&gt;, hypsiboas_exastis &lt;dbl&gt;, hypsiboas_faber &lt;dbl&gt;,
+## #   hypsiboas_semilineatus &lt;dbl&gt;, hypsiboas_sp._1 &lt;dbl&gt;, scinax_auratus &lt;dbl&gt;,
+## #   scinax_eurydice &lt;dbl&gt;, scinax_nebulosus &lt;dbl&gt;, scinax_pachychrus &lt;dbl&gt;,
+## #   sphaenorhynchus_prasinus &lt;dbl&gt;, trachycephalus_mesophaeus &lt;dbl&gt;,
+## #   agalychnis_granulosa &lt;dbl&gt;, leptodactylus_latrans &lt;dbl&gt;,
+## #   leptodactylus_mystacinus &lt;dbl&gt;, pseudopaludicola_sp._1 &lt;dbl&gt;,
+## #   physalaemus_sp._1 &lt;dbl&gt;, proceratophrys_renalis &lt;dbl&gt;,
+## #   haddadus_binotatus &lt;dbl&gt;, pristimantis_sp._1 &lt;dbl&gt;,
+## #   pristimantis_sp._2 &lt;dbl&gt;, `dendropsophus_sp._(gr._microcephalus)` &lt;dbl&gt;,
+## #   `leptodactylus_sp._(aff._andreae)` &lt;dbl&gt;, `physalaemus\002_cicada` &lt;dbl&gt;,
+## #   pleurodema_diplolister &lt;dbl&gt;, pristimantis_sp. &lt;dbl&gt;,
+## #   `pseudopaludicola_sp._(gr._falcipes)` &lt;dbl&gt;,
+## #   `scinax_sp._(gr._ruber)` &lt;dbl&gt;, hypsiboas_multifasciatus &lt;dbl&gt;,
+## #   `leptodactylus_sp._(aff._syphax)` &lt;dbl&gt;, `scinax_cf._x-signatus` &lt;dbl&gt;,
+## #   `siphonops_sp._(aff._paulensis)` &lt;dbl&gt;, pseudopaludicola_sp. &lt;dbl&gt;,
+## #   elachistocleis_cesarii &lt;dbl&gt;, physalaemus_kroyeri &lt;dbl&gt;,
+## #   physalaemus_sp. &lt;dbl&gt;, leptodactylus_marmoratus &lt;dbl&gt;,
+## #   pristimantis_ramagii &lt;dbl&gt;, lithobates_palmipes &lt;dbl&gt;, hypsiboas_sp. &lt;dbl&gt;,
+## #   hyla_albomarginata &lt;dbl&gt;, hyla_elegans &lt;dbl&gt;, hyla_faber &lt;dbl&gt;,
+## #   hyla_minuta &lt;dbl&gt;, …
+```
+
+---
+
+class: clear, inverse, center, middle
+
+# Mas o mais importante é a ideia de **encadeamento das funções**
+
+---
+
+# 3.7 dplyr
+## Permite manipular os dados de forma simples
 
 ```r
 da &lt;- si %&gt;% 
@@ -4532,7 +5225,7 @@ da
 ---
 
 # 3.7 dplyr
-## Permite manipular os dados de forma mais simples
+## Permite manipular os dados de forma simples
 
 ```r
 da &lt;- si %&gt;% 
@@ -4561,7 +5254,7 @@ da
 ---
 
 # 3.7 dplyr
-## Permite manipular os dados de forma mais simples
+## Permite manipular os dados de forma simples
 
 ```r
 da &lt;- si %&gt;% 
@@ -4592,7 +5285,7 @@ da
 ---
 
 # 3.7 dplyr
-## Permite manipular os dados de forma mais simples
+## Permite manipular os dados de forma simples
 
 ```r
 da &lt;- si %&gt;% 
@@ -4629,17 +5322,17 @@ class: clear, inverse, center, middle
 
 ---
 
-# Exercício 11
+# Exercício 12
 
 ### Adicione essas novas colunas `alt_log, tem_log e pre_log`, que são a operação `log10` das colunas `altitude,	temperature e	precipitation` e atribua ao mesmo objeto `si` utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea27486" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3594a" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
 ---
 
-# Exercício 11
+# Exercício 12
 ## Solução
 
 ```r
@@ -4670,17 +5363,17 @@ si[, 25:28]
 
 ---
 
-# Exercício 12
+# Exercício 13
 
 ### Ordene os dados em forma decrescente pela coluna `altitude`, atribuindo o resultado a um novo objeto utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea2716c" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea35917" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
 ---
 
-# Exercício 12
+# Exercício 13
 ## Solução
 
 ```r
@@ -4715,17 +5408,17 @@ si_ar
 
 ---
 
-# Exercício 13
+# Exercício 14
 
 ###  Filtre as linhas com `altitude` maior que 1000 mm, `temperature` menor que 15 ºC e `precipitation` maior que 1000 mm, atribuindo o resultado a um novo objeto utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea27195" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea35a1d" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
 ---
 
-# Exercício 13
+# Exercício 14
 ## Solução
 
 ```r
@@ -4762,17 +5455,17 @@ si_fi
 
 ---
 
-# Exercício 14
+# Exercício 15
 
 ### Amostre 200 linhas aleatoriamente com número de espécies maior que 15 espécies, atribuindo o resultado a um novo objeto utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea271ae" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3585b" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
 ---
 
-# Exercício 14
+# Exercício 15
 ## Solução
 
 ```r
@@ -4787,16 +5480,16 @@ si_sa
 ## # A tibble: 200 x 28
 ##    id    reference_number species_number record sampled_habitat active_methods
 ##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
-##  1 amp2…             1335             32 co     fo,pp,is        as,sb,tr      
-##  2 amp1…             1234             31 co     fo,la,ll        as            
-##  3 amp1…             1071             43 co     &lt;NA&gt;            &lt;NA&gt;          
-##  4 amp1…             1265             21 co     fo,la,sw,os     as,sb         
-##  5 amp1…             1295             20 co     &lt;NA&gt;            &lt;NA&gt;          
-##  6 amp2…             1370             17 co     tp,pp,du        as,sb         
-##  7 amp1…             1141             36 ab     fo,tp,pp,la,sw… as            
-##  8 amp1…             1216             20 co     la              as            
-##  9 amp1…             1189             28 co     sp,la,sw,is     sb            
-## 10 amp1…             1310             27 co     &lt;NA&gt;            &lt;NA&gt;          
+##  1 amp1…             1310             27 co     &lt;NA&gt;            &lt;NA&gt;          
+##  2 amp1…             1153             45 co     &lt;NA&gt;            as,tr,qs      
+##  3 amp1…             1073             30 co     fo,tp,sp,pp,la… as            
+##  4 amp1…             1203             23 ab     fo,ll           qs            
+##  5 amp1…             1283             21 co     fo,tp,pp,ll,is  as            
+##  6 amp1…             1193             16 co     sp              as,sb         
+##  7 amp1…             1087             34 co     fo,tp,is        as            
+##  8 amp1…             1098             20 co     fo,tp,pp,la,is  as            
+##  9 amp1…             1086             18 co     fo,la,is        as            
+## 10 amp1…             1200             48 co     fo,ll,is        as            
 ## # … with 190 more rows, and 22 more variables: passive_methods &lt;chr&gt;,
 ## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
 ## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
@@ -4807,28 +5500,30 @@ si_sa
 ```
 
 ---
-
-class: clear, inverse, center, middle
-
-# Dúvidas?
-
----
-
-class: inverse, center, middle
-
-# Dúvidas?
-
----
 class: clear, center, middle
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/stringr.png)
+background-image: url(img/package_stringr.png)
 background-size: 400px
 background-position: 50% 50%
 
 ---
 
+background-image: url(img/cheatsheet_stringr.png)
+background-size: 600px
+background-position: 50% 50%
+
 # 3.8 stringr
 
-## Pacote para a manipulação de characters ou strings
+## Work with Strings Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/strings.pdf
+
+---
+
+# 3.8 stringr
+
+## Pacote para a manipulação de strings
 
 ### Comprimento
 
@@ -4934,8 +5629,8 @@ le
 ```
 
 ```
-##  [1] "z" "k" "o" "r" "h" "x" "j" "b" "v" "d" "w" "q" "l" "w" "t" "s" "g" "i" "s"
-## [20] "u" "k" "k" "l" "q" "b" "t"
+##  [1] "s" "g" "i" "s" "u" "k" "k" "l" "q" "b" "t" "g" "q" "d" "m" "s" "a" "q" "d"
+## [20] "y" "b" "z" "y" "u" "h" "c"
 ```
 --
 
@@ -4944,8 +5639,8 @@ str_sort(le)
 ```
 
 ```
-##  [1] "b" "b" "d" "g" "h" "i" "j" "k" "k" "k" "l" "l" "o" "q" "q" "r" "s" "s" "t"
-## [20] "t" "u" "v" "w" "w" "x" "z"
+##  [1] "a" "b" "b" "c" "d" "d" "g" "g" "h" "i" "k" "k" "l" "m" "q" "q" "q" "s" "s"
+## [20] "s" "t" "u" "u" "y" "y" "z"
 ```
 --
 
@@ -4954,8 +5649,8 @@ str_sort(le, dec = TRUE)
 ```
 
 ```
-##  [1] "z" "x" "w" "w" "v" "u" "t" "t" "s" "s" "r" "q" "q" "o" "l" "l" "k" "k" "k"
-## [20] "j" "i" "h" "g" "d" "b" "b"
+##  [1] "z" "y" "y" "u" "u" "t" "s" "s" "s" "q" "q" "q" "m" "l" "k" "k" "i" "h" "g"
+## [20] "g" "d" "d" "c" "b" "b" "a"
 ```
 
 ---
@@ -4995,31 +5690,38 @@ str_split("a-b-c", "-")
 
 ---
 
-class: inverse, center, middle
-
-# Dúvidas?
-
----
-
 class: clear, center, middle
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/forcats.png)
+background-image: url(img/package_forcats.png)
 background-size: 400px
 background-position: 50% 50%
 
 ---
 
+background-image: url(img/cheatsheet_forcats.png)
+background-size: 600px
+background-position: 50% 50%
+
 # 3.9 forcats
 
-## Pacote para manejar os **levels** dos fatores
+## Factors with forcats Cheatsheet
 
-### **fct_relevel**: reordena os levels de forma simples
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/factors.pdf
+
+---
+
+# 3.9 forcats
+
+### **as_factor()**: cria fatores
 
 ```r
 # fixar amostragem
 set.seed(1)
 
-# criar um fator
-fa &lt;- factor(sample(c("alto", "medio", "baixo"), 30, rep = TRUE))
+# cria um fator
+fa &lt;- sample(c("alto", "medio", "baixo"), 30, rep = TRUE) %&gt;% 
+  forcats::as_factor()
 fa
 ```
 
@@ -5034,42 +5736,1224 @@ fa
 
 # 3.9 forcats
 
-## Pacote para manejar os **levels** dos fatores
-
-### **fct_relevel**: reordena os levels de forma simples
+### **fct_recode()**: muda o nome dos níveis
 
 ```r
-fa.or &lt;- fa %&gt;% 
-  fct_relevel(c("baixo", "medio", "alto"))
-fa.or
+# muda o nome dos niveis
+fa_recode &lt;- fa %&gt;% 
+  forcats::fct_recode(a = "alto", m = "medio", b = "baixo")
+fa_recode
 ```
 
 ```
-##  [1] alto  baixo alto  medio alto  baixo baixo medio medio baixo baixo alto 
-## [13] alto  alto  medio medio medio medio baixo alto  baixo alto  alto  alto 
-## [25] alto  medio alto  alto  medio medio
-## Levels: baixo medio alto
+##  [1] a b a m a b b m m b b a a a m m m m b a b a a a a m a a m m
+## Levels: a b m
+```
+
+---
+
+# 3.9 forcats
+
+### **fct_rev()**: inverte os níveis
+
+```r
+# inverte os niveis
+fa_rev &lt;- fa_recode %&gt;% 
+  forcats::fct_rev()
+fa_rev
+```
+
+```
+##  [1] a b a m a b b m m b b a a a m m m m b a b a a a a m a a m m
+## Levels: m b a
+```
+
+---
+
+# 3.9 forcats
+
+### **fct_relevel()**: especifica a classificação de um ou mais níveis
+
+```r
+# especifica a classificacao de um nivel
+fa_relevel &lt;- fa_recode %&gt;% 
+  forcats::fct_relevel(c("a", "m", "b"))
+fa_relevel
+```
+
+```
+##  [1] a b a m a b b m m b b a a a m m m m b a b a a a a m a a m m
+## Levels: a m b
+```
+
+---
+
+# 3.9 forcats
+
+### **fct_inorder()**: ordem em que aparece
+
+```r
+# ordem em que aparece
+fa_inorder &lt;- fa_recode %&gt;% 
+  forcats::fct_inorder()
+fa_inorder
+```
+
+```
+##  [1] a b a m a b b m m b b a a a m m m m b a b a a a a m a a m m
+## Levels: a b m
+```
+
+---
+
+# 3.9 forcats
+
+### **fct_infreq()**: ordem (decrescente) de frequência
+
+```r
+# ordem (decrescente) de frequencia
+fa_infreq &lt;- fa_recode %&gt;% 
+  forcats::fct_infreq()
+fa_infreq
+```
+
+```
+##  [1] a b a m a b b m m b b a a a m m m m b a b a a a a m a a m m
+## Levels: a m b
+```
+
+---
+
+# 3.9 forcats
+
+### **fct_lump()**: agregação de níveis raros em um nível
+
+```r
+# agregacao de niveis raros em um nivel
+fa_lump &lt;- fa_recode %&gt;% 
+  forcats::fct_lump()
+fa_lump
+```
+
+```
+##  [1] a     Other a     m     a     Other Other m     m     Other Other a    
+## [13] a     a     m     m     m     m     Other a     Other a     a     a    
+## [25] a     m     a     a     m     m    
+## Levels: a m Other
 ```
 
 ---
 
 class: clear, center, middle
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/purrr.png)
+background-image: url(img/package_lubridate.png)
 background-size: 400px
 background-position: 50% 50%
 
 ---
 
-# 3.10 purrr
+background-image: url(img/cheatsheet_lubridate.png)
+background-size: 600px
+background-position: 50% 50%
 
-## Pacote que implementa **Programação Funcional**
+# 3.10 lubridate
+
+## Dates and Times Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf
+
+---
+
+# 3.10 lubridate
+
+## Pacote à parte do tidyverse
+
+### Instalar
+
+```r
+# install
+install.packages("lubridate")
+```
+
+### Carregar
+
+```r
+# load
+library(lubridate)
+```
+
+---
+
+# 3.10 lubridate
+
+### As funções `date()` e `as_date()` assumem que a ordem segue o padrão da língua inglesa: ano-mês-dia (ymd)
+
+### **date**: classe para datas
+
+```r
+# string
+data_string &lt;- "2020-04-24"
+data_string
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+class(data_string)
+```
+
+```
+## [1] "character"
+```
+
+---
+
+# 3.10 lubridate
+
+### As funções `date()` e `as_date()` assumem que a ordem segue o padrão da língua inglesa: ano-mês-dia (ymd)
+
+### **date**: classe para datas
+
+```r
+# criar um objeto com a classe data
+data_date &lt;- lubridate::date(data_string)
+data_date
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+class(data_date)
+```
+
+```
+## [1] "Date"
+```
+
+---
+
+# 3.10 lubridate
+
+### As funções `date()` e `as_date()` assumem que a ordem segue o padrão da língua inglesa: ano-mês-dia (ymd)
+
+### **date**: classe para datas
+
+```r
+# criar um objeto com a classe data
+data_date &lt;- lubridate::as_date(data_string)
+data_date
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+class(data_date)
+```
+
+```
+## [1] "Date"
+```
+
+---
+
+# 3.10 lubridate
+
+### Datas no padrão da língua portuguesa: dia-mês-ano (dmy)
+
+### **date**: classe para datas
+
+```r
+# string
+data_string &lt;- "24-04-2020"
+data_string
+```
+
+```
+## [1] "24-04-2020"
+```
+
+```r
+class(data_string)
+```
+
+```
+## [1] "character"
+```
+
+---
+
+# 3.10 lubridate
+
+### Datas no padrão da língua portuguesa: dia-mês-ano (dmy)
+
+### **date**: classe para datas
+
+```r
+# criar um objeto com a classe data
+data_date &lt;- lubridate::dmy(data_string)
+data_date
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+class(data_date)
+```
+
+```
+## [1] "Date"
+```
+
+---
+
+# 3.10 lubridate
+
+### Além de outros diversos formatos
+
+
+```r
+# formatos
+lubridate::dmy(24042020)
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+lubridate::dmy("24042020")
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+lubridate::dmy("24/04/2020")
+```
+
+```
+## [1] "2020-04-24"
+```
+
+```r
+lubridate::dmy("24.04.2020")
+```
+
+```
+## [1] "2020-04-24"
+```
+
+---
+
+# 3.10 lubridate
+
+### Especificar horários
+
+
+```r
+# especificar horarios
+lubridate::dmy_h(2404202013)
+```
+
+```
+## [1] "2020-04-24 13:00:00 UTC"
+```
+
+```r
+lubridate::dmy_hm(240420201335)
+```
+
+```
+## [1] "2020-04-24 13:35:00 UTC"
+```
+
+```r
+lubridate::dmy_hms(24042020133535)
+```
+
+```
+## [1] "2020-04-24 13:35:35 UTC"
+```
+
+---
+
+background-image: url(img/package_lubridate.png)
+background-size: 300px
+background-position: 80% 80%
+
+# 3.10 lubridate
+
+## Funções úteis
+- second() - extrai os segundos
+- minute() - extrai os minutos
+- hour() - extrai a hora
+- wday() - extrai o dia da semana
+- mday() - extrai o dia do mês
+- month() - extrai o mês
+- year() - extrai o ano
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] http://material.curso-r.com/lubridate/
+
+---
+
+# 3.10 lubridate
+
+### Extração
+
+```r
+# criar
+data &lt;- lubridate::dmy_hms(24042020133535)
+data
+```
+
+```
+## [1] "2020-04-24 13:35:35 UTC"
+```
+--
+
+```r
+# extrair
+lubridate::second(data)
+```
+
+```
+## [1] 35
+```
+
+```r
+lubridate::day(data)
+```
+
+```
+## [1] 24
+```
+
+```r
+lubridate::month(data)
+```
+
+```
+## [1] 4
+```
+
+---
+
+# 3.10 lubridate
+
+### Extração
+
+```r
+# criar
+data &lt;- lubridate::dmy_hms(24042020133535)
+data
+```
+
+```
+## [1] "2020-04-24 13:35:35 UTC"
+```
+
+
+```r
+# extrair
+lubridate::wday(data)
+```
+
+```
+## [1] 6
+```
+
+```r
+lubridate::wday(data, label = TRUE)
+```
+
+```
+## [1] Fri
+## Levels: Sun &lt; Mon &lt; Tue &lt; Wed &lt; Thu &lt; Fri &lt; Sat
+```
+
+---
+
+# 3.10 lubridate
+
+### Inclusão
+
+```r
+# criar
+data &lt;- lubridate::dmy(24042020)
+data
+```
+
+```
+## [1] "2020-04-24"
+```
+
+
+```r
+# inlcuir
+lubridate::hour(data) &lt;- 13
+data
+```
+
+```
+## [1] "2020-04-24 13:00:00 UTC"
+```
+
+---
+
+# 3.10 lubridate
+
+### Extrair a data no instante da execução
+&lt;br&gt;
+
+```r
+# extrair a data no instante da execucao
+lubridate::today() 
+```
+
+```
+## [1] "2020-04-24"
+```
+
+--
+
+&lt;br&gt;
+
+
+```r
+# extrair a data e horario no instante da execucao
+lubridate::now()
+```
+
+```
+## [1] "2020-04-24 18:18:51 -03"
+```
+
+quando eu preparava essa aula...
+
+---
+
+# 3.10 lubridate
+
+### Fusos horários
+
+```r
+# agora
+agora &lt;- lubridate::ymd_hms(lubridate::now(), tz = "America/Sao_Paulo")
+agora
+```
+
+```
+## [1] "2020-04-24 18:18:51 -03"
+```
+--
+
+```r
+# verificar os tz
+OlsonNames()
+```
+
+```
+##   [1] "Africa/Abidjan"                   "Africa/Accra"                    
+##   [3] "Africa/Addis_Ababa"               "Africa/Algiers"                  
+##   [5] "Africa/Asmara"                    "Africa/Asmera"                   
+##   [7] "Africa/Bamako"                    "Africa/Bangui"                   
+##   [9] "Africa/Banjul"                    "Africa/Bissau"                   
+##  [11] "Africa/Blantyre"                  "Africa/Brazzaville"              
+##  [13] "Africa/Bujumbura"                 "Africa/Cairo"                    
+##  [15] "Africa/Casablanca"                "Africa/Ceuta"                    
+##  [17] "Africa/Conakry"                   "Africa/Dakar"                    
+##  [19] "Africa/Dar_es_Salaam"             "Africa/Djibouti"                 
+##  [21] "Africa/Douala"                    "Africa/El_Aaiun"                 
+##  [23] "Africa/Freetown"                  "Africa/Gaborone"                 
+##  [25] "Africa/Harare"                    "Africa/Johannesburg"             
+##  [27] "Africa/Juba"                      "Africa/Kampala"                  
+##  [29] "Africa/Khartoum"                  "Africa/Kigali"                   
+##  [31] "Africa/Kinshasa"                  "Africa/Lagos"                    
+##  [33] "Africa/Libreville"                "Africa/Lome"                     
+##  [35] "Africa/Luanda"                    "Africa/Lubumbashi"               
+##  [37] "Africa/Lusaka"                    "Africa/Malabo"                   
+##  [39] "Africa/Maputo"                    "Africa/Maseru"                   
+##  [41] "Africa/Mbabane"                   "Africa/Mogadishu"                
+##  [43] "Africa/Monrovia"                  "Africa/Nairobi"                  
+##  [45] "Africa/Ndjamena"                  "Africa/Niamey"                   
+##  [47] "Africa/Nouakchott"                "Africa/Ouagadougou"              
+##  [49] "Africa/Porto-Novo"                "Africa/Sao_Tome"                 
+##  [51] "Africa/Timbuktu"                  "Africa/Tripoli"                  
+##  [53] "Africa/Tunis"                     "Africa/Windhoek"                 
+##  [55] "America/Adak"                     "America/Anchorage"               
+##  [57] "America/Anguilla"                 "America/Antigua"                 
+##  [59] "America/Araguaina"                "America/Argentina/Buenos_Aires"  
+##  [61] "America/Argentina/Catamarca"      "America/Argentina/ComodRivadavia"
+##  [63] "America/Argentina/Cordoba"        "America/Argentina/Jujuy"         
+##  [65] "America/Argentina/La_Rioja"       "America/Argentina/Mendoza"       
+##  [67] "America/Argentina/Rio_Gallegos"   "America/Argentina/Salta"         
+##  [69] "America/Argentina/San_Juan"       "America/Argentina/San_Luis"      
+##  [71] "America/Argentina/Tucuman"        "America/Argentina/Ushuaia"       
+##  [73] "America/Aruba"                    "America/Asuncion"                
+##  [75] "America/Atikokan"                 "America/Atka"                    
+##  [77] "America/Bahia"                    "America/Bahia_Banderas"          
+##  [79] "America/Barbados"                 "America/Belem"                   
+##  [81] "America/Belize"                   "America/Blanc-Sablon"            
+##  [83] "America/Boa_Vista"                "America/Bogota"                  
+##  [85] "America/Boise"                    "America/Buenos_Aires"            
+##  [87] "America/Cambridge_Bay"            "America/Campo_Grande"            
+##  [89] "America/Cancun"                   "America/Caracas"                 
+##  [91] "America/Catamarca"                "America/Cayenne"                 
+##  [93] "America/Cayman"                   "America/Chicago"                 
+##  [95] "America/Chihuahua"                "America/Coral_Harbour"           
+##  [97] "America/Cordoba"                  "America/Costa_Rica"              
+##  [99] "America/Creston"                  "America/Cuiaba"                  
+## [101] "America/Curacao"                  "America/Danmarkshavn"            
+## [103] "America/Dawson"                   "America/Dawson_Creek"            
+## [105] "America/Denver"                   "America/Detroit"                 
+## [107] "America/Dominica"                 "America/Edmonton"                
+## [109] "America/Eirunepe"                 "America/El_Salvador"             
+## [111] "America/Ensenada"                 "America/Fort_Nelson"             
+## [113] "America/Fort_Wayne"               "America/Fortaleza"               
+## [115] "America/Glace_Bay"                "America/Godthab"                 
+## [117] "America/Goose_Bay"                "America/Grand_Turk"              
+## [119] "America/Grenada"                  "America/Guadeloupe"              
+## [121] "America/Guatemala"                "America/Guayaquil"               
+## [123] "America/Guyana"                   "America/Halifax"                 
+## [125] "America/Havana"                   "America/Hermosillo"              
+## [127] "America/Indiana/Indianapolis"     "America/Indiana/Knox"            
+## [129] "America/Indiana/Marengo"          "America/Indiana/Petersburg"      
+## [131] "America/Indiana/Tell_City"        "America/Indiana/Vevay"           
+## [133] "America/Indiana/Vincennes"        "America/Indiana/Winamac"         
+## [135] "America/Indianapolis"             "America/Inuvik"                  
+## [137] "America/Iqaluit"                  "America/Jamaica"                 
+## [139] "America/Jujuy"                    "America/Juneau"                  
+## [141] "America/Kentucky/Louisville"      "America/Kentucky/Monticello"     
+## [143] "America/Knox_IN"                  "America/Kralendijk"              
+## [145] "America/La_Paz"                   "America/Lima"                    
+## [147] "America/Los_Angeles"              "America/Louisville"              
+## [149] "America/Lower_Princes"            "America/Maceio"                  
+## [151] "America/Managua"                  "America/Manaus"                  
+## [153] "America/Marigot"                  "America/Martinique"              
+## [155] "America/Matamoros"                "America/Mazatlan"                
+## [157] "America/Mendoza"                  "America/Menominee"               
+## [159] "America/Merida"                   "America/Metlakatla"              
+## [161] "America/Mexico_City"              "America/Miquelon"                
+## [163] "America/Moncton"                  "America/Monterrey"               
+## [165] "America/Montevideo"               "America/Montreal"                
+## [167] "America/Montserrat"               "America/Nassau"                  
+## [169] "America/New_York"                 "America/Nipigon"                 
+## [171] "America/Nome"                     "America/Noronha"                 
+## [173] "America/North_Dakota/Beulah"      "America/North_Dakota/Center"     
+## [175] "America/North_Dakota/New_Salem"   "America/Ojinaga"                 
+## [177] "America/Panama"                   "America/Pangnirtung"             
+## [179] "America/Paramaribo"               "America/Phoenix"                 
+## [181] "America/Port_of_Spain"            "America/Port-au-Prince"          
+## [183] "America/Porto_Acre"               "America/Porto_Velho"             
+## [185] "America/Puerto_Rico"              "America/Punta_Arenas"            
+## [187] "America/Rainy_River"              "America/Rankin_Inlet"            
+## [189] "America/Recife"                   "America/Regina"                  
+## [191] "America/Resolute"                 "America/Rio_Branco"              
+## [193] "America/Rosario"                  "America/Santa_Isabel"            
+## [195] "America/Santarem"                 "America/Santiago"                
+## [197] "America/Santo_Domingo"            "America/Sao_Paulo"               
+## [199] "America/Scoresbysund"             "America/Shiprock"                
+## [201] "America/Sitka"                    "America/St_Barthelemy"           
+## [203] "America/St_Johns"                 "America/St_Kitts"                
+## [205] "America/St_Lucia"                 "America/St_Thomas"               
+## [207] "America/St_Vincent"               "America/Swift_Current"           
+## [209] "America/Tegucigalpa"              "America/Thule"                   
+## [211] "America/Thunder_Bay"              "America/Tijuana"                 
+## [213] "America/Toronto"                  "America/Tortola"                 
+## [215] "America/Vancouver"                "America/Virgin"                  
+## [217] "America/Whitehorse"               "America/Winnipeg"                
+## [219] "America/Yakutat"                  "America/Yellowknife"             
+## [221] "Antarctica/Casey"                 "Antarctica/Davis"                
+## [223] "Antarctica/DumontDUrville"        "Antarctica/Macquarie"            
+## [225] "Antarctica/Mawson"                "Antarctica/McMurdo"              
+## [227] "Antarctica/Palmer"                "Antarctica/Rothera"              
+## [229] "Antarctica/South_Pole"            "Antarctica/Syowa"                
+## [231] "Antarctica/Troll"                 "Antarctica/Vostok"               
+## [233] "Arctic/Longyearbyen"              "Asia/Aden"                       
+## [235] "Asia/Almaty"                      "Asia/Amman"                      
+## [237] "Asia/Anadyr"                      "Asia/Aqtau"                      
+## [239] "Asia/Aqtobe"                      "Asia/Ashgabat"                   
+## [241] "Asia/Ashkhabad"                   "Asia/Atyrau"                     
+## [243] "Asia/Baghdad"                     "Asia/Bahrain"                    
+## [245] "Asia/Baku"                        "Asia/Bangkok"                    
+## [247] "Asia/Barnaul"                     "Asia/Beirut"                     
+## [249] "Asia/Bishkek"                     "Asia/Brunei"                     
+## [251] "Asia/Calcutta"                    "Asia/Chita"                      
+## [253] "Asia/Choibalsan"                  "Asia/Chongqing"                  
+## [255] "Asia/Chungking"                   "Asia/Colombo"                    
+## [257] "Asia/Dacca"                       "Asia/Damascus"                   
+## [259] "Asia/Dhaka"                       "Asia/Dili"                       
+## [261] "Asia/Dubai"                       "Asia/Dushanbe"                   
+## [263] "Asia/Famagusta"                   "Asia/Gaza"                       
+## [265] "Asia/Harbin"                      "Asia/Hebron"                     
+## [267] "Asia/Ho_Chi_Minh"                 "Asia/Hong_Kong"                  
+## [269] "Asia/Hovd"                        "Asia/Irkutsk"                    
+## [271] "Asia/Istanbul"                    "Asia/Jakarta"                    
+## [273] "Asia/Jayapura"                    "Asia/Jerusalem"                  
+## [275] "Asia/Kabul"                       "Asia/Kamchatka"                  
+## [277] "Asia/Karachi"                     "Asia/Kashgar"                    
+## [279] "Asia/Kathmandu"                   "Asia/Katmandu"                   
+## [281] "Asia/Khandyga"                    "Asia/Kolkata"                    
+## [283] "Asia/Krasnoyarsk"                 "Asia/Kuala_Lumpur"               
+## [285] "Asia/Kuching"                     "Asia/Kuwait"                     
+## [287] "Asia/Macao"                       "Asia/Macau"                      
+## [289] "Asia/Magadan"                     "Asia/Makassar"                   
+## [291] "Asia/Manila"                      "Asia/Muscat"                     
+## [293] "Asia/Nicosia"                     "Asia/Novokuznetsk"               
+## [295] "Asia/Novosibirsk"                 "Asia/Omsk"                       
+## [297] "Asia/Oral"                        "Asia/Phnom_Penh"                 
+## [299] "Asia/Pontianak"                   "Asia/Pyongyang"                  
+## [301] "Asia/Qatar"                       "Asia/Qostanay"                   
+## [303] "Asia/Qyzylorda"                   "Asia/Rangoon"                    
+## [305] "Asia/Riyadh"                      "Asia/Saigon"                     
+## [307] "Asia/Sakhalin"                    "Asia/Samarkand"                  
+## [309] "Asia/Seoul"                       "Asia/Shanghai"                   
+## [311] "Asia/Singapore"                   "Asia/Srednekolymsk"              
+## [313] "Asia/Taipei"                      "Asia/Tashkent"                   
+## [315] "Asia/Tbilisi"                     "Asia/Tehran"                     
+## [317] "Asia/Tel_Aviv"                    "Asia/Thimbu"                     
+## [319] "Asia/Thimphu"                     "Asia/Tokyo"                      
+## [321] "Asia/Tomsk"                       "Asia/Ujung_Pandang"              
+## [323] "Asia/Ulaanbaatar"                 "Asia/Ulan_Bator"                 
+## [325] "Asia/Urumqi"                      "Asia/Ust-Nera"                   
+## [327] "Asia/Vientiane"                   "Asia/Vladivostok"                
+## [329] "Asia/Yakutsk"                     "Asia/Yangon"                     
+## [331] "Asia/Yekaterinburg"               "Asia/Yerevan"                    
+## [333] "Atlantic/Azores"                  "Atlantic/Bermuda"                
+## [335] "Atlantic/Canary"                  "Atlantic/Cape_Verde"             
+## [337] "Atlantic/Faeroe"                  "Atlantic/Faroe"                  
+## [339] "Atlantic/Jan_Mayen"               "Atlantic/Madeira"                
+## [341] "Atlantic/Reykjavik"               "Atlantic/South_Georgia"          
+## [343] "Atlantic/St_Helena"               "Atlantic/Stanley"                
+## [345] "Australia/ACT"                    "Australia/Adelaide"              
+## [347] "Australia/Brisbane"               "Australia/Broken_Hill"           
+## [349] "Australia/Canberra"               "Australia/Currie"                
+## [351] "Australia/Darwin"                 "Australia/Eucla"                 
+## [353] "Australia/Hobart"                 "Australia/LHI"                   
+## [355] "Australia/Lindeman"               "Australia/Lord_Howe"             
+## [357] "Australia/Melbourne"              "Australia/North"                 
+## [359] "Australia/NSW"                    "Australia/Perth"                 
+## [361] "Australia/Queensland"             "Australia/South"                 
+## [363] "Australia/Sydney"                 "Australia/Tasmania"              
+## [365] "Australia/Victoria"               "Australia/West"                  
+## [367] "Australia/Yancowinna"             "Brazil/Acre"                     
+## [369] "Brazil/DeNoronha"                 "Brazil/East"                     
+## [371] "Brazil/West"                      "Canada/Atlantic"                 
+## [373] "Canada/Central"                   "Canada/Eastern"                  
+## [375] "Canada/Mountain"                  "Canada/Newfoundland"             
+## [377] "Canada/Pacific"                   "Canada/Saskatchewan"             
+## [379] "Canada/Yukon"                     "CET"                             
+## [381] "Chile/Continental"                "Chile/EasterIsland"              
+## [383] "CST6CDT"                          "Cuba"                            
+## [385] "EET"                              "Egypt"                           
+## [387] "Eire"                             "EST"                             
+## [389] "EST5EDT"                          "Etc/GMT"                         
+## [391] "Etc/GMT-0"                        "Etc/GMT-1"                       
+## [393] "Etc/GMT-10"                       "Etc/GMT-11"                      
+## [395] "Etc/GMT-12"                       "Etc/GMT-13"                      
+## [397] "Etc/GMT-14"                       "Etc/GMT-2"                       
+## [399] "Etc/GMT-3"                        "Etc/GMT-4"                       
+## [401] "Etc/GMT-5"                        "Etc/GMT-6"                       
+## [403] "Etc/GMT-7"                        "Etc/GMT-8"                       
+## [405] "Etc/GMT-9"                        "Etc/GMT+0"                       
+## [407] "Etc/GMT+1"                        "Etc/GMT+10"                      
+## [409] "Etc/GMT+11"                       "Etc/GMT+12"                      
+## [411] "Etc/GMT+2"                        "Etc/GMT+3"                       
+## [413] "Etc/GMT+4"                        "Etc/GMT+5"                       
+## [415] "Etc/GMT+6"                        "Etc/GMT+7"                       
+## [417] "Etc/GMT+8"                        "Etc/GMT+9"                       
+## [419] "Etc/GMT0"                         "Etc/Greenwich"                   
+## [421] "Etc/UCT"                          "Etc/Universal"                   
+## [423] "Etc/UTC"                          "Etc/Zulu"                        
+## [425] "Europe/Amsterdam"                 "Europe/Andorra"                  
+## [427] "Europe/Astrakhan"                 "Europe/Athens"                   
+## [429] "Europe/Belfast"                   "Europe/Belgrade"                 
+## [431] "Europe/Berlin"                    "Europe/Bratislava"               
+## [433] "Europe/Brussels"                  "Europe/Bucharest"                
+## [435] "Europe/Budapest"                  "Europe/Busingen"                 
+## [437] "Europe/Chisinau"                  "Europe/Copenhagen"               
+## [439] "Europe/Dublin"                    "Europe/Gibraltar"                
+## [441] "Europe/Guernsey"                  "Europe/Helsinki"                 
+## [443] "Europe/Isle_of_Man"               "Europe/Istanbul"                 
+## [445] "Europe/Jersey"                    "Europe/Kaliningrad"              
+## [447] "Europe/Kiev"                      "Europe/Kirov"                    
+## [449] "Europe/Lisbon"                    "Europe/Ljubljana"                
+## [451] "Europe/London"                    "Europe/Luxembourg"               
+## [453] "Europe/Madrid"                    "Europe/Malta"                    
+## [455] "Europe/Mariehamn"                 "Europe/Minsk"                    
+## [457] "Europe/Monaco"                    "Europe/Moscow"                   
+## [459] "Europe/Nicosia"                   "Europe/Oslo"                     
+## [461] "Europe/Paris"                     "Europe/Podgorica"                
+## [463] "Europe/Prague"                    "Europe/Riga"                     
+## [465] "Europe/Rome"                      "Europe/Samara"                   
+## [467] "Europe/San_Marino"                "Europe/Sarajevo"                 
+## [469] "Europe/Saratov"                   "Europe/Simferopol"               
+## [471] "Europe/Skopje"                    "Europe/Sofia"                    
+## [473] "Europe/Stockholm"                 "Europe/Tallinn"                  
+## [475] "Europe/Tirane"                    "Europe/Tiraspol"                 
+## [477] "Europe/Ulyanovsk"                 "Europe/Uzhgorod"                 
+## [479] "Europe/Vaduz"                     "Europe/Vatican"                  
+## [481] "Europe/Vienna"                    "Europe/Vilnius"                  
+## [483] "Europe/Volgograd"                 "Europe/Warsaw"                   
+## [485] "Europe/Zagreb"                    "Europe/Zaporozhye"               
+## [487] "Europe/Zurich"                    "Factory"                         
+## [489] "GB"                               "GB-Eire"                         
+## [491] "GMT"                              "GMT-0"                           
+## [493] "GMT+0"                            "GMT0"                            
+## [495] "Greenwich"                        "Hongkong"                        
+## [497] "HST"                              "Iceland"                         
+## [499] "Indian/Antananarivo"              "Indian/Chagos"                   
+## [501] "Indian/Christmas"                 "Indian/Cocos"                    
+## [503] "Indian/Comoro"                    "Indian/Kerguelen"                
+## [505] "Indian/Mahe"                      "Indian/Maldives"                 
+## [507] "Indian/Mauritius"                 "Indian/Mayotte"                  
+## [509] "Indian/Reunion"                   "Iran"                            
+## [511] "Israel"                           "Jamaica"                         
+## [513] "Japan"                            "Kwajalein"                       
+## [515] "Libya"                            "MET"                             
+## [517] "Mexico/BajaNorte"                 "Mexico/BajaSur"                  
+## [519] "Mexico/General"                   "MST"                             
+## [521] "MST7MDT"                          "Navajo"                          
+## [523] "NZ"                               "NZ-CHAT"                         
+## [525] "Pacific/Apia"                     "Pacific/Auckland"                
+## [527] "Pacific/Bougainville"             "Pacific/Chatham"                 
+## [529] "Pacific/Chuuk"                    "Pacific/Easter"                  
+## [531] "Pacific/Efate"                    "Pacific/Enderbury"               
+## [533] "Pacific/Fakaofo"                  "Pacific/Fiji"                    
+## [535] "Pacific/Funafuti"                 "Pacific/Galapagos"               
+## [537] "Pacific/Gambier"                  "Pacific/Guadalcanal"             
+## [539] "Pacific/Guam"                     "Pacific/Honolulu"                
+## [541] "Pacific/Johnston"                 "Pacific/Kiritimati"              
+## [543] "Pacific/Kosrae"                   "Pacific/Kwajalein"               
+## [545] "Pacific/Majuro"                   "Pacific/Marquesas"               
+## [547] "Pacific/Midway"                   "Pacific/Nauru"                   
+## [549] "Pacific/Niue"                     "Pacific/Norfolk"                 
+## [551] "Pacific/Noumea"                   "Pacific/Pago_Pago"               
+## [553] "Pacific/Palau"                    "Pacific/Pitcairn"                
+## [555] "Pacific/Pohnpei"                  "Pacific/Ponape"                  
+## [557] "Pacific/Port_Moresby"             "Pacific/Rarotonga"               
+## [559] "Pacific/Saipan"                   "Pacific/Samoa"                   
+## [561] "Pacific/Tahiti"                   "Pacific/Tarawa"                  
+## [563] "Pacific/Tongatapu"                "Pacific/Truk"                    
+## [565] "Pacific/Wake"                     "Pacific/Wallis"                  
+## [567] "Pacific/Yap"                      "Poland"                          
+## [569] "Portugal"                         "PRC"                             
+## [571] "PST8PDT"                          "ROC"                             
+## [573] "ROK"                              "Singapore"                       
+## [575] "SystemV/AST4"                     "SystemV/AST4ADT"                 
+## [577] "SystemV/CST6"                     "SystemV/CST6CDT"                 
+## [579] "SystemV/EST5"                     "SystemV/EST5EDT"                 
+## [581] "SystemV/HST10"                    "SystemV/MST7"                    
+## [583] "SystemV/MST7MDT"                  "SystemV/PST8"                    
+## [585] "SystemV/PST8PDT"                  "SystemV/YST9"                    
+## [587] "SystemV/YST9YDT"                  "Turkey"                          
+## [589] "UCT"                              "Universal"                       
+## [591] "US/Alaska"                        "US/Aleutian"                     
+## [593] "US/Arizona"                       "US/Central"                      
+## [595] "US/East-Indiana"                  "US/Eastern"                      
+## [597] "US/Hawaii"                        "US/Indiana-Starke"               
+## [599] "US/Michigan"                      "US/Mountain"                     
+## [601] "US/Pacific"                       "US/Pacific-New"                  
+## [603] "US/Samoa"                         "UTC"                             
+## [605] "W-SU"                             "WET"                             
+## [607] "Zulu"
+```
+
+---
+
+# 3.10 lubridate
+
+### Fusos horários
+
+```r
+# que horas sao em...
+lubridate::with_tz(agora, tzone = "GMT")
+```
+
+```
+## [1] "2020-04-24 21:18:51 GMT"
+```
+
+```r
+lubridate::with_tz(agora, tzone = "Europe/Stockholm")  
+```
+
+```
+## [1] "2020-04-24 23:18:51 CEST"
+```
+--
+&lt;br&gt;&lt;br&gt;
+
+```r
+# altera o fuso sem mudar a hora
+lubridate::force_tz(agora, tzone = "GMT")
+```
+
+```
+## [1] "2020-04-24 18:18:51 GMT"
+```
+
+---
+
+# 3.10 lubridate
+
+## Operações com datas
+
+### Intervalos
+Intervalos podem ser salvos em objetos com classe interval
+
+```r
+# datas
+inicio_r &lt;- lubridate::dmy("30-11-2011")
+hoje_r &lt;- lubridate::today()
+
+# intervalo
+r_interval &lt;- lubridate::interval(inicio_r, hoje_r)
+r_interval
+```
+
+```
+## [1] 2011-11-30 UTC--2020-04-24 UTC
+```
+
+```r
+class(r_interval)
+```
+
+```
+## [1] "Interval"
+## attr(,"package")
+## [1] "lubridate"
+```
+
+---
+
+# 3.10 lubridate
+
+## Operações com datas
+
+### Intervalos
+Intersecção de intervalor com a função `int_overlaps()`
+
+
+```r
+# outra forma de definir um intervalo: o operador %--%
+r_interval &lt;- lubridate::dmy("30-11-2011") %--% lubridate::today() 
+namoro_interval &lt;- lubridate::dmy("25-06-2008") %--% lubridate::today()   
+```
+--
+
+```r
+# verificar sobreposicao
+lubridate::int_overlaps(r_interval, namoro_interval)
+```
+
+```
+## [1] TRUE
+```
+
+---
+
+# 3.10 lubridate
+
+## Operações com datas
+
+### Aritmética com datas
+
+```r
+# somando datas
+inicio_r + lubridate::ddays(1)
+```
+
+```
+## [1] "2011-12-01"
+```
+
+```r
+inicio_r + lubridate::dyears(1)
+```
+
+```
+## [1] "2012-11-29 06:00:00 UTC"
+```
+
+---
+
+# 3.10 lubridate
+
+## Operações com datas
+
+### Aritmética com datas
+
+```r
+# criando datas recorrentes
+reunioes &lt;- lubridate::today() + lubridate::weeks(0:10)
+reunioes
+```
+
+```
+##  [1] "2020-04-24" "2020-05-01" "2020-05-08" "2020-05-15" "2020-05-22"
+##  [6] "2020-05-29" "2020-06-05" "2020-06-12" "2020-06-19" "2020-06-26"
+## [11] "2020-07-03"
+```
+
+---
+
+# 3.10 lubridate
+
+## Operações com datas
+
+### Aritmética com datas
+
+```r
+# duracao de um intervalo 
+r_interval &lt;- inicio_r %--% lubridate::today()
+r_interval
+```
+
+```
+## [1] 2011-11-30 UTC--2020-04-24 UTC
+```
+--
+
+```r
+# transformacoes
+r_interval / lubridate::dyears(1)
+```
+
+```
+## [1] 8.399726
+```
+
+```r
+r_interval / lubridate::ddays(1)
+```
+
+```
+## [1] 3068
+```
+
+---
+
+# 3.10 lubridate
+
+## Operações com datas
+
+### Aritmética com datas
+
+```r
+# total do periodo estudando r
+lubridate::as.period(r_interval)
+```
+
+```
+## [1] "8y 4m 25d 0H 0M 0S"
+```
+--
+
+```r
+# tempo de namoro
+lubridate::as.period(namoro_interval)
+```
+
+```
+## [1] "11y 9m 30d 0H 0M 0S"
+```
+
+---
+
+class: clear, center, middle
+background-image: url(img/package_purrr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+background-image: url(img/cheatsheet_purrr.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 3.11 purrr
+
+## Data Import Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf
+
+---
+
+# 3.11 purrr
+
+### Pacote que implementa **Programação Funcional** 
+
+--
+
+&lt;br&gt;
+
+### Uma função chama outra função para ser aplicada repetidamente percorrendo elementos de um objeto (vetor, lista ou data frame)
+
+--
+
+&lt;br&gt;
+
+## Exemplos:
+- Análise de experimento em vários locais 
+- Análise de todas as respostas de um experimento
+- Análise dos dados com diferentes transformações de variáveis
+- Simulação computacional com diferentes delineamentos
+- Importação de todos os datasets de um diretório
+
+---
+
+background-image: url(img/purrr_map.png)
+background-size: 400px
+background-position: 85% 90%
+
+# 3.11 purrr
+
+## A principal função é a `map*()` e sua "família"
+
+&lt;br&gt;
+
+## map(.x, .f)
+### .x: uma vetor, lista ou data frame
+### .f: uma função
+
+---
+
+# 3.11 purrr
+
+## Aplicando uma função em série
+
+
+```r
+li &lt;- list(1:5, c(4, 5, 7), c(98, 34,-10), c(2, 2, 2, 2, 2))
+li
+```
+
+
+
+
+```r
+purrr::map(x, sum)
+```
+
+```
+## [[1]]
+## [1] 15
+## 
+## [[2]]
+## [1] 16
+## 
+## [[3]]
+## [1] 122
+## 
+## [[4]]
+## [1] 10
+```
+
+---
+
+# 3.11 purrr
+
+## Tipos de retorno
+
+&lt;br&gt;&lt;br&gt;
+
+|  map |  returns |
+|:--|:--|
+|`map()` | list |
+|`map_chr()` | character vector |
+|`map_dbl()` | double vector (numeric) |
+|`map_int()` | integer vector |
+|`map_lgl()` | logical vector |
+|`map_dfc()` | data frame (by column) |
+|`map_dfr()` | data frame (by row) |
+
+---
+
+# 3.11 purrr
+
+## Retorna double vector (numeric)
+
+```r
+purrr::map_dbl(x, sum)
+```
+
+```
+## [1]  15  16 122  10
+```
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+--
+
+## Retorna strings
+
+```r
+purrr::map_chr(x, paste, collapse = " ")
+```
+
+```
+## [1] "1 2 3 4 5" "4 5 7"     "98 34 -10" "2 2 2 2 2"
+```
+
+---
+
+# 3.11 purrr
+
+## Duas listas em paralelo
+
+```r
+x &lt;- list(3, 5, 0, 1)
+y &lt;- list(3, 5, 0, 1)
+
+purrr::map2_dbl(x, y, prod)
+```
+
+```
+## [1]  9 25  0  1
+```
+
+--
+
+## Várias listas aninhadas
+
+```r
+x &lt;- list(3, 5, 0, 1)
+y &lt;- list(3, 5, 0, 1)
+z &lt;- list(3, 5, 0, 1)
+
+purrr::pmap_dbl(list(x, y, z), prod)
+```
+
+```
+## [1]  27 125   0   1
+```
+
+---
+
+# 3.11 purrr
 
 ### Calcular a média para várias colunas
 
 ```r
 mean_var &lt;- si %&gt;% 
-  select(species_number, altitude) %&gt;% 
-  map_dbl(mean)
+  dplyr::select(species_number, altitude) %&gt;% 
+  purrr::map_dbl(mean)
 mean_var
 ```
 
@@ -5078,25 +6962,35 @@ mean_var
 ##       15.16509      545.64144
 ```
 
----
-
-# 3.10 purrr
-
-## Pacote que implementa **Programação Funcional**
+--
 
 ### Calcular o desvio padrão para várias colunas
 
 ```r
-mean_var &lt;- si %&gt;% 
-  select(species_number, altitude) %&gt;% 
-  map_dbl(sd)
-mean_var
+sd_var &lt;- si %&gt;% 
+  dplyr::select(species_number, altitude) %&gt;% 
+  purrr::map_dbl(sd)
+sd_var
 ```
 
 ```
 ## species_number       altitude 
 ##       11.24582      392.40221
 ```
+
+---
+
+background-image: url(img/general_curso_r.png), url(img/person_jenny_bryan.jpeg)
+background-size: 400px, 300px
+background-position: 10% 70%, 90% 80%
+
+# 3.11 purrr
+
+## Material
+
+### [Webinar de purrr avançado](https://youtu.be/vb1lD9_AFcU) - Curso-R
+
+### [purrr tutorial](https://jennybc.github.io/purrr-tutorial/) - Jennifer (Jenny) Bryan
 
 ---
 
