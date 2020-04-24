@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introdução ao tidyverse</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurício Vancine" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao <em>tidyverse</em> <br><br>
+## 6 R Markdown <br><br><br>
+### Maurício Vancine
+### 25/04/2019
+
+---
+
+
+
+
+class: clear, center, middle
+background-image: url(img/rmarkdown_output_formats.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 6 R Markdown
+
+## Conteúdo
+6.1 Markdown
+&lt;br&gt;
+6.2 R Markdown
+&lt;br&gt;
+6.3 Instalar pacotes
+&lt;br&gt;
+6.4 Criar um arquivo R Markdown
+&lt;br&gt;
+6.5 Estrutura do RMarkdown
+&lt;br&gt;
+6.6 Sintaxe do Markdown
+&lt;br&gt;
+6.7 Renderizar um arquivo R Markdown
+&lt;br&gt;
+6.8 Principais formatos de saída
+
+---
+
+background-image: url(img/cover_ciencias_dados_r.jpg)
+background-size: 300px
+background-position: 50% 50%
+
+# 6 R Markdown
+
+## Ciência de Dados com R: introdução (2018)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://cdr.ibpad.com.br/index.html
+
+---
+
+background-image: url(img/cover_rmarkdown.png)
+background-size: 280px
+background-position: 50% 50%
+
+# 6 R Markdown
+
+## R Markdown: The Definitive Guide (2018)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://bookdown.org/yihui/rmarkdown/
+
+---
+
+background-image: url(img/rmarkdown_rticles.png)
+background-size: 450px
+background-position: 50% 45%
+
+# 6 R Markdown
+
+## Pacote para escrever artigos
+
+`rticles`
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/rticles
+
+[*] https://bookdown.org/yihui/rmarkdown/journals.html
+
+---
+
+background-image: url(img/rmarkdown_universe.jpg)
+background-size: 850px
+background-position: 50% 60%
+
+# 6 R Markdown
+
+## Possibilidades de criações
+
+---
+
+# 6.1 Markdown
+
+&lt;br&gt;
+
+### Markdown é uma **linguagem de marcação** que diz como algo deve ser **entendido**, mas não têm capacidade de **processamento ou execução de funções**
+
+&lt;br&gt;
+--
+
+### A **vantagem do Markdown** é a sua **simplicidade** e a **possibilidade de utilização** de uma linguagem comum para a criação de **vários tipos de documentos**
+
+---
+
+background-image: url(img/rmarkdown_flow.png)
+background-size: 800px
+background-position: 50% 95%
+
+# 6.2 R Markdown
+
+### O **R Markdown** executa **scripts em R** e os incorpora a um arquivo Markdown (extensão .md)
+
+--
+
+### O pacote **knitr** executa “pedaços” (**chunks**) de códigos e gera um arquivo .md com os códigos e resultados
+
+--
+
+### O **pandoc** converte para a linguagem desejada, gerando os arquivos nos formatos escolhidos (.html, .docx, .pdf, .odt)
+
+---
+
+background-image: url(img/rmarkdown_flow2.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 6.2 R Markdown
+
+---
+
+# 6.3 Instalar pacotes
+
+## Instalar do CRAN
+
+```r
+install.packages("rmarkdown")
+library(markdown)
+```
+
+--
+
+## Instalar do CRAN
+
+```r
+install.packages("knitr")
+library(knitr)
+```
+
+--
+
+## Para gerar pdfs
+
+```r
+install.packages("tinytex")
+library(tinytex)
+
+# install TinyTeX
+install_tinytex() # pode demorar
+```
+
+---
+
+background-image: url(img/rmarkdown_new_rmarkdown.png)
+background-size: 450px
+background-position: 50% 80%
+
+# 6.4 Criar um arquivo R Markdown
+
+### É um arquivo **diferente** do script (.R), com o formato (.Rmd) = R Markdown
+
+`File -&gt; New FIle -&gt; R Markdown`
+
+---
+
+background-image: url(img/rmarkdown_structure.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 6.5 Estrutura do RMarkdown
+
+---
+
+# 6.5 Estrutura do RMarkdown
+
+### **1 YAML**
+#### Responsável pelas **configurações dos documentos**, onde informamos o título do documento, a data de criação, o nome do autor e o tipo de output que desejamos
+
+```r
+---
+title: "Exemplo"
+author: "Seu nome"
+date: "15-01-2019"
+output:
+  html_document: default
+  pdf_document:
+    fig_caption: yes
+    fig_height: 3.5
+    fig_width: 7
+    number_sections: yes
+lang: pt-br
+---
+```
+
+---
+
+background-image: url(img/rmarkdown_chunk.png)
+background-size: 800px
+background-position: 50% 70%
+
+# 6.5 Estrutura do RMarkdown
+
+## **2 Code Chunks**
+### Pedaços de código em R para serem executados e gerar resultados que serão incorporados ao documento
+
+### Atalho: `ctrl + alt + I`
+
+---
+
+# 6.5 Estrutura do RMarkdown
+
+## **2 Code Chunks**
+
+#### Valores são acrescentados aqui: `{r, eval = FALSE}`
+
+|   Opção    |   Valor Padrão   |                                     Descrição                                      |
+|:----------:|:----------------:|:----------------------------------------------------------------------------------:|
+|    eval    |       TRUE       | Execução do código                                                                 |
+|   include  |       TRUE       | Exibição do código. Resultados não aparecem                                        |
+|  collapse  |       FALSE      | Colapsar os resutados num bloco                                                    |
+|    echo    |       FALSE      | Exibição do código. Resultados aparecem                                            |
+|   results  |      markup      | hide: sem resultados; hold: resultados formatados; asis: resultados não formatados |
+|    error   |       TRUE       | Mostrar erros                                                                      |
+|   message  |       TRUE       | Mostrar mensagens                                                                  |
+|   warning  |       TRUE       | Mostrar warnings                                                                   |
+| fig.height |         7        | Altura do gráficos em polegadas                                                    |
+|  fig.width |         7        | Largura do gráficos em polegadas                                                   |
+
+---
+
+# 6.5 Estrutura do RMarkdown
+
+## **3 Markdown**
+
+### Formato de texto que será exibido quando o arquivo for "renderizado"
+
+&lt;br&gt;&lt;br&gt;
+
+
+```r
+## Título
+Texto normal
+
+Mais uma linha
+
+Outros formatos de texto Markdown serão explicados...
+```
+
+---
+
+# 6.6 Sintaxe do Markdown
+
+## Cabeçalhos
+
+```md
+# Cabeçalho de primeiro nível
+## Cabeçalho de segundo nível
+### Cabeçalho de terceiro nível
+```
+
+--
+
+## Estilo de texto
+
+```md
+# *Itálico* e **Negrito**
+```
+
+--
+
+## Citações
+
+```md
+&gt; Aqui vai um texto para citação
+```
+
+--
+
+## Código no texto
+
+```md
+`mean(x)`
+```
+
+---
+
+# 6.6 Sintaxe do Markdown
+
+## Código processado no texto
+
+```md
+` r mean(c(2, 3, 4)) `
+```
+
+--
+
+## Imagens - tem de estar na mesma pasta **images**, no mesmo diretório que o arquivo . Rmd
+
+```md
+![](images/code_chunk.png)
+
+![Título Opcional](images/code_chunk.png)
+```
+
+---
+
+# 6.6 Sintaxe do Markdown
+
+## Listas não ordenadas
+
+```r
+# * Item a
+# * Item b
+    + Subitem b1
+    + Subitem b2
+```
+--
+
+## Listas ordenadas
+
+```md
+6. Item 1
+2. Item 2
+3. Item 3
+    i. Item 3a
+    ii. Item 3b
+```
+
+---
+
+# 6.6 Sintaxe do Markdown
+
+## Tabelas
+
+```r
+| Coluna 1 |    Coluna 2  |
+| -------: | :-----------:|
+|    10    |     Brasil   | 
+|    20    |     China    |
+Fonte: MDIC.
+```
+
+### Gerador de tabelas para o Markdown
+[*] https://www.tablesgenerator.com/markdown_tables
+
+---
+
+# 6.6 Sintaxe do Markdown
+
+## Tabelas
+
+```r
+x &lt;- letters[1:3]
+y &lt;- LETTERS[1:3]
+kable(data.frame(x, y), align = 'cc')
+```
+
+--
+
+## Sites
+
+```r
+Site do [MDIC](www.mdic.gov.br)
+```
+
+--
+
+## Linha horizontal ou Quebra de Página
+
+```r
+# ***
+---
+```
+
+---
+
+# 6.6 Sintaxe do Markdown
+
+## Equação
+
+```r
+Modelo linear simples
+$y_i = \alpha + \beta x_i + e_i$
+```
+
+`\(y_i = \alpha + \beta x_i + e_i\)`
+
+--
+
+## Equação em Bloco
+
+```r
+Modelo linear simples 
+$$y_i = \alpha + \beta x_i + e_i$$
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}$$
+```
+`$$y_i = \alpha + \beta x_i + e_i$$`
+`$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}$$`
+
+---
+
+background-image: url(img/rmarkdown_knit_button.png)
+background-size: 450px
+background-position: 50% 80%
+
+# 6.7 Renderizar um R Markdown 
+
+###  Usando o botão `knit`, disponível na interface do RStudio
+
+---
+
+background-image: url(img/rmarkdown_knit_output.png)
+background-size: 700px
+background-position: 50% 50%
+
+# 6.8 Principais formatos de saída
+
+---
+
+# 6.8 Principais formatos de saída
+
+### **html**
+#### `output: html_document`
+####  Linguagem de marcação para construção de páginas web
+
+--
+
+### **pdf**
+#### `output: pdf_document`
+####  PDFs criados pelo RMarkdown utiliza LaTeX (pronuncia-se: Lah-tech or Lay-tech)
+
+--
+
+### **Word (.xmls)**
+#### `output: word_document`
+
+--
+
+### **OpenDocument Text(.odt)**
+#### `output: odt_document`
+
+---
+
+class: inverse, center, middle
+
+# Dúvidas?
+
+---
+
+class: inverse, middle, center
+
+# Muito obrigado pela atenção!
+
+---
+
+class: clear, middle
+
+## Maurício H. Vancine
+
+&lt;br&gt;
+
+Contatos:
+
+|                                                                                           |                               |
+| :---------------------------------------------------------------------------------------- | :---------------------------- |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
+| &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
+
+Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "rainbow",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,2494 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurício H. Vancine" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao geoprocessamento para Etnobiologia e Conservação da Biodiversidade <br><br>
+## 4 Introdução ao tidyverse <br><br> xaringan [presentation ninja]
+### Maurício H. Vancine
+### 30/09/2019
+
+---
+
+
+
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tidyverse.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4 Introdução ao tidyverse
+## Tópicos
+4.1 tidyverse
+&lt;br&gt;
+4.2 magrittr (pipe - %&gt;%)
+&lt;br&gt;
+4.3 readr
+&lt;br&gt;
+4.4 readxl e writexl
+&lt;br&gt;
+4.5 tibble
+&lt;br&gt;
+4.6 tidyr
+&lt;br&gt;
+4.7 dplyr
+&lt;br&gt;
+4.8 stringr
+&lt;br&gt;
+4.9 forcats
+&lt;br&gt;
+4.10 purrr
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tidyverse.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.1 tidyverse
+
+### O tidyverse é um **pacote** com a função de **instalar** e **carregar** outros pacotes
+
+--
+
+### O **conjunto** desses pacotes forma o **tidyverse**
+
+--
+
+### É considerado um “universo” à parte do R, pois todas as suas **ferramentas** possuem formas de uso consistentes e **funcionam** muito bem em conjunto
+
+--
+
+### Seu uso é mais voltado para a **Ciência de Dados**
+
+--
+
+### E depois que vocês **aprenderem**, nunca mais usaram o R de outra forma...
+
+---
+
+class: inverse, center
+background-image: url(img/gig_avenger_reference.gif)
+background-size: 800px
+
+# Iniciativa Vingadores do R
+
+---
+
+background-image: url(img/tidyverse_flowchart.png)
+background-size: 800px
+
+# 4.1 tidyverse
+
+
+---
+
+background-image: url(img/person_hadley_wickham.jpg)
+background-size: 600px
+background-position: 50% 65%
+
+# 4.1 tidyverse
+
+## O idealizador foi o **Hadley Wickham** e atualmente **muitas pessoas** têm contribuído para sua expansão
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] http://hadley.nz/
+
+---
+
+background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/artigo_tidy.png)
+background-size: 400px
+background-position: 50% 60%
+
+# 4.1 tidyverse
+
+## Artigo: **Tidy Data (2014)** - *Journal of Statistics Software*
+
+### Hadley Wickham
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] http://vita.had.co.nz/papers/tidy-data.pdf
+
+---
+
+background-image: url(https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png)
+background-size: 250px
+background-position: 50% 50%
+
+# 4.1 tidyverse
+
+## Livro: **R for Data Science (2017)**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://r4ds.had.co.nz/
+
+---
+
+background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/tidyverse.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.1 tidyverse
+
+## Sites
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://www.tidyverse.org/
+
+---
+
+background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/tidyverse2.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.1 tidyverse
+
+## Sites
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://rpubs.com/modelthinkingbr/dados
+
+---
+
+# 4.1 tidyverse
+
+## Para utilizar os pacotes do **tidyverse** é preciso instalar e carregar o pacote
+
+`tidyverse`
+
+--
+
+
+```r
+# instalar o pacote
+install.packages("tidyverse")
+```
+
+---
+
+# 4.1 tidyverse
+
+## Notem a saída do carregamento do pacote
+
+```r
+# carregar o pacote
+library(tidyverse)
+```
+
+```
+## ── Attaching packages ─────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
+```
+
+```
+## ✓ ggplot2 3.3.0     ✓ purrr   0.3.4
+## ✓ tibble  3.0.1     ✓ dplyr   0.8.5
+## ✓ tidyr   1.0.2     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0
+```
+
+```
+## ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+```
+
+---
+
+# 4.1 tidyverse
+
+## IMPORTANTE
+
+### Todas as funções dos pacotes atrelados ao **tidyverse** usam `_` para separar os nomes internos das funções
+
+&lt;br&gt;&lt;br&gt;
+
+`read_csv`
+
+`read_xlsx`
+
+`as_tibble`
+
+`left_join`
+
+`group_by`
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/magrittr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.2 magrittr (pipe - %&gt;%)
+
+### O operador pipe (*%&gt;%*) permite o “encadeamento” de várias funções e **não é preciso de objetos** para armazenar resultados intermediários
+
+--
+
+### Essa função torna os códigos em R **mais simples**, pois realizamos **múltiplas operações** em uma **única linha**
+
+--
+
+### Ele captura o **resultado de uma declaração** e o **torna a entrada da próxima declaração**. Podemos pensar como *“EM SEGUIDA FAÇA”*
+
+--
+
+### O operador pipe é o **%&gt;%** (atalho: `crtl + shift + M`). 
+
+---
+
+# 4.2 magrittr (pipe - %&gt;%)
+
+### Atalho: `crtl + shift + M`
+
+```r
+# sem pipe
+sqrt(sum(1:100))
+```
+
+```
+## [1] 71.06335
+```
+
+--
+
+background-image: url(https://i.ytimg.com/vi/UiTZp86c04o/maxresdefault.jpg)
+background-size: 500px
+background-position: 50% 80%
+
+---
+
+# 4.2 magrittr (pipe - %&gt;%)
+
+### Atalho: `crtl + shift + M`
+
+```r
+# sem pipe
+sqrt(sum(1:100))
+```
+
+```
+## [1] 71.06335
+```
+
+
+```r
+# com pipe
+1:100 %&gt;% 
+  sum() %&gt;% 
+  sqrt()
+```
+
+```
+## [1] 71.06335
+```
+
+---
+class: inverse, center, middle
+background-image: url(https://media.giphy.com/media/7ND8xzTlR5b8s/giphy.gif)
+background-size: 800px
+
+---
+
+# 4.2 magrittr (pipe - %&gt;%)
+
+### Atalho: `crtl + shift + M`
+
+```r
+# fixar amostragem
+set.seed(1)
+
+# sem pipe
+ve &lt;- sum(sqrt(sort(log10(rpois(100, 5)))))
+ve
+```
+
+```
+## [1] 80.24719
+```
+--
+
+```r
+# fixar amostragem
+set.seed(1)
+
+# com pipe
+ve &lt;- rpois(100, 5) %&gt;% 
+  log10() %&gt;%
+  sort() %&gt;% 
+  sqrt() %&gt;% 
+  sum()
+ve  
+```
+
+```
+## [1] 80.24719
+```
+
+---
+
+class: inverse, center, middle
+background-image: url(https://i.4pcdn.org/pol/1483757174562.gif)
+background-size: 600px
+
+---
+
+class: inverse, center, middle
+
+# Dúvidas?
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/readr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.3 readr
+
+### **Carrega e salva** grandes arquivos de forma **mais rápida** no formato **.csv**
+
+--
+
+### As funções **read.csv()** e **read.csv2()** são substituídas pelas funções **read_csv()** e **read_csv2()**
+
+--
+
+### Essas funções fornecem **medidores de progresso** (barra do tempo de leitura dos dados)
+
+--
+
+### E também **classificam** automaticamente o **modo** dos dados de cada coluna
+
+--
+
+### A classe do objeto atribuído é **tibble** (data frame lv2)
+
+--
+
+### Para salvar arquivos no formato .csv: **write_csv()** e **write_csv2()**
+
+---
+
+background-image: url(https://miro.medium.com/fit/c/240/240/1*s5rAky37x3iZ5cC7OEKvbw.jpeg)
+background-size: 300px
+background-position: 50% 85%
+
+# Download de dados do GitHub
+
+## ** ATLANTIC AMPHIBIANS: a dataset of amphibian communities from the Atlantic Forests of South America**
+
+### Eu mesmo et al. (2018)
+
+---
+
+# 4.3 readr
+
+## **Formato .csv**
+
+
+```r
+# diretorio
+setwd("/home/mude/data/github/disciplina-geoprocessamento/03_dados/00_tabelas")
+```
+--
+
+```r
+# import sites
+si &lt;- read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
+si
+```
+--
+
+```r
+# import species
+sp &lt;- read_csv("ATLANTIC_AMPHIBIANS_species.csv")
+sp
+```
+
+---
+
+# 4.3 readr
+
+## **Formato .txt**
+
+
+```r
+# diretorio
+setwd("/home/mude/data/github/disciplina-geoprocessamento/03_dados/00_tabelas")
+```
+--
+
+```r
+# import sites
+si &lt;- read_table2("ATLANTIC_AMPHIBIANS_sites.txt")
+si
+```
+--
+
+```r
+# import species
+sp &lt;- read_table2("ATLANTIC_AMPHIBIANS_species.txt")
+sp
+```
+
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/readxl.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.4 readxl e writexl
+
+## São pacotes à parte do **tidyverse**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+
+```r
+install.packages("readxl")
+library("readxl")
+```
+
+&lt;br&gt;
+--
+
+
+
+```r
+install.packages("writexl")
+library("writexl")
+```
+
+---
+
+# 4.4 readxl e writexl
+
+### **Carrega e salva** grandes arquivos de forma **mais rápida** no formato **.xlsx**
+
+--
+
+### As funções **read.xlsx()** e **read.xlsx2()** são substituídas pelas funções **read_xlsx()** e **read_xlsx2()**
+
+--
+
+### Essas funções fornecem **medidores de progresso** (barra do tempo de leitura dos dados)
+
+--
+
+### E também **classificam** automaticamente o **modo** dos dados de cada coluna
+
+--
+
+### A classe do objeto atribuído é **tibble** (data frame lv2)
+
+--
+
+### Para salvar arquivos no formato .xlsx: **write_xlsx()** e **write_xlsx2()**
+
+---
+
+# 4.4 readxl e writexl
+
+## **Formato .xlsx**
+
+
+```r
+# diretorio
+setwd("/home/mude/data/github/disciplina-geoprocessamento/03_dados/00_tabelas")
+```
+--
+
+```r
+# import sites
+si &lt;- read_xlsx("ATLANTIC_AMPHIBIANS_sites.xlsx")
+si
+```
+--
+
+```r
+# import species
+sp &lt;- read_xlsx("ATLANTIC_AMPHIBIANS_species.xlsx")
+sp
+```
+
+---
+
+class: inverse, center, middle
+
+# Dúvidas?
+
+---
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tibble.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.5 tibble
+
+### O tibble (classe *tbl_df*) é um **tipo especial de data frame**
+
+--
+
+### É o **formato** necessário para que as funções do tidyverse **funcionem**
+
+--
+
+### Converter **data frame** em **tibble** usa-se a função `as_tibble()`
+
+--
+
+### Converter **tibble** em **data frame** usa-se a função `as_data_frame()`
+
+--
+
+### Cada variável pode ser do tipo *numbers(int, dbl)*, *character(chr)*, *logical(lgl)* ou *factor(fctr)*
+
+---
+
+# 4.5 tibble
+
+## Descrição dos modos das colunas através da função 
+
+`glimpse()`
+
+
+--
+
+```r
+glimpse(si)
+```
+
+```
+## Rows: 1,163
+## Columns: 25
+## $ id                    &lt;chr&gt; "amp1001", "amp1002", "amp1003", "amp1004", "am…
+## $ reference_number      &lt;dbl&gt; 1001, 1002, 1002, 1002, 1003, 1004, 1005, 1005,…
+## $ species_number        &lt;dbl&gt; 19, 16, 14, 13, 30, 42, 23, 19, 13, 1, 1, 2, 4,…
+## $ record                &lt;chr&gt; "ab", "co", "co", "co", "co", "co", "co", "co",…
+## $ sampled_habitat       &lt;chr&gt; "fo,ll", "fo,la,ll", "fo,la,ll", "fo,la,ll", "f…
+## $ active_methods        &lt;chr&gt; "as", "as", "as", "as", "as", NA, "as", "as,sb,…
+## $ passive_methods       &lt;chr&gt; "pt", "pt", "pt", "pt", NA, NA, NA, NA, "pt", "…
+## $ complementary_methods &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…
+## $ period                &lt;chr&gt; "mo,da,tw,ni", "mo,da,tw,ni", "mo,da,tw,ni", "m…
+## $ month_start           &lt;dbl&gt; 9, 12, 12, 12, 7, NA, 4, 4, 4, 5, 5, 5, 5, 5, 5…
+## $ year_start            &lt;dbl&gt; 2000, 2007, 2007, 2007, 1988, NA, 2007, 2007, 2…
+## $ month_finish          &lt;dbl&gt; 1, 5, 5, 5, 8, NA, 4, 4, 4, 7, 7, 7, 7, 7, 7, 7…
+## $ year_finish           &lt;dbl&gt; 2002, 2009, 2009, 2009, 2001, NA, 2009, 2009, 2…
+## $ effort_months         &lt;dbl&gt; 16, 17, 17, 17, 157, NA, 24, 24, 24, 2, 2, 2, 2…
+## $ country               &lt;chr&gt; "Brazil", "Brazil", "Brazil", "Brazil", "Brazil…
+## $ state                 &lt;chr&gt; "Piauí", "Ceará", "Ceará", "Ceará", "Ceará", "C…
+## $ state_abbreviation    &lt;chr&gt; "BR-PI", "BR-CE", "BR-CE", "BR-CE", "BR-CE", "B…
+## $ municipality          &lt;chr&gt; "Canto do Buriti", "São Gonçalo do Amarante", "…
+## $ site                  &lt;chr&gt; "Parque Nacional Serra das Confusões", "Dunas",…
+## $ latitude              &lt;dbl&gt; -8.680000, -3.545527, -3.574194, -3.515250, -4.…
+## $ longitude             &lt;dbl&gt; -43.42194, -38.85783, -38.88869, -38.91880, -38…
+## $ coordinate_precision  &lt;chr&gt; "gm", "dd", "dd", "dd", "gm", NA, "gms", "gms",…
+## $ altitude              &lt;dbl&gt; 543, 15, 29, 25, 750, 745, 863, 878, 826, 93, 3…
+## $ temperature           &lt;dbl&gt; 24.98, 26.53, 26.45, 26.55, 21.35, 20.45, 21.57…
+## $ precipitation         &lt;dbl&gt; 853, 1318, 1248, 1376, 1689, 1249, 1520, 1474, …
+```
+
+---
+
+# 4.5 tibble
+
+## Descrição dos modos das colunas através da função 
+
+`glimpse()`
+
+
+```r
+glimpse(sp)
+```
+
+```
+## Rows: 17,619
+## Columns: 10
+## $ id          &lt;chr&gt; "amp1001", "amp1001", "amp1001", "amp1001", "amp1001", "a…
+## $ order       &lt;chr&gt; NA, "Anura", "Anura", "Anura", NA, "Anura", "Anura", "Anu…
+## $ superfamily &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ family      &lt;chr&gt; NA, "Hylidae", "Hylidae", "Microhylidae", NA, "Leptodacty…
+## $ subfamily   &lt;chr&gt; NA, "Lophyohylinae", "Dendropsophinae", "Gastrophryninae"…
+## $ genus       &lt;chr&gt; NA, "Corythomantis", "Dendropsophus", "Dermatonotus", NA,…
+## $ species     &lt;chr&gt; "Adenomera sp. n.", "Corythomantis greeningi", "Dendropso…
+## $ valid_name  &lt;chr&gt; NA, "Corythomantis greeningi", "Dendropsophus soaresi", "…
+## $ individuals &lt;dbl&gt; 25, 11, 1, 20, 10, 2, 3, 9, 32, 5, 11, 6, 59, 19, 18, 4, …
+## $ endemic     &lt;dbl&gt; NA, NA, 0, NA, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, NA, …
+```
+
+---
+
+# 4.5 tibble
+
+## tibble vs data.frame
+
+### 1. Nunca converte um tipo **character como factor**
+
+```r
+df &lt;- data.frame(ch = c("a", "b"), nu = 1:2)
+str(df)
+```
+
+```
+## 'data.frame':	2 obs. of  2 variables:
+##  $ ch: Factor w/ 2 levels "a","b": 1 2
+##  $ nu: int  1 2
+```
+--
+
+```r
+tb &lt;- tibble(ch = c("a", "b"), nu = 1:2)
+glimpse(tb)
+```
+
+```
+## Rows: 2
+## Columns: 2
+## $ ch &lt;chr&gt; "a", "b"
+## $ nu &lt;int&gt; 1, 2
+```
+
+---
+
+# 4.5 tibble
+
+## tibble vs data.frame
+
+### 2. A indexação com colchetes sempre retorna um **tibble**
+
+```r
+df_ch &lt;- df[, 1]
+class(df_ch)
+```
+
+```
+## [1] "factor"
+```
+--
+
+```r
+tb_ch &lt;- tb[, 1]
+class(tb_ch)
+```
+
+```
+## [1] "tbl_df"     "tbl"        "data.frame"
+```
+--
+
+```r
+# indexacao pelo nome devolve um vetor
+tb_ch &lt;- tb$ch
+class(tb_ch)
+```
+
+```
+## [1] "character"
+```
+
+---
+
+# 4.5 tibble
+
+## tibble vs data.frame
+
+### 3. Não faz correspondência parcial, retorna **NULL** se a coluna não existe com o nome especificado
+
+```r
+df$c 
+```
+
+```
+## [1] a b
+## Levels: a b
+```
+--
+
+```r
+tb$c
+```
+
+```
+## Warning: Unknown or uninitialised column: `c`.
+```
+
+```
+## NULL
+```
+
+---
+
+class: inverse, middle, center
+
+# Dúvidas?
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/tidyr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.6 tidyr
+
+### Os conjuntos de dados **tidy** (organizados) são fáceis de manipular, modelar e visualizar
+
+--
+
+### Um conjunto de dados está **arrumado ou não**, dependendo de como linhas, colunas e células são combinadas com observações, variáveis e valores
+
+--
+
+## Nos dados tidy:
+### 1 Cada variável em uma coluna
+### 2 Cada observação em uma linha
+### 3 Cada valor como uma célula
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/tidy1.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.6 tidyr
+
+---
+
+# 4.6 tidyr
+
+**1 unite()**: junta dados de múltiplas colunas em uma&lt;br&gt;
+**2 separate()**: separa caracteres em múlplica colunas&lt;br&gt;
+**3 drop_na()**: retira linhas com NA&lt;br&gt;
+**4 replace_na()**: substitui NA&lt;br&gt;
+**5 spread()**: long para wide&lt;br&gt;
+**6 gather()**: wide para long&lt;br&gt;
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/unite.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.6 tidyr
+
+---
+
+# 4.6 tidyr
+
+## **1 unite**
+
+### unir as colunas latirude e longitude separadas por uma vírgula
+
+```r
+si_unite &lt;- si %&gt;% 
+  unite("lat_lon", latitude:longitude, sep = ",")
+si_unite$lat_lon
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/separate.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.6 tidyr
+
+---
+
+# 4.6 tidyr
+
+## **2 separate**
+
+### separar os dados de "period" em quatro colunas dos seus valores
+
+```r
+si_separate &lt;- si %&gt;% 
+  separate("period", c("mo", "da", "tw", "ni"), remove = FALSE)
+si_separate[, c(1, 9:13)]
+```
+
+---
+
+# 4.6 tidyr
+
+## **3 drop_na()**
+
+### remove as linhas com NA de todas as colunas
+
+```r
+si_drop_na &lt;- si %&gt;% 
+  drop_na()
+si_drop_na
+```
+--
+### remove as linhas com NA da coluna "year_start"
+
+```r
+si_drop_na &lt;- si %&gt;% 
+  drop_na(year_start)
+si_drop_na
+```
+
+---
+
+# 4.6 tidyr
+
+## **4 replace_na()**
+
+### substituir os NAs da coluna "year_start" por 0 
+
+```r
+si_replace_na &lt;- si %&gt;% 
+  replace_na(list(year_start = 0))
+si_replace_na
+```
+
+---
+
+background-image: url(img/tidyr_spread_pivot_wider.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.6 tidyr
+
+---
+
+# 4.6 tidyr
+
+## **5 spread()** 
+
+Long para wide
+
+1. **key**: variável categórica que irá definir os nomes das colunas
+
+2. **value**: variável numérica que irá preencher os dados
+
+
+```r
+si_spread &lt;- si[, c("id", "record", "species_number")] %&gt;% 
+  spread(key = record, value = species_number, fill = 0)
+si_spread
+```
+
+```
+## # A tibble: 1,163 x 3
+##    id         ab    co
+##    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;
+##  1 amp1001    19     0
+##  2 amp1002     0    16
+##  3 amp1003     0    14
+##  4 amp1004     0    13
+##  5 amp1005     0    30
+##  6 amp1006     0    42
+##  7 amp1007     0    23
+##  8 amp1008     0    19
+##  9 amp1009    13     0
+## 10 amp1010     1     0
+## # … with 1,153 more rows
+```
+
+---
+
+# 4.6 tidyr
+
+## **5 spread()** 
+
+Long para wide
+
+1. **key**: variável categórica que irá definir os nomes das colunas
+
+2. **value**: variável numérica que irá preencher os dados
+
+
+```r
+si_spread &lt;- si[, c("id", "record", "species_number")] %&gt;% 
+  spread(key = state_abbreviation, value = species_number, fill = 0)
+si_spread
+```
+
+---
+
+# 4.6 tidyr
+
+## **5 spread()** 
+
+Long para wide
+
+1. **key**: variável categórica que irá definir os nomes das colunas
+
+2. **value**: variável numérica que irá preencher os dados
+
+
+```r
+sp_spread &lt;- sp[1:1000, c("id", "species", "individuals")] %&gt;% 
+  spread(key = species, value = individuals, fill = 0)
+sp_spread
+```
+
+---
+
+background-image: url(img/tidyr_gather_pivot_longer.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.6 tidyr
+
+---
+
+# 4.6 tidyr
+
+## **6 gather()**
+
+wide para long
+
+1. **key**: variável categórica que irá definir os nomes das colunas
+
+2. **value**: variável numérica que irá preencher os dados
+
+
+```r
+si_gather &lt;- si_spread %&gt;% 
+  gather(key = record, value = species_number, -id)
+si_gather
+```
+
+```
+## # A tibble: 2,326 x 3
+##    id      record species_number
+##    &lt;chr&gt;   &lt;chr&gt;           &lt;dbl&gt;
+##  1 amp1001 ab                 19
+##  2 amp1002 ab                  0
+##  3 amp1003 ab                  0
+##  4 amp1004 ab                  0
+##  5 amp1005 ab                  0
+##  6 amp1006 ab                  0
+##  7 amp1007 ab                  0
+##  8 amp1008 ab                  0
+##  9 amp1009 ab                 13
+## 10 amp1010 ab                  1
+## # … with 2,316 more rows
+```
+
+---
+
+class: clear, center, middle
+background-image: url(img/package_dplyr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.7 dplyr
+
+### O **dplyr** é um pacote que **facilita** o trabalho com dados, com uma **gramática de manipulação** de dados **simples e flexível** (filtragem, reordenamento, seleção, entre outras)
+
+--
+
+### Ele foi construído com o intuito de obter uma forma **mais rápida** e **expressiva** de tratar os dados 
+
+--
+
+### O **tibble** é a **versão de data frame** mais **conveniente** para **se usar** com dplyr
+
+---
+
+# 4.7 dplyr
+
+### Sua gramática simples contém **funções verbais** para manipulação de dados
+
+--
+
+## Funções
+**1 select()**: seleciona colunas pelo nome gerando um tibble&lt;br&gt;
+**2 pull()**: seleciona uma coluna como vetor&lt;br&gt;
+**3 rename()**: muda o nome das colunas&lt;br&gt;
+**4 mutate()**: adiciona novas colunas ou adiciona resultados em colunas existentes&lt;br&gt;
+**5 arrange()**: reordenar as linhas com base nos valores de colunas&lt;br&gt;
+**6 filter()**: seleciona linhas com base em valores&lt;br&gt;
+**7 distinc()**: remove linhas com valores repetidos com base nos valores de colunas&lt;br&gt;
+**8 slice()**: seleciona linhas pelos números&lt;br&gt;
+**9 n_sample()**: amostragem aleatória de linhas&lt;br&gt;
+**10 summarise()**: agrega ou resume os dados através de funções, podendo considerar valores das colunas&lt;br&gt;
+**11 join()**: junta dados de duas tabelas através de uma coluna chave
+
+---
+
+# 4.7 dplyr
+
+### O **tibble** é sempre o **primeiro argumento** das funções verbais
+
+--
+
+### Todas seguem a mesma sintaxe: 
+
+### 1. tibble
+
+### 2. operador pipe 
+
+### 3. nome da função verbal com os argumentos entre parênteses 
+
+--
+
+&lt;br&gt; 
+
+### As funções verbais **não modificam** o tibble original
+
+--
+
+
+```r
+sp_dplyr &lt;- sp %&gt;% 
+  funcao_verbal(argumento1, argumento2)
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/select.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **1 select**
+
+---
+
+# 4.7 dplyr
+
+## **1 select**
+
+### Seleciona colunas pelo nome
+
+
+```r
+si_select &lt;- si %&gt;% 
+  select(id, longitude, latitude)
+si_select
+```
+
+```
+## # A tibble: 1,163 x 3
+##    id      longitude latitude
+##    &lt;chr&gt;       &lt;dbl&gt;    &lt;dbl&gt;
+##  1 amp1001     -43.4    -8.68
+##  2 amp1002     -38.9    -3.55
+##  3 amp1003     -38.9    -3.57
+##  4 amp1004     -38.9    -3.52
+##  5 amp1005     -38.9    -4.28
+##  6 amp1006     -36.4    -9.23
+##  7 amp1007     -40.9    -3.85
+##  8 amp1008     -40.9    -3.83
+##  9 amp1009     -40.9    -3.84
+## 10 amp1010     -35.2    -6.14
+## # … with 1,153 more rows
+```
+
+---
+
+# 4.7 dplyr
+
+## **1 select**
+
+### Remove as colunas pelo nome
+
+
+```r
+si_select &lt;- si %&gt;% 
+  select(-c(id, longitude, latitude))
+si_select
+```
+
+```
+## # A tibble: 1,163 x 22
+##    reference_number species_number record sampled_habitat active_methods
+##               &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1             1001             19 ab     fo,ll           as            
+##  2             1002             16 co     fo,la,ll        as            
+##  3             1002             14 co     fo,la,ll        as            
+##  4             1002             13 co     fo,la,ll        as            
+##  5             1003             30 co     fo,ll,br        as            
+##  6             1004             42 co     tp,pp,la,ll,is  &lt;NA&gt;          
+##  7             1005             23 co     sp              as            
+##  8             1005             19 co     sp,la,sw        as,sb,tr      
+##  9             1005             13 ab     fo              &lt;NA&gt;          
+## 10             1006              1 ab     fo              &lt;NA&gt;          
+## # … with 1,153 more rows, and 17 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;,
+## #   temperature &lt;dbl&gt;, precipitation &lt;dbl&gt;
+```
+---
+
+# 4.7 dplyr
+
+## **1 select**
+
+### Seleciona colunas por um padrão
+
+
+```r
+#  starts_with(), ends_with() e contains()
+si_select &lt;- si %&gt;% 
+  select(contains("sp"))
+si_select
+```
+
+```
+## # A tibble: 1,163 x 1
+##    species_number
+##             &lt;dbl&gt;
+##  1             19
+##  2             16
+##  3             14
+##  4             13
+##  5             30
+##  6             42
+##  7             23
+##  8             19
+##  9             13
+## 10              1
+## # … with 1,153 more rows
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/vectorizedFnct.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **2 pull**
+
+---
+
+# 4.7 dplyr
+
+## **2 pull**
+
+
+```r
+# coluna para vetor
+si_pull &lt;- si %&gt;% 
+  pull(id)
+si_pull
+```
+
+```
+##    [1] "amp1001" "amp1002" "amp1003" "amp1004" "amp1005" "amp1006" "amp1007"
+##    [8] "amp1008" "amp1009" "amp1010" "amp1011" "amp1012" "amp1013" "amp1014"
+##   [15] "amp1015" "amp1016" "amp1017" "amp1018" "amp1019" "amp1020" "amp1021"
+##   [22] "amp1022" "amp1023" "amp1024" "amp1025" "amp1026" "amp1027" "amp1028"
+##   [29] "amp1029" "amp1030" "amp1031" "amp1032" "amp1033" "amp1034" "amp1035"
+##   [36] "amp1036" "amp1037" "amp1038" "amp1039" "amp1040" "amp1041" "amp1042"
+##   [43] "amp1043" "amp1044" "amp1045" "amp1046" "amp1047" "amp1048" "amp1049"
+##   [50] "amp1050" "amp1051" "amp1052" "amp1053" "amp1054" "amp1055" "amp1056"
+##   [57] "amp1057" "amp1058" "amp1059" "amp1060" "amp1061" "amp1062" "amp1063"
+##   [64] "amp1064" "amp1065" "amp1066" "amp1067" "amp1068" "amp1069" "amp1070"
+##   [71] "amp1071" "amp1072" "amp1073" "amp1074" "amp1075" "amp1076" "amp1077"
+##   [78] "amp1078" "amp1079" "amp1080" "amp1081" "amp1082" "amp1083" "amp1084"
+##   [85] "amp1085" "amp1086" "amp1087" "amp1088" "amp1089" "amp1090" "amp1091"
+##   [92] "amp1092" "amp1093" "amp1094" "amp1095" "amp1096" "amp1097" "amp1098"
+##   [99] "amp1099" "amp1100" "amp1101" "amp1102" "amp1103" "amp1104" "amp1105"
+##  [106] "amp1106" "amp1107" "amp1108" "amp1109" "amp1110" "amp1111" "amp1112"
+##  [113] "amp1113" "amp1114" "amp1115" "amp1116" "amp1117" "amp1118" "amp1119"
+##  [120] "amp1120" "amp1121" "amp1122" "amp1123" "amp1124" "amp1125" "amp1126"
+##  [127] "amp1127" "amp1128" "amp1129" "amp1130" "amp1131" "amp1132" "amp1133"
+##  [134] "amp1134" "amp1135" "amp1136" "amp1137" "amp1138" "amp1139" "amp1140"
+##  [141] "amp1141" "amp1142" "amp1143" "amp1144" "amp1145" "amp1146" "amp1147"
+##  [148] "amp1148" "amp1149" "amp1150" "amp1151" "amp1152" "amp1153" "amp1154"
+##  [155] "amp1155" "amp1156" "amp1157" "amp1158" "amp1159" "amp1160" "amp1161"
+##  [162] "amp1162" "amp1163" "amp1164" "amp1165" "amp1166" "amp1167" "amp1168"
+##  [169] "amp1169" "amp1170" "amp1171" "amp1172" "amp1173" "amp1174" "amp1175"
+##  [176] "amp1176" "amp1177" "amp1178" "amp1179" "amp1180" "amp1181" "amp1182"
+##  [183] "amp1183" "amp1184" "amp1185" "amp1186" "amp1187" "amp1188" "amp1189"
+##  [190] "amp1190" "amp1191" "amp1192" "amp1193" "amp1194" "amp1195" "amp1196"
+##  [197] "amp1197" "amp1198" "amp1199" "amp1200" "amp1201" "amp1202" "amp1203"
+##  [204] "amp1204" "amp1205" "amp1206" "amp1207" "amp1208" "amp1209" "amp1210"
+##  [211] "amp1211" "amp1212" "amp1213" "amp1214" "amp1215" "amp1216" "amp1217"
+##  [218] "amp1218" "amp1219" "amp1220" "amp1221" "amp1222" "amp1223" "amp1224"
+##  [225] "amp1225" "amp1226" "amp1227" "amp1228" "amp1229" "amp1230" "amp1231"
+##  [232] "amp1232" "amp1233" "amp1234" "amp1235" "amp1236" "amp1237" "amp1238"
+##  [239] "amp1239" "amp1240" "amp1241" "amp1242" "amp1243" "amp1244" "amp1245"
+##  [246] "amp1246" "amp1247" "amp1248" "amp1249" "amp1250" "amp1251" "amp1252"
+##  [253] "amp1253" "amp1254" "amp1255" "amp1256" "amp1257" "amp1258" "amp1259"
+##  [260] "amp1260" "amp1261" "amp1262" "amp1263" "amp1264" "amp1265" "amp1266"
+##  [267] "amp1267" "amp1268" "amp1269" "amp1270" "amp1271" "amp1272" "amp1273"
+##  [274] "amp1274" "amp1275" "amp1276" "amp1277" "amp1278" "amp1279" "amp1280"
+##  [281] "amp1281" "amp1282" "amp1283" "amp1284" "amp1285" "amp1286" "amp1287"
+##  [288] "amp1288" "amp1289" "amp1290" "amp1291" "amp1292" "amp1293" "amp1294"
+##  [295] "amp1295" "amp1296" "amp1297" "amp1298" "amp1299" "amp1300" "amp1301"
+##  [302] "amp1302" "amp1303" "amp1304" "amp1305" "amp1306" "amp1307" "amp1308"
+##  [309] "amp1309" "amp1310" "amp1311" "amp1312" "amp1313" "amp1314" "amp1315"
+##  [316] "amp1316" "amp1317" "amp1318" "amp1319" "amp1320" "amp1321" "amp1322"
+##  [323] "amp1323" "amp1324" "amp1325" "amp1326" "amp1327" "amp1328" "amp1329"
+##  [330] "amp1330" "amp1331" "amp1332" "amp1333" "amp1334" "amp1335" "amp1336"
+##  [337] "amp1337" "amp1338" "amp1339" "amp1340" "amp1341" "amp1342" "amp1343"
+##  [344] "amp1344" "amp1345" "amp1346" "amp1347" "amp1348" "amp1349" "amp1350"
+##  [351] "amp1351" "amp1352" "amp1353" "amp1354" "amp1355" "amp1356" "amp1357"
+##  [358] "amp1358" "amp1359" "amp1360" "amp1361" "amp1362" "amp1363" "amp1364"
+##  [365] "amp1365" "amp1366" "amp1367" "amp1368" "amp1369" "amp1370" "amp1371"
+##  [372] "amp1372" "amp1373" "amp1374" "amp1375" "amp1376" "amp1377" "amp1378"
+##  [379] "amp1379" "amp1380" "amp1381" "amp1382" "amp1383" "amp1384" "amp1385"
+##  [386] "amp1386" "amp1387" "amp1388" "amp1389" "amp1390" "amp1391" "amp1392"
+##  [393] "amp1393" "amp1394" "amp1395" "amp1396" "amp1397" "amp1398" "amp1399"
+##  [400] "amp1400" "amp1401" "amp1402" "amp1403" "amp1404" "amp1405" "amp1406"
+##  [407] "amp1407" "amp1408" "amp1409" "amp1410" "amp1411" "amp1412" "amp1413"
+##  [414] "amp1414" "amp1415" "amp1416" "amp1417" "amp1418" "amp1419" "amp1420"
+##  [421] "amp1421" "amp1422" "amp1423" "amp1424" "amp1425" "amp1426" "amp1427"
+##  [428] "amp1428" "amp1429" "amp1430" "amp1431" "amp1432" "amp1433" "amp1434"
+##  [435] "amp1435" "amp1436" "amp1437" "amp1438" "amp1439" "amp1440" "amp1441"
+##  [442] "amp1442" "amp1443" "amp1444" "amp1445" "amp1446" "amp1447" "amp1448"
+##  [449] "amp1449" "amp1450" "amp1451" "amp1452" "amp1453" "amp1454" "amp1455"
+##  [456] "amp1456" "amp1457" "amp1458" "amp1459" "amp1460" "amp1461" "amp1462"
+##  [463] "amp1463" "amp1464" "amp1465" "amp1466" "amp1467" "amp1468" "amp1469"
+##  [470] "amp1470" "amp1471" "amp1472" "amp1473" "amp1474" "amp1475" "amp1476"
+##  [477] "amp1477" "amp1478" "amp1479" "amp1480" "amp1481" "amp1482" "amp1483"
+##  [484] "amp1484" "amp1485" "amp1486" "amp1487" "amp1488" "amp1489" "amp1490"
+##  [491] "amp1491" "amp1492" "amp1493" "amp1494" "amp1495" "amp1496" "amp1497"
+##  [498] "amp1498" "amp1499" "amp1500" "amp1501" "amp1502" "amp1503" "amp1504"
+##  [505] "amp1505" "amp1506" "amp1507" "amp1508" "amp1509" "amp1510" "amp1511"
+##  [512] "amp1512" "amp1513" "amp1514" "amp1515" "amp1516" "amp1517" "amp1518"
+##  [519] "amp1519" "amp1520" "amp1521" "amp1522" "amp1523" "amp1524" "amp1525"
+##  [526] "amp1526" "amp1527" "amp1528" "amp1529" "amp1530" "amp1531" "amp1532"
+##  [533] "amp1533" "amp1534" "amp1535" "amp1536" "amp1537" "amp1538" "amp1539"
+##  [540] "amp1540" "amp1541" "amp1542" "amp1543" "amp1544" "amp1545" "amp1546"
+##  [547] "amp1547" "amp1548" "amp1549" "amp1550" "amp1551" "amp1552" "amp1553"
+##  [554] "amp1554" "amp1555" "amp1556" "amp1557" "amp1558" "amp1559" "amp1560"
+##  [561] "amp1561" "amp1562" "amp1563" "amp1564" "amp1565" "amp1566" "amp1567"
+##  [568] "amp1568" "amp1569" "amp1570" "amp1571" "amp1572" "amp1573" "amp1574"
+##  [575] "amp1575" "amp1576" "amp1577" "amp1578" "amp1579" "amp1580" "amp1581"
+##  [582] "amp1582" "amp1583" "amp1584" "amp1585" "amp1586" "amp1587" "amp1588"
+##  [589] "amp1589" "amp1590" "amp1591" "amp1592" "amp1593" "amp1594" "amp1595"
+##  [596] "amp1596" "amp1597" "amp1598" "amp1599" "amp1600" "amp1601" "amp1602"
+##  [603] "amp1603" "amp1604" "amp1605" "amp1606" "amp1607" "amp1608" "amp1609"
+##  [610] "amp1610" "amp1611" "amp1612" "amp1613" "amp1614" "amp1615" "amp1616"
+##  [617] "amp1617" "amp1618" "amp1619" "amp1620" "amp1621" "amp1622" "amp1623"
+##  [624] "amp1624" "amp1625" "amp1626" "amp1627" "amp1628" "amp1629" "amp1630"
+##  [631] "amp1631" "amp1632" "amp1633" "amp1634" "amp1635" "amp1636" "amp1637"
+##  [638] "amp1638" "amp1639" "amp1640" "amp1641" "amp1642" "amp1643" "amp1644"
+##  [645] "amp1645" "amp1646" "amp1647" "amp1648" "amp1649" "amp1650" "amp1651"
+##  [652] "amp1652" "amp1653" "amp1654" "amp1655" "amp1656" "amp1657" "amp1658"
+##  [659] "amp1659" "amp1660" "amp1661" "amp1662" "amp1663" "amp1664" "amp1665"
+##  [666] "amp1666" "amp1667" "amp1668" "amp1669" "amp1670" "amp1671" "amp1672"
+##  [673] "amp1673" "amp1674" "amp1675" "amp1676" "amp1677" "amp1678" "amp1679"
+##  [680] "amp1680" "amp1681" "amp1682" "amp1683" "amp1684" "amp1685" "amp1686"
+##  [687] "amp1687" "amp1688" "amp1689" "amp1690" "amp1691" "amp1692" "amp1693"
+##  [694] "amp1694" "amp1695" "amp1696" "amp1697" "amp1698" "amp1699" "amp1700"
+##  [701] "amp1701" "amp1702" "amp1703" "amp1704" "amp1705" "amp1706" "amp1707"
+##  [708] "amp1708" "amp1709" "amp1710" "amp1711" "amp1712" "amp1713" "amp1714"
+##  [715] "amp1715" "amp1716" "amp1717" "amp1718" "amp1719" "amp1720" "amp1721"
+##  [722] "amp1722" "amp1723" "amp1724" "amp1725" "amp1726" "amp1727" "amp1728"
+##  [729] "amp1729" "amp1730" "amp1731" "amp1732" "amp1733" "amp1734" "amp1735"
+##  [736] "amp1736" "amp1737" "amp1738" "amp1739" "amp1740" "amp1741" "amp1742"
+##  [743] "amp1743" "amp1744" "amp1745" "amp1746" "amp1747" "amp1748" "amp1749"
+##  [750] "amp1750" "amp1751" "amp1752" "amp1753" "amp1754" "amp1755" "amp1756"
+##  [757] "amp1757" "amp1758" "amp1759" "amp1760" "amp1761" "amp1762" "amp1763"
+##  [764] "amp1764" "amp1765" "amp1766" "amp1767" "amp1768" "amp1769" "amp1770"
+##  [771] "amp1771" "amp1772" "amp1773" "amp1774" "amp1775" "amp1776" "amp1777"
+##  [778] "amp1778" "amp1779" "amp1780" "amp1781" "amp1782" "amp1783" "amp1784"
+##  [785] "amp1785" "amp1786" "amp1787" "amp1788" "amp1789" "amp1790" "amp1791"
+##  [792] "amp1792" "amp1793" "amp1794" "amp1795" "amp1796" "amp1797" "amp1798"
+##  [799] "amp1799" "amp1800" "amp1801" "amp1802" "amp1803" "amp1804" "amp1805"
+##  [806] "amp1806" "amp1807" "amp1808" "amp1809" "amp1810" "amp1811" "amp1812"
+##  [813] "amp1813" "amp1814" "amp1815" "amp1816" "amp1817" "amp1818" "amp1819"
+##  [820] "amp1820" "amp1821" "amp1822" "amp1823" "amp1824" "amp1825" "amp1826"
+##  [827] "amp1827" "amp1828" "amp1829" "amp1830" "amp1831" "amp1832" "amp1833"
+##  [834] "amp1834" "amp1835" "amp1836" "amp1837" "amp1838" "amp1839" "amp1840"
+##  [841] "amp1841" "amp1842" "amp1843" "amp1844" "amp1845" "amp1846" "amp1847"
+##  [848] "amp1848" "amp1849" "amp1850" "amp1851" "amp1852" "amp1853" "amp1854"
+##  [855] "amp1855" "amp1856" "amp1857" "amp1858" "amp1859" "amp1860" "amp1861"
+##  [862] "amp1862" "amp1863" "amp1864" "amp1865" "amp1866" "amp1867" "amp1868"
+##  [869] "amp1869" "amp1870" "amp1871" "amp1872" "amp1873" "amp1874" "amp1875"
+##  [876] "amp1876" "amp1877" "amp1878" "amp1879" "amp1880" "amp1881" "amp1882"
+##  [883] "amp1883" "amp1884" "amp1885" "amp1886" "amp1887" "amp1888" "amp1889"
+##  [890] "amp1890" "amp1891" "amp1892" "amp1893" "amp1894" "amp1895" "amp1896"
+##  [897] "amp1897" "amp1898" "amp1899" "amp1900" "amp1901" "amp1902" "amp1903"
+##  [904] "amp1904" "amp1905" "amp1906" "amp1907" "amp1908" "amp1909" "amp1910"
+##  [911] "amp1911" "amp1912" "amp1913" "amp1914" "amp1915" "amp1916" "amp1917"
+##  [918] "amp1918" "amp1919" "amp1920" "amp1921" "amp1922" "amp1923" "amp1924"
+##  [925] "amp1925" "amp1926" "amp1927" "amp1928" "amp1929" "amp1930" "amp1931"
+##  [932] "amp1932" "amp1933" "amp1934" "amp1935" "amp1936" "amp1937" "amp1938"
+##  [939] "amp1939" "amp1940" "amp1941" "amp1942" "amp1943" "amp1944" "amp1945"
+##  [946] "amp1946" "amp1947" "amp1948" "amp1949" "amp1950" "amp1951" "amp1952"
+##  [953] "amp1953" "amp1954" "amp1955" "amp1956" "amp1957" "amp1958" "amp1959"
+##  [960] "amp1960" "amp1961" "amp1962" "amp1963" "amp1964" "amp1965" "amp1966"
+##  [967] "amp1967" "amp1968" "amp1969" "amp1970" "amp1971" "amp1972" "amp1973"
+##  [974] "amp1974" "amp1975" "amp1976" "amp1977" "amp1978" "amp1979" "amp1980"
+##  [981] "amp1981" "amp1982" "amp1983" "amp1984" "amp1985" "amp1986" "amp1987"
+##  [988] "amp1988" "amp1989" "amp1990" "amp1991" "amp1992" "amp1993" "amp1994"
+##  [995] "amp1995" "amp1996" "amp1997" "amp1998" "amp1999" "amp2000" "amp2001"
+## [1002] "amp2002" "amp2003" "amp2004" "amp2005" "amp2006" "amp2007" "amp2008"
+## [1009] "amp2009" "amp2010" "amp2011" "amp2012" "amp2013" "amp2014" "amp2015"
+## [1016] "amp2016" "amp2017" "amp2018" "amp2019" "amp2020" "amp2021" "amp2022"
+## [1023] "amp2023" "amp2024" "amp2025" "amp2026" "amp2027" "amp2028" "amp2029"
+## [1030] "amp2030" "amp2031" "amp2032" "amp2033" "amp2034" "amp2035" "amp2036"
+## [1037] "amp2037" "amp2038" "amp2039" "amp2040" "amp2041" "amp2042" "amp2043"
+## [1044] "amp2044" "amp2045" "amp2046" "amp2047" "amp2048" "amp2049" "amp2050"
+## [1051] "amp2051" "amp2052" "amp2053" "amp2054" "amp2055" "amp2056" "amp2057"
+## [1058] "amp2058" "amp2059" "amp2060" "amp2061" "amp2062" "amp2063" "amp2064"
+## [1065] "amp2065" "amp2066" "amp2067" "amp2068" "amp2069" "amp2070" "amp2071"
+## [1072] "amp2072" "amp2073" "amp2074" "amp2075" "amp2076" "amp2077" "amp2078"
+## [1079] "amp2079" "amp2080" "amp2081" "amp2082" "amp2083" "amp2084" "amp2085"
+## [1086] "amp2086" "amp2087" "amp2088" "amp2089" "amp2090" "amp2091" "amp2092"
+## [1093] "amp2093" "amp2094" "amp2095" "amp2096" "amp2097" "amp2098" "amp2099"
+## [1100] "amp2100" "amp2101" "amp2102" "amp2103" "amp2104" "amp2105" "amp2106"
+## [1107] "amp2107" "amp2108" "amp2109" "amp2110" "amp2111" "amp2112" "amp2113"
+## [1114] "amp2114" "amp2115" "amp2116" "amp2117" "amp2118" "amp2119" "amp2120"
+## [1121] "amp2121" "amp2122" "amp2123" "amp2124" "amp2125" "amp2126" "amp2127"
+## [1128] "amp2128" "amp2129" "amp2130" "amp2131" "amp2132" "amp2133" "amp2134"
+## [1135] "amp2135" "amp2136" "amp2137" "amp2138" "amp2139" "amp2140" "amp2141"
+## [1142] "amp2142" "amp2143" "amp2144" "amp2145" "amp2146" "amp2147" "amp2148"
+## [1149] "amp2149" "amp2150" "amp2151" "amp2152" "amp2153" "amp2154" "amp2155"
+## [1156] "amp2156" "amp2157" "amp2158" "amp2159" "amp2160" "amp2161" "amp2162"
+## [1163] "amp2163"
+```
+
+---
+
+# 4.7 dplyr
+
+## **2 pull**
+
+
+```r
+# coluna para vetor
+si_pull &lt;- si %&gt;% 
+  pull(species_number)
+si_pull
+```
+
+```
+##    [1] 19 16 14 13 30 42 23 19 13  1  1  2  4  4  6  5  8  2  5  1  2  2  1  2
+##   [25]  2  1  2  3  7  8  7  7  7  7  7  8  9  4  2  2  3  5  2  1  1  2  8  8
+##   [49]  7  8  9  6  5 21 24 19 21 14 14  8 12 25 23  6  4  7  5  7  7  8  7 15
+##   [73] 11 37 19 15 41  8  6 16  9 21 27 19 20 26 10  6 30 35 28 27 32 29  5  4
+##   [97] 23 33 18 21 26 14 48 16 80 33 38 40 40 13 12  7  5  5  5 18 12  8  8  2
+##  [121]  2  1  1 13  2  6  3  2  2  2  1  2  9  3  1  1 21  1 11  9  5  1  2  4
+##  [145]  6  4  2 24 24 29 12  2 16 11  6  7 11  9 15  9  6 12  8  5 32 18 23 19
+##  [169] 32 24 20 17 18 16 24 19 21 19 23 39 13 34 22 25 18 20 20 19 29 28 28 22
+##  [193] 36 19  7 15  6  9  4 14 15 34 44 33 43 18  5  5  5  5 11 40 35 37  8 15
+##  [217] 12 15 14 26 43 38 39 30 28 36 27 38 20 20 26 24 29 17 14 22 14 32 15 18
+##  [241] 10  4 18 16 18 26  9 18 20 18 21 49 34  9  5  3  7  3 16 14  3 10 12  3
+##  [265]  7 13 10 18  9 15 10  7  8  8 16 14  9 36  8 10  7 41 11 30 19  5  7 20
+##  [289]  7  6  5  2  3  3  9  5  5  3  4 13  2 20 25  5  8  5  2  4 10  4 29 22
+##  [313] 22 22 29 12 22 14 40 41 13 19 22  4 14 11  2  5  3 34 41  2  7 13 50 53
+##  [337] 22 29 24  6 31  4 33 21 26 37 39 31 20 19 16 20 76 15 32 26 13  7  4  5
+##  [361]  1  6 25 26 12 41 32 36 36 14 11 12 19 69 32 21 18 44 28 44  5 21 18 45
+##  [385] 44 10 12  8  7  5  5  2 25 16  6 50 23 24 40  9 16 13 31  9 16 22 10  8
+##  [409] 30 27 14 10 53 24 30 22 32 14 17 17  4  4  2  5  5  3 13  4  7 14  5  3
+##  [433] 10  3  4  3  1  1  2  2  2  5  5  6  9  2  2  1  6 10  6 10  4  3  3 10
+##  [457] 16 14  2  2  3  1  3  3  2  2  3  4  2  6  6  7  5  6  6  9 10  7  3  9
+##  [481] 15  7  8 11 16  2  2 13  6  6  8  8  7  7  7  7  7  6  6  7 16  2 13  7
+##  [505] 16  4 10  6 13  5 13 19  5  2  4  3  1 26 47 28 12 11  8  9  9  5  4  9
+##  [529] 28 20 20 21 12 18 15 14 13 16 12  7  9  9 16  8  7  8 11 17  7 15 17 18
+##  [553] 15 20 19 18 29 35 25 14  4 12 12 12  9 11  4  8  8  5 17 14 18 48 21 29
+##  [577] 23  5  7  6  9  2  5  6 11 10 13 14 14 14 11 12 11 17 13 17  4 13  6 13
+##  [601] 17 16 13  7 13  5 14  5  7 13 16  9  5 10 10  3 17 10  3  7 12 10 17 15
+##  [625] 11 12 10 34 43 42 15  5 13 11  5 10 25 26  5  7  8 10 11 11  9  9  7  9
+##  [649] 11 27 21 17 32 28 11 30 13 19 20 21  9 17 12  9 16 32 46  5 21 16 50 17
+##  [673] 26 40 54 24 40 65  7 32 15 31 21 29 19 24 26 27 24 29 17 19 20 22 66 25
+##  [697] 21 14 17 19 20 23 23 29 11  6  5  9 10  2 20 45 15 12 33 10 31 45 21  7
+##  [721]  7 31  8 11 15  4  4  7 13 12 14  8 21 20 23 19 24 11  8 13  9 23 11 15
+##  [745] 21 17  5 12 16 17 11 12 14 14 19 17  9 14 19 22 16  8 26 16 15 19 18 18
+##  [769] 21 22 25 24 21 14 14 21 15 25 23 22 19  8 13  9 23 13 12  9  5  7 11  8
+##  [793]  5  6 28  9 11 13 13 17 29 21 19 19 11 13 10  8  7  7 23 25 13  8 21 14
+##  [817] 53 15 17 18 20 20 19 18 13 11 10 18 10 10  7 11  4  5  4  5  8  2 15  7
+##  [841] 13  7 14 21 33 32 26 30 24 29 17 21 18 16 22 26 38 21 18 13 15 32 42 14
+##  [865] 23 22 22 31 20 39 10 18 13 20 34 32 28 26 23 22 19 21 39 26 29 29 21 24
+##  [889] 27 32 33 42 16 24 20 23 21 32 25 21 19 22 31 28 20 19 18 19 14 14 15 24
+##  [913] 14 27 27 19 32  9 10 16 21  5 19  7 12 13  8 12 14 11 19 13 24 21 25  5
+##  [937]  3  6 10 10 10  5 10  8 11  5 16  7  8 14 11 13 11 13  9 10 26  9 10  9
+##  [961]  2  8  5  9  6  8  4  1  5  9 10 15 14  6 10  4 10  8 13  8 13  8 11  3
+##  [985]  4 28 26 23 38 24  9 10  9  4  9 13  8 10  5 14  3  2  2  3 13 11  9  9
+## [1009] 11 21  7 54 15 10  3  2 10  6  5  4  4 14 12 12  2 11  9  7  8 16 19 23
+## [1033] 25 11 27 26  8 33 14 17 11  7 10  2  3  9  7  9 24 23  1 21 32 20 24 29
+## [1057] 25 28 38 36 30  6  9 23 48 15 12 13 13 28  7  9 15 32 13 18 22 20 20 19
+## [1081] 23 29 15 31 16 19 17 10  8  9 32 55 19 16  5 13  1  1  2  3  2  1  2  1
+## [1105]  3  2  2  1  1  1  2  3  2  2 16 13 12 10  8 10 12 11  7  8  5  7  6 10
+## [1129]  6 12 17 17 17 12 16 12 12 24  6  9  7  7 23 27 27 30 26 32 25 22 20 15
+## [1153] 21  3  4  6  3  3  9  6  1  2  2
+```
+
+---
+
+# 4.7 dplyr
+
+## **3 rename**
+
+### Renomeia colunas
+
+```r
+# rename sp colum
+si_rename &lt;- si %&gt;%
+  rename(sp = species_number)
+si_rename
+```
+
+```
+## # A tibble: 1,163 x 25
+##    id    reference_number    sp record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1001    19 ab     fo,ll           as            
+##  2 amp1…             1002    16 co     fo,la,ll        as            
+##  3 amp1…             1002    14 co     fo,la,ll        as            
+##  4 amp1…             1002    13 co     fo,la,ll        as            
+##  5 amp1…             1003    30 co     fo,ll,br        as            
+##  6 amp1…             1004    42 co     tp,pp,la,ll,is  &lt;NA&gt;          
+##  7 amp1…             1005    23 co     sp              as            
+##  8 amp1…             1005    19 co     sp,la,sw        as,sb,tr      
+##  9 amp1…             1005    13 ab     fo              &lt;NA&gt;          
+## 10 amp1…             1006     1 ab     fo              &lt;NA&gt;          
+## # … with 1,153 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/mutate.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **4 mutate**
+
+---
+
+# 4.7 dplyr
+
+## **4 mutate**
+
+### Adiciona colunas novas ou vindas de operações
+
+```r
+# add colum record as factor
+si_mutate &lt;- si %&gt;% 
+  mutate(record_factor = as.factor(record))
+si_mutate
+```
+
+```
+## # A tibble: 1,163 x 26
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1001             19 ab     fo,ll           as            
+##  2 amp1…             1002             16 co     fo,la,ll        as            
+##  3 amp1…             1002             14 co     fo,la,ll        as            
+##  4 amp1…             1002             13 co     fo,la,ll        as            
+##  5 amp1…             1003             30 co     fo,ll,br        as            
+##  6 amp1…             1004             42 co     tp,pp,la,ll,is  &lt;NA&gt;          
+##  7 amp1…             1005             23 co     sp              as            
+##  8 amp1…             1005             19 co     sp,la,sw        as,sb,tr      
+##  9 amp1…             1005             13 ab     fo              &lt;NA&gt;          
+## 10 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+## # … with 1,153 more rows, and 20 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;, record_factor &lt;fct&gt;
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/arrange.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **5 arrange**
+
+---
+
+# 4.7 dplyr
+
+## **5 arrange**
+
+### Ordenar de forma crescente pela coluna **species_number**
+
+```r
+si_arrange &lt;- si %&gt;% 
+  arrange(species_number)
+si_arrange
+```
+
+--
+
+### Ordenar de forma decrescente pela coluna **species_number**
+
+```r
+si_arrange &lt;- si %&gt;% 
+  arrange(desc(species_number))
+si_arrange
+```
+--
+
+```r
+si_arrange &lt;- si %&gt;% 
+  arrange(-species_number)
+si_arrange
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/filter.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **6 filter**
+
+---
+
+# 4.7 dplyr
+
+## **6 filter** 
+
+### operadores: &gt;, &gt;=, &lt;, &lt;=, ==, !=, is.na, !is.na, %in%
+### Filtrar para locais com mais de 5 espécies
+
+```r
+si_filter &lt;- si %&gt;% 
+  filter(species_number &gt; 5)
+si_filter
+```
+--
+### Filtrar para locais centre 1 e 5 espécies
+
+```r
+si_filter &lt;- si %&gt;% 
+  filter(between(species_number, 1, 5))
+si_filter
+```
+
+---
+
+# 4.7 dplyr
+
+## **6 filter** 
+### Filtrar para locais sem NA no métodos passivos
+
+```r
+si_filter &lt;- si %&gt;% 
+  filter(is.na(passive_methods))
+si_filter
+```
+--
+### Filtrar para locais sem NA no métodos ativos **E** passivos
+
+```r
+si_filter &lt;- si %&gt;% 
+  filter(is.na(active_methods) &amp; is.na(passive_methods))
+si_filter
+```
+
+---
+
+# 4.7 dplyr
+
+## **6 filter** 
+### Filtrar para locais amostrados com mais de 5 espécies **E** em Pernambuco
+
+```r
+si_filter &lt;- si %&gt;% 
+  filter(species_number &gt; 5 &amp; state_abbreviation == "BR-PE") 
+si_filter
+```
+--
+### Filtrar para locais amostrados com mais de 5 espécies **OU** em Pernambuco
+
+```r
+si_filter &lt;- si %&gt;% 
+  filter(species_number &gt; 5 | state_abbreviation == "BR-PE")
+si_filter
+```
+
+---
+
+# 4.7 dplyr
+
+## **7 distinct**
+### Remove linhas duplicadas considerando a coluna número de espécies
+
+```r
+si_distinct &lt;- si %&gt;% 
+  distinct(species_number)
+si_distinct
+```
+
+```
+## # A tibble: 58 x 1
+##    species_number
+##             &lt;dbl&gt;
+##  1             19
+##  2             16
+##  3             14
+##  4             13
+##  5             30
+##  6             42
+##  7             23
+##  8              1
+##  9              2
+## 10              4
+## # … with 48 more rows
+```
+
+---
+
+# 4.7 dplyr
+
+## **7 distinct**
+### Remove linhas duplicadas considerando a coluna número de espécies e mantém as demais
+
+```r
+si_distinct &lt;- si %&gt;% 
+  distinct(species_number, .keep_all = TRUE)
+si_distinct
+```
+
+```
+## # A tibble: 58 x 25
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1001             19 ab     fo,ll           as            
+##  2 amp1…             1002             16 co     fo,la,ll        as            
+##  3 amp1…             1002             14 co     fo,la,ll        as            
+##  4 amp1…             1002             13 co     fo,la,ll        as            
+##  5 amp1…             1003             30 co     fo,ll,br        as            
+##  6 amp1…             1004             42 co     tp,pp,la,ll,is  &lt;NA&gt;          
+##  7 amp1…             1005             23 co     sp              as            
+##  8 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+##  9 amp1…             1006              2 ab     fo              &lt;NA&gt;          
+## 10 amp1…             1006              4 ab     fo              &lt;NA&gt;          
+## # … with 48 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;
+```
+
+---
+
+# 4.7 dplyr
+
+## **8 slice** 
+### Selecionar linhas 1 a 10
+
+```r
+si_slice &lt;- si %&gt;% 
+  slice(1:10)
+si_slice
+```
+
+```
+## # A tibble: 10 x 25
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1001             19 ab     fo,ll           as            
+##  2 amp1…             1002             16 co     fo,la,ll        as            
+##  3 amp1…             1002             14 co     fo,la,ll        as            
+##  4 amp1…             1002             13 co     fo,la,ll        as            
+##  5 amp1…             1003             30 co     fo,ll,br        as            
+##  6 amp1…             1004             42 co     tp,pp,la,ll,is  &lt;NA&gt;          
+##  7 amp1…             1005             23 co     sp              as            
+##  8 amp1…             1005             19 co     sp,la,sw        as,sb,tr      
+##  9 amp1…             1005             13 ab     fo              &lt;NA&gt;          
+## 10 amp1…             1006              1 ab     fo              &lt;NA&gt;          
+## # … with 19 more variables: passive_methods &lt;chr&gt;, complementary_methods &lt;chr&gt;,
+## #   period &lt;chr&gt;, month_start &lt;dbl&gt;, year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;,
+## #   year_finish &lt;dbl&gt;, effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;,
+## #   state_abbreviation &lt;chr&gt;, municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;,
+## #   longitude &lt;dbl&gt;, coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;,
+## #   temperature &lt;dbl&gt;, precipitation &lt;dbl&gt;
+```
+
+---
+
+# 4.7 dplyr
+
+## **9 n_sample** 
+
+### Amostrar 100 linhas aleatoriamente
+
+```r
+si_sample_n &lt;- si %&gt;% 
+  sample_n(100)
+si_sample_n
+```
+
+```
+## # A tibble: 100 x 25
+##    id    reference_number species_number record sampled_habitat active_methods
+##    &lt;chr&gt;            &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           &lt;chr&gt;         
+##  1 amp1…             1207              7 co     tp              as            
+##  2 amp1…             1102             29 co     fo,sw,ll,is,br  as            
+##  3 amp1…             1097              7 co     tp              as            
+##  4 amp1…             1206             10 ab     pp              as            
+##  5 amp1…             1114              3 ab     br              as            
+##  6 amp1…             1181              2 co     ll,is,br        as            
+##  7 amp1…             1286             22 co     fo,tp,sp,pp,la… as            
+##  8 amp1…             1285             17 co     fo,la,sw,is     &lt;NA&gt;          
+##  9 amp1…             1288             21 co     fo,is           as            
+## 10 amp1…             1207              3 co     tp              as            
+## # … with 90 more rows, and 19 more variables: passive_methods &lt;chr&gt;,
+## #   complementary_methods &lt;chr&gt;, period &lt;chr&gt;, month_start &lt;dbl&gt;,
+## #   year_start &lt;dbl&gt;, month_finish &lt;dbl&gt;, year_finish &lt;dbl&gt;,
+## #   effort_months &lt;dbl&gt;, country &lt;chr&gt;, state &lt;chr&gt;, state_abbreviation &lt;chr&gt;,
+## #   municipality &lt;chr&gt;, site &lt;chr&gt;, latitude &lt;dbl&gt;, longitude &lt;dbl&gt;,
+## #   coordinate_precision &lt;chr&gt;, altitude &lt;dbl&gt;, temperature &lt;dbl&gt;,
+## #   precipitation &lt;dbl&gt;
+```
+
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/summarize.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **10 summarise**
+
+---
+
+# 4.7 dplyr
+
+## **10 summarise**
+
+### Média e desvio padrão do número de espécies total
+
+
+```r
+si_summarise &lt;- si %&gt;% 
+  summarise(mean_sp = mean(species_number), sd_sp = sd(species_number))
+si_summarise
+```
+
+```
+## # A tibble: 1 x 2
+##   mean_sp sd_sp
+##     &lt;dbl&gt; &lt;dbl&gt;
+## 1    15.2  11.2
+```
+
+---
+
+# 4.7 dplyr
+
+## **10 summarise**
+### Média e desvio padrão do número de espécies por país
+
+```r
+si_summarise_group &lt;- si %&gt;% 
+  group_by(country) %&gt;% 
+  summarise(mean_sp = mean(species_number), sd_sp = sd(species_number))
+si_summarise_group
+```
+
+```
+## # A tibble: 3 x 3
+##   country   mean_sp sd_sp
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;
+## 1 Argentina    8.36  7.73
+## 2 Brazil      15.2  11.3 
+## 3 Paraguay    28     2.92
+```
+
+---
+
+background-image: url(http://www.flutterbys.com.au/stats/tut/images/leftjoin.png)
+background-size: 800px
+background-position: 50% 50%
+
+# 4.7 dplyr
+
+## **11 join**
+
+---
+
+# 4.7 dplyr
+
+## **11 join**
+
+## Adicionar longitute e latitude na tabela de espécies
+
+### Selecionar as colunas que preciso da tabela **si**
+
+```r
+si_coord &lt;- si %&gt;% 
+  select(id, longitude, latitude)
+si_coord 
+```
+
+```
+## # A tibble: 1,163 x 3
+##    id      longitude latitude
+##    &lt;chr&gt;       &lt;dbl&gt;    &lt;dbl&gt;
+##  1 amp1001     -43.4    -8.68
+##  2 amp1002     -38.9    -3.55
+##  3 amp1003     -38.9    -3.57
+##  4 amp1004     -38.9    -3.52
+##  5 amp1005     -38.9    -4.28
+##  6 amp1006     -36.4    -9.23
+##  7 amp1007     -40.9    -3.85
+##  8 amp1008     -40.9    -3.83
+##  9 amp1009     -40.9    -3.84
+## 10 amp1010     -35.2    -6.14
+## # … with 1,153 more rows
+```
+
+---
+
+# 4.7 dplyr
+
+## **11 join**
+
+## Adicionar longitute e latitude na tabela de espécies
+
+### Join com as tabelas pela coluna "id"
+
+```r
+# join dos dados
+sp_join &lt;- sp %&gt;% 
+  left_join(si_coord, by = "id")
+sp_join
+```
+
+```
+## # A tibble: 17,619 x 12
+##    id    order superfamily family subfamily genus species valid_name individuals
+##    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;  &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;            &lt;dbl&gt;
+##  1 amp1… &lt;NA&gt;  &lt;NA&gt;        &lt;NA&gt;   &lt;NA&gt;      &lt;NA&gt;  Adenom… &lt;NA&gt;                25
+##  2 amp1… Anura &lt;NA&gt;        Hylid… Lophyohy… Cory… Coryth… Corythoma…          11
+##  3 amp1… Anura &lt;NA&gt;        Hylid… Dendrops… Dend… Dendro… Dendropso…           1
+##  4 amp1… Anura &lt;NA&gt;        Micro… Gastroph… Derm… Dermat… Dermatono…          20
+##  5 amp1… &lt;NA&gt;  &lt;NA&gt;        &lt;NA&gt;   &lt;NA&gt;      &lt;NA&gt;  Leptod… &lt;NA&gt;                10
+##  6 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           2
+##  7 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           3
+##  8 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           9
+##  9 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…          32
+## 10 amp1… Anura &lt;NA&gt;        Lepto… Leptodac… Lept… Leptod… Leptodact…           5
+## # … with 17,609 more rows, and 3 more variables: endemic &lt;dbl&gt;,
+## #   longitude &lt;dbl&gt;, latitude &lt;dbl&gt;
+```
+
+---
+
+# 4.7 dplyr
+
+## **11 join**
+
+## Adicionar longitute e latitude na tabela de espécies
+
+### Nome das colunas
+
+```r
+colnames(sp_join)
+```
+
+```
+##  [1] "id"          "order"       "superfamily" "family"      "subfamily"  
+##  [6] "genus"       "species"     "valid_name"  "individuals" "endemic"    
+## [11] "longitude"   "latitude"
+```
+
+---
+
+# 4.7 dplyr
+## manipular os dados de forma mais simples
+
+```r
+da &lt;- si %&gt;% 
+  select(id, state_abbreviation, species_number)
+da
+```
+
+```
+## # A tibble: 1,163 x 3
+##    id      state_abbreviation species_number
+##    &lt;chr&gt;   &lt;chr&gt;                       &lt;dbl&gt;
+##  1 amp1001 BR-PI                          19
+##  2 amp1002 BR-CE                          16
+##  3 amp1003 BR-CE                          14
+##  4 amp1004 BR-CE                          13
+##  5 amp1005 BR-CE                          30
+##  6 amp1006 BR-CE                          42
+##  7 amp1007 BR-CE                          23
+##  8 amp1008 BR-CE                          19
+##  9 amp1009 BR-CE                          13
+## 10 amp1010 BR-RN                           1
+## # … with 1,153 more rows
+```
+
+---
+
+# 4.7 dplyr
+## manipular os dados de forma mais simples
+
+```r
+da &lt;- si %&gt;% 
+  select(id, state_abbreviation, species_number) %&gt;% 
+  filter(species_number &gt; 5)
+da
+```
+
+```
+## # A tibble: 934 x 3
+##    id      state_abbreviation species_number
+##    &lt;chr&gt;   &lt;chr&gt;                       &lt;dbl&gt;
+##  1 amp1001 BR-PI                          19
+##  2 amp1002 BR-CE                          16
+##  3 amp1003 BR-CE                          14
+##  4 amp1004 BR-CE                          13
+##  5 amp1005 BR-CE                          30
+##  6 amp1006 BR-CE                          42
+##  7 amp1007 BR-CE                          23
+##  8 amp1008 BR-CE                          19
+##  9 amp1009 BR-CE                          13
+## 10 amp1015 BR-RN                           6
+## # … with 924 more rows
+```
+
+---
+
+# 4.7 dplyr
+## manipular os dados de forma mais simples
+
+```r
+da &lt;- si %&gt;% 
+  select(id, state_abbreviation, species_number) %&gt;% 
+  filter(species_number &gt; 5) %&gt;% 
+  group_by(state_abbreviation) %&gt;% 
+  summarise(nsp_state_abb = n())
+da
+```
+
+```
+## # A tibble: 23 x 2
+##    state_abbreviation nsp_state_abb
+##    &lt;chr&gt;                      &lt;int&gt;
+##  1 AR-N                           7
+##  2 BR-AL                          3
+##  3 BR-BA                         63
+##  4 BR-CE                          8
+##  5 BR-ES                         33
+##  6 BR-GO                          4
+##  7 BR-MG                         91
+##  8 BR-MS                          1
+##  9 BR-PB                         17
+## 10 BR-PE                         30
+## # … with 13 more rows
+```
+
+---
+
+# 4.7 dplyr
+## manipular os dados de forma mais simples
+
+```r
+da &lt;- si %&gt;% 
+  select(id, state_abbreviation, species_number) %&gt;% 
+  filter(species_number &gt; 5) %&gt;% 
+  group_by(state_abbreviation) %&gt;% 
+  summarise(nsp_state_abb = n()) %&gt;% 
+  arrange(nsp_state_abb)
+da
+```
+
+```
+## # A tibble: 23 x 2
+##    state_abbreviation nsp_state_abb
+##    &lt;chr&gt;                      &lt;int&gt;
+##  1 BR-MS                          1
+##  2 BR-PI                          1
+##  3 PY-13                          1
+##  4 PY-14                          1
+##  5 PY-2                           1
+##  6 PY-4                           1
+##  7 PY-7                           1
+##  8 BR-AL                          3
+##  9 BR-GO                          4
+## 10 BR-SE                          4
+## # … with 13 more rows
+```
+
+---
+
+class: inverse, center, middle
+
+# Dúvidas?
+
+---
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/stringr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.8 stringr
+
+## Pacote para a manipulação de characters ou strings
+
+### Comprimento
+
+```r
+str_length("abc")
+```
+
+```
+## [1] 3
+```
+
+--
+
+### Substituição
+
+```r
+str_sub("abc", 3)
+```
+
+```
+## [1] "c"
+```
+
+---
+
+# 4.8 stringr
+
+### Inserir espaço em branco
+
+```r
+str_pad("abc", width = 4, side = "left")
+```
+
+```
+## [1] " abc"
+```
+
+--
+
+### Inserir espaço em branco
+
+```r
+str_pad("abc", width = 4, side = "right")
+```
+
+```
+## [1] "abc "
+```
+
+--
+
+### Remover espaço em branco do começo, final ou ambos
+
+```r
+str_trim(" abc ")
+```
+
+```
+## [1] "abc"
+```
+
+---
+
+# 4.8 stringr
+
+### Minúsculas e maiúsculas
+
+```r
+str_to_upper("abc")
+```
+
+```
+## [1] "ABC"
+```
+--
+
+```r
+str_to_title("abc")
+```
+
+```
+## [1] "Abc"
+```
+--
+
+```r
+str_to_title("aBc")
+```
+
+```
+## [1] "Abc"
+```
+
+---
+
+# 4.8 stringr
+
+### Ordenarção
+
+```r
+le &lt;- sample(letters, 26, rep = TRUE)
+le
+```
+
+```
+##  [1] "a" "u" "t" "j" "n" "j" "y" "x" "u" "u" "v" "f" "r" "p" "b" "h" "n" "d" "z"
+## [20] "h" "u" "e" "h" "x" "g" "t"
+```
+--
+
+```r
+str_sort(le)
+```
+
+```
+##  [1] "a" "b" "d" "e" "f" "g" "h" "h" "h" "j" "j" "n" "n" "p" "r" "t" "t" "u" "u"
+## [20] "u" "u" "v" "x" "x" "y" "z"
+```
+--
+
+```r
+str_sort(le, dec = TRUE)
+```
+
+```
+##  [1] "z" "y" "x" "x" "v" "u" "u" "u" "u" "t" "t" "r" "p" "n" "n" "j" "j" "h" "h"
+## [20] "h" "g" "f" "e" "d" "b" "a"
+```
+
+---
+
+# 4.8 stringr
+
+### Extrair
+
+```r
+str_extract("abc", "b")
+```
+
+```
+## [1] "b"
+```
+
+### Substituir
+
+```r
+str_replace("abc", "a", "y")
+```
+
+```
+## [1] "ybc"
+```
+
+### Separação
+
+```r
+str_split("a-b-c", "-")
+```
+
+```
+## [[1]]
+## [1] "a" "b" "c"
+```
+
+---
+
+class: inverse, center, middle
+
+# Dúvidas?
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/forcats.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.9 forcats
+
+## Pacote para manejar os **levels** dos fatores
+
+### **fct_relevel**: reordena os levels de forma simples
+
+```r
+# fixar amostragem
+set.seed(1)
+
+# criar um fator
+fa &lt;- factor(sample(c("alto", "medio", "baixo"), 30, rep = TRUE))
+fa
+```
+
+```
+##  [1] alto  baixo alto  medio alto  baixo baixo medio medio baixo baixo alto 
+## [13] alto  alto  medio medio medio medio baixo alto  baixo alto  alto  alto 
+## [25] alto  medio alto  alto  medio medio
+## Levels: alto baixo medio
+```
+
+---
+
+# 4.9 forcats
+
+## Pacote para manejar os **levels** dos fatores
+
+### **fct_relevel**: reordena os levels de forma simples
+
+```r
+fa.or &lt;- fa %&gt;% 
+  fct_relevel(c("baixo", "medio", "alto"))
+fa.or
+```
+
+```
+##  [1] alto  baixo alto  medio alto  baixo baixo medio medio baixo baixo alto 
+## [13] alto  alto  medio medio medio medio baixo alto  baixo alto  alto  alto 
+## [25] alto  medio alto  alto  medio medio
+## Levels: baixo medio alto
+```
+
+---
+
+class: clear, center, middle
+background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/purrr.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+# 4.10 purrr
+
+## Pacote que implementa **Programação Funcional**
+
+### Calcular a média para várias colunas
+
+```r
+mean_var &lt;- si %&gt;% 
+  select(species_number, altitude) %&gt;% 
+  map_dbl(mean)
+mean_var
+```
+
+```
+## species_number       altitude 
+##       15.16509      545.64144
+```
+
+---
+
+# 4.10 purrr
+
+## Pacote que implementa **Programação Funcional**
+
+### Calcular o desvio padrão para várias colunas
+
+```r
+mean_var &lt;- si %&gt;% 
+  select(species_number, altitude) %&gt;% 
+  map_dbl(sd)
+mean_var
+```
+
+```
+## species_number       altitude 
+##       11.24582      392.40221
+```
+
+
+---
+
+class: inverse, center, middle
+
+# Dúvidas?
+
+---
+
+class: clear, middle
+
+## Maurício Vancine
+
+&lt;br&gt;
+
+Contatos:
+
+|                                                                                           |                               |
+| :---------------------------------------------------------------------------------------- | :---------------------------- |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
+| &lt;a href="http://gitlab.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-gitlab fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
+| &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
+
+Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
