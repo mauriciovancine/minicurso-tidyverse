@@ -1,25 +1,27 @@
----
-title: "Introdução ao tidyverse <br><br>"
-subtitle: "<br> 1 Revisão rápida de R e RStudio  <br><br> xaringan [presentation ninja]"
-author: "Maurício Vancine"
-date: "25/04/2019"
-output:
-  xaringan::moon_reader:
-    css: [metropolis]
-    lib_dir: libs
-    nature:
-      highlightStyle: rainbow
-      highlightLines: true
-      countIncrementalSlides: false
-    includes:
-      in_header: header.html
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introdução ao tidyverse</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurício Vancine" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao tidyverse <br><br>
+## <br> 1 Revisão rápida de R e RStudio <br><br> xaringan [presentation ninja]
+### Maurício Vancine
+### 25/04/2019
+
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-if(!require(countdown)) devtools::install_github("gadenbuie/countdown")
-```
+
+
 
 class: clear, center, middle
 background-image: url(img/r_rstudio.png)
@@ -36,31 +38,31 @@ background-position: 85% 75%
 
 ## Conteúdo
 1.1 Linguagem R
-<br>
+&lt;br&gt;
 1.2 RStudio
-<br>
+&lt;br&gt;
 1.3 Aplicações da linguagem R
-<br>
+&lt;br&gt;
 1.4 Editor/Roteiro (*code*/*script*)
-<br>
+&lt;br&gt;
 1.5 Comentários (*#*)
-<br>
-1.6 Atribuição (*<-*)
-<br>
+&lt;br&gt;
+1.6 Atribuição (*&lt;-*)
+&lt;br&gt;
 1.7 Objetos
-<br>
+&lt;br&gt;
 1.8 Operadores
-<br>
+&lt;br&gt;
 1.9 Funções
-<br>
+&lt;br&gt;
 1.10 Pacotes
-<br>
+&lt;br&gt;
 1.11 Ajuda (*help*)
-<br>
+&lt;br&gt;
 1.12 Ambiente (*environment*/*workspace*)
-<br>
+&lt;br&gt;
 1.13 Citações
-<br>
+&lt;br&gt;
 1.14 Principais erros
 
 ---
@@ -69,7 +71,7 @@ background-position: 85% 75%
 
 ## E por que usar o R?
 
-<br>
+&lt;br&gt;
 
 ### 1. É **grátis**!
 
@@ -106,7 +108,7 @@ background-position: 80% 80%
 - Old S (1976-1987)
 - New S (1988-1997)
 - S4 (1998)
-<br><br>
+&lt;br&gt;&lt;br&gt;
 - Interface: S-PLUS (1988-2008)
 
 ---
@@ -207,7 +209,7 @@ background-position: 50% 60%
 
 ### Cientista Chefe no RStudio e Professor Adjunto de Estatística na Universidade de Auckland, Stanford e Rice
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] http://hadley.nz/
 
@@ -227,7 +229,7 @@ background-position: 50% 60%
 
 ##  Engenheiro de software no RStudio
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://yihui.name/
 
@@ -247,7 +249,7 @@ background-position: 50% 50%
 
 ## Ciência de Dados com R: introdução (2018)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://cdr.ibpad.com.br/index.html
 
@@ -261,7 +263,7 @@ background-position: 50% 55%
 
 ## R for Data Science (2017)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://r4ds.had.co.nz/
 
@@ -275,7 +277,7 @@ background-position: 50% 55%
 
 ## Statistical Inference via Data Science (2019)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://moderndive.com
 
@@ -289,7 +291,7 @@ background-position: 50% 50%
 
 ## R Markdown: The Definitive Guide (2018)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://bookdown.org/yihui/rmarkdown/
 
@@ -303,9 +305,15 @@ background-position: 50% 50%
 
 ## Geocomputation with R (2019)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [*] https://geocompr.robinlovelace.net/
+
+---
+
+class: clear, inverse, center, middle
+
+# Dúvidas?
 
 ---
 
@@ -372,8 +380,8 @@ background-position: 50% 98%
 - **ctrl + S**: salva um script
 - **ctrl + Z**: desfaz uma operação
 - **ctrl + shift + Z**: refaz uma operação
-- **alt + -**: insere um sinal de atribuição (<-)
-- **ctrl + shift + M**: insere um operador pipe (%>%) 
+- **alt + -**: insere um sinal de atribuição (&lt;-)
+- **ctrl + shift + M**: insere um operador pipe (%&gt;%) 
 - **ctrl + shift + C**: comenta uma linha no script - insere um (#) 
 - **ctrl + shift + R**: insere uma sessão (# ----------------------)
 - **ctrl + shift + H**: abre uma janela para selecionar o diretório de trabalho
@@ -411,24 +419,26 @@ background-position: 50% 85%
 
 ## Esclarecimentos
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ### Isso é texto, não digite no R!
 
 --
 
-<br>
+&lt;br&gt;
 
 ### Digitar no script
-```{r,eval=FALSE}
+
+```r
 print("Isso é o resultado que deve aparecer no console")
 ```
 
 --
 
 ### Resultado no console
-```{r,echo=FALSE}
-print("Isso é o resultado que deve aparecer no console")
+
+```
+## [1] "Isso é o resultado que deve aparecer no console"
 ```
 
 ---
@@ -441,7 +451,7 @@ background-position: 50% 90%
 
 ## Escolher UTF-8
 
-`Tools -> Global Options -> Code -> Saving -> Default text endcoding (UTF-8)`
+`Tools -&gt; Global Options -&gt; Code -&gt; Saving -&gt; Default text endcoding (UTF-8)`
 
 ---
 
@@ -505,7 +515,7 @@ background-position: 50% 50%
 
 # Vamos padronizar
 
-<br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ## .center[`script_aula_01.R`]
 
@@ -527,12 +537,22 @@ background-position: 50% 50%
 
 --
 
-```{r}
+
+```r
 1
 ```
+
+```
+## [1] 1
+```
 --
-```{r}
+
+```r
 1 + 2
+```
+
+```
+## [1] 3
 ```
 
 ---
@@ -557,7 +577,8 @@ class: clear, inverse, center, middle
 
 ### Cabeçalho
 
-```{r}
+
+```r
 #' ---
 #' title: aula 01 - revisao r
 #' author: mauricio vancine
@@ -569,11 +590,16 @@ class: clear, inverse, center, middle
 
 ### Informações sobre os comandos
 
-```{r}
+
+```r
 ## comentarios
 # o r nao le o codigo depois do # (hash)
 
 42 # essas palavras nao sao executadas, apenas o 42
+```
+
+```
+## [1] 42
 ```
 
 ---
@@ -594,7 +620,7 @@ Há livros apenas sobre assunto: "[Clean Code](https://medium.com/joaorobertopb/
 
 --
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ## Estilos de códigos
 
@@ -610,21 +636,41 @@ Há livros apenas sobre assunto: "[Clean Code](https://medium.com/joaorobertopb/
 
 ## Operações aritméticas
 
-```{r}
+
+```r
 ## operacoes aritmeticas (+, -, *, /, ^)
 10 + 2 # adicao
 ```
+
+```
+## [1] 12
+```
 --
-```{r}
+
+```r
 10 - 2 # subtracao
 ```
---
-```{r}
-10 * 2 # multiplicacao
+
+```
+## [1] 8
 ```
 --
-```{r}
+
+```r
+10 * 2 # multiplicacao
+```
+
+```
+## [1] 20
+```
+--
+
+```r
 10 / 2 # divisao
+```
+
+```
+## [1] 5
 ```
 
 ---
@@ -633,22 +679,32 @@ Há livros apenas sobre assunto: "[Clean Code](https://medium.com/joaorobertopb/
 
 ### Ordem das operações aritméticas 
 
-<br>
+&lt;br&gt;
 
-### .center[`^  >>  * ou /  >>  + ou -`]
+### .center[`^  &gt;&gt;  * ou /  &gt;&gt;  + ou -`]
 
-<br>
+&lt;br&gt;
   
-```{r}
+
+```r
 # sem especificar - segue a ordem
 1 * 2 + 2 / 2 ^ 2
 ```
 
+```
+## [1] 2.5
+```
+
 --
 
-```{r}
+
+```r
 # especificando - segue os parênteses
 ((1 * 2) + (2 / 2)) ^ 2
+```
+
+```
+## [1] 9
 ```
 
 ---
@@ -662,9 +718,9 @@ background-image: url(img/exercicio01.jpg)
 background-size: 500px
 background-position: 50% 50%
 
-```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
-```
+<div class="countdown" id="timer_5ea2641f" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+</div>
 
 # Exercício 01
 
@@ -675,9 +731,14 @@ countdown(minutes = 0, seconds = 30, color_background = "gray30")
 # Exercício 01
 
 ## Resposta
-```{r}
+
+```r
 # exercicio 01
 7 + 7 / 7 + 7 * 7 - 7
+```
+
+```
+## [1] 50
 ```
 
 ---
@@ -692,19 +753,31 @@ class: clear, inverse, center, middle
 
 ## Famigerados colchetes na resposta do console....
 
-```{r}
+
+```r
 ## famigerados colchetes [] na resposta
 10 + 2 # adicao
 ```
+
+```
+## [1] 12
+```
 --
-```{r}
+
+```r
 # indicam a posicao do numero em uma sequencia
 10:60 # sequencia unitaria de 10 a 60
 ```
 
+```
+##  [1] 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+## [26] 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59
+## [51] 60
+```
+
 ---
 
-# 1.6 Atribuição (*<-*)
+# 1.6 Atribuição (*&lt;-*)
 
 ### Atribuição possibilita a **manipulação de dados**
 
@@ -714,27 +787,28 @@ class: clear, inverse, center, middle
 
 --
 
-### Iremos utilizar os símbolos **"<" (menor)**, seguido de **"-" (menos)**, **sem espaço**!!!
+### Iremos utilizar os símbolos **"&lt;" (menor)**, seguido de **"-" (menos)**, **sem espaço**!!!
 
-<br>
+&lt;br&gt;
 
 --
 
-## **palavra <- dados**
+## **palavra &lt;- dados**
 
 ### Atalho: `alt + -`
 
 ---
 
-# 1.6 Atribuição (*<-*)
+# 1.6 Atribuição (*&lt;-*)
 
 ### Vamos atribuir o **valor 10** à palavra **obj_10**
 
 --
 
-```{r}
-## atribuicao - simbolo (<-)
-obj_10 <- 10 
+
+```r
+## atribuicao - simbolo (&lt;-)
+obj_10 &lt;- 10 
 ```
 
 --
@@ -752,7 +826,7 @@ background-position: 50% 50%
 
 ---
 
-# 1.6 Atribuição (*<-*)
+# 1.6 Atribuição (*&lt;-*)
 
 ## Sempre **confira** a atribuição!!!
 
@@ -760,19 +834,29 @@ background-position: 50% 50%
 
 --
 
-```{r}
-## atribuicao - simbolo (<-)
-obj_10 <- 10 
-obj_10 #<<
+
+```r
+## atribuicao - simbolo (&lt;-)
+obj_10 &lt;- 10 
+*obj_10
+```
+
+```
+## [1] 10
 ```
 
 --
 
 ## Outro exemplo:
-```{r}
-## atribuicao - simbolo (<-)
-obj_2 <- 2
-obj_2 #<<
+
+```r
+## atribuicao - simbolo (&lt;-)
+obj_2 &lt;- 2
+*obj_2
+```
+
+```
+## [1] 2
 ```
 
 ---
@@ -787,34 +871,44 @@ background-image: url(img/rstudio_environment.png)
 background-size: 800px
 background-position: 50% 50%
 
-# 1.6 Atribuição (*<-*)
+# 1.6 Atribuição (*&lt;-*)
 
 ##  Ambiente (*Environment*)
 
 ---
 
-# 1.6 Atribuição (*<-*)
+# 1.6 Atribuição (*&lt;-*)
 
 ## CUIDADO!
 ### O R **sobrescreve** os valores dos objetos com o **mesmo nome**!
 
 --
 
-```{r}
+
+```r
 # sobrescreve o valor dos objetos
-obj <- 100
+obj &lt;- 100
 obj
 ```
+
+```
+## [1] 100
+```
 --
-```{r}
+
+```r
 # obj agora vale 2
-obj <- 2
+obj &lt;- 2
 obj
+```
+
+```
+## [1] 2
 ```
 
 ---
 
-# 1.6 Atribuição (*<-*)
+# 1.6 Atribuição (*&lt;-*)
 
 ## CUIDADO!
 ### O R tem **limitações** ao nomear objetos!
@@ -849,13 +943,24 @@ obj
 
 --
 
-```{r}
-# definir dois objetos
-va1 <- 10
-va1
 
-va2 <- 2
+```r
+# definir dois objetos
+va1 &lt;- 10
+va1
+```
+
+```
+## [1] 10
+```
+
+```r
+va2 &lt;- 2
 va2
+```
+
+```
+## [1] 2
 ```
 
 ---
@@ -864,13 +969,23 @@ va2
 
 ### Podemos utilizar **objetos** para fazer operações
 
-```{r}
+
+```r
 # operacoes com objetos
 va1 + va2 # adicao
 ```
+
+```
+## [1] 12
+```
 --
-```{r}
+
+```r
 va1 - va2 # subtracao
+```
+
+```
+## [1] 8
 ```
 
 ---
@@ -879,15 +994,25 @@ va1 - va2 # subtracao
 
 ### Podemos ainda **atribuir os resultados** das operações a **objetos**
 
-```{r}
+
+```r
 # operacoes com objetos e atribuicao
-adi <- va1 + va2 # adicao
+adi &lt;- va1 + va2 # adicao
 adi
 ```
+
+```
+## [1] 12
+```
 --
-```{r}
-sub <- va1 - va2 # subtracao
+
+```r
+sub &lt;- va1 - va2 # subtracao
 sub
+```
+
+```
+## [1] 8
 ```
 
 ---
@@ -898,7 +1023,7 @@ sub
 
 ### Resultados numéricos
 
-<br>
+&lt;br&gt;
 
 | Operador |       Descrição      |   Uso   |
 |:--------:|:--------------------:|:-------:|
@@ -918,15 +1043,15 @@ sub
 
 ### Resultados Booleanos (TRUE ou FALSE)
 
-<br>
+&lt;br&gt;
 
 | Operador |       Descrição       |   Uso   |
 |:--------:|:---------------------:|:-------:|
-|     <    | Menor                 |  a < b  |
-|     >    | Maior                 |  a > b  |
+|     &lt;    | Menor                 |  a &lt; b  |
+|     &gt;    | Maior                 |  a &gt; b  |
 |    ==    | Igual                 |  a == b |
-|    <=    | Menor ou igual        |  a <= b |
-|    >=    | Maior ou igual        | a > = b |
+|    &lt;=    | Menor ou igual        |  a &lt;= b |
+|    &gt;=    | Maior ou igual        | a &gt; = b |
 |    !=    | Não igual (diferente) |   a!=b  |
 
 ---
@@ -940,16 +1065,21 @@ class: clear, clean, inverse, middle, center
 
 ## Verifique se 3x2³ é maior que 2x3²
 
-```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
-```
+<div class="countdown" id="timer_5ea2651a" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+</div>
 
 --
 
 ## Resposta
-```{r}
+
+```r
 # exercicio 02
-3 * 2 ^ 3 >= 2 * 3 ^ 2
+3 * 2 ^ 3 &gt;= 2 * 3 ^ 2
+```
+
+```
+## [1] TRUE
 ```
 
 ---
@@ -965,9 +1095,10 @@ countdown(minutes = 0, seconds = 30, color_background = "gray30")
 
 ### **nome_da_funcao**(**argumento1**, **argumento2**)
 
-<br>
+&lt;br&gt;
 
-```{r}
+
+```r
 ## funcoes
 # comandos que realizam operacoes em argumentos
 # estrutura de uma funcao
@@ -994,9 +1125,21 @@ countdown(minutes = 0, seconds = 30, color_background = "gray30")
 --
 
 ### Exemplo:
-```{r}
+
+```r
 sum(1, NA)
+```
+
+```
+## [1] NA
+```
+
+```r
 sum(1, NA, na.rm = TRUE)
+```
+
+```
+## [1] 1
 ```
 
 ---
@@ -1005,21 +1148,31 @@ sum(1, NA, na.rm = TRUE)
 
 ## Argumentos como **valores**
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
-```{r}
+
+```r
 # funcoes - argumentos como valores
 # soma
 sum(10, 2)
 ```
 
+```
+## [1] 12
+```
+
 --
 
-<br>
+&lt;br&gt;
 
-```{r}
+
+```r
 # produto
 prod(10, 2)
+```
+
+```
+## [1] 20
 ```
 
 ---
@@ -1028,21 +1181,31 @@ prod(10, 2)
 
 ## Argumentos como **objetos**
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
-```{r}
+
+```r
 # funcoes - argumentos como objetos
 # soma
 sum(va1, va2)
 ```
 
+```
+## [1] 12
+```
+
 --
 
-<br>
+&lt;br&gt;
 
-```{r}
+
+```r
 # produto
 prod(va1, va2)
+```
+
+```
+## [1] 20
 ```
 
 ---
@@ -1051,19 +1214,31 @@ prod(va1, va2)
 
 ## Argumentos como **parâmetros**
 
-```{r}
+
+```r
 # funcoes - nome dos argumentos
 # repeticao - todos
 rep(x = 1:5, times = 10)
 ```
 
-<br><br>
+```
+##  [1] 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3
+## [39] 4 5 1 2 3 4 5 1 2 3 4 5
+```
+
+&lt;br&gt;&lt;br&gt;
 
 --
 
-```{r}
+
+```r
 # repeticao - cada
 rep(x = 1:5, each = 10)
+```
+
+```
+##  [1] 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4
+## [39] 4 4 5 5 5 5 5 5 5 5 5 5
 ```
 
 ---
@@ -1072,18 +1247,30 @@ rep(x = 1:5, each = 10)
 
 ## Atribuir resultados das funções à objetos
 
-```{r}
+
+```r
 ## atribuicao dos resultados
 # repeticao - todos
-rep_times <- rep(x = 1:5, times = 10)
+rep_times &lt;- rep(x = 1:5, times = 10)
 rep_times
 ```
+
+```
+##  [1] 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3
+## [39] 4 5 1 2 3 4 5 1 2 3 4 5
+```
 --
-```{r}
+
+```r
 ## atribuicao dos resultados
 # repeticao - todos
-rep_each <- rep(x = 1:5, each = 10)
+rep_each &lt;- rep(x = 1:5, each = 10)
 rep_each
+```
+
+```
+##  [1] 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4
+## [39] 4 4 5 5 5 5 5 5 5 5 5 5
 ```
 
 ---
@@ -1093,28 +1280,39 @@ rep_each
 --
 
 **Criar** dois objetos
-```{r}
+
+```r
 # criar dois objetos
-foo <- 2
-bar <- 3
+foo &lt;- 2
+bar &lt;- 3
 ```
 
 --
 
 **Somar** esses objetos e **atribuição** ao objeto *su*
-```{r}
+
+```r
 # somar e atribuir
-su <- sum(foo, bar)
+su &lt;- sum(foo, bar)
 su
+```
+
+```
+## [1] 5
 ```
 
 --
 
 **Raiz quadrada** do *su* e **atribuição** ao *sq*
-```{r}
+
+```r
 # raiz e atribuir
-sq <- sqrt(su)
+sq &lt;- sqrt(su)
 sq
+```
+
+```
+## [1] 2.236068
 ```
 
 ---
@@ -1123,7 +1321,7 @@ sq
 
 ## Esse é o processo de programação no R: 
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ## 1. **Atribuição** de dados a objetos
 
@@ -1147,35 +1345,46 @@ class: clear, clean, inverse, middle, center
 
 ### Façam o logaritmo natural (função **log**) do objeto *mult* e atribuam ao objeto *loge*
 
-```{r echo = FALSE}
-countdown(minutes = 1, seconds = 00, color_background = "gray30")
-```
+<div class="countdown" id="timer_5ea26514" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
 
 ---
 
 # Exercício 03
 ## Resposta
 
-```{r}
+
+```r
 # criar dois objetos
-foo <- 100
-bar <- 300
+foo &lt;- 100
+bar &lt;- 300
 ```
 
 --
 
-```{r}
+
+```r
 # multiplicar e atribuir
-mult <- prod(foo, bar)
+mult &lt;- prod(foo, bar)
 mult 
 ```
 
+```
+## [1] 30000
+```
+
 --
 
-```{r}
+
+```r
 # raiz e atribuir
-loge <- log(mult)
+loge &lt;- log(mult)
 loge
+```
+
+```
+## [1] 10.30895
 ```
 
 ---
@@ -1211,12 +1420,12 @@ class: clear, inverse, center, middle
 # 1.9 Funções
 ## Funções vêm de **duas fontes**:
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ### 1. Pacotes já **instalados por padrão** e que são **carregados** quando abrimos o R
 
 --
-<br>
+&lt;br&gt;
 
 ### 2. Pacotes que **instalamos** e **carregamos** com comandos
 
@@ -1239,10 +1448,17 @@ class: clear, inverse, center, middle
 --
 
 ### Verificar **pacotes carregados**
-```{r}
+
+```r
 # verificar pacotes carregados
 search()
+```
 
+```
+##  [1] ".GlobalEnv"        "package:countdown" "package:stats"    
+##  [4] "package:graphics"  "package:grDevices" "package:utils"    
+##  [7] "package:datasets"  "package:methods"   "Autoloads"        
+## [10] "package:base"
 ```
 
 ---
@@ -1255,7 +1471,8 @@ search()
 
 ### Verificar **pacotes instalados**
 
-```{r, eval = FALSE}
+
+```r
 # verificar pacotes instalados
 library()
 ```
@@ -1266,14 +1483,14 @@ library()
 
 ## Ex.: pacote `vegan` 
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ## Fontes:
 
 ### Pacotes do CRAN
 https://cran.r-project.org/web/packages/vegan/index.html
 
-<br>
+&lt;br&gt;
 
 ### Pacotes do GitHub
 https://github.com/vegandevs/vegan
@@ -1301,7 +1518,8 @@ https://github.com/vegandevs/vegan
 ### 4. Função (CRAN): 
 `install.packages()`
 
-```{r, eval = FALSE}
+
+```r
 # instalar pacotes
 install.packages("vegan")
 ```
@@ -1330,7 +1548,8 @@ install.packages("vegan")
 `library()` ou `require()`
 
 
-```{r}
+
+```r
 # carregar pacotes
 library(vegan)
 ```
@@ -1341,7 +1560,8 @@ library(vegan)
 
 ## Instalar pacotes do GitHub
 ### 1. Instalar pacote **devtools**
-```{r, eval = FALSE}
+
+```r
 # instalar pacote devtools
 install.packages("devtools")
 
@@ -1356,7 +1576,8 @@ library(devtools)
 
 --
 
-```{r, eval = FALSE}
+
+```r
 # instalar pacote do github
 install_github("vegandevs/vegan")
 
@@ -1382,9 +1603,10 @@ library("vegan")
 
 ### É uma função que **demora** para rodar
 
-<br>
+&lt;br&gt;
 
-```{r, eval = FALSE}
+
+```r
 # atualizacao dos pacotes instalados 
 update.packages(ask = FALSE) 
 ```
@@ -1399,12 +1621,12 @@ class: clear, inverse, center, middle
 
 # 1.10 Pacotes
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ## Windows
 C:/Users/**nome_do_computador**/Documentos/R/win-library/**numero_da_versao_r**
 
-<br>
+&lt;br&gt;
 
 ## Unix (Linux e MacOS):
 /home/**nome_do_computador**/R/**tipo_do_computador**/**numero_da_versao_r**
@@ -1436,11 +1658,16 @@ background-position: 35% 60%
 
 # 1.10 Pacotes
 
-```{r}
+
+```r
 nrow(available.packages(repos = "http://cran.r-project.org"))
 ```
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+```
+## [1] 15530
+```
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 https://cran.r-project.org/web/packages/available_packages_by_name.html
 
@@ -1455,9 +1682,9 @@ class: clear, clean, inverse, middle, center
 
 ## Instalem o pacote **tidyverse** do CRAN
 
-```{r echo = FALSE}
-countdown(minutes = 0, seconds = 10, color_background = "gray30")
-```
+<div class="countdown" id="timer_5ea264ba" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">10</span></code>
+</div>
 
 ---
 
@@ -1467,7 +1694,8 @@ countdown(minutes = 0, seconds = 10, color_background = "gray30")
 
 ## Resposta
 
-```{r,eval=FALSE}
+
+```r
 install.packages("tidyverse")
 ```
 
@@ -1489,7 +1717,8 @@ background-position: 50% 50%
 # 1.11 Ajuda (*help*)
 ## Descreve as informações de uma função
 
-```{r}
+
+```r
 ## ajuda
 # descreve as informacoes de uma funcao
 
@@ -1512,11 +1741,12 @@ background-position: 50% 50%
 
 ## Detalhes de um pacote
 
-```{r,eval=FALSE}
+
+```r
 library(help = "vegan")
 ```
 
-<br>
+&lt;br&gt;
 
 - Descrição
 - Versão
@@ -1537,7 +1767,7 @@ class: clear, inverse, center, middle
 
 class: clear, inverse, center, middle
 
-# palavra <- dados
+# palavra &lt;- dados
 
 ---
 
@@ -1551,14 +1781,28 @@ background-position: 50% 50%
 
 # 1.12 Ambiente (*environment*)
 ### Listar todos os objetos criados
-```{r}
+
+```r
 # listar objetos
 ls()
 ```
+
+```
+##  [1] "adi"       "bar"       "foo"       "loge"      "mult"      "obj"      
+##  [7] "obj_10"    "obj_2"     "rep_each"  "rep_times" "sq"        "su"       
+## [13] "sub"       "va1"       "va2"
+```
 --
-```{r}
+
+```r
 # listar objetos
 objects()
+```
+
+```
+##  [1] "adi"       "bar"       "foo"       "loge"      "mult"      "obj"      
+##  [7] "obj_10"    "obj_2"     "rep_each"  "rep_times" "sq"        "su"       
+## [13] "sub"       "va1"       "va2"
 ```
 
 ---
@@ -1577,16 +1821,16 @@ background-position: 50% 78%
 
 # 1.12 Ambiente (*environment*)
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ### Salvar todos os objetos criados
-`Session -> Save Workspace As... -> meus_objetos.RData` 
+`Session -&gt; Save Workspace As... -&gt; meus_objetos.RData` 
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 --
 
 ### Carregar os objetos criados e salvos
-`Session -> Load Workspace... -> meus_objetos.RData` 
+`Session -&gt; Load Workspace... -&gt; meus_objetos.RData` 
 
 ---
 
@@ -1594,19 +1838,34 @@ background-position: 50% 78%
 
 ### Remover um objeto
 
-```{r}
+
+```r
 # listar objetos
 ls()
 ```
+
+```
+##  [1] "adi"       "bar"       "foo"       "loge"      "mult"      "obj"      
+##  [7] "obj_10"    "obj_2"     "rep_each"  "rep_times" "sq"        "su"       
+## [13] "sub"       "va1"       "va2"
+```
 --
-```{r}
+
+```r
 # remover o objeto "bar"
 rm(bar)
 ```
 --
-```{r}
+
+```r
 # listar objetos
 ls()
+```
+
+```
+##  [1] "adi"       "foo"       "loge"      "mult"      "obj"       "obj_10"   
+##  [7] "obj_2"     "rep_each"  "rep_times" "sq"        "su"        "sub"      
+## [13] "va1"       "va2"
 ```
 
 ---
@@ -1615,19 +1874,32 @@ ls()
 
 ### Remover todos os objetos
 
-```{r}
+
+```r
 # listar objetos
 ls()
 ```
+
+```
+##  [1] "adi"       "foo"       "loge"      "mult"      "obj"       "obj_10"   
+##  [7] "obj_2"     "rep_each"  "rep_times" "sq"        "su"        "sub"      
+## [13] "va1"       "va2"
+```
 --
-```{r}
+
+```r
 # remover todos os objetos
 rm(list = ls())
 ```
 --
-```{r}
+
+```r
 # listar objetos
 ls()
+```
+
+```
+## character(0)
 ```
 
 ---
@@ -1635,30 +1907,21 @@ ls()
 # 1.12 Ambiente (*environment*)
 
 ### Carregar os objetos criados e salvos
-`Session -> Load Workspace... -> meus_objetos.RData` 
-
-```{r,include=FALSE}
-adi <- 1 
-foo <- 1
-bar <- 1
-lo <- 1        
-mu <- 1        
-obj <- 1      
-obj_10 <- 1    
-obj_2 <- 1      
-rep_each <- 1   
-rep_times <- 1 
-sq <- 1        
-su <- 1        
-sub <- 1       
-va1 <- 1      
-va2 <- 1
-```
+`Session -&gt; Load Workspace... -&gt; meus_objetos.RData` 
 
 
-```{r}
+
+
+
+```r
 # rodem para verificar 
 ls()
+```
+
+```
+##  [1] "adi"       "bar"       "foo"       "lo"        "mu"        "obj"      
+##  [7] "obj_10"    "obj_2"     "rep_each"  "rep_times" "sq"        "su"       
+## [13] "sub"       "va1"       "va2"
 ```
 
 ---
@@ -1667,22 +1930,73 @@ ls()
 
 ## Como citar o R e os pacotes em trabalhos?
 
-```{r}
+
+```r
 ## citacao do r e dos pacotes
 
 # citacao do R
 citation()
 ```
 
+```
+## 
+## To cite R in publications use:
+## 
+##   R Core Team (2020). R: A language and environment for statistical
+##   computing. R Foundation for Statistical Computing, Vienna, Austria.
+##   URL https://www.R-project.org/.
+## 
+## A BibTeX entry for LaTeX users is
+## 
+##   @Manual{,
+##     title = {R: A Language and Environment for Statistical Computing},
+##     author = {{R Core Team}},
+##     organization = {R Foundation for Statistical Computing},
+##     address = {Vienna, Austria},
+##     year = {2020},
+##     url = {https://www.R-project.org/},
+##   }
+## 
+## We have invested a lot of time and effort in creating R, please cite it
+## when using it for data analysis. See also 'citation("pkgname")' for
+## citing R packages.
+```
+
 ---
 
 # 1.13 Citações
 
 ## Como citar o R e os pacotes em trabalhos?
 
-```{r}
+
+```r
 # citacao dos pacotes
 citation("vegan")
+```
+
+```
+## 
+## To cite package 'vegan' in publications use:
+## 
+##   Jari Oksanen, F. Guillaume Blanchet, Michael Friendly, Roeland Kindt,
+##   Pierre Legendre, Dan McGlinn, Peter R. Minchin, R. B. O'Hara, Gavin
+##   L. Simpson, Peter Solymos, M. Henry H. Stevens, Eduard Szoecs and
+##   Helene Wagner (2019). vegan: Community Ecology Package. R package
+##   version 2.5-6. https://CRAN.R-project.org/package=vegan
+## 
+## A BibTeX entry for LaTeX users is
+## 
+##   @Manual{,
+##     title = {vegan: Community Ecology Package},
+##     author = {Jari Oksanen and F. Guillaume Blanchet and Michael Friendly and Roeland Kindt and Pierre Legendre and Dan McGlinn and Peter R. Minchin and R. B. O'Hara and Gavin L. Simpson and Peter Solymos and M. Henry H. Stevens and Eduard Szoecs and Helene Wagner},
+##     year = {2019},
+##     note = {R package version 2.5-6},
+##     url = {https://CRAN.R-project.org/package=vegan},
+##   }
+## 
+## ATTENTION: This citation information has been auto-generated from the
+## package DESCRIPTION file and may need manual editing, see
+## 'help("citation")'.
 ```
 
 ---
@@ -1718,15 +2032,31 @@ background-position: 50% 50%
 ## 1. Esquecer de completar um comando (+)
 
 Parênteses
-```{r, error = TRUE}
+
+```r
 sum(1, 2
 +
 ```
 
+```
+## Error: &lt;text&gt;:3:0: unexpected end of input
+## 1: sum(1, 2
+## 2: +
+##   ^
+```
+
 Aspas
-```{r, error = TRUE}
+
+```r
 "string
 +
+```
+
+```
+## Error: &lt;text&gt;:1:1: unexpected INCOMPLETE_STRING
+## 1: "string
+## 2: +
+##    ^
 ```
 
 ---
@@ -1734,8 +2064,15 @@ Aspas
 # 1.14 Principais erros
 
 ## 2. Esquecer da vírgula
-```{r, error = TRUE}
+
+```r
 sum(1 2)
+```
+
+```
+## Error: &lt;text&gt;:1:7: unexpected numeric constant
+## 1: sum(1 2
+##           ^
 ```
 
 ---
@@ -1743,18 +2080,14 @@ sum(1 2)
 # 1.14 Principais erros
 
 ## 3. Chamar um objeto errado
-```{r, error = TRUE}
-obj <- 10
+
+```r
+obj &lt;- 10
 OBJ
 ```
 
----
-
-# 1.14 Principais erros
-
-## 4. Esquecer de carregar um pacote
-```{r, error = TRUE}
-ggplot(iris) + aes(Sepal.Length, Sepal.Width) + geom_point()
+```
+## Error in eval(expr, envir, enclos): object 'OBJ' not found
 ```
 
 ---
@@ -1762,11 +2095,28 @@ ggplot(iris) + aes(Sepal.Length, Sepal.Width) + geom_point()
 # 1.14 Principais erros
 
 ## 4. Esquecer de carregar um pacote
-```{r,fig.align='center',fig.width=5.5,fig.height=5.5}
+
+```r
+ggplot(iris) + aes(Sepal.Length, Sepal.Width) + geom_point()
+```
+
+```
+## Error in ggplot(iris): could not find function "ggplot"
+```
+
+---
+
+# 1.14 Principais erros
+
+## 4. Esquecer de carregar um pacote
+
+```r
 library(ggplot2)
 ggplot(iris) + aes(Sepal.Length, Sepal.Width) + geom_point() + theme_bw()
 ```
 
+&lt;img src="01_tidyr_files/figure-html/unnamed-chunk-75-1.png" style="display: block; margin: auto;" /&gt;
+
 ---
 
 background-image: url(img/camel_case.png)
@@ -1776,8 +2126,14 @@ background-position: 50% 90%
 # 1.14 Principais erros
 
 ## 5. Usar o nome da função de forma errônea
-```{r, error = TRUE}
+
+```r
 rowSums(iris[1:10, -5])
+```
+
+```
+##    1    2    3    4    5    6    7    8    9   10 
+## 10.2  9.5  9.4  9.4 10.2 11.4  9.7 10.1  8.9  9.6
 ```
 
 ---
@@ -1789,8 +2145,13 @@ background-position: 50% 90%
 # 1.14 Principais erros
 
 ## 5. Usar o nome da função de forma errônea
-```{r, error = TRUE}
+
+```r
 rowsums(iris[1:10, -5])
+```
+
+```
+## Error in rowsums(iris[1:10, -5]): could not find function "rowsums"
 ```
 
 ---
@@ -1801,9 +2162,9 @@ background-position: 50% 50%
 
 # Cases
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 Allison Horst 
-<br>
+&lt;br&gt;
 [*] https://github.com/allisonhorst/stats-illustrations
 
 ---
@@ -1818,15 +2179,138 @@ class: clear, middle
 
 ## Maurício Vancine
 
-<br>
+&lt;br&gt;
 
 Contatos:
 
 |                                                                                           |                               |
 | :---------------------------------------------------------------------------------------- | :---------------------------- |
-| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>]  | mauricio.vancine@gmail.com    |
-| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]   | mauriciovancine.netlify.com   |
-| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>]  | @mauriciovancine              |
-| <a href="http://github.com/mauriciovancine">.RUred[<i class="fa fa-github fa-fw"></i>]    | @mauriciovancine              |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
+| &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "rainbow",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 ---
-title: "Introdução ao *tidyverse* <br><br>"
-subtitle: "5 Modelos, tidyverse e tidymodels <br><br><br>"
+title: "Introdução ao tidyverse <br><br>"
+subtitle: "5 Modelos, tidyverse e tidymodels <br><br> xaringan [presentation ninja]"
 author: "Maurício Vancine"
 date: "25/04/2019"
 output:
@@ -289,9 +289,7 @@ background-position: 50% 90%
 
 ## Dados do **GitHub**
 
-
 `https://github.com/mauriciovancine/curso-r/tree/master/data`
-
 
 `dados_anfíbios.csv -> Raw -> Copia o link`
 
@@ -333,7 +331,7 @@ augment(mo.glm.ga)
 
 ---
 
-class: inverse, center, middle
+class: clear, inverse, center, middle
 
 # Para os amantes do **p-value**...
 
@@ -627,19 +625,19 @@ plot(mo.glm.ga)
 
 ---
 
-class: inverse, center, middle
+class: clear, inverse, center, middle
 
 # Agora uma quebra de paradigma!
 
 ---
 
-class: inverse, center, middle
+class: clear, inverse, center, middle
 
 # Vamos testar várias hipóteses ao mesmo tempo!
 
 ---
 
-class: inverse, center, middle
+class: clear, inverse, center, middle
 background-image: url(https://media.giphy.com/media/EvWx1BeeRyyJi/giphy.gif)
 background-size: 500px
 background-position: 50% 50%

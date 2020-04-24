@@ -1,6 +1,6 @@
 ---
-title: "Introdução ao *tidyverse* <br><br>"
-subtitle: "<br> 2 Revisão de estrutura de dados <br>"
+title: "Introdução ao tidyverse <br><br>"
+subtitle: "<br> 2 Revisão de estrutura de dados  <br><br> xaringan [presentation ninja]"
 author: "Maurício Vancine"
 date: "25/04/2019"
 output:
@@ -110,7 +110,7 @@ obj_10
 
 ---
 
-background-image: url(img/r_modes.png)
+background-image: url(img/code_modes.png)
 background-size: 70%
 background-position: 50% 90%
 
@@ -193,12 +193,6 @@ mode(obj_log)
 
 ---
 
-class: clear, inverse, center, middle
-
-# Dúvidas?
-
----
-
 # 2.3 Estrutura dos objetos
 
 ## Estruturas (*organização*): vector, factor, matrix, array, data frame e list
@@ -258,7 +252,7 @@ background-position: 50% 70%
 
 ---
 
-background-image: url(img/code_vector_types.png)
+background-image: url(img/code_vector_types1.png)
 background-size: 800px
 background-position: 50% 50%
 
@@ -384,7 +378,7 @@ sa_com_rep
 
 ---
 
-class: clean, inverse, middle, center
+class: clear,  clean, inverse, middle, center
 # Exercícios
 
 ---
@@ -478,12 +472,6 @@ as.integer()
 as.numeric()
 as.logical()
 ```
-
----
-
-class: clear, inverse, center, middle
-
-# Dúvidas?
 
 ---
 
@@ -586,7 +574,7 @@ class(fa_no)
 
 ---
 
-class: clean, inverse, middle, center
+class: clear,  clean, inverse, middle, center
 # Exercícios
 
 ---
@@ -775,7 +763,7 @@ ma_cbind
 
 ---
 
-class: clean, inverse, middle, center
+class: clear,  clean, inverse, middle, center
 # Exercícios
 
 ---
@@ -946,7 +934,7 @@ class: clear, inverse, center, middle
 
 ---
 
-class: inverse, center, middle
+class: clear,  inverse, center, middle
 background-image: url(img/gif_mind_blowing2.gif)
 background-size: 700px
 
@@ -1049,7 +1037,7 @@ str(df_c)
 
 ---
 
-class: clean, inverse, middle, center
+class: clear,  clean, inverse, middle, center
 # Exercícios
 
 ---
@@ -1643,12 +1631,6 @@ df[df$flo == "floresta", ]
 
 ---
 
-class: clear, inverse, center, middle
-
-# Dúvidas?
-
----
-
 # 2.6 Valores faltantes e especiais
 
 ## São **valores reservados** que representam *dados faltantes*, *indefinições matemáticas*, *infinitos* e *objetos nulos*
@@ -1812,12 +1794,6 @@ nulo
 
 ---
 
-class: clear, inverse, center, middle
-
-# Dúvidas?
-
----
-
 # 2.7 Diretório de trabalho
 
 ## Endereço da pasta onde o R irá **importar e exportar** os dados
@@ -1915,7 +1891,7 @@ class(da)
 
 ---
 
-class: inverse, center, middle
+class: clear,  inverse, center, middle
 
 # IMPORTANTE: a tabela importada para o R sempre será um **data frame**!
 
@@ -2106,12 +2082,6 @@ nrow(da_na)
 da_sp <- da[da$state == "São Paulo", ]
 da_sp
 ```
-
----
-
-class: inverse, center, middle
-
-# Dúvidas?
 
 ---
 

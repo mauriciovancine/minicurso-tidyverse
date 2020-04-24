@@ -11,8 +11,8 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Introdução ao <em>tidyverse</em> <br><br>
-## 6 R Markdown <br><br><br>
+# Introdução ao tidyverse <br><br>
+## 6 R Markdown <br><br> xaringan [presentation ninja]
 ### Maurício Vancine
 ### 25/04/2019
 
@@ -101,7 +101,7 @@ background-position: 50% 60%
 
 # 6 R Markdown
 
-## Possibilidades de criações
+## Possibilidades de criação de várias saídas
 
 ---
 
@@ -238,8 +238,9 @@ background-position: 50% 70%
 
 #### Valores são acrescentados aqui: `{r, eval = FALSE}`
 
+
 |   Opção    |   Valor Padrão   |                                     Descrição                                      |
-|:----------:|:----------------:|:----------------------------------------------------------------------------------:|
+|:----------:|:----------------:|:---------------------------------------------------------------------------------- |
 |    eval    |       TRUE       | Execução do código                                                                 |
 |   include  |       TRUE       | Exibição do código. Resultados não aparecem                                        |
 |  collapse  |       FALSE      | Colapsar os resutados num bloco                                                    |
@@ -329,6 +330,23 @@ Outros formatos de texto Markdown serão explicados...
 
 ---
 
+background-image: url(img/rmarkdown_giphyr_screenshot.png)
+background-size: 450px
+background-position: 50% 90%
+
+# 6.6 Sintaxe do Markdown
+
+## GIFs
+O Addin [giphyr](https://github.com/haozhu233/giphyr) procura Gifs diretamente no RStudio
+
+```r
+install.packages("giphyr")
+devtools::install_github("haozhu233/giphyr")
+```
+
+
+---
+
 # 6.6 Sintaxe do Markdown
 
 ## Listas não ordenadas
@@ -344,7 +362,7 @@ Outros formatos de texto Markdown serão explicados...
 ## Listas ordenadas
 
 ```md
-6. Item 1
+1. Item 1
 2. Item 2
 3. Item 3
     i. Item 3a
@@ -377,7 +395,7 @@ Fonte: MDIC.
 ```r
 x &lt;- letters[1:3]
 y &lt;- LETTERS[1:3]
-kable(data.frame(x, y), align = 'cc')
+knitr::kable(data.frame(x, y), align = 'cc')
 ```
 
 --
@@ -466,13 +484,13 @@ background-position: 50% 50%
 
 ---
 
-class: inverse, center, middle
+class: clear, inverse, center, middle
 
 # Dúvidas?
 
 ---
 
-class: inverse, middle, center
+class: clear, inverse, middle, center
 
 # Muito obrigado pela atenção!
 

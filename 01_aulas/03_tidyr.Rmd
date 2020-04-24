@@ -1,6 +1,6 @@
 ---
-title: "Introdução ao *tidyverse* <br><br>"
-subtitle: "<br> 3 *tidyverse* <br>"
+title: "Introdução ao tidyverse <br><br>"
+subtitle: "<br> 3 tidyverse <br><br> xaringan [presentation ninja]"
 author: "Maurício Vancine"
 date: "25/04/2019"
 output:
@@ -484,7 +484,6 @@ si <- readr::read_csv("/home/mude/data/github/minicurso-r-sebio-2019/03_dados/AT
 si
 ```
 
-
 ---
 
 # 3.3 readr
@@ -586,6 +585,21 @@ si
 
 ---
 
+# 3.3 readr
+
+## **Formato .csv**
+```{r,eval=FALSE}
+# import sites
+si <- readr::read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
+si
+```
+--
+```{r,eval=FALSE}
+# import sites
+sp <- readr::read_csv("ATLANTIC_AMPHIBIANS_species.csv")
+sp
+```
+
 class: clear, inverse, center, middle
 
 # Dúvidas?
@@ -655,7 +669,7 @@ glimpse(tb)
 
 ## tibble vs data.frame
 
-### 2. A indexação com colchetes sempre retorna um **tibble**
+### 2. A indexação com colchetes retorna um **tibble**
 ```{r}
 df_ch <- df[, 1]
 class(df_ch)
@@ -741,9 +755,9 @@ background-position: 50% 50%
 
 #### **5 replace_na()**: substitui NA
 
-#### **6 spread() | pivot_wider()**: long para wide
+#### **6 spread() => pivot_wider()**: long para wide
 
-#### **7 gather() | pivot_longer()**: wide para long
+#### **7 gather() => pivot_longer()**: wide para long
 
 ---
 
@@ -760,16 +774,11 @@ background-position: 50% 50%
 ## **1 unite**
 
 ### unir as colunas latirude e longitude separadas por uma vírgula
-```{r,eval=FALSE}
+```{r}
+# sem pipes
 si_unite <- tidyr::unite(si, "lat_lon", latitude:longitude, sep = ",")
 si_unite$lat_lon
 ```
-
-```{r,echo=FALSE}
-si_unite <- tidyr::unite(si, "lat_lon", latitude:longitude, sep = ",")
-si_unite$lat_lon
-```
-
 
 ---
 
@@ -778,13 +787,8 @@ si_unite$lat_lon
 ## **1 unite**
 
 ### unir as colunas latirude e longitude separadas por uma vírgula
-```{r,eval=FALSE}
-si_unite <- si %>% 
-  tidyr::unite("lat_lon", latitude:longitude, sep = ",")
-si_unite$lat_lon
-```
-
-```{r,echo=FALSE}
+```{r}
+# com pipes
 si_unite <- si %>% 
   tidyr::unite("lat_lon", latitude:longitude, sep = ",")
 si_unite$lat_lon
@@ -805,13 +809,7 @@ background-position: 50% 50%
 ## **2 separate**
 
 ### separar os dados de "period" em quatro colunas dos seus valores
-```{r,eval=FALSE}
-si_separate <- si %>% 
-  tidyr::separate("period", c("mo", "da", "tw", "ni"), remove = FALSE)
-si_separate[, c(1, 9:13)]
-```
-
-```{r,echo=FALSE}
+```{r}
 si_separate <- si %>% 
   tidyr::separate("period", c("mo", "da", "tw", "ni"), remove = FALSE)
 si_separate[, c(1, 9:13)]
@@ -823,19 +821,12 @@ si_separate[, c(1, 9:13)]
 
 ## **3 separate_rows()**
 
-### separar os dados de "period" em quatro colunas dos seus valores
-```{r,eval=FALSE}
+### separar os dados de "period" na mesma coluna e repetindo os valores
+```{r}
 si_separate_row <- si %>% 
   tidyr::separate_rows("period")
 si_separate_row[, c(1, 9:13)]
 ```
-
-```{r,echo=FALSE}
-si_separate_row <- si %>% 
-  tidyr::separate_rows("period")
-si_separate_row[, c(1, 9:13)]
-```
-
 
 ---
 
@@ -844,13 +835,7 @@ si_separate_row[, c(1, 9:13)]
 ## **4 drop_na()**
 
 ### remove as linhas com NA de todas as colunas
-```{r,eval=FALSE}
-si_drop_na <- si %>% 
-  tidyr::drop_na()
-si_drop_na
-```
-
-```{r,echo=FALSE}
+```{r}
 si_drop_na <- si %>% 
   tidyr::drop_na()
 si_drop_na
@@ -861,16 +846,10 @@ si_drop_na
 # 3.6 tidyr
 
 ## **4 drop_na()**
-### remove as linhas com NA da coluna "year_start"
-```{r,eval=FALSE}
+### remove as linhas com NA da coluna "active_methods"
+```{r}
 si_drop_na <- si %>% 
-  tidyr::drop_na(year_start)
-si_drop_na
-```
-
-```{r,echo=FALSE}
-si_drop_na <- si %>% 
-  tidyr::drop_na(year_start)
+  tidyr::drop_na(active_methods)
 si_drop_na
 ```
 
@@ -880,16 +859,10 @@ si_drop_na
 
 ## **5 replace_na()**
 
-### substituir os NAs da coluna "year_start" por 0 
-```{r,eval=FALSE}
+### substituir os NAs da coluna "active_methods" por 0 
+```{r}
 si_replace_na <- si %>% 
-  tidyr::replace_na(list(year_start = 0))
-si_replace_na
-```
-
-```{r,echo=FALSE}
-si_replace_na <- si %>% 
-  tidyr::replace_na(list(year_start = 0))
+  tidyr::replace_na(list(active_methods = 0))
 si_replace_na
 ```
 
@@ -905,7 +878,7 @@ background-position: 50% 50%
 
 # 3.6 tidyr
 
-## **5 spread()** 
+## **6 spread()** 
 
 Long para wide
 
@@ -913,9 +886,10 @@ Long para wide
 
 2. **value**: variável numérica que irá preencher os dados
 
-```{r}
+```{r,eval=FALSE}
+si[, c("id", "record", "species_number")]
 si_spread <- si[, c("id", "record", "species_number")] %>% 
-  spread(key = record, value = species_number, fill = 0)
+  tidyr::spread(key = state_abbreviation, value = species_number, fill = 0)
 si_spread
 ```
 
@@ -923,7 +897,7 @@ si_spread
 
 # 3.6 tidyr
 
-## **5 spread()** 
+## **6 spread()** 
 
 Long para wide
 
@@ -931,28 +905,49 @@ Long para wide
 
 2. **value**: variável numérica que irá preencher os dados
 
-```{r, eval = FALSE}
-si_spread <- si[, c("id", "record", "species_number")] %>% 
-  spread(key = state_abbreviation, value = species_number, fill = 0)
-si_spread
-```
-
----
-
-# 3.6 tidyr
-
-## **5 spread()** 
-
-Long para wide
-
-1. **key**: variável categórica que irá definir os nomes das colunas
-
-2. **value**: variável numérica que irá preencher os dados
-
-```{r, eval = FALSE}
+```{r,eval=FALSE}
+sp[1:1000, c("id", "species", "individuals")]
 sp_spread <- sp[1:1000, c("id", "species", "individuals")] %>% 
-  spread(key = species, value = individuals, fill = 0)
+  tidyr::spread(key = species, value = individuals, fill = 0)
 sp_spread
+```
+
+---
+
+# 3.6 tidyr
+
+## **6 pivot_wider()** 
+
+Long para wide
+
+1. **names_from**: variável categórica que irá definir os nomes das colunas
+
+2. **valuess_from**: variável numérica que irá preencher os dados
+
+```{r,eval=FALSE}
+si[, c("id", "state_abbreviation", "species_number")]
+si_wide <- si[, c("id", "state_abbreviation", "species_number")] %>% 
+  tidyr::pivot_wider(names_from = state_abbreviation, values_from = species_number, values_fill = list(species_number = 0))
+si_wide
+```
+
+---
+
+# 3.6 tidyr
+
+## **6 pivot_wider()** 
+
+Long para wide
+
+1. **names_from**: variável categórica que irá definir os nomes das colunas
+
+2. **valuess_from**: variável numérica que irá preencher os dados
+
+```{r,eval=FALSE}
+sp[1:1000, c("id", "species", "individuals")]
+sp_wide <- sp[1:1000, c("id", "species", "individuals")] %>% 
+  tidyr::pivot_wider(names_from = species, values_from = individuals, values_fill = list(individuals = 0))
+sp_wide
 ```
 
 ---
@@ -967,7 +962,7 @@ background-position: 50% 50%
 
 # 3.6 tidyr
 
-## **6 gather()**
+## **7 gather()**
 
 wide para long
 
@@ -977,8 +972,26 @@ wide para long
 
 ```{r}
 si_gather <- si_spread %>% 
-  gather(key = record, value = species_number, -id)
+  tidyr::gather(key = record, value = species_number, -id)
 si_gather
+```
+
+---
+
+# 3.6 tidyr
+
+## **7 pivot_longer()**
+
+wide para long
+
+1. **names_to**: variável categórica que irá definir os nomes das colunas
+
+2. **values_to**: variável numérica que irá preencher os dados
+
+```{r}
+si_long <- si_wide %>% 
+  tidyr::pivot_longer(cols = -id, names_to = "record", values_to = "species_number")
+si_long
 ```
 
 ---

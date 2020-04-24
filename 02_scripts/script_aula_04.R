@@ -1,279 +1,489 @@
 # -------------------------------------------------------------------------
-# aula 4 - introducao ao tidyverse
+# aula 5 - visualizacao de dados
 
 # mauricio vancine
-# 23-10-2019
+# 24-10-2019
 # -------------------------------------------------------------------------
 
 # topicos -----------------------------------------------------------------  
-# 4.1 tidyverse
-# 4.2 magrittr (pipe - %>%)
-# 4.3 readr
-# 4.4 readxl e writexl
-# 4.5 tibble
-# 4.6 tidyr
-# 4.7 dplyr
+# 5.1 tipos de dados (variaveis = colunas)
+# 5.2 principais tipos de graficos
+# 5.3 graficos no r (pacotes graphics, ggplot2 e ggpubr)
+# 5.5 histograma (histogram)
+# 5.6 grafico de setores (pie chart e danut plot)
+# 5.7 grafico de barras (bar plot)
+# 5.8 grafico de caixa (box plot)
+# 5.9 grafico de dispersao (scatter plot)
 
-# 4.1 tidyverse -----------------------------------------------------------
-# instalar o pacote
-# install.packages("tidyverse")
-
-# carregar o pacote
+# 5.1 Principais pacotes para gráficos ------------------------------------
+# package
 library(tidyverse)
 
-# 4.2 magrittr (pipe - %>%) -----------------------------------------------
-# sem pipe
-sqrt(sum(1:100))
-
-# com pipe
-1:100 %>% 
-  sum() %>% 
-  sqrt()
-
-# fixar amostragem
-set.seed(42)
-
-# sem pipe
-ve <- sum(sqrt(sort(log10(rpois(100, 10)))))
-ve
-
-# fixar amostragem
-set.seed(42)
-
-# com pipe
-ve <- rpois(100, 10) %>% 
-  log10() %>%
-  sort() %>% 
-  sqrt() %>% 
-  sum()
-ve 
-
-# exercicio 13 ------------------------------------------------------------
-
-
-
-# 4.3 readr ---------------------------------------------------------------
-# diretorio
+# directory
 setwd("/home/mude/data/github/minicurso-r-sebio-2019/03_dados")
 
-# formato .csv
-# import sites
-si <- readr::read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
-si
-
-# formato .txt
-# import sites
-si <- readr::read_tsv("ATLANTIC_AMPHIBIANS_sites.txt")
-si
-
-# 4.4 readxl e writexl ----------------------------------------------------
-# packages
-# nstall.packages("readxl")
-library("readxl")
-
-# install.packages("writexl")
-library("writexl")
-
-# import sites
-si <- readxl::read_xlsx("ATLANTIC_AMPHIBIANS_sites.xlsx")
-si
-
-# 4.5 tibble --------------------------------------------------------------
-# view the data
-tibble::glimpse(si)
-
-# 4.6 tidyr ---------------------------------------------------------------
-# funcoes
-# 1 unite(): junta dados de multiplas colunas em uma
-# 2 separate(): separa caracteres em mulplica colunas
-# 3 drop_na(): retira linhas com NA
-# 4 replace_na(): substitui NA
-
-# 1 unite
-# unir as colunas latirude e longitude separadas por uma vírgula
-si_unite <- si %>% 
-  tidyr::unite("lat_lon", latitude:longitude, sep = ",")
-si_unite$lat_lon
-  
-# 2 separate
-# separar os dados de "period" em quatro colunas dos seus valores
-si_separate <- si %>% 
-  tidyr::separate("period", c("mo", "da", "tw", "ni"), remove = FALSE)
-si_separate[, c(1, 9:13)]
-
-# 3 drop_na()
-# remove as linhas com NA de todas as colunas
-si_drop_na <- si %>% 
-  tidyr::drop_na()
-si_drop_na
-
-# remove as linhas com NA da coluna "year_start"
-si_drop_na <- si %>% 
-  tidyr::drop_na(year_start)
-si_drop_na
-
-# 4 replace_na()
-# substituir os NAs da coluna "year_start" por 0 
-si_replace_na <- si %>% 
-  tidyr::replace_na(list(year_start = 0))
-si_replace_na
-
-
-# exercicio 14 ------------------------------------------------------------
-
-
-
-# 4.7 dplyr ---------------------------------------------------------------
-# funcoes
-# 1 select(): seleciona colunas pelo nome gerando um tibble
-# 2 pull(): seleciona uma coluna como vetor
-# 3 rename(): muda o nome das colunas
-# 4 mutate(): adiciona novas colunas ou adiciona resultados em colunas existentes
-# 5 arrange(): reordenar as linhas com base nos valores de colunas
-# 6 filter(): seleciona linhas com base em valores
-# 7 distinc(): remove linhas com valores repetidos com base nos valores de colunas
-# 8 slice(): seleciona linhas pelos numeros
-# 9 n_sample(): amostragem aleatoria de linhas
-# 10 summarise(): agrega ou resume os dados atraves de funcoes, podendo considerar valores das colunas
-
-# 1 select
-# seleciona colunas pelo nome
-si_select <- si %>% 
-  dplyr::select(id, longitude, latitude)
-si_select
-
-# nao seleciona colunas pelo nome
-si_select <- si %>% 
-  dplyr::select(-c(id, longitude, latitude))
-si_select
-
-#  starts_with(), ends_with() e contains()
-si_select <- si %>% 
-  dplyr::select(contains("sp"))
-si_select
-
-# 2 pull
-# coluna para vetor
-si_pull <- si %>% 
-  dplyr:: pull(id)
-si_pull
-
-si_pull <- si %>% 
-  dplyr::pull(species_number)
-si_pull
-
-# 3 rename
-si_rename <- si %>%
-  dplyr::rename(sp = species_number)
-si_rename
-
-# 4 mutate
-si_mutate <- si %>% 
-  dplyr::mutate(record_factor = as.factor(record))
-si_mutate
-
-# 5 arrange
-si_arrange <- si %>% 
-  dplyr::arrange(species_number)
-si_arrange
-
-si_arrange <- si %>% 
-  dplyr::arrange(desc(species_number))
-si_arrange
-
-si_arrange <- si %>% 
-  dplyr::arrange(-species_number)
-si_arrange
-
-# 6 filter
-si_filter <- si %>% 
-  dplyr::filter(species_number > 5)
-si_filter
-
-si_filter <- si %>% 
-  dplyr::filter(between(species_number, 1, 5))
-si_filter
-
-si_filter <- si %>% 
-  dplyr::filter(is.na(passive_methods))
-si_filter
-
-si_filter <- si %>% 
-  dplyr::filter(is.na(active_methods) & is.na(passive_methods))
-si_filter
-
-si_filter <- si %>% 
-  dplyr::filter(species_number > 5 & state_abbreviation == "BR-PE") 
-si_filter
-
-si_filter <- si %>% 
-  dplyr::filter(species_number > 5 | state_abbreviation == "BR-PE")
-si_filter
-
-# 7 distinct
-si_distinct <- si %>% 
-  dplyr::distinct(species_number)
-si_distinct
-
-si_distinct <- si %>% 
-  dplyr::distinct(species_number, .keep_all = TRUE)
-si_distinct
-
-# 8 slice 
-si_slice <- si %>% 
-  dplyr::slice(1:10)
-si_slice
-
-# 9 n_sample 
-si_sample_n <- si %>% 
-  dplyr::sample_n(100)
-si_sample_n
-
-# 10 summarise
-si_summarise <- si %>% 
-  dplyr::summarise(mean_sp = mean(species_number), sd_sp = sd(species_number))
-si_summarise
-
-si_summarise_group <- si %>% 
-  dplyr::group_by(country) %>% 
-  dplyr::summarise(mean_sp = mean(species_number), sd_sp = sd(species_number))
-si_summarise_group
-
-#  permite manipular os dados de forma mais simples
-da <- si %>% 
-  dplyr::select(id, state_abbreviation, species_number)
+# importar
+da <- read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
 da
 
-da <- si %>% 
-  dplyr::select(id, state_abbreviation, species_number) %>% 
-  dplyr::filter(species_number > 5)
-da
+# verificar
+glimpse(da)
 
-da <- si %>% 
-  dplyr::select(id, state_abbreviation, species_number) %>% 
-  dplyr::filter(species_number > 5) %>% 
-  dplyr::group_by(state_abbreviation) %>% 
-  dplyr::summarise(nsp_state_abb = n())
-da
+# graphics
+plot(species_number ~ effort_months, data = da)
 
-da <- si %>% 
-  dplyr:: select(id, state_abbreviation, species_number) %>% 
-  dplyr::filter(species_number > 5) %>% 
-  dplyr::group_by(state_abbreviation) %>% 
-  dplyr::summarise(nsp_state_abb = n()) %>% 
-  dplyr::arrange(nsp_state_abb)
-da
+# ggplot2
+library(ggplot2)
+ggplot(data = da) + aes(effort_months, species_number) + geom_point()
 
-# exercicio 15 ------------------------------------------------------------
+# ggpubr
+library(ggpubr)
+ggscatter(da, x = "effort_months", y = "species_number")
+
+# 5.5 histograma (histogram) ----------------------------------------------
+# graphics
+# histogram
+hist(da$species_number)
+
+# color
+hist(da$species_number,
+     col = "gray50",
+     border = "gray")
+
+# tible
+hist(da$species_number,
+     col = "gray50",
+     border = "gray",
+     main = "Ti")
+
+# labs
+hist(da$species_number,
+     col = "gray50",
+     border = "gray",
+     main = "Ti",
+     xlab = "Sp",
+     ylab = "Fr")
+
+# breacks
+hist(da$species_number,
+     col = "gray50",
+     border = "gray",
+     main = "Ti",
+     xlab = "Sp",
+     ylab = "Fr",
+     br = 50)
+
+# size
+hist(da$species_number,
+     col = "gray50",
+     border = "gray",
+     main = "Ti",
+     xlab = "Sp",
+     ylab = "Fr",
+     br = 50,
+     cex.main = 2.5,
+     cex.lab = 2.2,
+     cex.axis = 2)
+
+# sensity
+hist(da$species_number,
+     col = "gray50",
+     border = "gray",
+     main = "Ti",
+     xlab = "Sp",
+     ylab = "Fr",
+     br = 50,
+     cex.main = 2.5,
+     cex.lab = 2.2,
+     cex.axis = 2,
+     prob = TRUE)
+lines(density(da$species_number))
+
+# diretorio
+setwd("")
+
+# cria um arquivo vazio
+tiff("meu_primeiro_histograma.tif", wi = 15, he = 15, un = "cm", 
+     res = 300, comp = "lzw+p")
+
+# plot
+hist(da$species_number,
+     col = "gray50",
+     border = "gray",
+     main = "Ti",
+     xlab = "Sp",
+     ylab = "Fr",
+     br = 50,
+     cex.main = 2.5,
+     cex.lab = 2.2,
+     cex.axis = 2,
+     prob = TRUE)
+lines(density(da$species_number))
+
+# fecha o arquivo
+dev.off()
+
+# ggplot2
+# data
+ggplot(data = da)
+
+# aes
+ggplot(data = da) +
+  aes(species_number)
+
+# geom
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram()
+
+# density
+ggplot(data = da) +
+  aes(species_number) +
+  geom_density()
+
+# change
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10)
+
+# theme
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10, alpha = .5) +
+  labs(x = "Número de Espécies", y = "Frequência") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# density
+ggplot(data = da) +
+  aes(species_number) +
+  geom_density(color = "black", fill = "forest green", alpha = .5) + 
+  labs(x = "Número de Espécies", y = "Frequência") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# facet
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10, 
+                 alpha = .5) +
+  facet_wrap(~ record, ncol = 2, scale = "free_y") +
+  labs(x = "Número de Espécies", y = "Frequência") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# facet
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10, 
+                 alpha = .5) +
+  facet_grid(record ~ .) +
+  labs(x = "Número de Espécies",
+       y = "Frequência") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# theme_
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10, 
+                 alpha = .5) +
+  facet_grid(record ~ .) +
+  labs(x = "Número de Espécies",
+       y = "Frequência") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# export
+ggplot(data = da) +
+  aes(species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10,
+                 alpha = .5) +
+  facet_grid(record ~ .) +
+  labs(x = "Número de Espécies",
+          y = "Frequência") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+ggsave("histogram_ggplot2.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+
+# ggpubr
+gghistogram(data = da, 
+            x = "species_number",
+            add = "median",
+            fill = "steelblue",
+            rug = TRUE,
+            add_density = TRUE,
+            xlab = "Número de espécies",
+            ylab = "Frequeência absoluta")
+
+# export
+gghistogram(data = da,
+            x = "species_number",
+            add = "median",
+            fill = "steelblue",
+            rug = TRUE,
+            add_density = TRUE,
+            xlab = "Número de espécies",
+            ylab = "Frequeência absoluta")
+ggsave("histogram_ggpubr.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
 
 
-# exercicio 16 ------------------------------------------------------------
+# 5.6 grafico de setores (pie chart) --------------------------------------
+# graphics
+# frequence table
+ta <- table(da$record)
+ta <- round(ta/sum(ta) * 100, 2)
+ta
+
+# pie chart
+pie(ta,
+    labels = paste(ta, "%"),
+    main = "Tipos de amostragens",
+    col = c("steelblue", "brown"))
+legend("topright", c("Abundância", "Composição"), 
+       cex = 0.8, fill = c("steelblue", "brown"))
+
+# ggplot2
+# frequence table as data frame
+ta_por <- ta %>%
+  as.data.frame %>% 
+  mutate(Amostragem = c("Abundância", "Composição"),
+         porc = paste0(Freq, "%"))
+ta_por
+
+# pie chart
+ggplot(ta_por) +
+  aes(x = "", y = Freq, fill = Amostragem) +
+  geom_bar(width = 1, stat = "identity", color = "white") +
+  coord_polar("y", start = 0) +
+  geom_text(aes(label = porc), color = "white", 
+            position = position_stack(vjust = 0.5), size = 8) +
+  scale_fill_manual(values = c(c("#0073C2FF", "#EFC000FF"))) +
+  theme_void()
+
+# ggpubr
+# pie chart
+ggpie(ta_por,
+      "Freq", 
+      label = "porc",
+      lab.pos = "in", 
+      lab.font = c(8, "white"),
+      fill = "Amostragem", 
+      color = "white",
+      palette = c("#00AFBB", "#FC4E07"))
+
+# 5.6 grafico de setores (donut chart) ------------------------------------
+# ggplot2
+# donut
+ggplot(ta_por) +
+  aes(x = 2, y = Freq, fill = Amostragem) +
+  geom_bar(stat = "identity", color = "white") +
+  xlim(0, 2.5) +
+  coord_polar(theta ="y", start = 0) +
+  geom_text(aes(label = porc), color = "white", 
+            position = position_stack(vjust = 0.5), size = 5) +
+  scale_fill_manual(values = c(c("#0073C2FF", "#EFC000FF"))) +
+  theme_void() +
+  theme(legend.position = c(.5, .5),
+        legend.title = element_text(size = 20),
+        legend.text = element_text(size = 15))
+
+# ggpubr
+# pie
+ggdonutchart(ta_por,
+             "Freq", 
+             label = "porc",
+             lab.pos = "in", 
+             lab.font = c(7, "white"),
+             fill = "Amostragem", 
+             color = "white",
+             palette = c("#00AFBB", "#FC4E07"))
 
 
-# exercicio 17 ------------------------------------------------------------
+# 5.7 grafico de barras (bar plot) ----------------------------------------
+# frequency table
+ta <- table(da$record)
+names(ta) <- c("Abundância", "Composição")
+ta
+
+# graphics
+barplot(ta, 
+        col = c("blue", "forest green"),
+        main = "Frequência de tipos de amostragens",
+        xlab = "Tipo de registro",
+        ylab = "Frequência",
+        cex.main = 1.5,
+        cex.lab = 1.3,
+        cex.axis = 1.2)
+
+# frequency table as data frame
+ta_por <- ta %>% 
+  as.data.frame
+colnames(ta_por) <- c("record", "freq")
+ta_por
+
+# ggplot2
+ggplot(data = ta_por) +
+  aes(x = record, y = freq) +
+  geom_bar(fill = c("blue", "forest green"), stat = "identity") +
+  geom_text(aes(x = record, y = freq, label = freq), size = 8, color = "white", vjust = 2) +
+  labs(x = "Tipo de registro",
+       y = "Frequência") +
+  theme_classic() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# ggpubr
+ggbarplot(ta_por,
+          x = "record",
+          y = "freq", 
+          fill = "record", 
+          color = "record",
+          palette = c("#00AFBB", "#FC4E07"),
+          label = TRUE, 
+          lab.pos = "in", 
+          lab.col = "white",
+          lab.size = 8,
+          xlab = "Tipo de registro",
+          ylab = "Frequeência absoluta",
+          legend = "none")
 
 
-# exercicio 18 ------------------------------------------------------------
+# 5.8 grafico de caixa (box plot) -----------------------------------------
+# graphics
+boxplot(species_number ~ as.factor(record),
+        data = da,
+        col = "gray",
+        border = "black",
+        main = "Espécies por amostragens",
+        xlab = "Tipo de registro",
+        ylab = "Número de Espécies",
+        cex.main = 1.5,
+        cex.lab = 1.3,
+        cex.axis = 1.2)
+
+# ggplot2
+# boxplot
+ggplot(data = da) +
+  aes(x = record, y = species_number) +
+  geom_boxplot(fill = c("blue", "forest green"), color = "black") +
+  labs(x = "Tipo de registro",
+       y = "Número de espécies") +
+  theme_classic() + 
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# boxplot with jitter
+ggplot(data = da) +
+  aes(x = record, y = species_number) +
+  geom_boxplot(fill = c("blue", "forest green"), color = "black") +
+  geom_jitter(width = .3, alpha = .4) +
+  labs(x = "Tipo de registro",
+       y = "Número de espécies") +
+  theme_classic() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# violin
+ggplot(data = da) +
+  aes(x = record, y = species_number) +
+  geom_violin(aes(fill = record), color = "black") +
+  scale_fill_manual(values = c("blue", "forest green")) +
+  geom_jitter(width = .3, alpha = .3) +
+  labs(x = "Tipo de registro",
+       y = "Número de espécies") +
+  theme_classic() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# ggpubr
+# boxplot
+ggboxplot(data = da, 
+          x = "record", 
+          y = "species_number",
+          xlab = "Número de espécies",
+          ylab = "Frequeência absoluta")
+
+# boxplot
+ggboxplot(data = da, 
+          x = "record", 
+          y = "species_number",
+          fill = "record",
+          palette = c("#00AFBB", "#FC4E07"),
+          xlab = "Número de espécies",
+          ylab = "Frequeência absoluta",
+          legend = "none")
+
+# boxplot with jitter
+ggboxplot(data = da, 
+          x = "record", 
+          y = "species_number",
+          add = "jitter", 
+          shape = "record",
+          fill = "record",
+          color = "black",
+          palette = c("#00AFBB", "#FC4E07"),
+          xlab = "Número de espécies",
+          ylab = "Frequeência absoluta",
+          legend = "none")
+
+# violin
+ggviolin(data = da, 
+         x = "record", 
+         y = "species_number",
+         add = "jitter", 
+         shape = "record",
+         fill = "record",
+         color = "black",
+         palette = c("#00AFBB", "#FC4E07"),
+         xlab = "Número de espécies",
+         ylab = "Frequeência absoluta",
+         legend = "none")
 
 
-end ---------------------------------------------------------------------
+# 5.9 grafico de dispersao (scatter plot) ---------------------------------
+# graphics
+plot(species_number ~ effort_months,
+     data = da,
+     pch = 20,
+     xlab = "Esforço amostral",
+     ylab = "Número de espécies",
+     cex.lab = 1.5,
+     cex.axis = 1.3,
+     bty = "l")
+
+# ggplot2
+ggplot(data = da) +
+  aes(x = effort_months, y = species_number) +
+  geom_point(colour = "black", fill = "forest green", size = 5, 
+             alpha = .5, pch = 21) +
+  labs(x = "Esforço amostral", y = "Número de espécies") +
+  theme_classic() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# ggpubr
+ggscatter(data = da,
+          x = "effort_months", 
+          y = "species_number",
+          color = "black",
+          fill = "forestgreen",
+          shape = 21, 
+          size = 5,
+          xlab = "Esforço amostral", 
+          ylab = "Número de espécies")
+
+# end ---------------------------------------------------------------------

@@ -1,5 +1,5 @@
 ---
-title: "Introdução ao *tidyverse* <br><br>"
+title: "Introdução ao tidyverse <br><br>"
 subtitle: "<br><br> xaringan [presentation ninja] <br>"
 author: "Maurício Vancine"
 date: "25/04/2019"
@@ -316,7 +316,7 @@ background-position: 85% 80%
 
 ---
 
-class: inverse, middle, center
+class: clear, inverse, middle, center
 
 # Dúvidas?
 
