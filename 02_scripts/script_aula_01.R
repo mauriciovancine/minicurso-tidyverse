@@ -27,6 +27,9 @@ if(!require(psych)) install.packages("psych")
 # data --------------------------------------------------------------------
 if(!require(datasauRus)) install.packages("datasauRus")
 
+# countdown ---------------------------------------------------------------
+if(!require(countdown)) devtools::install_github("gadenbuie/countdown")
+
 # markdown ----------------------------------------------------------------
 if(!require(rmarkdown)) install.packages("rmarkdown")
 if(!require(knitr)) install.packages("knitr")

@@ -285,7 +285,7 @@ dplyr::glimpse(iris)
 
 background-image: url(img/package_rsample.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.8 Pacote rsample
 
@@ -301,7 +301,7 @@ iris_split
 
 background-image: url(img/package_rsample.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.8 Pacote rsample
 
@@ -318,7 +318,7 @@ iris_split %>%
 
 background-image: url(img/package_rsample.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.8 Pacote rsample
 
@@ -335,7 +335,7 @@ iris_split %>%
 
 background-image: url(img/package_recipes.png)
 background-size: 100px
-background-position: 90% 72%
+background-position: 95% 72%
 
 # 5.9 Pacote recipes
 
@@ -354,7 +354,7 @@ iris_recipe
 
 background-image: url(img/package_recipes.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.9 Pacote recipes
 
@@ -369,7 +369,7 @@ dplyr::glimpse(iris_testing)
 
 background-image: url(img/package_recipes.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.9 Pacote recipes
 
@@ -383,7 +383,7 @@ dplyr::glimpse(iris_training)
 
 background-image: url(img/package_parsnip.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.10 Pacote parsnip
 
@@ -396,9 +396,19 @@ iris_rf <- parsnip::rand_forest(trees = 100, mode = "classification") %>%
 
 ---
 
+background-image: url(img/package_parsnip.png), url(img/algorithm_random_forest.png)
+background-size: 100px, 700px
+background-position: 95% 90%, 45% 50%
+
+# 5.10 Pacote parsnip
+
+## Random Forest
+
+---
+
 background-image: url(img/package_parsnip.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.10 Pacote parsnip
 ```{r}
@@ -410,7 +420,7 @@ stats::predict(iris_rf, iris_testing)
 
 background-image: url(img/package_parsnip.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.10 Pacote parsnip
 ```{r}
@@ -424,7 +434,7 @@ iris_rf %>%
 
 background-image: url(img/package_yardstick.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.11 Pacote tyardstick
 ```{r}
@@ -439,7 +449,7 @@ iris_rf %>%
 
 background-image: url(img/package_yardstick.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.11 Pacote tyardstick
 ```{r}
@@ -454,7 +464,7 @@ dplyr::glimpse(iris_probs)
 
 background-image: url(img/package_yardstick.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.11 Pacote tyardstick
 ```{r}
@@ -465,8 +475,14 @@ iris_probs %>%
 
 ---
 
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 95% 83%
+
 # 5.11 Pacote tyardstick
-```{r,fig.align='center',fig.width=11,fig.height=5}
+## ROC e AUC
+```{r,fig.width=10,fig.height=5}
+# roc e auc
 iris_probs %>%
   yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>%
   ggplot2::autoplot()
@@ -476,10 +492,11 @@ iris_probs %>%
 
 background-image: url(img/package_yardstick.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.11 Pacote tyardstick
 ```{r}
+# predicao
 predict(iris_rf, iris_testing, type = "prob") %>%
   dplyr::bind_cols(predict(iris_rf, iris_testing)) %>%
   dplyr::bind_cols(select(iris_testing, Species)) %>%
@@ -490,7 +507,7 @@ predict(iris_rf, iris_testing, type = "prob") %>%
 
 background-image: url(img/package_yardstick.png)
 background-size: 100px
-background-position: 90% 90%
+background-position: 95% 90%
 
 # 5.11 Pacote tyardstick
 ```{r}
