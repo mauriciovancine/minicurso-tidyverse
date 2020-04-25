@@ -18,7 +18,19 @@
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="purrr_map.svg">
   <defs
-     id="defs2" />
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath42">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:2.39999996, 0.79999997;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect44"
+         width="84.666664"
+         height="57.830357"
+         x="62.744045"
+         y="124.45387" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -397,6 +409,9 @@ ylhdAAAAAElFTkSuQmCC
 "
        preserveAspectRatio="none"
        height="56.515003"
-       width="189.44167" />
+       width="189.44167"
+       clip-path="url(#clipPath42)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
   </g>
 </svg>

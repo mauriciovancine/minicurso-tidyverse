@@ -110,6 +110,18 @@ class: clear, inverse, center, middle
 
 ---
 
+background-image: url(img/general_data_eu_mesmo.png)
+background-size: 600px
+background-position: 50% 90%
+
+# Importar dados para gráficos
+
+## ATLANTIC AMPHIBIANS: a dataset of amphibian communities from the Atlantic Forests of South America
+
+### Eu mesmo et al. (2018)
+
+---
+
 # Importar dados para gráficos
 
 ```r
@@ -209,6 +221,20 @@ class: clear, center, middle
 background-image: url(img/package_ggplot2.png)
 background-size: 400px
 background-position: 50% 50%
+
+---
+
+background-image: url(img/cheatsheet_ggplot2.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 4.1 ggplot2
+
+## Data Visualization Cheatsheet
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
 
 ---
 
@@ -808,7 +834,7 @@ background-position: 50% 60%
 
 ```r
 ggplot(data = da) +
-* aes(species_number)
+* aes(x = species_number)
 ```
 ]
 
@@ -825,7 +851,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
 * geom_histogram()
 ```
 ]
@@ -843,7 +869,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
 * geom_density()
 ```
 ]
@@ -860,7 +886,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
 * geom_histogram(color = "black", fill = "forest green", bins = 10)
 ```
 
@@ -879,7 +905,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, alpha = .5) +
 * labs(x = "Número de Espécies", y = "Frequência") +
 * theme(axis.title = element_text(size = 24),
@@ -902,7 +928,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
 * geom_density(color = "black", fill = "forest green", alpha = .5) +
   labs(x = "Número de Espécies", y = "Frequência") +
   theme(axis.title = element_text(size = 24),
@@ -946,7 +972,7 @@ background-position: 50% 50%
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
 * facet_wrap(~ record, ncol = 2, scale = "free_y") +
@@ -971,7 +997,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
 * facet_grid(record ~ .) +
@@ -996,7 +1022,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -1023,7 +1049,7 @@ ggplot(data = da) +
 
 ```r
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -1904,6 +1930,22 @@ class: clear, inverse, center, middle
 
 ---
 
+background-image: url(img/gif_data_dino_statistics.gif)
+background-size: 600px
+background-position: 50% 70%
+
+# 4.9 Gráfico de dispersão
+
+### Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing
+
+#### Justin Matejka, George Fitzmaurice
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://www.autodeskresearch.com/publications/samestats
+
+---
+
 # 4.9 Gráfico de dispersão
 
 ## dino
@@ -1931,6 +1973,31 @@ datasaurus_dozen %&gt;%
 
 ## dino
 &lt;img src="04_tidyr_files/figure-html/unnamed-chunk-81-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# 4.9 Gráfico de dispersão
+
+## All plots
+
+```r
+# all plot
+datasaurus_dozen %&gt;% 
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point(colour = "black", fill = "black", 
+             size = 1, alpha = .75, pch = 21) +
+  facet_wrap(~dataset) +
+  theme_bw()
+```
+
+---
+
+# 4.9 Gráfico de dispersão
+
+## All plots
+&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-83-1.png" style="display: block; margin: auto;" /&gt;
+
 
 ---
 
@@ -1999,7 +2066,7 @@ pairs(da_sel,
 # 4.10 Gráfico pareado (pairs plot)
 
 ## graphics
-&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-84-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-86-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -2029,7 +2096,7 @@ ggpairs(data = da_sel) +
 # 4.10 Gráfico pareado (pairs plot)
 
 ## GGally
-&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-86-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-88-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -2068,7 +2135,7 @@ pairs.panels(da_sel,
 # 4.10 Gráfico pareado (pairs plot)
 
 ## psych
-&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-88-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="04_tidyr_files/figure-html/unnamed-chunk-90-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 

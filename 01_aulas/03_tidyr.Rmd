@@ -155,8 +155,8 @@ background-position: 50% 60%
 ---
 
 background-image: url(img/tidyverse_article_tidy.png)
-background-size: 400px
-background-position: 50% 60%
+background-size: 500px
+background-position: 50% 55%
 
 # 3.1 Pacote tidyverse
 
@@ -254,6 +254,19 @@ background-position: 80% 80%
 
 ---
 
+# 3.1 Pacote tidyverse
+
+## Listar todos os pacotes do tidyverse
+
+<br><br>
+
+```{r}
+# list all packages in the tidyverse 
+tidyverse::tidyverse_packages(include_self = TRUE)
+```
+
+---
+
 class: clear, center, middle
 background-image: url(img/package_magrittr.png)
 background-size: 400px
@@ -261,9 +274,9 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/tidyverse_magritte_pipe.jpg), url(img/person_rene_magritte.jpg)
-background-size: 500px, 200px
-background-position: 15% 40%, 85% 90%
+background-image: url(img/person_rene_magritte.jpg), url(img/tidyverse_magritte_pipe.jpg)
+background-size: 250px, 500px
+background-position: 10% 30%, 85% 75%
 
 # 3.2 magrittr (pipe - %>%)
 
@@ -2577,12 +2590,14 @@ purrr::map(x, sum)
 
 # 3.11 purrr
 
+<br><br>
+
 ## Retorna double vector (numeric)
 ```{r}
 purrr::map_dbl(x, sum)
 ```
 
-<br><br><br>
+<br>
 
 --
 

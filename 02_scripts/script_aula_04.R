@@ -1,28 +1,30 @@
 #' ---
-#' title: aula 04 - revisao de estrutura e manejo de dados
+#' title: aula 04 - visualizacao de dados 
 #' author: mauricio vancine
 #' date: 2020-04-26
 #' ---
 
 # topicos -----------------------------------------------------------------  
-# 5.1 tipos de dados (variaveis = colunas)
-# 5.2 principais tipos de graficos
-# 5.3 graficos no r (pacotes graphics, ggplot2 e ggpubr)
-# 5.5 histograma (histogram)
-# 5.6 grafico de setores (pie chart e danut plot)
-# 5.7 grafico de barras (bar plot)
-# 5.8 grafico de caixa (box plot)
-# 5.9 grafico de dispersao (scatter plot)
+# 4.1 Principais pacotes para gráficos 
+# 4.2 principais livros e sites 
+# 4.3 tipos de dados (variaveis = colunas)
+# 4.4 principais tipos de graficos
+# 4.5 graficos no r (pacotes graphics, ggplot2 e ggpubr)
+# 4.6 histograma (histogram)
+# 4.7 grafico de setores (pie chart e danut plot)
+# 4.8 grafico de barras (bar plot)
+# 4.9 grafico de caixa (box plot)
+# 4.10 grafico de dispersao (scatter plot)
 
-# 5.1 Principais pacotes para gráficos ------------------------------------
+# 4.1 Principais pacotes para gráficos ------------------------------------
 # package
 library(tidyverse)
 
 # directory
-setwd("/home/mude/data/github/minicurso-r-sebio-2019/03_dados")
+setwd("/home/mude/data/github/minicurso-tidyverse/03_dados")
 
 # importar
-da <- read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
+da <- readr::read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
 da
 
 # verificar
@@ -39,7 +41,7 @@ ggplot(data = da) + aes(effort_months, species_number) + geom_point()
 library(ggpubr)
 ggscatter(da, x = "effort_months", y = "species_number")
 
-# 5.5 histograma (histogram) ----------------------------------------------
+# 4.5 histograma (histogram) ----------------------------------------------
 # graphics
 # histogram
 hist(da$species_number)
@@ -128,26 +130,26 @@ ggplot(data = da)
 
 # aes
 ggplot(data = da) +
-  aes(species_number)
+  aes(x = species_number)
 
 # geom
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram()
 
 # density
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_density()
 
 # change
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10)
 
 # theme
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, alpha = .5) +
   labs(x = "Número de Espécies", y = "Frequência") +
   theme(axis.title = element_text(size = 24),
@@ -156,7 +158,7 @@ ggplot(data = da) +
 
 # density
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_density(color = "black", fill = "forest green", alpha = .5) + 
   labs(x = "Número de Espécies", y = "Frequência") +
   theme(axis.title = element_text(size = 24),
@@ -165,7 +167,7 @@ ggplot(data = da) +
 
 # facet
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_wrap(~ record, ncol = 2, scale = "free_y") +
@@ -176,7 +178,7 @@ ggplot(data = da) +
 
 # facet
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -188,7 +190,7 @@ ggplot(data = da) +
 
 # theme_
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -201,7 +203,7 @@ ggplot(data = da) +
 
 # export
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10,
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -235,7 +237,7 @@ gghistogram(data = da,
 ggsave("histogram_ggpubr.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
 
 
-# 5.6 grafico de setores (pie chart) --------------------------------------
+# 4.6 grafico de setores (pie chart) --------------------------------------
 # graphics
 # frequence table
 ta <- table(da$record)
@@ -279,7 +281,7 @@ ggpie(ta_por,
       color = "white",
       palette = c("#00AFBB", "#FC4E07"))
 
-# 5.6 grafico de setores (donut chart) ------------------------------------
+# 4.6 grafico de setores (donut chart) ------------------------------------
 # ggplot2
 # donut
 ggplot(ta_por) +
@@ -307,7 +309,7 @@ ggdonutchart(ta_por,
              palette = c("#00AFBB", "#FC4E07"))
 
 
-# 5.7 grafico de barras (bar plot) ----------------------------------------
+# 4.7 grafico de barras (bar plot) ----------------------------------------
 # frequency table
 ta <- table(da$record)
 names(ta) <- c("Abundância", "Composição")
@@ -357,7 +359,7 @@ ggbarplot(ta_por,
           legend = "none")
 
 
-# 5.8 grafico de caixa (box plot) -----------------------------------------
+# 4.8 grafico de caixa (box plot) -----------------------------------------
 # graphics
 boxplot(species_number ~ as.factor(record),
         data = da,
@@ -452,7 +454,7 @@ ggviolin(data = da,
          legend = "none")
 
 
-# 5.9 grafico de dispersao (scatter plot) ---------------------------------
+# 4.9 grafico de dispersao (scatter plot) ---------------------------------
 # graphics
 plot(species_number ~ effort_months,
      data = da,
@@ -485,4 +487,65 @@ ggscatter(data = da,
           xlab = "Esforço amostral", 
           ylab = "Número de espécies")
 
+
+# bonus -------------------------------------------------------------------
+
+# package
+library(datasauRus)
+
+# data + plot
+datasaurus_dozen %>% 
+  dplyr::filter(dataset == "dino") %>% 
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point(colour = "black", fill = "black", 
+             size = 5, alpha = .75, pch = 21) +
+  theme_bw() +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# all plot
+datasaurus_dozen %>% 
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point(colour = "black", fill = "black", 
+             size = 2, alpha = .75, pch = 21) +
+  facet_wrap(~dataset) +
+  theme_bw()
+
+# pairs -------------------------------------------------------------------
+# selecionar as colunas
+da_sel <- da %>% 
+  select(temperature, precipitation, altitude)
+da_sel
+
+# pairs plot
+pairs(da_sel,
+      pch = 20,
+      upper.panel = NULL)
+
+# package
+library(GGally)
+
+# ggpairs
+ggpairs(data = da_sel) +
+  theme_bw()
+
+# psych
+# package
+library(psych)
+
+# pairs
+pairs.panels(da_sel, 
+             method = "spearman",
+             pch = 20, 
+             ellipses = FALSE, 
+             density = FALSE, 
+             stars = TRUE, 
+             hist.col = "gray",
+             digits = 2,
+             rug = FALSE,
+             breaks = 10,
+             ci = TRUE)
 # end ---------------------------------------------------------------------

@@ -156,8 +156,8 @@ background-position: 50% 60%
 ---
 
 background-image: url(img/tidyverse_article_tidy.png)
-background-size: 400px
-background-position: 50% 60%
+background-size: 500px
+background-position: 50% 55%
 
 # 3.1 Pacote tidyverse
 
@@ -279,6 +279,29 @@ background-position: 80% 80%
 
 ---
 
+# 3.1 Pacote tidyverse
+
+## Listar todos os pacotes do tidyverse
+
+&lt;br&gt;&lt;br&gt;
+
+
+```r
+# list all packages in the tidyverse 
+tidyverse::tidyverse_packages(include_self = TRUE)
+```
+
+```
+##  [1] "broom"      "cli"        "crayon"     "dbplyr"     "dplyr"     
+##  [6] "forcats"    "ggplot2"    "haven"      "hms"        "httr"      
+## [11] "jsonlite"   "lubridate"  "magrittr"   "modelr"     "pillar"    
+## [16] "purrr"      "readr"      "readxl"     "reprex"     "rlang"     
+## [21] "rstudioapi" "rvest"      "stringr"    "tibble"     "tidyr"     
+## [26] "xml2"       "tidyverse"
+```
+
+---
+
 class: clear, center, middle
 background-image: url(img/package_magrittr.png)
 background-size: 400px
@@ -286,9 +309,9 @@ background-position: 50% 50%
 
 ---
 
-background-image: url(img/tidyverse_magritte_pipe.jpg), url(img/person_rene_magritte.jpg)
-background-size: 500px, 200px
-background-position: 15% 40%, 85% 90%
+background-image: url(img/person_rene_magritte.jpg), url(img/tidyverse_magritte_pipe.jpg)
+background-size: 250px, 500px
+background-position: 10% 30%, 85% 75%
 
 # 3.2 magrittr (pipe - %&gt;%)
 
@@ -428,7 +451,7 @@ class: clear, inverse, center, middle
 
 `prod(sort(sample(1:10, 10000, rep = TRUE)))`
 
-<div class="countdown" id="timer_5ea357fd" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3d266" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -2725,7 +2748,7 @@ class: clear, inverse, center, middle
 # Exercício 10
 ### Combine as colunas `country`, `state`, `state_abbreviation`, `municipality`, `site`, em uma coluna chamada `local_total` separadas por `, (vírgula + espaço)`, atribuindo o resultado a um novo objeto, utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea35b86" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3cebf" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -3912,7 +3935,7 @@ si_local$local_total
 
 # Exercício 11
 ### Quanto indivíduos por há por família nos locais amostrados? Apenas para as 1000 primeiras linhas da tabela `sp`
-<div class="countdown" id="timer_5ea359cb" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3d0e1" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -5326,7 +5349,7 @@ class: clear, inverse, center, middle
 
 ### Adicione essas novas colunas `alt_log, tem_log e pre_log`, que são a operação `log10` das colunas `altitude,	temperature e	precipitation` e atribua ao mesmo objeto `si` utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea3594a" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3d18c" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -5367,7 +5390,7 @@ si[, 25:28]
 
 ### Ordene os dados em forma decrescente pela coluna `altitude`, atribuindo o resultado a um novo objeto utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea35917" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3cff3" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -5412,7 +5435,7 @@ si_ar
 
 ###  Filtre as linhas com `altitude` maior que 1000 mm, `temperature` menor que 15 ºC e `precipitation` maior que 1000 mm, atribuindo o resultado a um novo objeto utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea35a1d" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3ceec" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -5459,7 +5482,7 @@ si_fi
 
 ### Amostre 200 linhas aleatoriamente com número de espécies maior que 15 espécies, atribuindo o resultado a um novo objeto utilizando o formato tidyverse
 
-<div class="countdown" id="timer_5ea3585b" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ea3d054" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -6223,7 +6246,7 @@ lubridate::today()
 ```
 
 ```
-## [1] "2020-04-24"
+## [1] "2020-04-25"
 ```
 
 --
@@ -6237,7 +6260,7 @@ lubridate::now()
 ```
 
 ```
-## [1] "2020-04-24 18:18:51 -03"
+## [1] "2020-04-25 02:46:29 -03"
 ```
 
 quando eu preparava essa aula...
@@ -6255,7 +6278,7 @@ agora
 ```
 
 ```
-## [1] "2020-04-24 18:18:51 -03"
+## [1] "2020-04-25 02:46:29 -03"
 ```
 --
 
@@ -6583,7 +6606,7 @@ lubridate::with_tz(agora, tzone = "GMT")
 ```
 
 ```
-## [1] "2020-04-24 21:18:51 GMT"
+## [1] "2020-04-25 05:46:29 GMT"
 ```
 
 ```r
@@ -6591,7 +6614,7 @@ lubridate::with_tz(agora, tzone = "Europe/Stockholm")
 ```
 
 ```
-## [1] "2020-04-24 23:18:51 CEST"
+## [1] "2020-04-25 07:46:29 CEST"
 ```
 --
 &lt;br&gt;&lt;br&gt;
@@ -6602,7 +6625,7 @@ lubridate::force_tz(agora, tzone = "GMT")
 ```
 
 ```
-## [1] "2020-04-24 18:18:51 GMT"
+## [1] "2020-04-25 02:46:29 GMT"
 ```
 
 ---
@@ -6625,7 +6648,7 @@ r_interval
 ```
 
 ```
-## [1] 2011-11-30 UTC--2020-04-24 UTC
+## [1] 2011-11-30 UTC--2020-04-25 UTC
 ```
 
 ```r
@@ -6704,9 +6727,9 @@ reunioes
 ```
 
 ```
-##  [1] "2020-04-24" "2020-05-01" "2020-05-08" "2020-05-15" "2020-05-22"
-##  [6] "2020-05-29" "2020-06-05" "2020-06-12" "2020-06-19" "2020-06-26"
-## [11] "2020-07-03"
+##  [1] "2020-04-25" "2020-05-02" "2020-05-09" "2020-05-16" "2020-05-23"
+##  [6] "2020-05-30" "2020-06-06" "2020-06-13" "2020-06-20" "2020-06-27"
+## [11] "2020-07-04"
 ```
 
 ---
@@ -6724,7 +6747,7 @@ r_interval
 ```
 
 ```
-## [1] 2011-11-30 UTC--2020-04-24 UTC
+## [1] 2011-11-30 UTC--2020-04-25 UTC
 ```
 --
 
@@ -6734,7 +6757,7 @@ r_interval / lubridate::dyears(1)
 ```
 
 ```
-## [1] 8.399726
+## [1] 8.402464
 ```
 
 ```r
@@ -6742,7 +6765,7 @@ r_interval / lubridate::ddays(1)
 ```
 
 ```
-## [1] 3068
+## [1] 3069
 ```
 
 ---
@@ -6759,7 +6782,7 @@ lubridate::as.period(r_interval)
 ```
 
 ```
-## [1] "8y 4m 25d 0H 0M 0S"
+## [1] "8y 4m 26d 0H 0M 0S"
 ```
 --
 
@@ -6769,7 +6792,7 @@ lubridate::as.period(namoro_interval)
 ```
 
 ```
-## [1] "11y 9m 30d 0H 0M 0S"
+## [1] "11y 10m 0d 0H 0M 0S"
 ```
 
 ---
@@ -6887,6 +6910,8 @@ purrr::map(x, sum)
 
 # 3.11 purrr
 
+&lt;br&gt;&lt;br&gt;
+
 ## Retorna double vector (numeric)
 
 ```r
@@ -6897,7 +6922,7 @@ purrr::map_dbl(x, sum)
 ## [1]  15  16 122  10
 ```
 
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;
 
 --
 

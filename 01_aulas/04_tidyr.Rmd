@@ -111,6 +111,18 @@ class: clear, inverse, center, middle
 
 ---
 
+background-image: url(img/general_data_eu_mesmo.png)
+background-size: 600px
+background-position: 50% 90%
+
+# Importar dados para gráficos
+
+## ATLANTIC AMPHIBIANS: a dataset of amphibian communities from the Atlantic Forests of South America
+
+### Eu mesmo et al. (2018)
+
+---
+
 # Importar dados para gráficos
 ```{r, warning=FALSE, message=FALSE, eval=FALSE}
 # package
@@ -209,6 +221,20 @@ class: clear, center, middle
 background-image: url(img/package_ggplot2.png)
 background-size: 400px
 background-position: 50% 50%
+
+---
+
+background-image: url(img/cheatsheet_ggplot2.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 4.1 ggplot2
+
+## Data Visualization Cheatsheet
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf
 
 ---
 
@@ -819,7 +845,7 @@ ggplot(data = da) #<<
 .pull-left[
 ```{r plot8, eval=FALSE}
 ggplot(data = da) +
-  aes(species_number) #<<
+  aes(x = species_number) #<<
 ```
 ]
 
@@ -836,7 +862,7 @@ ggplot(data = da) +
 .pull-left[
 ```{r plot9, eval=FALSE, message=FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram() #<<
 ```
 ]
@@ -854,7 +880,7 @@ ggplot(data = da) +
 .pull-left[
 ```{r plot10, eval=FALSE, message=FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_density() #<<
 ```
 ]
@@ -871,7 +897,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10) #<<
 ```
 
@@ -882,7 +908,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", out.width = "60%"}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10) #<<
 ```
 
@@ -893,7 +919,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, alpha = .5) +
   labs(x = "Número de Espécies", y = "Frequência") + #<<
   theme(axis.title = element_text(size = 24), #<<
@@ -908,7 +934,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", out.width = "60%"}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) + #<<
   labs(x = "Número de Espécies", y = "Frequência") + #<<
@@ -924,7 +950,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_density(color = "black", fill = "forest green", alpha = .5) +  #<<
   labs(x = "Número de Espécies", y = "Frequência") +
   theme(axis.title = element_text(size = 24),
@@ -939,7 +965,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", out.width = "60%"}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_density(color = "black", fill = "forest green", alpha = .5) +  #<<
   labs(x = "Número de Espécies", y = "Frequência") +
   theme(axis.title = element_text(size = 24),
@@ -975,7 +1001,7 @@ background-position: 50% 50%
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_wrap(~ record, ncol = 2, scale = "free_y") +  #<<
@@ -992,7 +1018,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", out.width = "60%"}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_wrap(~ record, ncol = 2, scale = "free_y") + #<<
@@ -1009,7 +1035,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) + #<<
@@ -1026,7 +1052,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", out.width = "60%"}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) + #<<
@@ -1044,7 +1070,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -1063,7 +1089,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", out.width = "60%"}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -1083,7 +1109,7 @@ ggplot(data = da) +
 ## ggplot2
 ```{r, eval = FALSE}
 ggplot(data = da) +
-  aes(species_number) +
+  aes(x = species_number) +
   geom_histogram(color = "black", fill = "forest green", bins = 10, 
                  alpha = .5) +
   facet_grid(record ~ .) +
@@ -2118,6 +2144,22 @@ class: clear, inverse, center, middle
 
 ---
 
+background-image: url(img/gif_data_dino_statistics.gif)
+background-size: 600px
+background-position: 50% 70%
+
+# 4.9 Gráfico de dispersão
+
+### Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing
+
+#### Justin Matejka, George Fitzmaurice
+
+<br><br><br><br><br><br><br><br><br><br>
+
+[*] https://www.autodeskresearch.com/publications/samestats
+
+---
+
 # 4.9 Gráfico de dispersão
 
 ## dino
@@ -2152,12 +2194,46 @@ datasaurus_dozen %>%
     ggplot() +
     aes(x = x, y = y) +
     geom_point(colour = "black", fill = "black", 
-               size = 5, alpha = .75, pch = 21) +
+               size = 5, pch = 21) +
     theme_classic() +
     theme(axis.title = element_text(size = 24),
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20))
 ```
+
+---
+
+# 4.9 Gráfico de dispersão
+
+## All plots
+```{r, eval = FALSE, message=FALSE, warning=FALSE}
+# all plot
+datasaurus_dozen %>% 
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point(colour = "black", fill = "black", 
+             size = 1, alpha = .75, pch = 21) +
+  facet_wrap(~dataset) +
+  theme_bw()
+```
+
+---
+
+# 4.9 Gráfico de dispersão
+
+## All plots
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.width=9, fig.height=7}
+# all plot
+datasaurus_dozen %>% 
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point(colour = "black", fill = "black", 
+             size = 1, alpha = .75, pch = 21) +
+  facet_wrap(~dataset) +
+  labs(x = "", y = "") +
+  theme_bw()
+```
+
 
 ---
 

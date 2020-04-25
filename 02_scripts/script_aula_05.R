@@ -1,489 +1,130 @@
-# -------------------------------------------------------------------------
-# aula 5 - visualizacao de dados
-
-# mauricio vancine
-# 24-10-2019
-# -------------------------------------------------------------------------
+#' ---
+#' title: aula 04 - resultados de modelos e tidymodels
+#' author: mauricio vancine
+#' date: 2020-04-26
+#' ---
 
 # topicos -----------------------------------------------------------------  
-# 5.1 tipos de dados (variaveis = colunas)
-# 5.2 principais tipos de graficos
-# 5.3 graficos no r (pacotes graphics, ggplot2 e ggpubr)
-# 5.5 histograma (histogram)
-# 5.6 grafico de setores (pie chart e danut plot)
-# 5.7 grafico de barras (bar plot)
-# 5.8 grafico de caixa (box plot)
-# 5.9 grafico de dispersao (scatter plot)
+# 5.1 Pacote broom
+# 5.2 Funções tidying do broom
+# 5.3 Aplicações
+# 5.4 Função tidy
+# 5.5 Função glance
+# 5.6 Função augment
+# 5.7 Pacote tidymodels
 
-# 5.1 Principais pacotes para gráficos ------------------------------------
-# package
-library(tidyverse)
+# data
+dplyr::glimpse(iris)
 
-# directory
-setwd("/home/mude/data/github/minicurso-r-sebio-2019/03_dados")
+# linear model
+lmfit <- lm(Sepal.Length ~ Petal.Length, iris)
+lmfit
 
-# importar
-da <- read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
-da
-
-# verificar
-glimpse(da)
-
-# graphics
-plot(species_number ~ effort_months, data = da)
-
-# ggplot2
-library(ggplot2)
-ggplot(data = da) + aes(effort_months, species_number) + geom_point()
-
-# ggpubr
-library(ggpubr)
-ggscatter(da, x = "effort_months", y = "species_number")
-
-# 5.5 histograma (histogram) ----------------------------------------------
-# graphics
-# histogram
-hist(da$species_number)
-
-# color
-hist(da$species_number,
-     col = "gray50",
-     border = "gray")
-
-# tible
-hist(da$species_number,
-     col = "gray50",
-     border = "gray",
-     main = "Ti")
-
-# labs
-hist(da$species_number,
-     col = "gray50",
-     border = "gray",
-     main = "Ti",
-     xlab = "Sp",
-     ylab = "Fr")
-
-# breacks
-hist(da$species_number,
-     col = "gray50",
-     border = "gray",
-     main = "Ti",
-     xlab = "Sp",
-     ylab = "Fr",
-     br = 50)
-
-# size
-hist(da$species_number,
-     col = "gray50",
-     border = "gray",
-     main = "Ti",
-     xlab = "Sp",
-     ylab = "Fr",
-     br = 50,
-     cex.main = 2.5,
-     cex.lab = 2.2,
-     cex.axis = 2)
-
-# sensity
-hist(da$species_number,
-     col = "gray50",
-     border = "gray",
-     main = "Ti",
-     xlab = "Sp",
-     ylab = "Fr",
-     br = 50,
-     cex.main = 2.5,
-     cex.lab = 2.2,
-     cex.axis = 2,
-     prob = TRUE)
-lines(density(da$species_number))
-
-# diretorio
-setwd("")
-
-# cria um arquivo vazio
-tiff("meu_primeiro_histograma.tif", wi = 15, he = 15, un = "cm", 
-     res = 300, comp = "lzw+p")
+# summary
+summary(lmfit)
 
 # plot
-hist(da$species_number,
-     col = "gray50",
-     border = "gray",
-     main = "Ti",
-     xlab = "Sp",
-     ylab = "Fr",
-     br = 50,
-     cex.main = 2.5,
-     cex.lab = 2.2,
-     cex.axis = 2,
-     prob = TRUE)
-lines(density(da$species_number))
+ggplot(data = iris) +
+  aes(x = Petal.Length, y = Sepal.Length) +
+  geom_point(size = 4, col = "gray30") +
+  stat_smooth(method = "lm", size = 2) +
+  theme_bw() +
+  theme(axis.title = element_text(size = 20),
+        axis.text = element_text(size = 15))
 
-# fecha o arquivo
-dev.off()
+# package
+library(broom)
 
-# ggplot2
+# componentes do modelo
+broom::tidy(lmfit)
+
+# informacoes sobre o modelo inteiro
+broom::glance(lmfit)
+
+# observacoes do modelo
+broom::augment(lmfit, data = iris)
+
+# tidymodels --------------------------------------------------------------
+# Load only the tidymodels library
+library(tidymodels)
+
 # data
-ggplot(data = da)
+dplyr::glimpse(iris)
 
-# aes
-ggplot(data = da) +
-  aes(species_number)
+# Data Sampling (rsample)
+iris_split <- rsample::initial_split(iris, prop = 0.6)
+iris_split
 
-# geom
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram()
+# train
+iris_split %>%
+  rsample::training() %>%
+  dplyr::glimpse()
 
-# density
-ggplot(data = da) +
-  aes(species_number) +
-  geom_density()
+# test
+iris_split %>%
+  rsample::testing() %>%
+  dplyr::glimpse()
 
-# change
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram(color = "black", fill = "forest green", bins = 10)
+# Pre-process interface (recipes)
+iris_recipe <- rsample::training(iris_split) %>%
+  recipes::recipe(Species ~.) %>%
+  recipes::step_corr(all_predictors()) %>%
+  recipes::step_center(all_predictors(), -all_outcomes()) %>%
+  recipes::step_scale(all_predictors(), -all_outcomes()) %>%
+  recipes::prep()
+iris_recipe
 
-# theme
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram(color = "black", fill = "forest green", bins = 10, alpha = .5) +
-  labs(x = "Número de Espécies", y = "Frequência") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
+# Execute the pre-processing (recipes)
+# test data
+iris_testing <- iris_recipe %>%
+  recipes::bake(rsample::testing(iris_split)) 
+dplyr::glimpse(iris_testing)
 
-# density
-ggplot(data = da) +
-  aes(species_number) +
-  geom_density(color = "black", fill = "forest green", alpha = .5) + 
-  labs(x = "Número de Espécies", y = "Frequência") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
+# train data
+iris_training <- recipes::juice(iris_recipe)
+dplyr::glimpse(iris_training)
 
-# facet
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram(color = "black", fill = "forest green", bins = 10, 
-                 alpha = .5) +
-  facet_wrap(~ record, ncol = 2, scale = "free_y") +
-  labs(x = "Número de Espécies", y = "Frequência") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
+# Model Training (parsnip)
+iris_rf <- parsnip::rand_forest(trees = 100, mode = "classification") %>%
+  parsnip::set_engine("randomForest") %>%
+  parsnip::fit(Species ~ ., data = iris_training)
 
-# facet
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram(color = "black", fill = "forest green", bins = 10, 
-                 alpha = .5) +
-  facet_grid(record ~ .) +
-  labs(x = "Número de Espécies",
-       y = "Frequência") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
+# Predictions
+stats::predict(iris_rf, iris_testing)
 
-# theme_
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram(color = "black", fill = "forest green", bins = 10, 
-                 alpha = .5) +
-  facet_grid(record ~ .) +
-  labs(x = "Número de Espécies",
-       y = "Frequência") +
-  theme_bw() +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
+iris_rf %>%
+  stats::predict(iris_testing) %>%
+  dplyr::bind_cols(iris_testing) %>%
+  dplyr::glimpse()
 
-# export
-ggplot(data = da) +
-  aes(species_number) +
-  geom_histogram(color = "black", fill = "forest green", bins = 10,
-                 alpha = .5) +
-  facet_grid(record ~ .) +
-  labs(x = "Número de Espécies",
-          y = "Frequência") +
-  theme_bw() +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
-ggsave("histogram_ggplot2.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+# Model Validation (yardstick)
+iris_rf %>%
+  stats::predict(iris_testing) %>%
+  dplyr::bind_cols(iris_testing) %>%
+  yardstick::metrics(truth = Species, estimate = .pred_class)
 
-# ggpubr
-gghistogram(data = da, 
-            x = "species_number",
-            add = "median",
-            fill = "steelblue",
-            rug = TRUE,
-            add_density = TRUE,
-            xlab = "Número de espécies",
-            ylab = "Frequeência absoluta")
+# Per classifier metrics
+iris_probs <- iris_rf %>%
+  stats::predict(iris_testing, type = "prob") %>%
+  dplyr::bind_cols(iris_testing)
+dplyr::glimpse(iris_probs)
 
-# export
-gghistogram(data = da,
-            x = "species_number",
-            add = "median",
-            fill = "steelblue",
-            rug = TRUE,
-            add_density = TRUE,
-            xlab = "Número de espécies",
-            ylab = "Frequeência absoluta")
-ggsave("histogram_ggpubr.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+iris_probs %>%
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %>%
+  dplyr::glimpse()
 
+iris_probs%>%
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>%
+  ggplot2::autoplot()
 
-# 5.6 grafico de setores (pie chart) --------------------------------------
-# graphics
-# frequence table
-ta <- table(da$record)
-ta <- round(ta/sum(ta) * 100, 2)
-ta
+predict(iris_rf, iris_testing, type = "prob") %>%
+  dplyr::bind_cols(predict(iris_rf, iris_testing)) %>%
+  dplyr::bind_cols(select(iris_testing, Species)) %>%
+  dplyr::glimpse()
 
-# pie chart
-pie(ta,
-    labels = paste(ta, "%"),
-    main = "Tipos de amostragens",
-    col = c("steelblue", "brown"))
-legend("topright", c("Abundância", "Composição"), 
-       cex = 0.8, fill = c("steelblue", "brown"))
-
-# ggplot2
-# frequence table as data frame
-ta_por <- ta %>%
-  as.data.frame %>% 
-  mutate(Amostragem = c("Abundância", "Composição"),
-         porc = paste0(Freq, "%"))
-ta_por
-
-# pie chart
-ggplot(ta_por) +
-  aes(x = "", y = Freq, fill = Amostragem) +
-  geom_bar(width = 1, stat = "identity", color = "white") +
-  coord_polar("y", start = 0) +
-  geom_text(aes(label = porc), color = "white", 
-            position = position_stack(vjust = 0.5), size = 8) +
-  scale_fill_manual(values = c(c("#0073C2FF", "#EFC000FF"))) +
-  theme_void()
-
-# ggpubr
-# pie chart
-ggpie(ta_por,
-      "Freq", 
-      label = "porc",
-      lab.pos = "in", 
-      lab.font = c(8, "white"),
-      fill = "Amostragem", 
-      color = "white",
-      palette = c("#00AFBB", "#FC4E07"))
-
-# 5.6 grafico de setores (donut chart) ------------------------------------
-# ggplot2
-# donut
-ggplot(ta_por) +
-  aes(x = 2, y = Freq, fill = Amostragem) +
-  geom_bar(stat = "identity", color = "white") +
-  xlim(0, 2.5) +
-  coord_polar(theta ="y", start = 0) +
-  geom_text(aes(label = porc), color = "white", 
-            position = position_stack(vjust = 0.5), size = 5) +
-  scale_fill_manual(values = c(c("#0073C2FF", "#EFC000FF"))) +
-  theme_void() +
-  theme(legend.position = c(.5, .5),
-        legend.title = element_text(size = 20),
-        legend.text = element_text(size = 15))
-
-# ggpubr
-# pie
-ggdonutchart(ta_por,
-             "Freq", 
-             label = "porc",
-             lab.pos = "in", 
-             lab.font = c(7, "white"),
-             fill = "Amostragem", 
-             color = "white",
-             palette = c("#00AFBB", "#FC4E07"))
-
-
-# 5.7 grafico de barras (bar plot) ----------------------------------------
-# frequency table
-ta <- table(da$record)
-names(ta) <- c("Abundância", "Composição")
-ta
-
-# graphics
-barplot(ta, 
-        col = c("blue", "forest green"),
-        main = "Frequência de tipos de amostragens",
-        xlab = "Tipo de registro",
-        ylab = "Frequência",
-        cex.main = 1.5,
-        cex.lab = 1.3,
-        cex.axis = 1.2)
-
-# frequency table as data frame
-ta_por <- ta %>% 
-  as.data.frame
-colnames(ta_por) <- c("record", "freq")
-ta_por
-
-# ggplot2
-ggplot(data = ta_por) +
-  aes(x = record, y = freq) +
-  geom_bar(fill = c("blue", "forest green"), stat = "identity") +
-  geom_text(aes(x = record, y = freq, label = freq), size = 8, color = "white", vjust = 2) +
-  labs(x = "Tipo de registro",
-       y = "Frequência") +
-  theme_classic() +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
-
-# ggpubr
-ggbarplot(ta_por,
-          x = "record",
-          y = "freq", 
-          fill = "record", 
-          color = "record",
-          palette = c("#00AFBB", "#FC4E07"),
-          label = TRUE, 
-          lab.pos = "in", 
-          lab.col = "white",
-          lab.size = 8,
-          xlab = "Tipo de registro",
-          ylab = "Frequeência absoluta",
-          legend = "none")
-
-
-# 5.8 grafico de caixa (box plot) -----------------------------------------
-# graphics
-boxplot(species_number ~ as.factor(record),
-        data = da,
-        col = "gray",
-        border = "black",
-        main = "Espécies por amostragens",
-        xlab = "Tipo de registro",
-        ylab = "Número de Espécies",
-        cex.main = 1.5,
-        cex.lab = 1.3,
-        cex.axis = 1.2)
-
-# ggplot2
-# boxplot
-ggplot(data = da) +
-  aes(x = record, y = species_number) +
-  geom_boxplot(fill = c("blue", "forest green"), color = "black") +
-  labs(x = "Tipo de registro",
-       y = "Número de espécies") +
-  theme_classic() + 
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
-
-# boxplot with jitter
-ggplot(data = da) +
-  aes(x = record, y = species_number) +
-  geom_boxplot(fill = c("blue", "forest green"), color = "black") +
-  geom_jitter(width = .3, alpha = .4) +
-  labs(x = "Tipo de registro",
-       y = "Número de espécies") +
-  theme_classic() +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
-
-# violin
-ggplot(data = da) +
-  aes(x = record, y = species_number) +
-  geom_violin(aes(fill = record), color = "black") +
-  scale_fill_manual(values = c("blue", "forest green")) +
-  geom_jitter(width = .3, alpha = .3) +
-  labs(x = "Tipo de registro",
-       y = "Número de espécies") +
-  theme_classic() +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
-
-# ggpubr
-# boxplot
-ggboxplot(data = da, 
-          x = "record", 
-          y = "species_number",
-          xlab = "Número de espécies",
-          ylab = "Frequeência absoluta")
-
-# boxplot
-ggboxplot(data = da, 
-          x = "record", 
-          y = "species_number",
-          fill = "record",
-          palette = c("#00AFBB", "#FC4E07"),
-          xlab = "Número de espécies",
-          ylab = "Frequeência absoluta",
-          legend = "none")
-
-# boxplot with jitter
-ggboxplot(data = da, 
-          x = "record", 
-          y = "species_number",
-          add = "jitter", 
-          shape = "record",
-          fill = "record",
-          color = "black",
-          palette = c("#00AFBB", "#FC4E07"),
-          xlab = "Número de espécies",
-          ylab = "Frequeência absoluta",
-          legend = "none")
-
-# violin
-ggviolin(data = da, 
-         x = "record", 
-         y = "species_number",
-         add = "jitter", 
-         shape = "record",
-         fill = "record",
-         color = "black",
-         palette = c("#00AFBB", "#FC4E07"),
-         xlab = "Número de espécies",
-         ylab = "Frequeência absoluta",
-         legend = "none")
-
-
-# 5.9 grafico de dispersao (scatter plot) ---------------------------------
-# graphics
-plot(species_number ~ effort_months,
-     data = da,
-     pch = 20,
-     xlab = "Esforço amostral",
-     ylab = "Número de espécies",
-     cex.lab = 1.5,
-     cex.axis = 1.3,
-     bty = "l")
-
-# ggplot2
-ggplot(data = da) +
-  aes(x = effort_months, y = species_number) +
-  geom_point(colour = "black", fill = "forest green", size = 5, 
-             alpha = .5, pch = 21) +
-  labs(x = "Esforço amostral", y = "Número de espécies") +
-  theme_classic() +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20))
-
-# ggpubr
-ggscatter(data = da,
-          x = "effort_months", 
-          y = "species_number",
-          color = "black",
-          fill = "forestgreen",
-          shape = 21, 
-          size = 5,
-          xlab = "Esforço amostral", 
-          ylab = "Número de espécies")
+predict(iris_rf, iris_testing, type = "prob") %>%
+  dplyr::bind_cols(predict(iris_rf, iris_testing)) %>%
+  dplyr::bind_cols(select(iris_testing, Species)) %>%
+  yardstick::metrics(Species, .pred_setosa:.pred_virginica, estimate = .pred_class)
 
 # end ---------------------------------------------------------------------

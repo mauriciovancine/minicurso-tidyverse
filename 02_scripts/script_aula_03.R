@@ -24,6 +24,9 @@
 # carregar o pacote
 library(tidyverse)
 
+# list all packages in the tidyverse 
+tidyverse::tidyverse_packages(include_self = TRUE)
+
 # 3.2 magrittr (pipe - %>%) -----------------------------------------------
 # sem pipe
 sqrt(sum(1:100))
@@ -100,8 +103,8 @@ tibble::glimpse(si)
 df <- data.frame(ch = c("a", "b"), nu = 1:2)
 str(df)
 
-tb <- tibble(ch = c("a", "b"), nu = 1:2)
-glimpse(tb)
+tb <- tibble::tibble(ch = c("a", "b"), nu = 1:2)
+tibble::glimpse(tb)
 
 # 2. A indexação com colchetes retorna um tibble
 df_ch <- df[, 1]

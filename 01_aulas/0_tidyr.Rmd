@@ -264,34 +264,42 @@ background-position: 85% 75%
 
 ---
 
-background-image: url(img/package_broom.png)
-background-size: 250px
-background-position: 85% 75%
+background-image: url(img/package_broom.png), url(img/package_tidymodels.png)
+background-size: 200px, 200px
+background-position: 50% 60%, 85% 90%
 
 # Minicurso
 
 ## Conteúdo
 
-### 5 Modelos, tidyverse e tidymodels
+### 5 Resultados de modelos e tidymodels
 5.1 Pacote broom
 <br>
-5.2 Modelos lineares 
+5.2 Funções tidying do broom
 <br>
-5.3 Famílias de distribuição (Gaussiana, Binomial e Poisson)
+5.3 Aplicações
 <br>
-5.4 Funções de ligação
+5.4 Função tidy
 <br>
-5.5 Ajuste dos modelos
+5.5 Função glance
 <br>
-5.6 Avaliação do ajuste dos modelos
+5.6 Função augment
 <br>
-5.7 Seleção de modelos (AIC)
+5.7 Pacote tidymodels
+<br>
+5.8 Pacote rsample
+<br>
+5.9 Pacote recipes
+<br>
+5.10 Pacote parsnip
+<br>
+5.11 Pacote yardstick
 
 ---
 
-background-image: url(img/rmarkdown_output_formats.png)
-background-size: 300px
-background-position: 85% 80%
+background-image: url(img/rmarkdown_output_formats.png), url(img/package_rmarkdown.png), url(img/package_knitr.png)
+background-size: 300px, 150px, 150px
+background-position: 85% 80%, 10% 95%, 35% 95%
 
 # Minicurso
 

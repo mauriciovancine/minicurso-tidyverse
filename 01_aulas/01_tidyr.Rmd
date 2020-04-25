@@ -136,6 +136,20 @@ background-position: 80% 80%
 
 ---
 
+background-image: url(img/cheatsheet_base_r.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 1.1 Base R
+
+## Base R
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+[*] http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf
+
+---
+
 background-image: url(img/r_vs_rstudio.png)
 background-size: 600px
 background-position: 50% 75%
@@ -157,6 +171,20 @@ background-size: 800px
 background-position: 50% 50%
 
 # 1.2 RStudio
+
+---
+
+background-image: url(img/cheatsheet_rstudio_ide.png)
+background-size: 600px
+background-position: 50% 50%
+
+# 1.2 RStudio
+
+## RStudio IDE Cheatsheet
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+[*] https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
 
 ---
 

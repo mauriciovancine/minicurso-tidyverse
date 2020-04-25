@@ -1,8 +1,8 @@
 ---
 title: "Introdução ao tidyverse <br><br>"
-subtitle: "5 Modelos, tidyverse e tidymodels <br><br> xaringan [presentation ninja]"
+subtitle: "5 Resultados de modelos e tidymodels <br><br> xaringan [presentation ninja]"
 author: "Maurício Vancine"
-date: "25/04/2019"
+date: "26/04/2019"
 output:
   xaringan::moon_reader:
     css: [metropolis]
@@ -17,713 +17,494 @@ output:
 
 ```{r, setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(tidyverse)
 ```
 
 class: clear, center, middle
-background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/plot_poiss.png)
-background-size: 700px
+background-image: url(img/package_broom.png)
+background-size: 400px
 background-position: 50% 50%
 
 ---
 
-# 8 Modelos Lineares Generalizados (GLM)
-## Tópicos
-8.1 Modelos Lineares (LM)
+background-image: url(img/package_broom.png), url(img/package_tidymodels.png)
+background-size: 250px, 250px
+background-position: 45% 90%, 90% 90%
+
+# 5 Modelos, tidyverse e tidymodels
+
+## Conteúdo
+5.1 Pacote broom
 <br>
-8.2 Modelos Lineares Generalizados (GLM)
+5.2 Funções tidying do broom
 <br>
-8.3 Famílias de distribuição (Gaussiana, Binomial, Poisson)
+5.3 Aplicações
 <br>
-8.4 Funções de ligação
+5.4 Função tidy
 <br>
-8.5 Ajuste dos modelos
+5.5 Função glance
 <br>
-8.6 Ajuste dos modelos no R
+5.6 Função augment
 <br>
-8.7 Seleção de modelos (AIC)
+5.7 Pacote tidymodels
+<br>
+5.8 Pacote rsample
+<br>
+5.9 Pacote recipes
+<br>
+5.10 Pacote parsnip
+<br>
+5.11 Pacote yardstick
 
 ---
 
-background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/glm_livro.png)
-background-size: 250px
-background-position: 50% 70%
+# 5 Modelos, tidyverse e tidymodels
 
-# 8 Modelos Lineares Generalizados (GLM)
+## Script
 
-## Livros
+<br><br><br><br><br><br>
 
-### **Modelos Lineares Generalizados e Extensões (2013)**
-
-### Gauss Moutinho Cordeiro e Clarice G.B. Demétrio
-
-<br><br><br><br><br><br><br><br><br><br><br>
-
-[*] http://www.esalq.usp.br/departamentos/lce/arquivos/aulas/2013/LCE5868/livro.pdf
+## .center[`script_aula_05.R`]
 
 ---
 
-background-image: url(https://press.princeton.edu/sites/default/files/styles/large/public/covers/9780691125220_0.png?itok=3jLmBQjA)
-background-size: 250px
-background-position: 50% 70%
+# 5.1 Pacote broom
 
-# 8 Modelos Lineares Generalizados (GLM)
+### Resume informações importantes sobre modelos em tidy tibbles
 
-## Livros
+<br>
 
-### **Ecological Models and Data in R (2008)**
+--
 
-### Ben Bolker
+### Organiza mais de 100 modelos de pacotes de modelagem populares e quase todos os objetos de saída de modelos que acompanha o Base R
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br>
 
-[*] https://ms.mcmaster.ca/~bolker/emdbook/index.html
+--
 
----
-
-background-image: url(https://images.tandf.co.uk/common/jackets/amazon/978113874/9781138741515.jpg)
-background-size: 220px
-background-position: 50% 65%
-
-# 8 Modelos Lineares Generalizados (GLM)
-
-## Livros
-
-### **An Introduction to Generalized Linear Models (2018)**
-
-### Annette J. Dobson e Adrian G. Barnett
-
-<br><br><br><br><br><br><br><br><br><br><br>
-
-[*] https://www.crcpress.com/An-Introduction-to-Generalized-Linear-Models/Dobson-Barnett/p/book/9781138741515
+### Atualmente, os seguintes métodos estão disponíveis no **broom**: https://broom.tidyverse.org/articles/available-methods.html
 
 ---
 
-background-image: url(https://images.springer.com/sgw/books/medium/9780387874579.jpg)
-background-size: 200px
+# 5.2 Funções tidying do broom
+
+### O pacote **broom** fornece três funções para transformar modelos em data frames *tidy*:
+
+<br>
+
+### *broom::tidy()*: resume informações sobre os componentes do modelo
+
+--
+
+### *broom::glance()*: apresenta informações sobre o modelo inteiro
+
+--
+
+### *broom::augment()*: informações sobre observações do modelo
+
+---
+
+background-image: url(img/general_iris_data.png)
+background-size: 700px
+background-position: 50% 98%
+
+# 5.3 Aplicações
+
+## iris data
+```{r}
+# data
+dplyr::glimpse(iris)
+```
+
+---
+
+# 5.3 Aplicações
+
+## Modelo Linear (LM)
+```{r}
+# linear model
+lmfit <- lm(Sepal.Length ~ Petal.Length, iris)
+lmfit
+```
+
+---
+
+# 5.3 Aplicações
+
+### Modelo Linear (LM)
+```{r,size='small'}
+summary(lmfit)
+```
+
+---
+
+# 5.3 Aplicações
+
+## Modelo Linear (LM)
+```{r,echo=FALSE,message=FALSE,fig.align='center'}
+# plot
+ggplot(data = iris) +
+  aes(x = Petal.Length, y = Sepal.Length) +
+  geom_point(size = 4, col = "gray30") +
+  stat_smooth(method = "lm", size = 2) +
+  theme_bw() +
+  theme(axis.title = element_text(size = 20),
+        axis.text = element_text(size = 15))
+```
+
+---
+
+# 5.4 Função tidy
+
+### Informações sobre os componentes do modelo
+
+```{r}
+# package
+library(broom)
+
+# componentes do modelo
+broom::tidy(lmfit)
+```
+
+---
+
+# 5.5 Função glance
+
+## Informações sobre o modelo inteiro
+
+```{r}
+# package
+library(broom)
+
+# informacoes sobre o modelo inteiro
+broom::glance(lmfit)
+```
+
+---
+
+# 5.6 Função augment
+
+## Informações sobre observações do modelo
+
+```{r}
+# package
+library(broom)
+
+# observacoes do modelo
+broom::augment(lmfit)
+```
+
+---
+
+# 5.6 Função augment
+
+###  Add informações sobre observações do modelo aos dados
+
+```{r}
+# package
+library(broom)
+
+# observacoes do modelo
+broom::augment(lmfit, data = iris)
+```
+
+---
+
+class: clear, center, middle
+background-image: url(img/package_tidymodels.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+background-image: url(img/tidymodels_site.png)
+background-size: 650px
 background-position: 50% 75%
 
-# 8 Modelos Lineares Generalizados (GLM)
+# 5.7 Pacote tidymodels
 
-## Livros
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### **Mixed Effects Models and Extensions in Ecology with R**<sup>*</sup>
-
-### Alain Zuur, Elena Ieno, Neil Walker, Anatoly Saveliev e Graham Smith
-
-<br><br><br><br><br><br><br><br><br>
-
-[*] http://highstat.com/index.php/mixed-effects-models-and-extensions-in-ecology-with-r
+[*] https://www.tidymodels.org/
 
 ---
 
-# 8.1 Modelos Lineares (LM)
+background-image: url(img/tidymodels_structure.png)
+background-size: 850px
+background-position: 50% 60%
 
-## Modelos Lineares (LM)
+# 5.7 Pacote tidymodels
 
-### Nossas análises nem sempre atendem aos **pressupostos** dos **modelos lineares**
+### Coleção de pacotes para **modelagem e aprendizado de máquina** usando princípios do **tidyverse**
 
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
---
-
-### 1. Linearidade
-### 2. Independência
-### **3. Homocedasticidade**
-### **4. Normalidade**
+[*] https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/
 
 ---
 
-# 8.2 Modelos Lineares Generalizados (GLM)
-
-### Os GLMs foram propostos por **Nelder and Wedderburn** (1972) como uma extensão do modelo linear normal
-
---
-
-### São modelos para análise de dados em que a **variância não é constante** ou o **erro do modelo** não tem uma **distribuição gaussiana (normal)**
-
---
-
-### A modelagem não é feita de forma direta, sendo necessário escolher uma **família de distribuição** da **variável Y**
-
---
-
-### Eles possibilitam utilizar **outras distribuições** para os erros e uma **função de ligação** que relaciona a **variável resposta (X)** à combinação linear das **variáveis preditoras (Y)**
-
----
-
-# 8.2 Modelos Lineares Generalizados (GLM)
-
-## Devemos considerar o **uso dos GLMs** quando a **variável resposta (Y)** geralmente for:
-
-<br><br>
-
-### contagem expressa em proporções (porcentagem)
-### contagens simples (abundância de espécies)
-### variáveis binárias (morto ou vivo)
-### tempo para o evento ocorrer (modelos de sobrevivência)
-
----
-
-# 8.2 Modelos Lineares Generalizados (GLM)
-
-## Ao utilizar um GLM, devemos definir:
-
-<br><br><br>
-
-### 1. o comportamento (distribuição) da variável resposta (Y)
-
---
-
-### 2. as variáveis preditoras (X)
-
---
-
-### 3. a **função de ligação** que irá ligar as variáveis preditoras (X) à variável resposta (Y)
-
----
-
-# 8.3 Famílias de distribuição
-
-## Tipos de resposta e distribuições
-
-<br><br><br>
-
-### **Medidas**: distribuição Gaussiana
-
-### **Binária**: distribuição Binomial
-
-### **Contagem**: distribuição de Poisson
-
----
-
-background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/tabela_glm.png)
-background-size: 700px
-background-position: 50% 50%
-
-# 8.4 Funções de ligação
-
----
-
-# 8.5 Ajuste dos modelos
-
-<br><br>
-
-## Inferência baseada na teoria assintótica de **máxima verossimilhança**
-
---
-<br>
-
-## Não tem **valor de p** nem **R<sup>2</sup>** para o modelo!!!
-
---
-
-<br>
-
-## Mas podemos **calcular** valores ajustados
-
----
-
-background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/maxi1.png)
-background-size: 600px
-background-position: 50% 50%
-
-# 8.5 Ajuste dos modelos
-
----
-
-background-image: url(https://raw.githubusercontent.com/mauriciovancine/curso-r/master/imagens/maxi2.png)
-background-size: 600px
-background-position: 50% 50%
-
-# 8.5 Ajuste dos modelos
-
----
-
-# 8.6 Ajuste dos modelos no R
-
-### No R, utilizamos a função 
-`glm()`
-
---
-
-### Fórmula: 
-`formula: y ∼ x1 + x2 + ... `
-
---
-
-### Famílias de distribuiao
-`family: gaussian(link = identity)`
-
-`family: binomial(link = logit)`
-
-`family: poisson(link = log)`
-
---
-
-### Verificar as estatísticas dos modelos
-`summary()`
-
----
-
-background-image: url(https://www.rstudio.com/wp-content/uploads/2014/04/broom.png)
-background-size: 400px
+background-image: url(img/tidymodels_process.png)
+background-size: 850px
 background-position: 50% 70%
 
-# 8.6 Ajuste dos modelos no R
+# 5.7 Pacote tidymodels
 
-## Podemos ainda retornar usando o pacote `broom`
+## Principais Pacotes
+- rsample - Diferentes tipos de reamostragens
+- recipes - Transformações para pré-processamento de dados do modelo
+- parnip - Uma interface comum para criação de modelo
+- yardstick - Medir o desempenho do modelo
 
-`tidy()`
+<br><br><br><br><br><br><br><br><br><br>
 
-`augment()`
-
-`glance()`
-
----
-
-background-image: url(https://octodex.github.com/images/octobiwan.jpg)
-background-size: 250px
-background-position: 50% 90%
-
-# Dados do GitHub
-
-## Dados do **GitHub**
-
-`https://github.com/mauriciovancine/curso-r/tree/master/data`
-
-`dados_anfíbios.csv -> Raw -> Copia o link`
-
-```{r, results = FALSE, message = FALSE}
-library(tidyverse)
-
-da <- read_csv("https://raw.githubusercontent.com/mauriciovancine/curso-r/master/data/dados_anfibios.csv")
-da
-```
+[*] https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+# 5.7 Pacote tidymodels
 
-## GLM - gaussiano
 ```{r}
-mo.glm.ga <- glm(tam_medio_femur ~ pct_flo,
-                 family = gaussian, 
-                 data = da)
-mo.glm.ga
+library(tidymodels)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/general_iris_data.png)
+background-size: 700px
+background-position: 50% 98%
+
+# 5.7 Pacote tidymodels
+
+## iris data
 ```{r}
-# coeficientes
-library(broom)
-tidy(mo.glm.ga)
+# data
+dplyr::glimpse(iris)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_rsample.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.8 Pacote rsample
+
+### Data Sampling
+
 ```{r}
-# valores ajustados e residuos
-augment(mo.glm.ga)
+# Data Sampling (rsample)
+iris_split <- rsample::initial_split(iris, prop = 0.6)
+iris_split
 ```
 
 ---
 
-class: clear, inverse, center, middle
+background-image: url(img/package_rsample.png)
+background-size: 100px
+background-position: 90% 90%
 
-# Para os amantes do **p-value**...
+# 5.8 Pacote rsample
 
----
+### Data Sampling
 
-# 8.6 Ajuste dos modelos no R
-```{r, message=FALSE, warning=FALSE}
-# valor p de um modelo pelo teste da razão da verossimilhança
-library(lmtest)
-lrtest(mo.glm.ga)
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
 ```{r}
-# coeficiente de determinacao
-glance(mo.glm.ga)
+# train
+iris_split %>%
+  rsample::training() %>%
+  dplyr::glimpse()
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_rsample.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.8 Pacote rsample
+
+### Data Sampling
+
 ```{r}
-# coeficiente de determinacao
-library(rcompanion)
-nagelkerke(mo.glm.ga)
+# test
+iris_split %>%
+  rsample::testing() %>%
+  dplyr::glimpse()
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
-## Plot
-```{r, eval=FALSE, fig.align='center'}
-ggplot(data = da) +
-  aes(x = pct_flo, y = tam_medio_femur) +
-  stat_smooth(method = "glm", method.args = list(family = "gaussian"), #<<
-              col = "black", level = .95) + #<<
-  geom_point(shape = 21, size = 5, col = "black", 
-             fill = "forestgreen", alpha = .8) +
-  theme_classic() +
-  labs(x = "Porcentagem de floresta (%)",
-          y = "Tamanho do fêmur") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-```
+background-image: url(img/package_recipes.png)
+background-size: 100px
+background-position: 90% 72%
 
----
+# 5.9 Pacote recipes
 
-# 8.6 Ajuste dos modelos no R
-## Plot
-```{r, echo=FALSE, fig.align='center'}
-ggplot(data = da) +
-  aes(x = pct_flo, y = tam_medio_femur) +
-  stat_smooth(method = "glm", method.args = list(family = "gaussian"), #<<
-              col = "black", level = .95) + #<<
-  geom_point(shape = 21, size = 5, col = "black", fill = "forestgreen", 
-             alpha = .8) +
-  theme_classic() +
-  labs(x = "Porcentagem de floresta (%)",
-          y = "Tamanho do fêmur") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-
-## Pressupostos dos modelos
-```{r, fig.align='center', fig.dim=c(5.5,5.5)}
-# pressupostos do modelo
-par(mfrow  = c(2, 2))
-plot(mo.glm.ga)
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-
-## GLM - binomial ou Regressão logística
 ```{r}
-mo.glm.bi <- glm(pres_inv ~ pct_flo,
-                 family = binomial("logit"), 
-                 data = da)
-mo.glm.bi
+# Pre-process interface (recipes)
+iris_recipe <- rsample::training(iris_split) %>%
+  recipes::recipe(Species ~.) %>%
+  recipes::step_corr(all_predictors()) %>%
+  recipes::step_center(all_predictors(), -all_outcomes()) %>%
+  recipes::step_scale(all_predictors(), -all_outcomes()) %>%
+  recipes::prep()
+iris_recipe
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_recipes.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.9 Pacote recipes
+
 ```{r}
-# coeficientes
-library(broom)
-tidy(mo.glm.bi)
+# test data
+iris_testing <- iris_recipe %>%
+  recipes::bake(rsample::testing(iris_split)) 
+dplyr::glimpse(iris_testing)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_recipes.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.9 Pacote recipes
+
 ```{r}
-# valores ajustados e residuos
-augment(mo.glm.bi)
+# train data
+iris_training <- recipes::juice(iris_recipe)
+dplyr::glimpse(iris_training)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_parsnip.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.10 Pacote parsnip
+
 ```{r}
-# valor p de um modelo pelo teste da razão da verossimilhanca
-lrtest(mo.glm.bi)
+# Model Training (parsnip)
+iris_rf <- parsnip::rand_forest(trees = 100, mode = "classification") %>%
+  parsnip::set_engine("randomForest") %>%
+  parsnip::fit(Species ~ ., data = iris_training)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_parsnip.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.10 Pacote parsnip
 ```{r}
-# coeficiente de determinacao
-glance(mo.glm.bi)
+# Predictions
+stats::predict(iris_rf, iris_testing)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_parsnip.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.10 Pacote parsnip
 ```{r}
-# coeficiente de determinacao
-nagelkerke(mo.glm.bi)
+iris_rf %>%
+  stats::predict(iris_testing) %>%
+  dplyr::bind_cols(iris_testing) %>%
+  dplyr::glimpse()
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
-## Plot
-```{r, eval=FALSE, fig.align='center'}
-ggplot(data = da) +
-  aes(x = pct_flo, y = pres_inv) +
-  stat_smooth(method = "glm", method.args = list(family = "binomial"), #<<
-              col = "black", level = .95) + #<<
-  geom_point(shape = 21, size = 5, col = "black", fill = "red", alpha = .8) +
-  theme_classic() +
-  labs(x = "Porcentagem de floresta (%)",
-          y = "Espécie invasora") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-```
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
 
----
-
-# 8.6 Ajuste dos modelos no R
-## Plot
-```{r, echo=FALSE, fig.align='center'}
-ggplot(data = da) +
-  aes(x = pct_flo, y = pres_inv) +
-  stat_smooth(method = "glm", method.args = list(family = "binomial"), #<<
-              col = "black", level = .95) + #<<
-  geom_point(shape = 21, size = 5, col = "black", fill = "red", alpha = .8) +
-  theme_classic() +
-  labs(x = "Porcentagem de floresta (%)",
-          y = "Espécie invasora") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-
-## Pressupostos dos modelos
-```{r, fig.align='center', fig.dim=c(5.5,5.5)}
-# pressupostos do modelo
-par(mfrow  = c(2, 2))
-plot(mo.glm.bi)
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-
-## GLM - poisson
+# 5.11 Pacote tyardstick
 ```{r}
-mo.glm.po <- glm(n_sp ~ pct_flo,
-                 family = poisson, 
-                 data = da)
-mo.glm.po
+# Model Validation (yardstick)
+iris_rf %>%
+  stats::predict(iris_testing) %>%
+  dplyr::bind_cols(iris_testing) %>%
+  yardstick::metrics(truth = Species, estimate = .pred_class)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
 ```{r}
-# coeficientes
-tidy(mo.glm.po)
+# Per classifier metrics
+iris_probs <- iris_rf %>%
+  stats::predict(iris_testing, type = "prob") %>%
+  dplyr::bind_cols(iris_testing)
+dplyr::glimpse(iris_probs)
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
 ```{r}
-# valores ajustados e residuos
-augment(mo.glm.po)
+iris_probs %>%
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %>%
+  dplyr::glimpse()
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+# 5.11 Pacote tyardstick
+```{r,fig.align='center',fig.width=11,fig.height=5}
+iris_probs %>%
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>%
+  ggplot2::autoplot()
+```
+
+---
+
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
 ```{r}
-# valor p de um modelo pelo teste da razão da verossimilhanca
-lrtest(mo.glm.po)
+predict(iris_rf, iris_testing, type = "prob") %>%
+  dplyr::bind_cols(predict(iris_rf, iris_testing)) %>%
+  dplyr::bind_cols(select(iris_testing, Species)) %>%
+  dplyr::glimpse()
 ```
 
 ---
 
-# 8.6 Ajuste dos modelos no R
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
 ```{r}
-# coeficiente de determinacao
-glance(mo.glm.po)
+predict(iris_rf, iris_testing, type = "prob") %>%
+  dplyr::bind_cols(predict(iris_rf, iris_testing)) %>%
+  dplyr::bind_cols(select(iris_testing, Species)) %>%
+  metrics(Species, .pred_setosa:.pred_virginica, estimate = .pred_class)
 ```
-
----
-
-# 8.6 Ajuste dos modelos no R
-```{r}
-# coeficiente de determinacao
-nagelkerke(mo.glm.po)
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-## Plot
-```{r, eval=FALSE, fig.align='center'}
-ggplot(data = da) +
-  aes(x = pct_flo, y = n_sp) +
-  stat_smooth(method = "glm", method.args = list(family = "poisson"), #<<
-              col = "black", level = .95) + #<<
-  geom_point(shape = 21, size = 5, col = "black", 
-             fill = "blue", alpha = .8) +
-  theme_classic() +
-  labs(x = "Porcentagem de floresta (%)",
-          y = "Número de espécies") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-## Plot
-```{r, echo=FALSE, fig.align='center'}
-ggplot(data = da) +
-  aes(x = pct_flo, y = n_sp) +
-  stat_smooth(method = "glm", method.args = list(family = "poisson"), #<<
-              col = "black", level = .95) + #<<
-  geom_point(shape = 21, size = 5, col = "black", 
-             fill = "blue", alpha = .8) +
-  theme_classic() +
-  labs(x = "Porcentagem de floresta (%)",
-          y = "Número de espécies") +
-  theme(axis.title = element_text(size = 24),
-        axis.text.x = element_text(size = 20),
-        axis.text.y = element_text(size = 20),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-```
-
----
-
-# 8.6 Ajuste dos modelos no R
-
-## Pressupostos dos modelos
-```{r, fig.align='center', fig.dim=c(5.5,5.5)}
-# pressupostos do modelo
-par(mfrow  = c(2, 2))
-plot(mo.glm.ga)
-```
-
----
-
-class: clear, inverse, center, middle
-
-# Agora uma quebra de paradigma!
-
----
-
-class: clear, inverse, center, middle
-
-# Vamos testar várias hipóteses ao mesmo tempo!
-
----
-
-class: clear, inverse, center, middle
-background-image: url(https://media.giphy.com/media/EvWx1BeeRyyJi/giphy.gif)
-background-size: 500px
-background-position: 50% 50%
-
----
-
-background-image: url(https://wikimedia.org/api/rest_v1/media/math/render/svg/5c6aebcc42fdb3b423867af9b3ce63d4e5b70d4b)
-background-size: 400px
-background-position: 50% 80%
-
-# 8.7 Seleção de modelos (AIC)
-
-## Seleção de modelos, por AIC (Akaike Criterion Information)
-
-### Ranqueamento do modelo modelo mais plausível
-
---
-
-### Usa-se geralmente os valores de AICc (para medidas pequenas)
-
-<BR>
-
-`AIC = 2K – 2 * ln(L), onde k = número de parâmetros estimados e L = máximo da função de verossimilhança`
-
----
-
-# 8.7 Seleção de modelos (AIC)
-
-## Critérios de seleção, segundo (Burnham e Anderson 2002):
-
-<br><br>
-
-## **ΔAICc < 2.0** (plausibilidade)
- 
-## **wAICc > 1.0** (peso no ranqueamento)
-
-<br> 
-
-### Todos os modelos com valores de **ΔAICc < 2.0** e **wAICc > 1.0** serão igualmente plausíveis
----
-
-# 8.7 Seleção de modelos (AIC)
-
-## Criar modelos segundo nossas hipóteses concorrente, inclusive o modelo nulo [glm(Y ~ 1)]
-```{r}
-mo0 <- glm(n_sp ~ 1, data = da, family = poisson)
-mo1 <- glm(n_sp ~ pct_flo, data = da, family = poisson)
-mo2 <- glm(n_sp ~ conect, data = da, family = poisson)
-mo3 <- glm(n_sp ~ matriz, data = da, family = poisson)
-mo4 <- glm(n_sp ~ pct_flo + conect, data = da, family = poisson)
-mo5 <- glm(n_sp ~ pct_flo + conect + matriz, data = da, family = poisson)
-```
-
----
-
-# 8.7 Seleção de modelos (AIC)
-```{r, message=FALSE, warning=FALSE}
-library(bbmle)
-aic <- ICtab(mo0, mo1, mo2, mo3, mo4, mo5, 
-             type = "AICc",
-             weights = TRUE,
-             delta = TRUE,
-             logLik = TRUE,
-             sort = TRUE,
-             nobs = nrow(da))
-
-aic
-```
-
----
-
-class: clear, inverse, center, middle
-
-# Dúvidas?
-
----
-
-class: clear, inverse, center, middle
-
-# Grato pela oportunidade e confiança nesses dias!
 
 ---
 
 class: clear, middle
 
-## Maurício H. Vancine
+## Maurício Vancine
 
 <br>
 

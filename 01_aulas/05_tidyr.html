@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introdução ao tidyverse</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurício Vancine" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introdução ao tidyverse <br><br>
+## 5 Resultados de modelos e tidymodels <br><br> xaringan [presentation ninja]
+### Maurício Vancine
+### 26/04/2019
+
+---
+
+
+
+
+class: clear, center, middle
+background-image: url(img/package_broom.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+background-image: url(img/package_broom.png), url(img/package_tidymodels.png)
+background-size: 250px, 250px
+background-position: 45% 90%, 90% 90%
+
+# 5 Modelos, tidyverse e tidymodels
+
+## Conteúdo
+5.1 Pacote broom
+&lt;br&gt;
+5.2 Funções tidying do broom
+&lt;br&gt;
+5.3 Aplicações
+&lt;br&gt;
+5.4 Função tidy
+&lt;br&gt;
+5.5 Função glance
+&lt;br&gt;
+5.6 Função augment
+&lt;br&gt;
+5.7 Pacote tidymodels
+&lt;br&gt;
+5.8 Pacote rsample
+&lt;br&gt;
+5.9 Pacote recipes
+&lt;br&gt;
+5.10 Pacote parsnip
+&lt;br&gt;
+5.11 Pacote yardstick
+
+---
+
+# 5 Modelos, tidyverse e tidymodels
+
+## Script
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+## .center[`script_aula_05.R`]
+
+---
+
+# 5.1 Pacote broom
+
+### Resume informações importantes sobre modelos em tidy tibbles
+
+&lt;br&gt;
+
+--
+
+### Organiza mais de 100 modelos de pacotes de modelagem populares e quase todos os objetos de saída de modelos que acompanha o Base R
+
+&lt;br&gt;
+
+--
+
+### Atualmente, os seguintes métodos estão disponíveis no **broom**: https://broom.tidyverse.org/articles/available-methods.html
+
+---
+
+# 5.2 Funções tidying do broom
+
+### O pacote **broom** fornece três funções para transformar modelos em data frames *tidy*:
+
+&lt;br&gt;
+
+### *broom::tidy()*: resume informações sobre os componentes do modelo
+
+--
+
+### *broom::glance()*: apresenta informações sobre o modelo inteiro
+
+--
+
+### *broom::augment()*: informações sobre observações do modelo
+
+---
+
+background-image: url(img/general_iris_data.png)
+background-size: 700px
+background-position: 50% 98%
+
+# 5.3 Aplicações
+
+## iris data
+
+```r
+# data
+dplyr::glimpse(iris)
+```
+
+```
+## Rows: 150
+## Columns: 5
+## $ Sepal.Length &lt;dbl&gt; 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5.4, 4…
+## $ Sepal.Width  &lt;dbl&gt; 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3…
+## $ Petal.Length &lt;dbl&gt; 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1.5, 1…
+## $ Petal.Width  &lt;dbl&gt; 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+# 5.3 Aplicações
+
+## Modelo Linear (LM)
+
+```r
+# linear model
+lmfit &lt;- lm(Sepal.Length ~ Petal.Length, iris)
+lmfit
+```
+
+```
+## 
+## Call:
+## lm(formula = Sepal.Length ~ Petal.Length, data = iris)
+## 
+## Coefficients:
+##  (Intercept)  Petal.Length  
+##       4.3066        0.4089
+```
+
+---
+
+# 5.3 Aplicações
+
+### Modelo Linear (LM)
+
+```r
+summary(lmfit)
+```
+
+```
+## 
+## Call:
+## lm(formula = Sepal.Length ~ Petal.Length, data = iris)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.24675 -0.29657 -0.01515  0.27676  1.00269 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   4.30660    0.07839   54.94   &lt;2e-16 ***
+## Petal.Length  0.40892    0.01889   21.65   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.4071 on 148 degrees of freedom
+## Multiple R-squared:   0.76,	Adjusted R-squared:  0.7583 
+## F-statistic: 468.6 on 1 and 148 DF,  p-value: &lt; 2.2e-16
+```
+
+---
+
+# 5.3 Aplicações
+
+## Modelo Linear (LM)
+&lt;img src="05_tidyr_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# 5.4 Função tidy
+
+### Informações sobre os componentes do modelo
+
+
+```r
+# package
+library(broom)
+
+# componentes do modelo
+broom::tidy(lmfit)
+```
+
+```
+## # A tibble: 2 x 5
+##   term         estimate std.error statistic   p.value
+##   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 (Intercept)     4.31     0.0784      54.9 2.43e-100
+## 2 Petal.Length    0.409    0.0189      21.6 1.04e- 47
+```
+
+---
+
+# 5.5 Função glance
+
+## Informações sobre o modelo inteiro
+
+
+```r
+# package
+library(broom)
+
+# informacoes sobre o modelo inteiro
+broom::glance(lmfit)
+```
+
+```
+## # A tibble: 1 x 11
+##   r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC
+##       &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;int&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1     0.760         0.758 0.407      469. 1.04e-47     2  -77.0  160.  169.
+## # … with 2 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;
+```
+
+---
+
+# 5.6 Função augment
+
+## Informações sobre observações do modelo
+
+
+```r
+# package
+library(broom)
+
+# observacoes do modelo
+broom::augment(lmfit)
+```
+
+```
+## # A tibble: 150 x 9
+##    Sepal.Length Petal.Length .fitted .se.fit  .resid   .hat .sigma .cooksd
+##           &lt;dbl&gt;        &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;
+##  1          5.1          1.4    4.88  0.0556  0.221  0.0186  0.408 2.85e-3
+##  2          4.9          1.4    4.88  0.0556  0.0209 0.0186  0.408 2.55e-5
+##  3          4.7          1.3    4.84  0.0571 -0.138  0.0197  0.408 1.18e-3
+##  4          4.6          1.5    4.92  0.0541 -0.320  0.0176  0.408 5.65e-3
+##  5          5            1.4    4.88  0.0556  0.121  0.0186  0.408 8.54e-4
+##  6          5.4          1.7    5.00  0.0511  0.398  0.0158  0.407 7.80e-3
+##  7          4.6          1.4    4.88  0.0556 -0.279  0.0186  0.408 4.55e-3
+##  8          5            1.5    4.92  0.0541  0.0800 0.0176  0.408 3.53e-4
+##  9          4.4          1.4    4.88  0.0556 -0.479  0.0186  0.407 1.34e-2
+## 10          4.9          1.5    4.92  0.0541 -0.0200 0.0176  0.408 2.20e-5
+## # … with 140 more rows, and 1 more variable: .std.resid &lt;dbl&gt;
+```
+
+---
+
+# 5.6 Função augment
+
+###  Add informações sobre observações do modelo aos dados
+
+
+```r
+# package
+library(broom)
+
+# observacoes do modelo
+broom::augment(lmfit, data = iris)
+```
+
+```
+## # A tibble: 150 x 12
+##    Sepal.Length Sepal.Width Petal.Length Petal.Width Species .fitted .se.fit
+##           &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;fct&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+##  1          5.1         3.5          1.4         0.2 setosa     4.88  0.0556
+##  2          4.9         3            1.4         0.2 setosa     4.88  0.0556
+##  3          4.7         3.2          1.3         0.2 setosa     4.84  0.0571
+##  4          4.6         3.1          1.5         0.2 setosa     4.92  0.0541
+##  5          5           3.6          1.4         0.2 setosa     4.88  0.0556
+##  6          5.4         3.9          1.7         0.4 setosa     5.00  0.0511
+##  7          4.6         3.4          1.4         0.3 setosa     4.88  0.0556
+##  8          5           3.4          1.5         0.2 setosa     4.92  0.0541
+##  9          4.4         2.9          1.4         0.2 setosa     4.88  0.0556
+## 10          4.9         3.1          1.5         0.1 setosa     4.92  0.0541
+## # … with 140 more rows, and 5 more variables: .resid &lt;dbl&gt;, .hat &lt;dbl&gt;,
+## #   .sigma &lt;dbl&gt;, .cooksd &lt;dbl&gt;, .std.resid &lt;dbl&gt;
+```
+
+---
+
+class: clear, center, middle
+background-image: url(img/package_tidymodels.png)
+background-size: 400px
+background-position: 50% 50%
+
+---
+
+background-image: url(img/tidymodels_site.png)
+background-size: 650px
+background-position: 50% 75%
+
+# 5.7 Pacote tidymodels
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://www.tidymodels.org/
+
+---
+
+background-image: url(img/tidymodels_structure.png)
+background-size: 850px
+background-position: 50% 60%
+
+# 5.7 Pacote tidymodels
+
+### Coleção de pacotes para **modelagem e aprendizado de máquina** usando princípios do **tidyverse**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/
+
+---
+
+background-image: url(img/tidymodels_process.png)
+background-size: 850px
+background-position: 50% 70%
+
+# 5.7 Pacote tidymodels
+
+## Principais Pacotes
+- rsample - Diferentes tipos de reamostragens
+- recipes - Transformações para pré-processamento de dados do modelo
+- parnip - Uma interface comum para criação de modelo
+- yardstick - Medir o desempenho do modelo
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[*] https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/
+
+---
+
+# 5.7 Pacote tidymodels
+
+
+```r
+library(tidymodels)
+```
+
+```
+## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────── tidymodels 0.1.0 ──
+```
+
+```
+## ✓ dials     0.0.6      ✓ rsample   0.0.6 
+## ✓ infer     0.5.1      ✓ tune      0.1.0 
+## ✓ parsnip   0.1.0      ✓ workflows 0.1.1 
+## ✓ recipes   0.1.10     ✓ yardstick 0.0.6
+```
+
+```
+## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────── tidymodels_conflicts() ──
+## x scales::discard() masks purrr::discard()
+## x dplyr::filter()   masks stats::filter()
+## x recipes::fixed()  masks stringr::fixed()
+## x dplyr::lag()      masks stats::lag()
+## x dials::margin()   masks ggplot2::margin()
+## x yardstick::spec() masks readr::spec()
+## x recipes::step()   masks stats::step()
+```
+
+---
+
+background-image: url(img/general_iris_data.png)
+background-size: 700px
+background-position: 50% 98%
+
+# 5.7 Pacote tidymodels
+
+## iris data
+
+```r
+# data
+dplyr::glimpse(iris)
+```
+
+```
+## Rows: 150
+## Columns: 5
+## $ Sepal.Length &lt;dbl&gt; 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5.4, 4…
+## $ Sepal.Width  &lt;dbl&gt; 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3…
+## $ Petal.Length &lt;dbl&gt; 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1.5, 1…
+## $ Petal.Width  &lt;dbl&gt; 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+background-image: url(img/package_rsample.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.8 Pacote rsample
+
+### Data Sampling
+
+
+```r
+# Data Sampling (rsample)
+iris_split &lt;- rsample::initial_split(iris, prop = 0.6)
+iris_split
+```
+
+```
+## &lt;Training/Validation/Total&gt;
+## &lt;90/60/150&gt;
+```
+
+---
+
+background-image: url(img/package_rsample.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.8 Pacote rsample
+
+### Data Sampling
+
+
+```r
+# train
+iris_split %&gt;%
+  rsample::training() %&gt;%
+  dplyr::glimpse()
+```
+
+```
+## Rows: 90
+## Columns: 5
+## $ Sepal.Length &lt;dbl&gt; 5.1, 4.9, 4.6, 5.0, 4.6, 4.4, 5.4, 4.8, 4.8, 4.3, 5.7, 5…
+## $ Sepal.Width  &lt;dbl&gt; 3.5, 3.0, 3.1, 3.6, 3.4, 2.9, 3.7, 3.4, 3.0, 3.0, 4.4, 3…
+## $ Petal.Length &lt;dbl&gt; 1.4, 1.4, 1.5, 1.4, 1.4, 1.4, 1.5, 1.6, 1.4, 1.1, 1.5, 1…
+## $ Petal.Width  &lt;dbl&gt; 0.2, 0.2, 0.2, 0.2, 0.3, 0.2, 0.2, 0.2, 0.1, 0.1, 0.4, 0…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+background-image: url(img/package_rsample.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.8 Pacote rsample
+
+### Data Sampling
+
+
+```r
+# test
+iris_split %&gt;%
+  rsample::testing() %&gt;%
+  dplyr::glimpse()
+```
+
+```
+## Rows: 60
+## Columns: 5
+## $ Sepal.Length &lt;dbl&gt; 4.7, 5.4, 5.0, 4.9, 5.8, 5.1, 5.7, 5.1, 5.0, 5.2, 4.7, 4…
+## $ Sepal.Width  &lt;dbl&gt; 3.2, 3.9, 3.4, 3.1, 4.0, 3.5, 3.8, 3.8, 3.0, 3.5, 3.2, 3…
+## $ Petal.Length &lt;dbl&gt; 1.3, 1.7, 1.5, 1.5, 1.2, 1.4, 1.7, 1.5, 1.6, 1.5, 1.6, 1…
+## $ Petal.Width  &lt;dbl&gt; 0.2, 0.4, 0.2, 0.1, 0.2, 0.3, 0.3, 0.3, 0.2, 0.2, 0.2, 0…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+background-image: url(img/package_recipes.png)
+background-size: 100px
+background-position: 90% 72%
+
+# 5.9 Pacote recipes
+
+
+```r
+# Pre-process interface (recipes)
+iris_recipe &lt;- rsample::training(iris_split) %&gt;%
+  recipes::recipe(Species ~.) %&gt;%
+  recipes::step_corr(all_predictors()) %&gt;%
+  recipes::step_center(all_predictors(), -all_outcomes()) %&gt;%
+  recipes::step_scale(all_predictors(), -all_outcomes()) %&gt;%
+  recipes::prep()
+iris_recipe
+```
+
+```
+## Data Recipe
+## 
+## Inputs:
+## 
+##       role #variables
+##    outcome          1
+##  predictor          4
+## 
+## Training data contained 90 data points and no missing data.
+## 
+## Operations:
+## 
+## Correlation filter removed Petal.Length [trained]
+## Centering for Sepal.Length, Sepal.Width, Petal.Width [trained]
+## Scaling for Sepal.Length, Sepal.Width, Petal.Width [trained]
+```
+
+---
+
+background-image: url(img/package_recipes.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.9 Pacote recipes
+
+
+```r
+# test data
+iris_testing &lt;- iris_recipe %&gt;%
+  recipes::bake(rsample::testing(iris_split)) 
+dplyr::glimpse(iris_testing)
+```
+
+```
+## Rows: 60
+## Columns: 4
+## $ Sepal.Length &lt;dbl&gt; -1.32241203, -0.50402344, -0.97167406, -1.08858672, -0.0…
+## $ Sepal.Width  &lt;dbl&gt; 0.40685598, 2.01892682, 0.86744765, 0.17656014, 2.249222…
+## $ Petal.Width  &lt;dbl&gt; -1.39684840, -1.13218238, -1.39684840, -1.52918140, -1.3…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+background-image: url(img/package_recipes.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.9 Pacote recipes
+
+
+```r
+# train data
+iris_training &lt;- recipes::juice(iris_recipe)
+dplyr::glimpse(iris_training)
+```
+
+```
+## Rows: 90
+## Columns: 4
+## $ Sepal.Length &lt;dbl&gt; -0.8547614, -1.0885867, -1.4393247, -0.9716741, -1.43932…
+## $ Sepal.Width  &lt;dbl&gt; 1.09774348, -0.05373569, 0.17656014, 1.32803932, 0.86744…
+## $ Petal.Width  &lt;dbl&gt; -1.3968484, -1.3968484, -1.3968484, -1.3968484, -1.26451…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+background-image: url(img/package_parsnip.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.10 Pacote parsnip
+
+
+```r
+# Model Training (parsnip)
+iris_rf &lt;- parsnip::rand_forest(trees = 100, mode = "classification") %&gt;%
+  parsnip::set_engine("randomForest") %&gt;%
+  parsnip::fit(Species ~ ., data = iris_training)
+```
+
+---
+
+background-image: url(img/package_parsnip.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.10 Pacote parsnip
+
+```r
+# Predictions
+stats::predict(iris_rf, iris_testing)
+```
+
+```
+## # A tibble: 60 x 1
+##    .pred_class
+##    &lt;fct&gt;      
+##  1 setosa     
+##  2 setosa     
+##  3 setosa     
+##  4 setosa     
+##  5 setosa     
+##  6 setosa     
+##  7 setosa     
+##  8 setosa     
+##  9 setosa     
+## 10 setosa     
+## # … with 50 more rows
+```
+
+---
+
+background-image: url(img/package_parsnip.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.10 Pacote parsnip
+
+```r
+iris_rf %&gt;%
+  stats::predict(iris_testing) %&gt;%
+  dplyr::bind_cols(iris_testing) %&gt;%
+  dplyr::glimpse()
+```
+
+```
+## Rows: 60
+## Columns: 5
+## $ .pred_class  &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+## $ Sepal.Length &lt;dbl&gt; -1.32241203, -0.50402344, -0.97167406, -1.08858672, -0.0…
+## $ Sepal.Width  &lt;dbl&gt; 0.40685598, 2.01892682, 0.86744765, 0.17656014, 2.249222…
+## $ Petal.Width  &lt;dbl&gt; -1.39684840, -1.13218238, -1.39684840, -1.52918140, -1.3…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, …
+```
+
+---
+
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
+
+```r
+# Model Validation (yardstick)
+iris_rf %&gt;%
+  stats::predict(iris_testing) %&gt;%
+  dplyr::bind_cols(iris_testing) %&gt;%
+  yardstick::metrics(truth = Species, estimate = .pred_class)
+```
+
+```
+## # A tibble: 2 x 3
+##   .metric  .estimator .estimate
+##   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+## 1 accuracy multiclass     0.917
+## 2 kap      multiclass     0.874
+```
+
+---
+
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
+
+```r
+# Per classifier metrics
+iris_probs &lt;- iris_rf %&gt;%
+  stats::predict(iris_testing, type = "prob") %&gt;%
+  dplyr::bind_cols(iris_testing)
+dplyr::glimpse(iris_probs)
+```
+
+```
+## Rows: 60
+## Columns: 7
+## $ .pred_setosa     &lt;dbl&gt; 1.00, 1.00, 1.00, 0.99, 0.73, 1.00, 0.76, 1.00, 0.93…
+## $ .pred_versicolor &lt;dbl&gt; 0.00, 0.00, 0.00, 0.01, 0.24, 0.00, 0.22, 0.00, 0.06…
+## $ .pred_virginica  &lt;dbl&gt; 0.00, 0.00, 0.00, 0.00, 0.03, 0.00, 0.02, 0.00, 0.01…
+## $ Sepal.Length     &lt;dbl&gt; -1.32241203, -0.50402344, -0.97167406, -1.08858672, …
+## $ Sepal.Width      &lt;dbl&gt; 0.40685598, 2.01892682, 0.86744765, 0.17656014, 2.24…
+## $ Petal.Width      &lt;dbl&gt; -1.39684840, -1.13218238, -1.39684840, -1.52918140, …
+## $ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, seto…
+```
+
+---
+
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
+
+```r
+iris_probs %&gt;%
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%
+  dplyr::glimpse()
+```
+
+```
+## Rows: 87
+## Columns: 5
+## $ .level          &lt;chr&gt; "setosa", "setosa", "setosa", "setosa", "setosa", "se…
+## $ .n              &lt;dbl&gt; 0, 13, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 28, 32…
+## $ .n_events       &lt;dbl&gt; 0, 13, 16, 17, 18, 19, 20, 21, 22, 22, 22, 22, 22, 22…
+## $ .percent_tested &lt;dbl&gt; 0.000000, 21.666667, 26.666667, 28.333333, 30.000000,…
+## $ .percent_found  &lt;dbl&gt; 0.00000, 59.09091, 72.72727, 77.27273, 81.81818, 86.3…
+```
+
+---
+
+# 5.11 Pacote tyardstick
+
+```r
+iris_probs %&gt;%
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%
+  ggplot2::autoplot()
+```
+
+&lt;img src="05_tidyr_files/figure-html/unnamed-chunk-23-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
+
+```r
+predict(iris_rf, iris_testing, type = "prob") %&gt;%
+  dplyr::bind_cols(predict(iris_rf, iris_testing)) %&gt;%
+  dplyr::bind_cols(select(iris_testing, Species)) %&gt;%
+  dplyr::glimpse()
+```
+
+```
+## Rows: 60
+## Columns: 5
+## $ .pred_setosa     &lt;dbl&gt; 1.00, 1.00, 1.00, 0.99, 0.73, 1.00, 0.76, 1.00, 0.93…
+## $ .pred_versicolor &lt;dbl&gt; 0.00, 0.00, 0.00, 0.01, 0.24, 0.00, 0.22, 0.00, 0.06…
+## $ .pred_virginica  &lt;dbl&gt; 0.00, 0.00, 0.00, 0.00, 0.03, 0.00, 0.02, 0.00, 0.01…
+## $ .pred_class      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, seto…
+## $ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, seto…
+```
+
+---
+
+background-image: url(img/package_yardstick.png)
+background-size: 100px
+background-position: 90% 90%
+
+# 5.11 Pacote tyardstick
+
+```r
+predict(iris_rf, iris_testing, type = "prob") %&gt;%
+  dplyr::bind_cols(predict(iris_rf, iris_testing)) %&gt;%
+  dplyr::bind_cols(select(iris_testing, Species)) %&gt;%
+  metrics(Species, .pred_setosa:.pred_virginica, estimate = .pred_class)
+```
+
+```
+## # A tibble: 4 x 3
+##   .metric     .estimator .estimate
+##   &lt;chr&gt;       &lt;chr&gt;          &lt;dbl&gt;
+## 1 accuracy    multiclass     0.917
+## 2 kap         multiclass     0.874
+## 3 mn_log_loss multiclass     0.217
+## 4 roc_auc     hand_till      0.992
+```
+
+---
+
+class: clear, middle
+
+## Maurício Vancine
+
+&lt;br&gt;
+
+Contatos:
+
+|                                                                                           |                               |
+| :---------------------------------------------------------------------------------------- | :---------------------------- |
+| &lt;a href="mailto:mauricio.vancine@gmail.com"&gt;.RUred[&lt;i class="fa fa-envelope fa-fw"&gt;&lt;/i&gt;]  | mauricio.vancine@gmail.com    |
+| &lt;a href="https://mauriciovancine.netlify.com/"&gt;.RUred[&lt;i class="fa fa-link fa-fw"&gt;&lt;/i&gt;]   | mauriciovancine.netlify.com   |
+| &lt;a href="http://twitter.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;]  | @mauriciovancine              |
+| &lt;a href="http://github.com/mauriciovancine"&gt;.RUred[&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;]    | @mauriciovancine              |
+
+Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "rainbow",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
