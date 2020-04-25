@@ -104,7 +104,7 @@ lines(density(da$species_number))
 setwd("")
 
 # cria um arquivo vazio
-tiff("meu_primeiro_histograma.tif", wi = 15, he = 15, un = "cm", 
+tiff("meu_primeiro_histograma.png", wi = 15, he = 15, un = "cm", 
      res = 300, comp = "lzw+p")
 
 # plot
@@ -213,7 +213,7 @@ ggplot(data = da) +
   theme(axis.title = element_text(size = 24),
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20))
-ggsave("histogram_ggplot2.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+ggsave("histogram_ggplot2.png", wi = 20, he = 15, un = "cm", dpi = 300)
 
 # ggpubr
 gghistogram(data = da, 
@@ -234,7 +234,7 @@ gghistogram(data = da,
             add_density = TRUE,
             xlab = "Número de espécies",
             ylab = "Frequeência absoluta")
-ggsave("histogram_ggpubr.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+ggsave("histogram_ggpubr.png", wi = 20, he = 15, un = "cm", dpi = 300)
 
 
 # 4.6 grafico de setores (pie chart) --------------------------------------

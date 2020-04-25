@@ -132,7 +132,7 @@ background-position: 80% 80%
 - Interface: RStudio (2011-atual)
 - Atualmente: **R Core Team**
 
-[http://vita.had.co.nz/papers/r-s.pdf]
+[*] http://vita.had.co.nz/papers/r-s.pdf
 
 ---
 
@@ -201,9 +201,9 @@ class: clear, inverse, center, middle
 - Análises de dados ecológicos (população, comunidades e ecossistemas)
 - Análise de dados espaciais, temporais e sonoros
 - Análise de dados funcionais, genéticos e filogenéticos
-- Análise de dados geoespaciais, sensoriamento retomo
+- Análise de dados geoespaciais e sensoriamento retomo
 - Visualização de todos os dados anteriores
-- Data Science
+- "Data Science"
 
 --
 
@@ -247,9 +247,9 @@ class: clear, inverse, center, middle
 
 ---
 
-background-image: url(img/person_yihui_xie.jpg)
-background-size: 500px
-background-position: 50% 60%
+background-image: url(img/person_yihui_xie.jpg), url(img/person_yihui_xie_avatar.png)
+background-size: 500px, 150px
+background-position: 50% 60%, 95% 10%
 
 # Yihui Xie
 
@@ -462,8 +462,8 @@ print("Isso é o resultado que deve aparecer no console")
 ---
 
 background-image: url(img/general_utf8.jpg)
-background-size: 350px
-background-position: 50% 90%
+background-size: 400px
+background-position: 50% 85%
 
 # 1.4 Editor/Roteiro (*code*/*script*)
 
@@ -853,7 +853,7 @@ obj
 
 --
 
-2. Nome de objetos só podem **conter letras, números, underscores (_) ou pontos (.)**
+2. Nome de objetos só podem **conter letras (a-z ou A-Z), números (0-9), underscores (_) ou pontos (.)**
 
 --
 
@@ -1825,7 +1825,7 @@ rowsums(iris[1:10, -5])
 
 background-image: url(img/code_coding_cases.png)
 background-size: 800px
-background-position: 50% 50%
+background-position: 50% 30%
 
 # Cases
 

@@ -756,8 +756,7 @@ setwd("")
 ### Exportar
 
 ```r
-tiff("meu_primeiro_histograma.tif", wi = 15, he = 15, un = "cm", 
-     res = 300, comp = "lzw+p")
+png("meu_primeiro_histograma.png", wi = 15, he = 15, un = "cm", res = 300)
 ```
 
 ---
@@ -782,8 +781,8 @@ dev.off()
 ```
 
 ```
-## tiff 
-##    3
+## png 
+##   3
 ```
 
 ---
@@ -1060,7 +1059,7 @@ ggplot(data = da) +
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20))
 
-*ggsave("histogram_ggplot2.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+*ggsave("histogram_ggplot2.png", wi = 20, he = 15, un = "cm", dpi = 300)
 ```
 
 ---
@@ -1110,7 +1109,7 @@ gghistogram(data = da,
             xlab = "Número de espécies",
             ylab = "Frequeência absoluta")
 
-*ggsave("histogram_ggpubr.tiff", wi = 20, he = 15, un = "cm", dpi = 300)
+*ggsave("histogram_ggpubr.png", wi = 20, he = 15, un = "cm", dpi = 300)
 ```
 
 ---
