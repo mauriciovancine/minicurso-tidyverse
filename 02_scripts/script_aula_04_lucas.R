@@ -1,4 +1,4 @@
-#' ---
+  #' ---
 #' title: aula 04 - visualizacao de dados 
 #' author: mauricio vancine
 #' date: 2020-04-26
@@ -21,7 +21,7 @@
 library(tidyverse)
 
 # directory
-setwd("/home/mude/data/github/minicurso-tidyverse/03_dados")
+setwd("/home/lucas/Documentos/data/github/minicurso-tidyverse/03_dados")
 
 # importar
 da <- readr::read_csv("ATLANTIC_AMPHIBIANS_sites.csv")
@@ -43,7 +43,8 @@ ggscatter(da, x = "effort_months", y = "species_number")
 
 # 4.5 histograma (histogram) ----------------------------------------------
 # graphics
-# histogram
+
+# histogram  --> representa dados de 1 coluna apenas - distribuição de frequencia e densidade dos dados contínuos
 hist(da$species_number)
 
 # color
@@ -100,16 +101,14 @@ hist(da$species_number,
      prob = TRUE)
 lines(density(da$species_number))
 
-# diretorio
-setwd("")
-
+# diretorio para salvar
+setwd("/home/lucas/Documentos/data/github/minicurso-tidyverse/03_dados")
 # cria um arquivo vazio
-png("meu_primeiro_histograma.png", wi = 20, he = 15, un = "cm", res = 300)
-
+png("meu_primeiro_histograma.png", wi = 15, he = 15, un = "cm", 
+     res = 300)
 # plot
-par(mar = c(6, 6, 4, 4),
-    mfrow = c(1, 2))
-
+par(mar = c(6, 6, 2, 2),  ##aqui é para não cortar o grafico. São margens
+    mfrow = c(1,2))  
 hist(da$species_number,
      col = "gray50",
      border = "gray",
@@ -122,9 +121,6 @@ hist(da$species_number,
      cex.axis = 2,
      prob = TRUE)
 lines(density(da$species_number))
-
-hist(da$species_number)
-
 # fecha o arquivo
 dev.off()
 
@@ -132,7 +128,7 @@ dev.off()
 # data
 ggplot(data = da)
 
-# aes
+# aes - estética... 
 ggplot(data = da) +
   aes(x = species_number)
 
@@ -164,6 +160,17 @@ ggplot(data = da) +
 ggplot(data = da) +
   aes(x = species_number) +
   geom_density(color = "black", fill = "forest green", alpha = .5) + 
+  labs(x = "Número de Espécies", y = "Frequência") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
+# facet
+ggplot(data = da) +
+  aes(x = species_number) +
+  geom_histogram(color = "black", fill = "forest green", bins = 10, 
+                 alpha = .5) +
+  facet_wrap(~ record, ncol = 2, scale = "free_y") +
   labs(x = "Número de Espécies", y = "Frequência") +
   theme(axis.title = element_text(size = 24),
         axis.text.x = element_text(size = 20),
@@ -217,7 +224,7 @@ ggplot(data = da) +
   theme(axis.title = element_text(size = 24),
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20))
-ggsave("histogram_ggplot2.png", wi = 20, he = 15, un = "cm", dpi = 300)
+ggsave("histogram_ggplot2.png", whwi = 20, he = 15, un = "cm", dpi = 300)
 
 # ggpubr
 gghistogram(data = da, 
@@ -239,6 +246,7 @@ gghistogram(data = da,
             xlab = "Número de espécies",
             ylab = "Frequeência absoluta")
 ggsave("histogram_ggpubr.png", wi = 20, he = 15, un = "cm", dpi = 300)
+
 
 # 4.6 grafico de setores (pie chart) --------------------------------------
 # graphics
@@ -263,7 +271,7 @@ ta_por <- ta %>%
          porc = paste0(Freq, "%"))
 ta_por
 
-# pie chart
+# pie chart  ## esse é toppp
 ggplot(ta_por) +
   aes(x = "", y = Freq, fill = Amostragem) +
   geom_bar(width = 1, stat = "identity", color = "white") +
@@ -279,7 +287,7 @@ ggpie(ta_por,
       "Freq", 
       label = "porc",
       lab.pos = "in", 
-      lab.font = c(8, "white"),
+      lab.font = c(5, "white"),
       fill = "Amostragem", 
       color = "white",
       palette = c("#00AFBB", "#FC4E07"))
@@ -306,7 +314,7 @@ ggdonutchart(ta_por,
              "Freq", 
              label = "porc",
              lab.pos = "in", 
-             lab.font = c(7, "white"),
+             lab.font = c(4, "white"),
              fill = "Amostragem", 
              color = "white",
              palette = c("#00AFBB", "#FC4E07"))
@@ -364,7 +372,7 @@ ggbarplot(ta_por,
 
 # 4.8 grafico de caixa (box plot) -----------------------------------------
 # graphics
-boxplot(species_number ~ as.factor(record),
+boxplot(species_number ~ as.factor(record),  # y em funsao de x... x precisa ser fator
         data = da,
         col = "gray",
         border = "black",
@@ -458,7 +466,7 @@ ggviolin(data = da,
 
 
 # 4.9 grafico de dispersao (scatter plot) ---------------------------------
-# graphics
+# graphics    x e y numericos
 plot(species_number ~ effort_months,
      data = da,
      pch = 20,
@@ -479,13 +487,25 @@ ggplot(data = da) +
         axis.text.x = element_text(size = 20),
         axis.text.y = element_text(size = 20))
 
+#ggplot2
+ggplot(data = da) +
+  aes(x = effort_months, y = species_number) +
+  geom_point(colour = "black", fill = "forest green", size = 5, 
+             alpha = .5, pch = 21) +
+  labs(x = "Esforço amostral", y = "Número de espécies") +
+  theme_classic()+
+  stat_smooth(method = "lm", color = "red", size = 2) +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20))
+
 # ggpubr
 ggscatter(data = da,
           x = "effort_months", 
           y = "species_number",
           color = "black",
           fill = "forestgreen",
-          shape = 21, 
+          shape = 21,
           size = 5,
           xlab = "Esforço amostral", 
           ylab = "Número de espécies")

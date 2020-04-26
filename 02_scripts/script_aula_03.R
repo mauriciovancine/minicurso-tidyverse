@@ -98,6 +98,7 @@ sp
 # 3.5 tibble --------------------------------------------------------------
 # view the data
 tibble::glimpse(si)
+str(si)
 
 # 1. nunca converte um tipo character como factor
 df <- data.frame(ch = c("a", "b"), nu = 1:2)
@@ -133,7 +134,8 @@ tb$c
 # 1 unite
 # unir as colunas latirude e longitude separadas por uma vírgula
 # sem pipes
-si_unite <- tidyr::unite(si, "lat_lon", latitude:longitude, sep = ",")
+si_unite <- tidyr::unite(si, "lat_lon", latitude:longitude, sep = ",", remove = FALSE)
+si_unite
 si_unite$lat_lon
 
 # com pipes
@@ -212,7 +214,11 @@ si_long <- si_wide %>%
 si_long
 
 # exercicio 10 ------------------------------------------------------------
-
+si_unit <- si %>% 
+  tidyr::unite(col = "local_total", 
+               country:site,
+               sep = ", ")
+si_unit$local_total
 
 # exercicio 11 ------------------------------------------------------------
 
@@ -290,11 +296,11 @@ si_filter <- si %>%
 si_filter
 
 si_filter <- si %>% 
-  dplyr::filter(is.na(passive_methods))
+  dplyr::filter(is.na(active_methods))
 si_filter
 
 si_filter <- si %>% 
-  dplyr::filter(!is.na(passive_methods))
+  dplyr::filter(!is.na(active_methods))
 si_filter
 
 si_filter <- si %>% 
@@ -302,12 +308,24 @@ si_filter <- si %>%
 si_filter
 
 si_filter <- si %>% 
-  dplyr::filter(species_number > 5 & state_abbreviation == "BR-PE") 
+  dplyr::filter(species_number > 5 & state_abbreviation == "BR-SP") 
 si_filter
 
 si_filter <- si %>% 
-  dplyr::filter(species_number > 5 | state_abbreviation == "BR-PE")
+  dplyr::filter(species_number > 5 | state_abbreviation == "BR-SP")
 si_filter
+
+si_filter <- si %>% 
+  dplyr::filter(species_number > median(species_number, na.rm = TRUE))
+si_filter
+
+si_filter <- si %>% 
+  dplyr::filter(sampled_habitat %in% c("fo,ll", "fo,la,ll"))
+si_filter$sampled_habitat
+
+si_distinct <- si %>% 
+  dplyr::distinct(longitude, latitude, .keep_all = TRUE)
+si_distinct
 
 # 7 distinct
 si_distinct <- si %>% 
@@ -325,8 +343,13 @@ si_slice
 
 # 9 n_sample 
 si_sample_n <- si %>% 
-  dplyr::sample_n(100)
+  dplyr::sample_n(200)
 si_sample_n
+
+set.seed(1)
+si_sample_f <- si %>% 
+  dplyr::sample_n(1, replace = TRUE)
+si_sample_f
 
 # 10 summarise
 si_summarise <- si %>% 
@@ -350,6 +373,8 @@ sp_join <- sp %>%
 sp_join
 
 colnames(sp_join)
+
+plot(sp_join$longitude, sp_join$latitude, pch = 20)
 
 # sufixos
 sp_wide_rename <- sp_wide %>% 
@@ -383,7 +408,11 @@ da <- si %>%
 da
 
 # exercicio 12 ------------------------------------------------------------
-
+si <- si %>% 
+  dplyr::mutate(alt_log = log10(altitude + 1),
+                tem_log = log10(temperature + 1),
+                pre_log = log10(precipitation + 1))
+si[, 25:28]
 
 # exercicio 13 ------------------------------------------------------------
 
@@ -429,16 +458,37 @@ str_replace("abc", "a", "y")
 # separacao
 str_split("a-b-c", "-")
 
+# exemplo
+si_ex <- si %>% 
+  dplyr::mutate(sampled_habitat = stringr::str_replace_all(sampled_habitat, ",", "_"))
+si_ex
+
+si_ex2 <- si %>% 
+  dplyr::mutate(id_text = stringr::str_extract(id, "[a-z]+"),
+                id_number = stringr::str_extract(id, "[0-9]+"),) %>% 
+  dplyr::select(id, id_text, id_number, everything())
+si_ex2
+
+si_ex2 <- si %>% 
+  dplyr::mutate(id_text = stringr::str_sub(id, 1, 3),
+                id_number = stringr::str_sub(id, 4, 9),) %>% 
+  dplyr::select(id, id_text, id_number, everything())
+si_ex2
+
 # 3.9 forcats -------------------------------------------------------------
 # fixar amostragem
 set.seed(1)
 
 # cria um fator
-fa <- sample(c("alto", "medio", "baixo"), 30, rep = TRUE) %>% 
+fa <- sample(c("alto", "medio", "baixo", "muito_baixo"), 30, rep = TRUE) %>% 
   forcats::as_factor()
 fa
 
 # muda o nome dos niveis
+fa_recode <- fa %>% 
+  forcats::fct_recode(a = "alto", m = "medio", b = "baixo", b = "muito_baixo")
+fa_recode
+
 fa_recode <- fa %>% 
   forcats::fct_recode(a = "alto", m = "medio", b = "baixo")
 fa_recode
@@ -469,6 +519,9 @@ fa_lump <- fa_recode %>%
 fa_lump
 
 # 3.10 lubridate ----------------------------------------------------------
+# package
+library(lubridate)
+
 # string
 data_string <- "2020-04-24"
 data_string

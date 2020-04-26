@@ -1073,7 +1073,7 @@ id
 sp <- c(paste("sp", 1:9, sep = "0"), paste("sp", 10:50, sep = ""))
 sp
 
-ab <- sample(0:5, 50)
+ab <- sample(0:5, 50, replace = TRUE)
 ab
 
 df <- data.frame(id, sp, ab)

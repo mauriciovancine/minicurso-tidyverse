@@ -1,0 +1,92 @@
+---
+title: "Curso tidyverse"
+author: "Mauricio Vancine"
+date: "4/26/2020"
+output:
+  pdf_document:
+    template: default.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Cabeçalho de primeiro nível
+## Cabeçalho de segundo nível
+### Cabeçalho de terceiro nível
+
+*Itálico*
+
+**Negrito**
+
+~~riscado~~
+
+## Mapa
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng = -47.58, lat = -22.39, popup = "Rio Claro")
+```
+
+## Gráfico
+```{r,fig.align='center',fig.height=5,echo=FALSE}
+plot(Sepal.Length ~ Sepal.Width, data = iris, pch = 20)
+```
+Fig. 1. Plot.
+
+## Citação
+Isso não é uma citação.
+
+> "Aqui vai um texto para citação longa de um livro (livro.)"
+
+## Código no texto
+`mean(x)`
+
+`r mean(2, 3, 4, 6)`
+
+## Add imagens
+
+## Listas não ordenadas
+* Item a
+* Item b
++ Subitem b1
++ Subitem b2
+
+1. Item 1
+2. Item 2
+3. Item 3
+i. Item 3a
+ii. Item 3b
+
+## Tabelas
+|   Opção  | Valor Padrão | Descrição                                                                          |
+|:--------:|:------------:|------------------------------------------------------------------------------------|
+|   eval   |     TRUE     | Execução do código                                                                 |
+|  include |     TRUE     | Exibição do código. Resultados não aparecem                                        |
+| collapse |     FALSE    | Colapsar os resutados num bloco                                                    |
+|   echo   |     FALSE    | Exibição do código. Resultados aparecem                                            |
+|  results |    markup    | hide: sem resultados; hold: resultados formatados; asis: resultados não formatados |
+Fonte: MDIC.
+
+#### Tabela
+```{r,echo=FALSE}
+x <- rnorm(100)
+y <- rnorm(100)
+DT::datatable(data.frame(x, y))
+```
+
+## Sites
+Site do [MDIC](www.mdic.gov.br)
+
+## Linha orizontal
+***
+---
+
+## Equações
+Modelo linear simples
+$y_i = \alpha + \beta x_i + e_i$
+
+Modelo linear simples 
+$$y_i = \alpha + \beta x_i + e_i$$
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}$$

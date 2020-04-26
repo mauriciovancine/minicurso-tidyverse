@@ -384,15 +384,15 @@ class: clear, inverse, center, middle
 
 # Exercício 09
 
-## Reescreva as operações utilizando pipes `%>%`:
+## Reescreva cada operação utilizando pipes `%>%`:
 `log10(cumsum(1:100))`
-
+----
 `sum(sqrt(rnorm(100)))`
-
+----
 `prod(sort(sample(1:10, 10000, rep = TRUE)))`
 
 ```{r echo = FALSE}
-countdown(minutes = 2, seconds = 00, color_background = "gray30")
+countdown(minutes = 5, seconds = 00, color_background = "gray30")
 ```
 
 ---
@@ -518,7 +518,7 @@ si
 ```
 
 ```{r,echo=FALSE}
-si <- readr::read_csv("/home/mude/data/github/minicurso-r-sebio-2019/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
+si <- readr::read_csv("/home/mude/data/github/minicurso-tidyverse/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
 si
 ```
 
@@ -540,7 +540,7 @@ si
 ```
 
 ```{r,echo=FALSE}
-si <- readr::read_csv("/home/mude/data/github/minicurso-r-sebio-2019/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
+si <- readr::read_csv("/home/mude/data/github/minicurso-tidyverse/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
 si
 ```
 
@@ -619,7 +619,7 @@ si
 ```
 
 ```{r,echo=FALSE}
-si <- readr::read_csv("/home/mude/data/github/minicurso-r-sebio-2019/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
+si <- readr::read_csv("/home/mude/data/github/minicurso-tidyverse/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
 si
 ```
 
@@ -693,7 +693,7 @@ background-position: 50% 50%
 ## Descrição dos modos das colunas através da função `glimpse()` - "espiar os dados"
 
 ```{r, include = FALSE}
-si <- readr::read_csv("/home/mude/data/github/minicurso-r-sebio-2019/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
+si <- readr::read_csv("/home/mude/data/github/minicurso-tidyverse/03_dados/ATLANTIC_AMPHIBIANS_sites.csv")
 ```
 --
 ```{r}
