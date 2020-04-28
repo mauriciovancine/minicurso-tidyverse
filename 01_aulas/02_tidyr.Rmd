@@ -11,8 +11,6 @@ output:
       highlightStyle: rainbow
       highlightLines: true
       countIncrementalSlides: false
-    includes:
-      in_header: header.html
 ---
 
 ```{r setup, include=FALSE}
@@ -390,16 +388,14 @@ class: clear,  clean, inverse, middle, center
 ### Lembrando: são 6 valores de 1 a 60 e atribuam a um objeto
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
 ---
 
 # Exercício 05
 
-## Vector
-### Escolham números para jogar na mega-sena
-### Lembrando: são 6 valores de 1 a 60 e atribuam a um objeto
+## Resposta
 
 ```{r}
 # solucao
@@ -587,14 +583,14 @@ class: clear,  clean, inverse, middle, center
 `cont, cont, cont, ...., cont, trat, trat, ...., trat`
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
 ---
 
 # Exercício 06
 
-## Factor
+## Resposta
 ```{r, eval = FALSE}
 # solucao 1
 ch <- rep(c("cont", "trat"), each = 50)
@@ -775,7 +771,7 @@ class: clear,  clean, inverse, middle, center
 ### Criem uma matriz chamada "ma", resultante da disposição de um vetor composto por 10000 valores aleatórios entre 0 e 10. A matriz deve conter 100 linhas e ser disposta por colunas
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
 
@@ -783,9 +779,7 @@ countdown(minutes = 0, seconds = 30, color_background = "gray30")
 
 # Exercício 07
 
-## Matrix
-
-### Criem uma matriz chamada "ma", resultante da disposição de um vetor composto por 10000 valores aleatórios entre 0 e 10. A matriz deve conter 100 linhas e ser disposta por colunas
+## Resposta
 
 ```{r, eval = FALSE}
 # solucao
@@ -1054,16 +1048,14 @@ class: clear,  clean, inverse, middle, center
 `ab: 50 valores aleatórios entre 0 a 5`
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
 ---
 
 # Exercício 08
 
-## Data frame
-
-### Criem um data frame "df", resultante da composição desses vetores: 
+## Resposta
 
 ```{r, eval = FALSE}
 # solucao
@@ -2123,17 +2115,20 @@ class: clear, inverse, center, middle
 
 class: clear, middle
 
+<br><br><br>
+
 ## Maurício Vancine
 
 <br>
 
 Contatos:
 
-|                                                                                           |                               |
-| :---------------------------------------------------------------------------------------- | :---------------------------- |
-| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>]  | mauricio.vancine@gmail.com    |
-| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]   | mauriciovancine.netlify.com   |
-| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>]  | @mauriciovancine              |
-| <a href="http://github.com/mauriciovancine">.RUred[<i class="fa fa-github fa-fw"></i>]    | @mauriciovancine              |
+`r icon::fa_envelope()` [mauricio.vancine@gmail.com](mauricio.vancine@gmail.com)
+<br>
+`r icon::fa_twitter()` [mauriciovancine](https://twitter.com/mauriciovancine)
+<br>
+`r icon::fa_link()` [mauriciovancine.netlify.com](https://mauriciovancine.netlify.com/)
+
+<br><br><br>
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)

@@ -11,8 +11,6 @@ output:
       highlightStyle: rainbow
       highlightLines: true
       countIncrementalSlides: false
-    includes:
-      in_header: header.html
 ---
 
 ```{r setup, include=FALSE}
@@ -555,17 +553,20 @@ class: clear, inverse, center, middle
 
 class: clear, middle
 
+<br><br><br>
+
 ## Maurício Vancine
 
 <br>
 
 Contatos:
 
-|                                                                                           |                               |
-| :---------------------------------------------------------------------------------------- | :---------------------------- |
-| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>]  | mauricio.vancine@gmail.com    |
-| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]   | mauriciovancine.netlify.com   |
-| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>]  | @mauriciovancine              |
-| <a href="http://github.com/mauriciovancine">.RUred[<i class="fa fa-github fa-fw"></i>]    | @mauriciovancine              |
+`r icon::fa_envelope()` [mauricio.vancine@gmail.com](mauricio.vancine@gmail.com)
+<br>
+`r icon::fa_twitter()` [mauriciovancine](https://twitter.com/mauriciovancine)
+<br>
+`r icon::fa_link()` [mauriciovancine.netlify.com](https://mauriciovancine.netlify.com/)
+
+<br><br><br>
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)

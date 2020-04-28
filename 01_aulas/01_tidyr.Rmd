@@ -11,8 +11,6 @@ output:
       highlightStyle: rainbow
       highlightLines: true
       countIncrementalSlides: false
-    includes:
-      in_header: header.html
 ---
 
 ```{r setup, include=FALSE}
@@ -691,7 +689,7 @@ background-size: 500px
 background-position: 50% 50%
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
 # Exercício 01
@@ -969,10 +967,12 @@ class: clear, clean, inverse, middle, center
 ## Verifique se 3x2³ é maior que 2x3²
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 30, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
---
+---
+
+# Exercício 02
 
 ## Resposta
 ```{r}
@@ -1176,12 +1176,13 @@ class: clear, clean, inverse, middle, center
 ### Façam o logaritmo natural (função **log**) do objeto *mult* e atribuam ao objeto *loge*
 
 ```{r echo = FALSE}
-countdown(minutes = 1, seconds = 00, color_background = "gray30")
+countdown(minutes = 2, seconds = 00, color_background = "gray30")
 ```
 
 ---
 
 # Exercício 03
+
 ## Resposta
 
 ```{r}
@@ -1484,14 +1485,12 @@ class: clear, clean, inverse, middle, center
 ## Instalem o pacote **tidyverse** do CRAN
 
 ```{r echo = FALSE}
-countdown(minutes = 0, seconds = 10, color_background = "gray30")
+countdown(minutes = 0, seconds = 30, color_background = "gray30")
 ```
 
 ---
 
 # Exercício 04
-
-## Instalem o pacote **tidyverse** do CRAN
 
 ## Resposta
 
@@ -1569,7 +1568,7 @@ class: clear, inverse, center, middle
 
 ---
 
-background-image: url(img/rstudio_ambiente.png)
+background-image: url(img/rstudio_environment.png)
 background-size: 800px
 background-position: 50% 50%
 
@@ -1797,7 +1796,7 @@ ggplot(iris) + aes(Sepal.Length, Sepal.Width) + geom_point() + theme_bw()
 
 ---
 
-background-image: url(img/camel_case.png)
+background-image: url(img/code_camel_case.png)
 background-size: 350px
 background-position: 50% 90%
 
@@ -1810,7 +1809,7 @@ rowSums(iris[1:10, -5])
 
 ---
 
-background-image: url(img/camel_case.png)
+background-image: url(img/code_camel_case.png)
 background-size: 350px
 background-position: 50% 90%
 
@@ -1844,17 +1843,20 @@ class: clear, inverse, center, middle
 
 class: clear, middle
 
+<br><br><br>
+
 ## Maurício Vancine
 
 <br>
 
 Contatos:
 
-|                                                                                           |                               |
-| :---------------------------------------------------------------------------------------- | :---------------------------- |
-| <a href="mailto:mauricio.vancine@gmail.com">.RUred[<i class="fa fa-envelope fa-fw"></i>]  | mauricio.vancine@gmail.com    |
-| <a href="https://mauriciovancine.netlify.com/">.RUred[<i class="fa fa-link fa-fw"></i>]   | mauriciovancine.netlify.com   |
-| <a href="http://twitter.com/mauriciovancine">.RUred[<i class="fa fa-twitter fa-fw"></i>]  | @mauriciovancine              |
-| <a href="http://github.com/mauriciovancine">.RUred[<i class="fa fa-github fa-fw"></i>]    | @mauriciovancine              |
+`r icon::fa_envelope()` [mauricio.vancine@gmail.com](mauricio.vancine@gmail.com)
+<br>
+`r icon::fa_twitter()` [mauriciovancine](https://twitter.com/mauriciovancine)
+<br>
+`r icon::fa_link()` [mauriciovancine.netlify.com](https://mauriciovancine.netlify.com/)
+
+<br><br><br>
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis)
