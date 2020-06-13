@@ -517,6 +517,18 @@ predict(iris_rf, iris_testing, type = "prob") %>%
 
 ---
 
+# tidymodels
+
+## Para saber mais
+
+### Pré-processamento de dados no R com o pacote {recipes} 
+[link](https://www.linkedin.com/pulse/pr%C3%A9-processamento-de-dados-r-com-o-pacote-recipes-edgar-cutar-junior/)
+
+### Ajuste de modelos preditivos no R com o pacote {parsnip}
+[link](https://www.linkedin.com/pulse/ajuste-de-modelos-preditivos-r-com-o-pacote-parsnip-cutar-junior/)
+
+---
+
 class: clear, middle
 
 <br><br><br>

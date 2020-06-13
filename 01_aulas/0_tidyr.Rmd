@@ -14,8 +14,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE,
-        encoding = "UTF-8")
+options(htmltools.dir.version = FALSE, encoding = "UTF-8")
 ```
 
 class: clear, center, middle

@@ -604,6 +604,10 @@ class: clear, inverse, center, middle
 
 ---
 
+background-image: url(img/cover_clean_code.png)
+background-size: 350px
+background-position: 90% 60%
+
 # Organização dos scripts
 
 ## Organização
@@ -1851,11 +1855,11 @@ class: clear, middle
 
 Contatos:
 
-`r icon::fa_envelope()` [mauricio.vancine@gmail.com](mauricio.vancine@gmail.com)
+`r icon::fa_envelope(color = "#23373b")` [mauricio.vancine@gmail.com](mauricio.vancine@gmail.com)
 <br>
-`r icon::fa_twitter()` [mauriciovancine](https://twitter.com/mauriciovancine)
+`r icon::fa_twitter(color = "#23373b")` [@mauriciovancine](https://twitter.com/mauriciovancine)
 <br>
-`r icon::fa_link()` [mauriciovancine.netlify.com](https://mauriciovancine.netlify.com/)
+`r icon::fa_link(color = "#23373b")` [mauriciovancine.netlify.com](https://mauriciovancine.netlify.com/)
 
 <br><br><br>
 
