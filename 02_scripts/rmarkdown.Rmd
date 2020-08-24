@@ -88,5 +88,5 @@ Modelo linear simples
 $y_i = \alpha + \beta x_i + e_i$
 
 Modelo linear simples 
-$$y_i = \alpha + \beta x_i + e_i$$
+$$Y_i = \beta_0 + \beta_1 X_i + e_i$$
 $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}$$
